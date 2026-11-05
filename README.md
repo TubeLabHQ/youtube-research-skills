@@ -1,102 +1,117 @@
-# YouTube Research Skills
+# YouTube Research Skills for AI Agents
 
-Agent skills that turn Claude, ChatGPT, Codex, Cursor and any skills-compatible agent into a YouTube strategist. Powered by the [TubeLab MCP](https://tubelab.net/youtube-mcp): 500K+ breakout channels, millions of outlier videos, trending title formulas, transcripts and comments, refreshed daily. Real channels, real view counts. Nothing made up.
+Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](https://tubelab.net/youtube-mcp).
 
-```bash
-npx skills add TubeLabHQ/youtube-research-skills
-```
+These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, tear down a channel's packaging, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, prospect creators, and watch a niche over time.
 
-Then connect the MCP once per client: https://tubelab.net/docs/api/mcp-server
-
-## What you can ask
-
-| Ask | Skill | What you get |
-|---|---|---|
-| "Find me 3 unsaturated faceless niches that make money" | `niche-finder` | working niches with proof channels, then bent ideas (format transplants, audience bridges, topic twists) each with an open-ness check |
-| "Home security for seniors is working. Twist it into something new" | `niche-finder` | "dogs as home security" style ideas, parents named, first 3 titles |
-| "What's working in personal finance this month, and why" | `outlier-research` | outlier report: table, repeatable patterns, hooks to steal verbatim, 5 ideas |
-| "Trend report for @mychannel this month" | `trend-report` | dated digest: trending videos with verbatim hooks, why they worked, formats, triggers, power words, 10 ideas with a why, 3 learnings |
-| "20 video ideas for @mychannel" | `video-ideation` | idea bank ranked by demand × fit, top 5 with thumbnail concept and opening line |
-| "Why did my views die? Roast @mychannel" | `channel-teardown` | packaging diagnosis essay: decay trajectories, promise rungs, 5 to 8 ideas, title templates |
-| "Thumbnail concepts for this title, here's the script" | `thumbnail-concepts` | style audit of your channel, bet and anchor, annotated and saved examples, 5 concepts, images or image prompts |
-| "What thumbnails work in home workouts right now" / "thumbnails like this one" | `thumbnail-concepts` | niche mode: the niche as anchor, visual twins vs topic twins, concepts for your next video |
-| "Is woodworking worth entering?" | `niche-validator` | verdict memo: saturation, audience quality, formats carrying the niche, entry strategy with first 5 titles |
-| "Title formulas that are rising in my niche" | `title-formulas` | formula sheet with momentum and live examples, filled 3 ways, bent formulas, exhausted warnings |
-| "Who are my real competitors and how do I compare?" | `competitor-landscape` | comparison table, pillar matrix, gaps and overlaps, copy and avoid, positioning sentence |
-| "What do viewers ask under the top videos in X?" | `comment-mining` | questions with counts, objections, verbatims, audience vocabulary, 5 ideas that answer them |
-| "Break down the structure of this video" | `transcript-intelligence` | hook verbatim, beat sheet, claims, quotable lines, structure template, script skeleton |
-| "How do channels like mine make money? Audit my monetization" | `monetization-research` | niche mix vs audience twins in other niches, exact mechanics as read, ranked opportunities, RPM levers, sponsor prospects |
-| "Find 30 channels to sponsor for my product" | `sponsorship-prospecting` | prospect table and CSV with audience fit, sponsored-before flag, outreach angle per top 10 |
-| "Tell me every week which channels are breaking out in X" | `niche-watchlist` | dated delta digest against a state file; schedule it with a routine, cron or n8n |
-
-## Skills
-
-| Group | Skills | Status |
-|---|---|---|
-| discover | `niche-finder` · `niche-validator` · `outlier-research` · `trend-report` | shipped |
-| analyze | `channel-teardown` · `competitor-landscape` · `comment-mining` · `transcript-intelligence` | shipped |
-| create | `video-ideation` · `title-formulas` · `thumbnail-concepts` | shipped |
-| business | `monetization-research` · `sponsorship-prospecting` · `niche-watchlist` | shipped (audience and money filters need a Pro account) |
-| data | `tubelab-mcp` (tool map, craft rules, filter recipes, response fields, REST fallback) | shipped |
-
-Chains for common jobs are in `playbooks/`: launch a faceless channel in one session, monthly client report.
-
-Every skill is one `SKILL.md`: which tools to call with which filters, in what order, and the artifact to produce. No build step, nothing generated.
+This is not endpoint routing. Each skill is a complete research workflow: which TubeLab tool to call, with which filters, in what order, what to compute, and the artifact to produce. Every number comes from a tool response, every claim carries a channel, a title, a view count, an outlier ratio and a date.
 
 ## Install
 
-### Skills CLI (Claude Code, Cursor, Codex, Copilot, Gemini CLI, Windsurf)
-
 ```bash
 npx skills add TubeLabHQ/youtube-research-skills
 ```
 
-Connect the MCP in your client (OAuth in Claude, API key as Bearer in Codex and Cursor): https://tubelab.net/docs/api/mcp-server
+Works with Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, VS Code, and other agents that support the [Agent Skills spec](https://agentskills.io).
 
-### Claude Code plugin (MCP and skills in one step)
+Claude Code can also install it as a plugin, which registers the MCP at the same time:
 
 ```bash
 claude plugin marketplace add TubeLabHQ/youtube-research-skills
 claude plugin install youtube-research@tubelab
 ```
 
-The plugin registers `https://public-api.tubelab.net/mcp`; the first tool call opens OAuth in your browser. Skills show up as `/youtube-research:niche-finder` and friends.
+## Setup
 
-### claude.ai and the ChatGPT app (no skills support)
+Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp`
 
-1. Connect TubeLab once: the TubeLab connector in claude.ai, or the official TubeLab app in ChatGPT (search "TubeLab" in apps, connect, then add it to a chat with + → More → TubeLab).
-2. Paste two files into the chat: `skills/tubelab-mcp/SKILL.md`, then the skill you want, for example `skills/niche-finder/SKILL.md`. Then ask your question.
+- Claude Code: the plugin does it, or `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`. The first call opens OAuth.
+- Claude.ai, Claude Desktop, ChatGPT: the official TubeLab connector or app, OAuth.
+- Codex, Cursor and other IDE agents: a TubeLab API key as `Authorization: Bearer <key>` (Pro plan).
+- No skills support (Claude.ai, ChatGPT): paste `skills/tubelab-mcp/SKILL.md` and then the skill you want into the chat.
 
-In claude.ai you can also upload a skill folder as a custom skill under Settings → Skills.
+Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free.
 
-### No MCP at all
+## Available Skills
 
-The REST API covers the same data with an API key: see the REST fallback section in `skills/tubelab-mcp/SKILL.md`.
+| Skill | Use it when you want to... | Output |
+|---|---|---|
+| [`niche-finder`](skills/niche-finder/) | Find niches that are working now and bend them into new, unsaturated ideas | Working niches with proof, bent ideas (transplant, bridge, twist, fusion) with open-ness checks |
+| [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, from a keyword or a channel | Verdict memo: saturation, audience quality, formats carrying it, entry strategy |
+| [`outlier-research`](skills/outlier-research/) | Find videos that beat their channel's baseline in a niche and why | Outlier table, repeatable patterns, hooks to steal, five ideas |
+| [`trend-report`](skills/trend-report/) | Get a dated digest of what is trending in a niche or for a channel | Trending videos with verbatim hooks, winning patterns, 10 ideas with a why, learnings |
+| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Idea bank ranked by demand and fit, top 5 with thumbnail concept and opening line |
+| [`title-formulas`](skills/title-formulas/) | Use title formulas with momentum, filled for your topic | Formula sheet with live examples, filled titles, bent formulas, exhausted warnings |
+| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts for one video, or study what thumbnails work in a niche | Style audit, bet and anchor, annotated examples, five concepts, images or image prompts |
+| [`channel-teardown`](skills/channel-teardown/) | Diagnose why a channel's views died and fix its packaging | Essay with decay trajectories, lenses, ideas, title templates, rewrites on request |
+| [`competitor-landscape`](skills/competitor-landscape/) | Compare a channel against its real neighbours | Comparison table, pillar matrix, gaps and overlaps, copy and avoid, positioning |
+| [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | Voice-of-audience report, verbatims, vocabulary, five ideas |
+| [`transcript-intelligence`](skills/transcript-intelligence/) | Break down a video's structure, hook and beats from its transcript | Hook verbatim, beat sheet, claims, quotable lines, structure template, script skeleton |
+| [`monetization-research`](skills/monetization-research/) | Audit how channels like yours, and channels with your audience, make money | Niche mix vs audience twins, exact mechanics as read, ranked opportunities, RPM levers |
+| [`sponsor-finder`](skills/sponsor-finder/) | Find the brands already sponsoring channels with your audience and size | Sponsor list with evidence, offers, placements, outreach angle per brand |
+| [`sponsorship-prospecting`](skills/sponsorship-prospecting/) | Build a creator prospect list for a product or brand | Prospect table and CSV with audience fit, sponsored-before flag, outreach angles |
+| [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new breakout channels, movers and dropped, state file |
+| [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, filters, response fields, quirks, REST fallback | Craft rules and recipes the other skills rely on; no artifact |
 
-## Principles
+Every skill is one `SKILL.md`. Real outputs for every skill, all run on the same channel, are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/).
 
-- **Outlier beats raw views.** A 50K video on a 5K-average channel says more than 2M on a giant. Rank by ratio and z-score, show both.
-- **Recency first.** Always set `publishedAtFrom`. Start at a month, widen only when thin, say when you widened.
-- **Broad then narrow.** One wide search, read the distribution, then filter. Strict filters on the first call return nothing and cost the same.
-- **Cite or cut.** Channel · video · views · ratio · date on every claim. Titles verbatim. No invented channels, ever.
-- **Estimates are estimates.** Revenue, RPM and audience are models. Order with them, present as bands, never as facts.
-- **Credit-aware.** Searches cost credits, reads are free. State the budget, go deep with free tools, never loop a paid search.
-- **Quality over slop.** Content Authenticity is never off: `neutral` (General and above) for niches, outliers, ideation and titles; `positive` (High) for anything thumbnail-related, because a viral thumbnail on a low-effort channel teaches the wrong lesson.
-- **Artifacts, not answers.** Every skill ends in a table, brief, board or sheet a creator can act on or a studio can hand to a client.
-- **Public data only.** Everything comes from public YouTube pages via TubeLab. No private analytics, no scraping of logged-in data.
+## Example Prompts
 
-## Credits and plans
+```text
+Find me 3 unsaturated faceless niches in English with real AdSense money, then twist the best one into 5 novel channel ideas.
+```
 
-Only the five search tools cost credits (channels 5, outliers 2, trending formats 1). Channel, video, transcript and comment reads are free. Each skill states its budget before the first paid call. The MCP is included from the Starter plan; API keys (Codex, Cursor, REST) and monetization, revenue, RPM and audience data are Pro and Team. Current details: https://tubelab.net/pricing
+```text
+Trend report for @mychannel this month. Hooks word for word, and 10 ideas I can make.
+```
 
-## Examples
+```text
+Roast @mychannel. Be direct. Why did the last six videos tank?
+```
 
-Real outputs produced by an agent with the live MCP, credits noted at the top of each file: `examples/`.
+```text
+Thumbnail concepts for "The 10 Minutes After You Eat Decide If That Meal Becomes Belly Fat". Here is the script.
+```
 
-## Contributing
+```text
+Who could sponsor my channel? Find the brands already paying channels my size with my audience.
+```
 
-See `CONTRIBUTING.md`. Run `node scripts/validate-skills.mjs` before opening a PR.
+```text
+Who are my real competitors and how do I compare? youtube.com/@handle
+```
 
-## License
+## How the Skills Work Together
 
-MIT
+```text
+tubelab-mcp
+        │
+        ▼
+YouTube research workflows
+ ├─ discover    niche-finder · niche-validator · outlier-research · trend-report
+ ├─ create      video-ideation · title-formulas · thumbnail-concepts
+ ├─ analyze     channel-teardown · competitor-landscape · comment-mining · transcript-intelligence
+ └─ business    monetization-research · sponsor-finder · sponsorship-prospecting · niche-watchlist
+```
+
+The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, response fields and quirks. Each workflow produces an artifact a creator can act on or a studio can hand to a client, not raw JSON.
+
+## Design Principles
+
+1. **Workflow-first, tool-second.** Users ask for an outcome, not a search.
+2. **Outlier over raw views.** A 50K video on a 5K-average channel says more than 2M on a giant. Rank by ratio, show both.
+3. **Recency first.** Every search sets a window. Widen one step at a time, and say so.
+4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result.
+5. **Cited outputs.** Channel · title verbatim · views · ratio · date on every claim. No invented channels, ever.
+6. **Estimates are estimates.** Revenue, RPM and audience are model outputs, shown as labelled bands.
+7. **Credit-aware.** State the budget before the first paid call, go deep with free reads, never loop a paid search.
+8. **Public data only.** Everything comes from public YouTube pages via TubeLab.
+
+## Links
+
+- [TubeLab](https://tubelab.net)
+- [YouTube MCP](https://tubelab.net/youtube-mcp)
+- [MCP Documentation](https://tubelab.net/docs/api/mcp-server)
+- [API Documentation](https://tubelab.net/docs/api/introduction)
+- [Pricing](https://tubelab.net/pricing)
+- [Contributing](CONTRIBUTING.md) · MIT license

@@ -19,6 +19,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Script structure, beat sheet, hook of this video, script skeleton | `transcript-intelligence` |
 | How do channels like mine make money, raise RPM, what to sell, who sponsors them | `monetization-research` |
 | Find creators to sponsor for a product, prospect list for a brand | `sponsorship-prospecting` |
+| Who could sponsor my channel, brands paying channels like mine, sponsor list | `sponsor-finder` |
 | Watch a niche, which channels broke out since last run, scheduled digest | `niche-watchlist` |
 | How do TubeLab tools work, which filter, credits, REST | `tubelab-mcp` |
 

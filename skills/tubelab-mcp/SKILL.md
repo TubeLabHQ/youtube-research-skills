@@ -10,7 +10,7 @@ metadata:
 
 # TubeLab MCP: the data layer
 
-TubeLab is a read-only index of public YouTube data, enriched for research: 500K+ breakout channels, millions of outlier videos, trending title formulas, plus live channel, video, transcript and comment reads. This skill is not a workflow. It teaches an agent to use the tools well so every workflow skill in this repo gets the same quality. Tool parameters are in the MCP schema already; this file covers what the schema does not say.
+TubeLab is a read-only index of public YouTube data, enriched for research: a growing index of breakout channels and outlier videos refreshed daily, trending title formulas, plus live channel, video, transcript and comment reads. This skill is not a workflow. It teaches an agent to use the tools well so every workflow skill in this repo gets the same quality. Tool parameters are in the MCP schema already; this file covers what the schema does not say.
 
 ## Connect and check
 

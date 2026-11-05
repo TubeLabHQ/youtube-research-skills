@@ -69,6 +69,8 @@ Audience and monetization fields are model estimates; confirm with the creator's
 
 ## Pitfalls
 
+- A creator asking who could sponsor them wants `sponsor-finder`, the mirror of this skill.
+
 - A semantic `query` combined with audience filters and a subscriber band drifts off topic (2 of 20 on topic in a live run). Prefer one of two shapes: audience filters with no `query` and topic read from `semantic.niches` in hand, or `query` with the subscriber band and audience read from `audience.dominant` in hand. Say which you used.
 
 - Audience fields are predictions. Present them as "predicted" and ask the creator for a screenshot before paying.
