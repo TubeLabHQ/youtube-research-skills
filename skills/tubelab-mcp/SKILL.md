@@ -14,7 +14,7 @@ TubeLab is a read-only index of public YouTube data, enriched for research: a gr
 
 ## Connect and check
 
-- Endpoint: `https://public-api.tubelab.net/mcp` (Streamable HTTP, stateless). Claude.ai, Claude Desktop and the ChatGPT app connect with OAuth through the official TubeLab connector or app. Claude Code: `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`. Codex, Cursor and other IDE agents send a TubeLab API key as `Authorization: Bearer <key>` (API keys need a Pro or Team plan). Setup per client: https://tubelab.net/docs/api/mcp-server
+- Endpoint: `https://public-api.tubelab.net/mcp` (Streamable HTTP, stateless). Claude.ai and Claude Desktop connect through the TubeLab connector (https://claude.ai/directory/tubelab); ChatGPT and Codex through the TubeLab app (https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b); both OAuth. Claude Code: `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`. Cursor and other IDE agents send a TubeLab API key as `Authorization: Bearer <key>` (API keys need a Pro or Team plan). Setup per client: https://tubelab.net/docs/api/mcp-server
 - When unsure, call `get_credits_balance` (free) first. If a search errors, check the balance before retrying.
 - The MCP is included from the Starter plan. Monetization, revenue, RPM and audience fields can be empty on Starter accounts; skills that lean on them say so. Plans: https://tubelab.net/pricing
 

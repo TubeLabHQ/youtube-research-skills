@@ -26,8 +26,9 @@ claude plugin install youtube-research@tubelab
 Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp`
 
 - Claude Code: the plugin does it, or `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`. The first call opens OAuth.
-- Claude.ai, Claude Desktop, ChatGPT: the official TubeLab connector or app, OAuth.
-- Codex, Cursor and other IDE agents: a TubeLab API key as `Authorization: Bearer <key>` (Pro plan).
+- Claude.ai and Claude Desktop: the [TubeLab connector](https://claude.ai/directory/tubelab), OAuth.
+- ChatGPT and Codex: the [TubeLab app](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b), OAuth. Codex supports ChatGPT apps, so no API key is needed there.
+- Cursor and other IDE agents: a TubeLab API key as `Authorization: Bearer <key>` (Pro plan).
 - No skills support (Claude.ai, ChatGPT): paste `skills/tubelab-mcp/SKILL.md` and then the skill you want into the chat.
 
 Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free.
@@ -112,6 +113,7 @@ The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, respon
 - [TubeLab](https://tubelab.net)
 - [YouTube MCP](https://tubelab.net/youtube-mcp)
 - [MCP Documentation](https://tubelab.net/docs/api/mcp-server)
+- [TubeLab in the Claude directory](https://claude.ai/directory/tubelab) · [TubeLab app for ChatGPT and Codex](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b)
 - [API Documentation](https://tubelab.net/docs/api/introduction)
 - [Pricing](https://tubelab.net/pricing)
 - [Contributing](CONTRIBUTING.md) · MIT license
