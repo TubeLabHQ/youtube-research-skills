@@ -22,6 +22,7 @@ A port of TubeLab's channel roast. The output is a long-form essay: short punchy
 | Input | Default |
 |---|---|
 | Channel | required: URL, `@handle` or ID |
+| Goal | ask once: **reach** (more views, AdSense, sponsors) or **conversion** (views from people who buy the channel's product or service). Unknown: assume reach for channels with no visible product, conversion for channels whose description sells something, and say which you assumed |
 | Rewrite old titles? | no, unless asked or a content-contract mismatch cannot be explained without one |
 | Language | the channel's own |
 | Niche angles | derived from the channel's titles; 2 to 3 angles |
@@ -37,7 +38,7 @@ Say before the first paid call: "About 9 to 11 credits: 2 to 3 outlier searches 
 3. **`get_video`** (free) on the biggest positive outlier plus 1 to 2 recent underperformers: exact date, description, tags, like and comment counts. `get_video_transcript` only to verify a suspected content-contract mismatch or to rewrite a title.
 4. **`search_outliers`** in the channel's niche, 2 to 3 passes on different angles: `query` (one angle), `publishedAtFrom: "semester"`, `sortBy: "averageViewsRatio"`, `language` matched to the channel, `classificationQuality: "neutral"`, `viewCountFrom` at 2 to 5x the channel's average views (a 2K-average channel uses 5000, a 500K-average channel uses 1000000), `channelMonetizationAdsense: true` when the floor is above 500K so paid brand campaigns (software and bank channels with ratio 50+) do not pass as competitors, `size: 20`. Widen to `year` if a pass returns under 5 hits and say so. Never drop `classificationQuality`.
 5. **`search_related_channels`** with `relatedChannelId: ["<channel id>"]`, `publishedAtFrom: "semester"`, `classificationQuality: "neutral"`, `size: 12`: the competitor set. Their sample `videos[]` titles show which promise rung the niche sits at. That is where the audience is.
-6. **Apply only the lenses that fit.** For each: the specific title and its views, why it fails, the fix principle, and a competitor's title and views beside it.
+6. **Apply only the lenses that fit, judged against the goal.** For each: the specific title and its views, why it fails, the fix principle, and a competitor's title and views beside it. Under a conversion goal, a title that names the buyer ("if you have a service business") and gets fewer views is not a failure if the segment named is the buyer; it is a failure when it names a segment the channel does not sell to, or when the universal frame of the same content would have reached the same buyers. Say which case it is, and keep the reach number next to it so the user sees the trade.
 
 | Lens | Test | Example |
 |---|---|---|
@@ -73,6 +74,7 @@ Run: <date> · Sample: <n> videos · Credits used · Widened: <none | pass, from
 - Average views are inflated by outliers. Use the median for "normal" and the last-4 average for "now".
 - `publishedAtEstimate` in the channel sample is month-granular; order videos inside a month by their sample position (newest first) and say the decay is dated to the month.
 - "Your titles are generic" without the exact title, its views and a competitor's title with views is not a finding.
+- Fewer views is not a finding by itself. Niching the title down can be the goal; judge against reach or conversion, never against views alone.
 - Thumbnail lens only when you can see the thumbnails. Otherwise say so and skip it.
 - Shorts-first channels: `get_channel_shorts` and `type: "short"` on outlier searches.
 - Under 15 sampled videos, decay patterns are "early signal".

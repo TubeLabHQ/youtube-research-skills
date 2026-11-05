@@ -22,6 +22,7 @@ Ideas for one channel, not for YouTube in general. Every idea traces back to an 
 | Input | Default |
 |---|---|
 | Channel | required: ID, URL or `@handle` |
+| Goal | reach (views) or conversion (views from buyers); unknown: reach unless the description sells something, and say which you assumed |
 | Adjacent niche keyword | none; adds one extra outlier pass when given |
 | How many ideas | 15 to 20 |
 | Long-form or Shorts | the channel's main format |
@@ -42,7 +43,7 @@ Say before the first paid call: "About 4 to 8 credits: 2 to 3 outlier searches a
 7. **Dedupe** to at most 2 outliers per `snippet.channelId`, rank by `averageViewsRatio` then `zScore`, keep `snippet.channelSubscribers` next to every ratio.
 8. **SCAMPER each of the top 10 to 12 outliers relative to this channel.** Substitute (swap topic, format or angle for this channel's), combine (merge two proven concepts), adapt (borrow from the adjacent niche), modify (amplify or twist the promise), put to other use (repurpose for this channel's segment), eliminate (strip to the core claim), reverse (flip the perspective). One to two ideas per outlier; note the title formula behind each outlier as you go.
 9. **Write titles** under 60 characters at promise rung 3 or above (rung 1 bare promise, 2 promise plus constraint, 3 named mechanism, 4 implicit promise where the mechanism carries everything). Pass the authority test: no claim this channel cannot back.
-10. **Rank** by demand (source ratio and recency) times fit (does the channel have a close topic in its top half, is the source channel within 10x of this one's size). An idea with no fit is "new ground": report it unranked, do not bury it, do not rank it first. Tie-break towards the channel's own best format. Expand the top 5 with a thumbnail concept (what the image shows, text of max 3 words) and an opening line.
+10. **Rank** by demand (source ratio and recency) times fit (does the channel have a close topic in its top half, is the source channel within 10x of this one's size). Under a conversion goal, fit also asks whether the idea reaches the buyer: an idea aimed at the segment the channel sells to outranks a broader idea with a higher ratio, and the table says so. An idea with no fit is "new ground": report it unranked, do not bury it, do not rank it first. Tie-break towards the channel's own best format. Expand the top 5 with a thumbnail concept (what the image shows, text of max 3 words) and an opening line.
 
 ## Output
 
