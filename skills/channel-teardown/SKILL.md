@@ -15,7 +15,7 @@ metadata:
 A port of TubeLab's channel roast. The output is a long-form essay: short punchy paragraphs, bold claims backed by data, no bullets or tables in the body (the TL;DR actions are the one exception). Direct, not mean. Data at every claim.
 
 - Use for: "roast @channel", "why did my views die", "what's wrong with my titles", "audit my channel", "rewrite my last 5 titles", "why did I stop growing".
-- Not for: ideas without a diagnosis (`video-ideation`), a niche-level view (`outlier-research`), thumbnails alone (`thumbnail-research`).
+- Not for: ideas without a diagnosis (`video-ideation`), a niche-level view (`outlier-research`), thumbnails alone (`thumbnail-concepts`).
 
 ## Inputs (ask only for what is missing)
 

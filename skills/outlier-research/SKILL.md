@@ -15,7 +15,7 @@ metadata:
 The "why did this work" skill. An outlier is a video that outperformed its own channel's average. A 50K video on a 5K-average channel says more about a format than 2M views on a giant channel, so everything here ranks by ratio, not raw views. The output is an outlier report: the winners with proof, the patterns they share, the hooks worth stealing, and five ideas grounded in them.
 
 - Use for: "what's working in X", "why did this blow up", "what's trending in my niche", "hooks and formats to steal", "show me breakout videos in X".
-- Not for: finding a niche to start (`niche-finder`), ideas for one existing channel (`video-ideation`), a dated digest with verbatim hooks (`trend-report`), thumbnails (`thumbnail-research`).
+- Not for: finding a niche to start (`niche-finder`), ideas for one existing channel (`video-ideation`), a dated digest with verbatim hooks (`trend-report`), thumbnails (`thumbnail-concepts`).
 
 ## Inputs (ask only for what is missing)
 

@@ -11,7 +11,6 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Trend report, what is trending this week or month, weekly digest, hooks working right now | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
 | Roast my channel, why did views die, packaging diagnosis, title rewrites | `channel-teardown` |
-| What thumbnails work in X, thumbnails like this one, thumbnail brief | `thumbnail-research` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails | `thumbnail-concepts` |
 | Is X worth entering, is this niche saturated, go or no-go | `niche-validator` |
 | Title formulas, trending title templates, fill a formula for my topic | `title-formulas` |
