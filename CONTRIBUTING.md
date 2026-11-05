@@ -26,6 +26,20 @@ node scripts/validate-skills.mjs
 - **No prices.** Credit costs are fine; plan prices change, link to https://tubelab.net/pricing.
 - **Under 150 lines.** A workflow skill that needs more is two skills.
 
+## Repo conventions
+
+- **Keep it simple.** One `SKILL.md` per skill, plain markdown, no build steps, no generated files, no framework. If a change needs tooling, the change is probably wrong.
+- **Do not over-engineer.** A skill is instructions an agent follows, not software. No scoring formulas, no config systems, no abstractions shared between skills. Prefer a sentence over a mechanism.
+- **Small, focused changes.** One skill or one fix per pull request. Fold a learned tool quirk into the skill that hit it and into `tubelab-mcp` if it is general.
+- **Commits follow Conventional Commits** (the commitizen pattern): `type(scope): subject` in the imperative, lower case, no period. Types: `feat`, `fix`, `docs`, `refactor`, `chore`, `ci`, `test`. Scope is the skill or area.
+
+```text
+feat(sponsor-finder): rank brands by warmth
+fix(tubelab-mcp): note that lexical outlier search ignores the query
+docs(readme): link the claude directory listing
+chore(examples): rerun niche-finder on @channel
+```
+
 ## Examples
 
 Every skill ships one real output in `examples/<skill>/`. Real means produced by an agent with the live MCP, with the credits spent noted at the top. Never fabricate an example; a missing example is better than a fake one.

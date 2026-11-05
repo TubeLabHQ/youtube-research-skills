@@ -45,4 +45,4 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 
 ## Repo conventions for contributors
 
-See `CONTRIBUTING.md`. Each workflow skill is one self-contained `SKILL.md`; only `tubelab-mcp` has a `references/` folder. Run `node scripts/validate-skills.mjs` before opening a PR.
+See `CONTRIBUTING.md`. Each workflow skill is one self-contained `SKILL.md`; only `tubelab-mcp` has a `references/` folder. Keep it simple, do not over-engineer, Conventional Commits (`type(scope): subject`). Run `node scripts/validate-skills.mjs` before opening a PR.
