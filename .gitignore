@@ -10,4 +10,4 @@ node_modules/
 
 # thumbnails saved by skills during a run are local working files, not published
 examples/**/*.jpg
-thumbnail-concepts/
+/thumbnail-concepts/
