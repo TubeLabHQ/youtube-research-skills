@@ -13,7 +13,8 @@
 //   - SKILL.md body < 500 lines
 //   - relative links and backticked skill paths resolve to real files
 //   - no hard-coded ISO dates (use recency tokens: month|trimester|semester|year)
-//   - workflow skills (everything except tubelab-mcp) have an "## Output" section with the
+//   - description under 500 chars (warning): it is loaded for every skill in every chat
+//   - workflow skills (everything except tubelab-mcp) have an "## Output Format" section with the
 //     artifact layout inline, and no PROMPT.md / assets/ / references/ (SKILL.md is self-contained)
 
 import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
@@ -110,6 +111,7 @@ function validateSkill(name) {
   if (!fm.description) errors.push(`${file}: frontmatter.description is required`);
   else {
     if (fm.description.length > 1024) errors.push(`${file}: description exceeds 1024 chars (${fm.description.length})`);
+    if (fm.description.length > 500) warnings.push(`${file}: description is ${fm.description.length} chars, aim under 500 (it is loaded for every skill in every chat)`);
     if (!/tubelab/i.test(fm.description)) warnings.push(`${file}: description should say it requires the TubeLab MCP (routing convention)`);
   }
   if (fm.compatibility && fm.compatibility.length > 500) errors.push(`${file}: compatibility exceeds 500 chars`);
@@ -120,17 +122,18 @@ function validateSkill(name) {
   }
   // size
   const lines = text.split('\n').length;
-  if (lines >= 500) errors.push(`${file}: ${lines} lines, keep SKILL.md under 500 (move detail to references/)`);
-  // links
+  if (lines >= 500) errors.push(`${file}: ${lines} lines, keep SKILL.md under 500 (cut, do not add files)`);
+  // links (fenced blocks are artifact layouts and examples, not links)
+  const prose = body.replace(/```[\s\S]*?```/g, '');
   const linkRe = /\]\((?!https?:|mailto:|#)([^)\s]+)\)/g;
-  for (const m of body.matchAll(linkRe)) {
+  for (const m of prose.matchAll(linkRe)) {
     const target = m[1].split('#')[0];
     if (!target) continue;
     const abs = resolve(dir, target);
     if (!existsSync(abs)) errors.push(`${file}: link target not found: ${m[1]}`);
   }
   const pathRe = /`((?:references|scripts)\/[A-Za-z0-9_./-]+)`/g;
-  for (const m of body.matchAll(pathRe)) {
+  for (const m of prose.matchAll(pathRe)) {
     if (!existsSync(resolve(dir, m[1]))) errors.push(`${file}: referenced file not found: ${m[1]}`);
   }
   // hard-coded dates
@@ -139,7 +142,7 @@ function validateSkill(name) {
   }
   // workflow skills are self-contained: output layout inline, no generated or side files
   if (!DATA_SKILLS.has(name)) {
-    if (!/^## Output\s*$/m.test(body)) errors.push(`${file}: workflow skill needs an "## Output" section with the artifact layout inline`);
+    if (!/^## Output Format\s*$/m.test(body)) errors.push(`${file}: workflow skill needs an "## Output Format" section with the artifact layout inline`);
     for (const extra of ['PROMPT.md', 'assets', 'references']) {
       if (existsSync(join(dir, extra))) errors.push(`${file}: remove ${extra} and fold it into SKILL.md (workflow skills are one file)`);
     }

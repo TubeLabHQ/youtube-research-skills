@@ -1,10 +1,10 @@
 ---
 name: tubelab-mcp
-description: How to drive the TubeLab MCP well for YouTube research. Tool map with credit costs, identifier rules, the craft rules every workflow skill assumes, the fields that carry the signal, known quirks, budget etiquette and the REST fallback. Load this when a workflow skill says so, when a TubeLab tool call fails or returns nothing, when unsure which search tool or filter to use, or when the user asks how TubeLab tools work. Requires the TubeLab MCP (https://public-api.tubelab.net/mcp) or a TubeLab API key.
+description: Use when a TubeLab tool call fails or returns nothing, when unsure which search tool or filter to use, or when the user asks how the TubeLab MCP tools, credits or REST API work. The data layer every workflow skill assumes: tool map with costs, identifier rules, craft rules, signal fields, quirks and the REST fallback.
 license: MIT
 metadata:
   author: tubelab
-  version: "1.1"
+  version: "2.0"
   kind: data-layer
 ---
 
@@ -81,9 +81,9 @@ Full field lists in [references/response-shapes.md](references/response-shapes.m
 - `get_video_comments` returns "Failed Dependency" or "No comments found" when comments are disabled: treat as no data, not as a failure. Its `comments[]` can contain duplicate entries; dedupe on author plus text, and treat `publishedAt` as coarse (month granularity or relative strings).
 - Empty `hits` with `pagination.total: 0`: widen recency, drop one filter or rephrase `query`. Keep the quality floor.
 
-## Budget etiquette
+## Spending credits
 
-Say the budget before the first paid call ("about 9 credits: one channel search at 5, two outlier searches at 2"). Spend paid searches on finding candidates and free reads on understanding them. If a search errors, check the balance, then retry once with fewer filters.
+Spend paid searches on finding candidates and free reads on understanding them. Two searches per job is the default, three the ceiling; never paginate a paid search in a loop. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Tell the user the credits used at the end, not a budget at the start.
 
 ## REST fallback (no MCP)
 

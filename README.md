@@ -115,7 +115,7 @@ The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, respon
 4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result.
 5. **Cited outputs.** Channel · title verbatim · views · ratio · date on every claim. No invented channels, ever.
 6. **Estimates are estimates.** Revenue, RPM and audience are model outputs, shown as labelled bands.
-7. **Credit-aware.** State the budget before the first paid call, go deep with free reads, never loop a paid search.
+7. **Credit-aware.** Searches cost credits, reads are free: go deep with free reads, never loop a paid search.
 8. **Public data only.** Everything comes from public YouTube pages via TubeLab.
 
 ## Links

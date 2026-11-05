@@ -1,88 +1,108 @@
 ---
 name: niche-validator
-description: Go or no-go verdict on one YouTube niche, from a keyword or from a channel whose niche you want checked. Reads the niche's channels and outliers from TubeLab to measure demand against supply, audience quality, which formats carry the niche, the gaps left open, and whether other-language markets are thinner, then writes a verdict memo with an entry strategy and the first five titles. Use when asked is this niche worth entering, is X saturated, should I start a channel about X, what niche is this channel in and is it crowded, or validate my niche idea. Requires the TubeLab MCP.
+description: Use when the user asks whether a niche is worth entering, if X is saturated, whether to start a channel about X, what niche a channel is in and how crowded it is, or to validate a niche idea. Measures demand, supply, audience and formats with the TubeLab MCP and writes a go, twist or no-go verdict memo.
 license: MIT
 metadata:
   author: tubelab
-  version: "1.0"
+  version: "2.0"
   requires: tubelab-mcp
-  credits: "7-9 per run (1 search_channels at 5, 1-2 search_outliers at 2, free reads)"
-  plan: starter
 ---
 
-# Niche validator
+# Niche Validator
 
-One niche, one verdict. Where `niche-finder` scans wide and bends, this skill goes deep on a single niche the user already has in mind and says enter, enter with a twist, or stay out, with the numbers that justify it. The output is a verdict memo a creator can act on this week.
+## Overview
 
-- Use for: "is X worth entering", "is X saturated", "should I start a channel about X", "what niche is @channel in and is it crowded", "validate my niche".
-- Not for: finding or bending niches (`niche-finder`), why one video worked (`outlier-research`), ideas for an existing channel (`video-ideation`).
+One niche, one verdict: enter, enter with a twist, or stay out, with the numbers. The TubeLab MCP is the data layer: channel sample, outliers, free leader reads.
 
-## Inputs (ask only for what is missing)
+## When to Use
 
-| Input | Default |
+Use this skill when the user asks to:
+
+- decide if a niche is worth entering, or if it is saturated
+- know whether to start a channel about X, or how crowded a channel's niche is
+
+Not for finding or bending niches (`niche-finder`) or why one video worked (`outlier-research`).
+
+## Data Sources
+
+| Tool | Use it for |
 |---|---|
-| Niche keyword or channel | one is required; from a channel, name the niche from its titles first |
-| Language | `["en"]`; expansion check in fr, de, es, pt only if asked or if the English verdict is "crowded" |
-| Faceless? | ask once if the user plans a faceless channel |
-| Exclusions | the slop list from `tubelab-mcp` plus the user's own |
+| `search_channels` | Demand, supply, freshness, audience, other languages |
+| `search_outliers` | The formats carrying the niche |
+| `get_channel` | Naming the niche; the leaders' best titles |
 
-## Credit budget
-
-Say before the first paid call: "About 7 to 9 credits: one channel search at 5, one or two outlier searches at 2, channel reads are free." Do not paginate. A language expansion is one more channel search at 5; ask before running it.
+Filters, the slop list and response fields are in `tubelab-mcp`.
 
 ## Workflow
 
-1. **Name the niche (free, when a channel is given).** `get_channel`: from `item.snippet` and the `item.videos[]` titles write the niche in 2 to 4 words plus one alternative phrasing. Confirm with the user only if the two phrasings disagree.
-2. **Supply and demand.** `search_channels` with `query: ["<niche>", "<alternative phrasing>"]`, `publishedAtFrom: "trimester"`, `classificationQuality: "neutral"`, `excludeNiche: [slop list]`, `language`, `size: 20`, no `sortBy` (seeded-random, the app's unbiased sample). Add `classificationIsFaceless: true` when the user plans a faceless channel. Drop off-topic hits before reading anything.
-3. **Widen rule.** Under 10 on-topic hits: `trimester` → `semester` → `year`, one step at a time, with one sentence in the memo saying which window was used and why. Never drop `classificationQuality`.
-4. **Read the sample.** Per hit: `statistics.medianViewsEstimate`, `avgViewsToSubscribersRatio`, `viewVariationCoefficient`, `subscriberCount`, `joinedDateEstimate`, `semantic.niches[]`, `monetization` bands, `detections.*.detected`, `audience.dominant`. Then: demand is the median of median views and the share of channels with ratio above 1; supply is the count of on-topic channels and how many are near-duplicates (same niches, same title shapes); freshness is the share joined within a year; audience quality is the dominant region, age and income when present, else the language as a proxy.
-5. **Formats that carry the niche.** `search_outliers` with the same `query`, `publishedAtFrom` as used in step 2, `sortBy: "averageViewsRatio"`, `averageViewsRatioFrom: 3`, `classificationQuality: "neutral"`, `excludeKeyword: [slop list]`, `language`, `size: 20`. Dedupe to max 2 per `snippet.channelId`. Group titles by format and title mechanic; a format counts when 3 or more outliers from different channels share it.
-6. **Leaders (free).** `get_channel` on 2 to 3 of the strongest channels from step 2: upload cadence from `item.videos[]` dates, long-form versus Shorts mix, the top 3 titles by `averageViewsRatio`, what they never cover.
-7. **Gaps and bent ideas.** Topics the audience asks for that no leader covers, formats proven in step 5 that the leaders have not used, and 2 to 3 bent ideas (swap the audience, swap the solution, fuse two formats) with the parent outliers named.
-8. **Language markets (optional, 5 credits).** Rerun step 2 with `language: ["fr"]`, `["de"]`, `["es"]` or `["pt"]` for one language the user can produce in; compare `pagination.total` and median views against English.
-9. **Verdict.** Enter when demand is healthy (median views above the user's floor, ratio above 1 on most channels) and supply is low or stale (few near-duplicates, young channels still clearing the floor). Enter with a twist when demand is healthy and supply is high but a gap or format from step 7 is open. Stay out when demand is thin, when near-duplicates dominate and nothing joined in the last year clears the floor, or when the audience region or income is wrong for the user's income goal. Rank the entry titles by the strength of the outlier pattern they borrow, then by freshness.
+1. **Clarify scope only if needed**
+   - Niche keyword or a channel (one required), language (default `["en"]`), faceless or not (ask once), exclusions. With a channel, `get_channel` and name the niche from its titles in 2 to 4 words plus one alternative.
+   - Language expansion (fr, de, es, pt) only if asked or the English verdict is "crowded"
 
-## Output
+2. **Supply and demand**
+   - `search_channels` with `query: ["<niche>", "<alternative phrasing>"]`, `publishedAtFrom: "trimester"`, `classificationQuality: "neutral"`, `excludeNiche: [slop list]`, `language`, `size: 20`, no `sortBy`. Add `classificationIsFaceless: true` for a faceless plan. Drop off-topic hits.
+   - Under 10 on-topic hits: widen `trimester` to `semester` to `year`, one step at a time, and say so.
+   - Demand: median of `medianViewsEstimate` and share with `avgViewsToSubscribersRatio` above 1. Supply: on-topic count and near-duplicates (same `semantic.niches[]`). Freshness: share with `joinedDateEstimate` within a year. Audience: `audience.dominant`, else language proxy; note `monetization` bands.
+
+3. **Formats that carry the niche**
+   - `search_outliers` with the same `query` and window, `sortBy: "averageViewsRatio"`, `averageViewsRatioFrom: 3`, `classificationQuality: "neutral"`, `excludeKeyword: [slop list]`, `language`, `size: 20`. Max 2 per `snippet.channelId`; a format needs 3 outliers from different channels.
+
+4. **Read the leaders**
+   - `get_channel` on 2 to 3 leaders: cadence, Shorts mix, top 3 titles by `averageViewsRatio`, what they never cover.
+
+5. **Gaps and bent ideas**
+   - Topics no leader covers, formats from step 3 leaders skip, 2 to 3 bent ideas (swap audience or solution, fuse formats) with parents named.
+
+6. **Language markets (optional, ask first)**
+   - Rerun step 2 with `language: ["fr"]`, `["de"]`, `["es"]` or `["pt"]`; compare `pagination.total` and median views against English.
+
+7. **Verdict**
+   - Enter: healthy demand (median above the user's floor, ratio above 1 on most), low or stale supply. Twist: healthy demand, high supply, an open gap from step 5. Stay out: thin demand, near-duplicates with nothing new clearing the floor, or the wrong audience for the income goal.
+
+## Output Format
 
 ```markdown
-# Niche verdict: <niche>
-Run: <date> · Language · Window: <trimester | semester | year> · Widened: <none | from, to, why> · Credits used
+# Niche Verdict: {niche}
+
+## Summary
+- Sample: {n} on-topic channels, {n} outliers after dedupe
+- Window: {trimester | semester | year}, widened because {reason}
+- Confidence: High/Medium/Low
 
 ## 1. Saturation (demand vs supply)
-Demand: median of median views <n> · <n> of <n> channels with ratio above 1 · top median <n>
-Supply: <n> on-topic channels in the sample · <n> near-duplicates · <n> joined within a year still clearing <floor> views
-Verdict on saturation: <open | crowded but moving | saturated>
+Demand: median of medians {n} · {n} of {n} with ratio above 1
+Supply: {n} on-topic · {n} near-duplicates · {n} joined within a year clearing {floor}
+Verdict: {open | crowded but moving | saturated}
 
 ## 2. Audience quality
-<dominant region · age · income from audience.dominant, labelled estimate; or language proxy> · monetization: <AdSense share, revenue band (estimate), detections present>
+{region · age · income (estimate) or language proxy} · {monetization bands}
 
 ## 3. What is working (formats with proof)
-| Format | Outliers (n, channels) | Median ratio | Example (channel (handle) · title verbatim · views · ratio · date) |
+| Format | Outliers (n, channels) | Median ratio | Example (@handle · title verbatim · views · ratio · date) |
 
 ## 4. Gaps and bent ideas
-- <gap or idea> · move · parents (proof lines)
+- {gap or idea} · move · parents (proof lines)
 
 ## 5. Other-language markets (if checked)
 | Language | Channels found | Median views | Verdict |
 
 ## 6. Verdict and entry strategy
-**<Enter | Enter with a twist | Stay out>.** <two sentences of why, with the numbers>
-Format · cadence · first 5 titles (each under 60 characters, with the outlier it borrows from)
+**{Enter | Enter with a twist | Stay out}.** {why, with the numbers}
+Format · cadence · first 5 titles (<60 chars, each with its source outlier)
 
-## 7. Caveats
-Sample size · estimates shown as bands · not checked
+## 7. Notes and Caveats
+- Estimates shown as labelled bands · what was not checked
 ```
 
-## Pitfalls
+## Quality Guardrails
 
-- A niche with ten big incumbents and nobody new clearing 1K median views is closed no matter how large the view counts look.
-- Raw subscriber counts say nothing about openness; `avgViewsToSubscribersRatio` and `joinedDateEstimate` do.
-- Monetization and audience fields are estimates and may be missing on Starter accounts. Say "estimate", give bands, and fall back to the language proxy without pretending it is more.
-- Under 10 on-topic hits after widening is "thin signal", not "open".
-- Never invent a channel or a video. If you did not fetch it, it is not evidence.
+- Always set `publishedAtFrom`; widen one step at a time and say so. Never drop `classificationQuality`.
+- Judge openness by ratio, median views and channel age, not subscribers.
+- Every claim carries channel, title verbatim, views, ratio, date. If you did not fetch it, it is not evidence.
+- Two or three searches is the default. Never paginate a paid search; reads are free.
 
-## Example prompts
+## Common Pitfalls
 
-- "Is 'home security for seniors' worth entering as a faceless channel?"
-- "What niche is youtube.com/@handle in, and is it saturated?"
-- "Validate 'budget RV living' for English and Spanish."
+- Do not call a niche open because views look large; ten incumbents and nothing new clearing 1K median views is closed.
+- Do not quote monetization or audience fields as facts; the language proxy is a proxy.
+- Do not turn under 10 on-topic hits after widening into a verdict, or invent a channel or a number.

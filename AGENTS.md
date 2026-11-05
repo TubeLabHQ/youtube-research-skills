@@ -27,13 +27,13 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 
 ## Rules every skill follows
 
-1. State the credit budget before the first paid search. Searches cost credits; channel, video, transcript and comment reads are free.
-2. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
-3. Content Authenticity is never off: `classificationQuality: "neutral"` for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result.
-4. Rank by `averageViewsRatio`, not raw views. Show both.
-5. Proof line on every claim: channel (handle) · video title verbatim · views · ratio · date. No invented channels or numbers.
-6. Revenue, RPM and audience are estimates. Present as bands, labelled.
-7. End with the artifact laid out in the skill's "Output" section.
+1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
+2. Content Authenticity is never off: `classificationQuality: "neutral"` for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result.
+3. Rank by `averageViewsRatio`, not raw views. Show both.
+4. Proof line on every claim: channel (handle) · video title verbatim · views · ratio · date. No invented channels or numbers.
+5. Revenue, RPM and audience are estimates. Present as bands, labelled.
+6. Searches cost credits; channel, video, transcript and comment reads are free. Two searches is the default, never paginate a paid search in a loop.
+7. End with the artifact laid out in the skill's "Output Format" section.
 
 ## Connecting the MCP
 
@@ -46,4 +46,4 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 
 ## Repo conventions for contributors
 
-See `CONTRIBUTING.md`. Each workflow skill is one self-contained `SKILL.md`; only `tubelab-mcp` has a `references/` folder. Keep it simple, do not over-engineer, Conventional Commits (`type(scope): subject`). Run `node scripts/validate-skills.mjs` before opening a PR.
+See `CONTRIBUTING.md`. Each workflow skill is one self-contained `SKILL.md` with the sections Overview · When to Use · Data Sources · Workflow · Output Format · Quality Guardrails · Common Pitfalls; only `tubelab-mcp` has a `references/` folder. Keep it simple, do not over-engineer, Conventional Commits (`type(scope): subject`). Run `node scripts/validate-skills.mjs` before opening a PR.

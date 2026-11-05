@@ -1,77 +1,102 @@
 ---
 name: sponsor-finder
-description: Find the brands already sponsoring YouTube channels like yours, with the evidence to pitch them. Uses TubeLab to find channels with your audience profile and size that carry sponsored content, reads their descriptions and the sponsor reads in their videos for the brand names, promo codes, landing links and pitch structures, then ranks the brands by how warm they are for your channel and drafts an outreach angle per brand. Use when asked who could sponsor my channel, how to find sponsors, which brands sponsor channels in my niche, a sponsor list for my channel, or how much to ask (bands only). Requires the TubeLab MCP.
+description: Use when the user asks who could sponsor their YouTube channel, which brands sponsor channels in their niche or at their size, a sponsor list for a pitch deck, or how much to ask. Finds sponsored channels with the same audience through the TubeLab MCP, reads their sponsor reads for brand names, and ranks the brands by warmth.
 license: MIT
 metadata:
   author: tubelab
-  version: "1.0"
+  version: "2.0"
   requires: tubelab-mcp
-  credits: "10-15 per run (1 search_related_channels at 5, 1-2 search_channels at 5; channel, video and transcript reads free)"
-  plan: pro
 ---
 
-# Sponsor finder
+# Sponsor Finder
 
-Brands that already pay channels with your audience are the warmest leads a creator has. TubeLab knows which channels carry sponsored content and who their audience is; the brand names live in those channels' descriptions and in the first two minutes of their videos. The output is a sponsor list: each brand with where it was seen, the channel sizes it pays, the pitch structure it uses, and the angle your channel can offer it.
+## Overview
 
-- Use for: "who could sponsor my channel", "find sponsors for @channel", "which brands sponsor channels in X", "brands paying channels my size", "sponsor list for my pitch deck".
-- Not for: a brand looking for creators (`sponsorship-prospecting`), the full money audit of a channel (`monetization-research`).
+Brands already paying channels with the user's audience are the warmest leads a creator has. The TubeLab MCP index knows which channels carry sponsored content and who their audience is; the brand names live in descriptions and the first two minutes of videos.
 
-## Inputs (ask only for what is missing)
+## When to Use
 
-| Input | Default |
+Use this skill when the user asks to:
+
+- find who could sponsor their channel, or which brands sponsor channels in their niche or at their size
+- build a sponsor list for a pitch deck
+- know how much to ask (bands only)
+
+Do not use this for a brand looking for creators (`sponsorship-prospecting`) or a full money audit (`monetization-research`).
+
+## Data Sources
+
+| Tool | Use it for |
 |---|---|
-| Your channel | required: ID, URL or `@handle` |
-| Size band for lookalikes | 0.3x to 3x your subscribers; for seeds over 1M, `subscribersFrom: 100000` with no ceiling, because the sponsored index thins out at the top |
-| Categories to exclude | none; the user may exclude gambling, supplements, crypto and the like |
-| Language | the channel's language |
-| Plan | audience filters need a Pro account; on Starter run steps 1, 2, 4 and 5 and say the twin pass is missing |
+| `search_related_channels` | Sponsored lookalikes, audience proxy |
+| `search_channels` | Sponsored twins outside the niche |
+| `get_channel`, `get_video` | Descriptions: brands, codes, links |
+| `get_video_transcript` | The sponsor read |
 
-## Credit budget
-
-Say before the first paid call: "About 10 to 15 credits: one related-channels search at 5, one or two channel searches at 5; channel, video and transcript reads are free." Do not paginate.
+Filters, the slop list and response fields are in `tubelab-mcp`.
 
 ## Workflow
 
-1. **Your channel (free).** `get_channel`: subscribers, `medianViewsEstimate`, `averageVideoDurationEstimate`, cadence, topics from titles, and any sponsor already in your descriptions and your 3 most recent video descriptions (so you do not pitch a current partner as new; the index's own sponsored flag for your channel is only visible through a paid search, so the description is the source here).
-2. **Sponsored lookalikes in the niche.** `search_related_channels` with `relatedChannelId: ["<your channel id>"]`, `publishedAtFrom: "trimester"`, `classificationQuality: "neutral"`, the size band from the inputs, `detectionsMonetization: ["sponsored"]`, `size: 20`. Per hit keep `snippet.title`, `handle`, `statistics.subscriberCount`, `medianViewsEstimate`, `audience.dominant`, `semantic.niches`. Under 8 hits: one widening only, drop the size band and keep the window, and say so; each widening is a new 5-credit call, so the budget allows one across steps 2 and 3. Still empty: report "no sponsored lookalikes at this size", skip to step 3. Your audience profile is the most common `audience.dominant` across the hits, labelled "proxy".
-3. **Sponsored twins outside the niche.** `search_channels` with no `query`, `excludeNiche: ["<your niche keywords>"]`, `audienceRegion: ["<your region>"]`, `audienceAgeFrom`/`To` spanning your dominant age band, `audienceDominantGender`, `detectionsMonetization: ["sponsored"]`, the size band from the inputs, `medianViewsFrom: 5000`, `publishedAtFrom: "trimester"`, `classificationQuality: "neutral"`, `sortBy: "recency"`, `size: 20`. Brands here pay for your audience without caring about your topic. Do not combine a semantic `query` with the audience filters; the match drifts off topic. Under 8 hits and no widening spent yet: drop the size band, once. If both passes are empty, the honest output is a short list from the channels you did get plus the sentence "the sponsored index has few channels at this size and audience"; do not pad it.
-4. **Read the sponsor reads (free).** For each of up to 15 channels (prefer the ones closest to your size), `get_channel` for `item.snippet.description`, then `get_video` on the 3 most recent videos for their descriptions: brand names, promo codes, tracked links, "sponsored by", "thanks to", "partner". For 4 to 6 videos whose description names a sponsor, `get_video_transcript` and read `events[]` until `startMs` passes 120000: where the read sits (cold open, after the hook, mid-roll), its length, the offer (code, discount, free trial), and the pitch structure. Record only what you read; the index exposes no brand names.
-5. **Group by brand.** For each brand: category, channels seen on (handle · subscribers · video title verbatim · date), how many of the sample it sponsors, the smallest and largest channel it pays, the offer, and the placement it buys. Drop categories the user excluded.
-6. **Rank the brands** by warmth: pays channels within your size band with your audience profile, on more than one channel, within the last trimester, in a category your content can host naturally. A brand seen once on a channel 10x your size is cold; a brand on three channels your size is a call to make this week.
-7. **Outreach angle per brand (top 10).** Which of your videos (title, views, ratio) matches the category, the placement you can offer (the read's position and length as seen on their current channels), and the proof line from your own numbers. Never invent a rate: if the user asks, give the only honest answer, a band from public CPM ranges labelled "industry estimate, not TubeLab data".
-8. **Contact path.** Only what the brand's own link in a description shows (a partnerships page, a creator program URL) or "not visible". Never invent an email.
+1. **Clarify scope only if needed**
+   - Channel (required); excluded categories (none by default).
+   - Size band: 0.3x to 3x the user's subscribers. Seeds over 1M: `subscribersFrom: 100000`, no ceiling.
+   - Audience filters need Pro. On Starter skip step 4 and say so.
 
-## Output
+2. **Your channel**
+   - `get_channel`: subscribers, `medianViewsEstimate`, cadence, topics, and sponsors already in its descriptions, so a current partner is not pitched as new.
+
+3. **Sponsored lookalikes in the niche**
+   - `search_related_channels` with `relatedChannelId: ["<channel id>"]`, `publishedAtFrom: "trimester"`, `classificationQuality: "neutral"`, the size band, `detectionsMonetization: ["sponsored"]`, `size: 20`. Audience profile is the most common `audience.dominant`, labelled "proxy".
+   - Under 8 hits: one widening only across steps 3 and 4: drop the size band, keep the window, say so.
+
+4. **Sponsored twins outside the niche**
+   - `search_channels` with no `query`, `excludeNiche: ["<niche keywords>"]`, `audienceRegion`, `audienceAgeFrom`/`To`, `audienceDominantGender`, `detectionsMonetization: ["sponsored"]`, the size band, `medianViewsFrom: 5000`, `publishedAtFrom: "trimester"`, `classificationQuality: "neutral"`, `sortBy: "recency"`, `size: 20`.
+   - Never combine a semantic `query` with audience filters; the match drifts off topic. Never pad a thin pass.
+
+5. **Read the sponsor reads**
+   - Up to 15 channels, closest in size first: `get_channel` description and `get_video` on the 3 latest videos for brands, promo codes, tracked links.
+   - For 4 to 6 videos naming a sponsor, `get_video_transcript`, `events[]` until `startMs` passes 120000: placement, length, offer, pitch structure.
+
+6. **Group by brand, rank by warmth**
+   - Per brand: category, channels seen on, size range paid, offer, placement.
+   - Warm: within the size band, same audience, more than one channel, last trimester, a category the content can host. Once on a channel 10x the size is cold.
+
+7. **Outreach angle for the top 10**
+   - The user's video that fits the category (title, views, ratio) and the placement they can offer as seen on the brand's channels.
+   - Contact path only as seen in a description, else "not visible". Rates, if asked: a public CPM band labelled "industry estimate, not TubeLab data".
+
+## Output Format
 
 ```markdown
-# Sponsor list: <channel title> (@handle)
-Run: <date> · Audience profile: <region · age · gender · income> (proxy from n channels) · Size band · Credits used · Plan fields: <yes | partial>
+# Sponsor List: {channel title} (@handle)
+
+## Summary
+- Audience: {region · age · gender · income} (proxy from {n} channels) · Size band: {from} to {to}
+- Sample: {n} lookalikes, {n} twins, {n} read in full · Confidence: High/Medium/Low
 
 ## 1. Brands already paying channels like yours
-| # | Brand | Category | Seen on (handle · subs · title verbatim · date) | Channels (n) | Size range paid | Offer | Placement | Warmth |
+| # | Brand | Category | Seen on (handle · title · date) | Channels (n) | Size range paid | Offer | Placement | Warmth |
 
 ## 2. Outreach angles (top 10)
-### 1. <Brand>
-Why them: <evidence> · Your video that fits: <title · views · ratio> · Placement you can offer: <position · length> · Contact path: <URL seen | not visible>
+- **{Brand}:** why them · your video that fits ({title · views · ratio}) · placement · contact path {URL | not visible}
 
-## 3. Pitch structures seen (verbatim openings of 4 to 6 sponsor reads, with channel and timestamp)
+## 3. Pitch structures seen
+- "{verbatim opening of the sponsor read}" · @handle · {timestamp}
 
 ## 4. Caveats
-Brands come only from descriptions and transcripts read in this run · `detections.sponsored` is a sampled prediction · rates are not TubeLab data · not checked
+- Brands only from descriptions and transcripts read · `detections.sponsored` is a sampled prediction · rates are not TubeLab data
 ```
 
-## Pitfalls
+## Quality Guardrails
 
-- The index flags sponsored content; it does not name the brand. If you did not read the brand in a description or hear it in a transcript, it is not on the list.
-- A sponsor read in a transcript can be an affiliate or the channel's own product. Check the description's wording before calling it a sponsor.
-- Channels far above your size attract brands with budgets you will not see. Keep the size band tight and show it.
-- Very large seeds (over 1M subscribers) have few sponsored lookalikes in the index; the list will be short and the example in this repo shows that. The skill works best between 10K and 1M subscribers.
-- Audience fields are estimates; say "proxy" and give the share of hits that agree.
-- Never invent a contact, a rate or a brand.
+- Always set `publishedAtFrom`; widen once and say so. Never drop `classificationQuality: "neutral"`; drop the size band instead.
+- Every brand carries channel, title verbatim, views, date. Not read or heard means not on the list.
+- Audience fields are estimates: say "proxy".
+- Two searches is the default, three the ceiling. Never paginate a paid search; reads are free.
 
-## Example prompts
+## Common Pitfalls
 
-- "Who could sponsor @mychannel? Find the brands already paying channels my size with my audience."
-- "Sponsor list for my pitch deck: brands, where they run reads, what they offer, and my angle for each."
-- "Which software brands sponsor business channels under 100K subscribers right now?"
+- Do not look for brand names in the index; it flags sponsored content only.
+- Do not call every read a sponsor; some are affiliate or own products.
+- Do not let the size band drift upward, and do not expect a long list for seeds over 1M; the sponsored index thins out at the top.
+- Do not invent a contact, a rate or a brand.
