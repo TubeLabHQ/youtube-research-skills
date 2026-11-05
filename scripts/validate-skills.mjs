@@ -143,7 +143,7 @@ function validateSkill(name) {
     for (const extra of ['PROMPT.md', 'assets', 'references']) {
       if (existsSync(join(dir, extra))) errors.push(`${file}: remove ${extra} and fold it into SKILL.md (workflow skills are one file)`);
     }
-    if (/\.\.\/tubelab-mcp\//.test(body)) errors.push(`${file}: do not link into ../tubelab-mcp; name the skill in prose so SKILL.md is pasteable`);
+    if (/\.\.\/tubelab-mcp\//.test(body)) errors.push(`${file}: do not link into ../tubelab-mcp; name the skill in prose so SKILL.md stands alone when uploaded or pasted`);
   }
 }
 

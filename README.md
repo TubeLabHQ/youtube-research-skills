@@ -29,7 +29,9 @@ Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp
 - Claude.ai and Claude Desktop: the [TubeLab connector](https://claude.ai/directory/tubelab), OAuth.
 - ChatGPT and Codex: the [TubeLab app](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b), OAuth. Codex supports ChatGPT apps, so no API key is needed there.
 - Cursor and other IDE agents: a TubeLab API key as `Authorization: Bearer <key>` (Pro plan).
-- No skills support (Claude.ai, ChatGPT): paste `skills/tubelab-mcp/SKILL.md` and then the skill you want into the chat.
+- Claude.ai and Claude Desktop also take skills directly: zip a skill folder (`cd skills && zip -r niche-finder.zip niche-finder/`), upload it under **Customize > Skills**, turn it on, and Claude loads it when a request matches. Upload `tubelab-mcp` too; the workflow skills name it.
+- ChatGPT desktop app and Codex: skills live in the **Skills** sidebar and in `.agents/skills/` of a repo; Codex also installs them with `$skill-installer`.
+- Any chat client that cannot install skills: paste `skills/tubelab-mcp/SKILL.md` and then the skill you want into the chat. Every skill is one file, so this works as is.
 
 Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free.
 
