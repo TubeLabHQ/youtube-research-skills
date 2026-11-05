@@ -40,6 +40,7 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 - Claude Code: this repo is a plugin; `.mcp.json` registers `https://public-api.tubelab.net/mcp` and the first call opens OAuth. Or `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`.
 - Claude.ai, Claude Desktop: the TubeLab connector (https://claude.ai/directory/tubelab), OAuth.
 - ChatGPT and Codex: the TubeLab app (https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b), OAuth.
+- Grok: custom connector at grok.com/connectors with the MCP URL; Grok Build: `/mcps` modal, skills in `.grok/skills/` or `~/.grok/skills/`.
 - Cursor, others: API key as `Authorization: Bearer <key>` (Pro plan). Setup: https://tubelab.net/docs/api/mcp-server
 - No MCP: the REST fallback section in `skills/tubelab-mcp/SKILL.md`.
 

@@ -12,7 +12,13 @@ This is not endpoint routing. Each skill is a complete research workflow: which 
 npx skills add TubeLabHQ/youtube-research-skills
 ```
 
-Works with Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, VS Code, and other agents that support the [Agent Skills spec](https://agentskills.io).
+Works with Claude Code, Cursor, OpenAI Codex, GitHub Copilot, Gemini CLI, Windsurf, VS Code, Grok Build, and other agents that support the [Agent Skills spec](https://agentskills.io).
+
+Grok Build reads skills from `.grok/skills/` in a repo or `~/.grok/skills/`, so a copy of the `skills/` folder is enough:
+
+```bash
+git clone https://github.com/TubeLabHQ/youtube-research-skills && cp -r youtube-research-skills/skills/* ~/.grok/skills/
+```
 
 Claude Code can also install it as a plugin, which registers the MCP at the same time:
 
@@ -28,6 +34,8 @@ Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp
 - Claude Code: the plugin does it, or `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`. The first call opens OAuth.
 - Claude.ai and Claude Desktop: the [TubeLab connector](https://claude.ai/directory/tubelab), OAuth.
 - ChatGPT and Codex: the [TubeLab app](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b), OAuth. Codex supports ChatGPT apps, so no API key is needed there.
+- Grok (grok.com, iOS, Android): add the MCP as a custom connector at [grok.com/connectors](https://grok.com/connectors), New Connector, Custom, with the URL above, and complete the authentication. Skills live at [grok.com/skills](https://grok.com/skills): create one by uploading a skill's `SKILL.md`, starting with `tubelab-mcp`.
+- Grok Build (terminal): skills from the folders above; add the MCP from the `/mcps` modal.
 - Cursor and other IDE agents: a TubeLab API key as `Authorization: Bearer <key>` (Pro plan).
 - Claude.ai and Claude Desktop also take skills directly: zip a skill folder (`cd skills && zip -r niche-finder.zip niche-finder/`), upload it under **Customize > Skills**, turn it on, and Claude loads it when a request matches. Upload `tubelab-mcp` too; the workflow skills name it.
 - ChatGPT desktop app and Codex: skills live in the **Skills** sidebar and in `.agents/skills/` of a repo; Codex also installs them with `$skill-installer`.
@@ -115,7 +123,7 @@ The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, respon
 - [TubeLab](https://tubelab.net)
 - [YouTube MCP](https://tubelab.net/youtube-mcp)
 - [MCP Documentation](https://tubelab.net/docs/api/mcp-server)
-- [TubeLab in the Claude directory](https://claude.ai/directory/tubelab) · [TubeLab app for ChatGPT and Codex](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b)
+- [TubeLab in the Claude directory](https://claude.ai/directory/tubelab) · [TubeLab app for ChatGPT and Codex](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b) · [Grok connectors](https://docs.x.ai/grok/connectors) and [Grok Build skills](https://docs.x.ai/build/features/skills-plugins-marketplaces)
 - [API Documentation](https://tubelab.net/docs/api/introduction)
 - [Pricing](https://tubelab.net/pricing)
 - [Contributing](CONTRIBUTING.md) · MIT license
