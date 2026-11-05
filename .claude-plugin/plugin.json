@@ -1,0 +1,25 @@
+{
+  "name": "youtube-research",
+  "displayName": "YouTube Research (TubeLab)",
+  "version": "0.1.0",
+  "description": "Skills that turn Claude into a YouTube strategist: niche finding, outlier research, video ideation, channel teardowns and thumbnail research, powered by the TubeLab MCP.",
+  "author": {
+    "name": "TubeLab",
+    "url": "https://tubelab.net"
+  },
+  "homepage": "https://github.com/TubeLabHQ/youtube-research-skills",
+  "repository": "https://github.com/TubeLabHQ/youtube-research-skills",
+  "license": "MIT",
+  "keywords": [
+    "youtube",
+    "research",
+    "niche",
+    "outliers",
+    "thumbnails",
+    "tubelab",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://tubelab.net/legal/privacy-policy",
+  "termsOfServiceUrl": "https://tubelab.net/legal/terms-of-service",
+  "documentationUrl": "https://tubelab.net/docs/api/mcp-server"
+}

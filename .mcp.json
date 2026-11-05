@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tubelab": {
+      "type": "http",
+      "url": "https://public-api.tubelab.net/mcp"
+    }
+  }
+}

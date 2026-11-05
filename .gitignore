@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+# thumbnail contact sheets built by skills/thumbnail-research/scripts/thumb-board.sh
+/tmp/
+.thumb-board/
+
+# internal planning docs, not part of the published repo
+/plans/

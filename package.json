@@ -1,0 +1,12 @@
+{
+  "name": "youtube-research-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent skills for YouTube research, powered by the TubeLab MCP",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-skills.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
