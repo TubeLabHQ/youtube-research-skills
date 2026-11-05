@@ -73,7 +73,7 @@ Roast @mychannel. Be direct. Why did the last six videos tank?
 ```
 
 ```text
-Thumbnail concepts for "The 10 Minutes After You Eat Decide If That Meal Becomes Belly Fat". Here is the script.
+Thumbnail concepts for "How I Would Build a $10M Service Business (If I Had to Start Over)". Here is the script.
 ```
 
 ```text
