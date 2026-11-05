@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Your competitors are the channels the index places next to yours, not the big names you watch. One related-channels search on the TubeLab MCP finds them, free channel reads measure them; the output is a comparison table, a pillar matrix, gaps, copy and avoid, and one positioning sentence.
+Compare a channel against the channels the TubeLab index places next to it. One related-channels search finds them, free channel reads measure cadence, consistency, outlier rate and pillars; the output is a comparison table, a pillar matrix, gaps, copy and avoid, and one positioning sentence.
 
 ## When to Use
 

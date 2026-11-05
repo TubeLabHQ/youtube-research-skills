@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-A port of TubeLab's channel roast: a long-form essay, short punchy paragraphs, bold claims backed by data, no bullets or tables except the TL;DR. Read the channel's own videos for free on the TubeLab MCP, compute the decay, then compare with the niche before diagnosing.
+Diagnose why a channel's views died from its own numbers, then compare its packaging with the niche. Read the channel's videos for free on the TubeLab MCP, compute the decay, search the niche's outliers and related channels, and write a long-form essay: short paragraphs, bold claims backed by data, no bullets or tables except the TL;DR.
 
 ## When to Use
 

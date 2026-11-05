@@ -34,7 +34,7 @@ Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp
 - Claude Code: the plugin does it, or `claude mcp add --transport http tubelab https://public-api.tubelab.net/mcp`. The first call opens OAuth.
 - Claude.ai and Claude Desktop: the [TubeLab connector](https://claude.ai/directory/tubelab), OAuth.
 - ChatGPT and Codex: the [TubeLab app](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b), OAuth. Codex supports ChatGPT apps, so no API key is needed there.
-- Grok (grok.com, iOS, Android): add the MCP as a custom connector at [grok.com/connectors](https://grok.com/connectors), New Connector, Custom, with the URL above, and complete the authentication. Skills live at [grok.com/skills](https://grok.com/skills): create one by uploading a skill's `SKILL.md`, starting with `tubelab-mcp`.
+- Grok Bot: ask a Bot to add the MCP server at the URL above (a Bot can add an MCP server that is not in its catalog by URL) and complete the authentication. Then hand the Bot this repo URL, or paste a `SKILL.md`, and ask it to save each one as a skill, starting with `tubelab-mcp`. Skills are shared by all your Bots; if a Bot cannot find one, open Connect apps and enable it under Private skills.
 - Grok Build (terminal): skills from the folders above; add the MCP from the `/mcps` modal.
 - Cursor and other IDE agents: a TubeLab API key as `Authorization: Bearer <key>` (Pro plan).
 - Claude.ai and Claude Desktop also take skills directly: zip a skill folder (`cd skills && zip -r niche-finder.zip niche-finder/`), upload it under **Customize > Skills**, turn it on, and Claude loads it when a request matches. Upload `tubelab-mcp` too; the workflow skills name it.
@@ -123,7 +123,7 @@ The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, respon
 - [TubeLab](https://tubelab.net)
 - [YouTube MCP](https://tubelab.net/youtube-mcp)
 - [MCP Documentation](https://tubelab.net/docs/api/mcp-server)
-- [TubeLab in the Claude directory](https://claude.ai/directory/tubelab) · [TubeLab app for ChatGPT and Codex](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b) · [Grok connectors](https://docs.x.ai/grok/connectors) and [Grok Build skills](https://docs.x.ai/build/features/skills-plugins-marketplaces)
+- [TubeLab in the Claude directory](https://claude.ai/directory/tubelab) · [TubeLab app for ChatGPT and Codex](https://chatgpt.com/plugins/plugin_asdk_app_6ab3980fb1488191a9b26b3f59efd90b) · [Grok Bot apps and MCP servers](https://docs.x.ai/grok-bot/computer-and-apps), [Grok Bot skills](https://docs.x.ai/grok-bot/skills-routines-and-automations) and [Grok Build skills](https://docs.x.ai/build/features/skills-plugins-marketplaces)
 - [API Documentation](https://tubelab.net/docs/api/introduction)
 - [Pricing](https://tubelab.net/pricing)
 - [Contributing](CONTRIBUTING.md) · MIT license

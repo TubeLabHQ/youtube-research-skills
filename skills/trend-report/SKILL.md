@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-A dated digest a creator can act on today, in the shape of the Trend Report TubeLab emails from the app, so reports compare month to month. The TubeLab MCP is the data layer: niche outliers, outliers from similar channels, trending formats, each winner's transcript for the verbatim hook.
+Write a dated trend digest for a niche or a channel: the current winners with their verbatim spoken hooks, the patterns they share, ideas for this channel and learnings. The TubeLab MCP is the data layer: niche outliers, outliers from similar channels, trending formats, each winner's transcript for the hook.
 
 ## When to Use
 

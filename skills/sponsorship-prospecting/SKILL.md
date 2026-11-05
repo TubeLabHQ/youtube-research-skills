@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-For brands and agencies: channels with the right audience, consistent views and room for a sponsor, found from the TubeLab MCP's audience predictions instead of a stale influencer database; free channel reads confirm cadence, consistency and contact hints.
+Build a sponsor prospect list for a brand: channels with the right audience, consistent views and room for a sponsor. The TubeLab MCP's audience and monetization filters find the candidates; free channel reads confirm cadence, consistency and contact hints.
 
 ## When to Use
 

@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-What the audience says, in its own words. Comment reads on the TubeLab MCP are free, and the top 100 under a strong video hold the questions people cared enough to ask. The output keeps every quote verbatim and ends in five video ideas that answer them.
+Turn the top comments under 3 to 10 videos into a voice-of-audience report: questions, objections, requests, praise and the audience's own words, every quote verbatim, ending in five video ideas that answer them. Comment reads on the TubeLab MCP are free.
 
 ## When to Use
 

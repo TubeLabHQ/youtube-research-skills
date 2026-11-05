@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Money follows the audience, not the topic. The niche shows what competitors do; channels in other niches with the same audience show what that audience already pays for. The TubeLab index flags methods; the exact mechanics come from free reads.
+Audit how a channel could make more money from two samples: niche competitors, and channels in other niches with the same audience, which show what that audience already pays for. The TubeLab index flags the methods; the exact mechanics come from free reads of descriptions and transcripts.
 
 ## When to Use
 

@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-A run is cheap, repeatable and stateful: one channel search per niche, a diff against what the last run saw, and a digest of only what is new. The TubeLab index refreshes daily and `sortBy: "foundAt"` surfaces channels the day they are discovered; `get_channel` enriches the new ones for free. Built for Claude Code routines, /loop, cron and n8n.
+Watch one or more niches on a schedule: one channel search per niche, a diff against a local state file from the last run, and a digest of only what is new. The TubeLab index refreshes daily and `sortBy: "foundAt"` surfaces channels the day they are discovered; `get_channel` enriches the new ones for free.
 
 ## When to Use
 

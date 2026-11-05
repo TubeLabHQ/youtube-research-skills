@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Titles with proof, not vibes. TubeLab's trending-formats index extracts the template behind outlier titles and counts how many videos use it and how they perform. The TubeLab MCP is the data layer: pull formulas by relevance and momentum, validate in the user's niche, fill, bend, flag the exhausted.
+Give the user title formulas that are working now, filled for their topic. The TubeLab MCP's trending-formats index holds the template behind outlier titles with how many videos use it and how they perform: pull formulas by relevance and momentum, validate them against live outliers in the user's niche, fill, bend, flag the exhausted.
 
 ## When to Use
 
