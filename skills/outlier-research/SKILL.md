@@ -71,6 +71,7 @@ Sample size after dedupe · thumbnails reviewed or not · patterns are associate
 
 - Raw views are not the signal. A video with 3M views and ratio 1.1 is the channel's normal, not an outlier.
 - One channel with five hits is a channel, not a pattern. Dedupe before reading.
+- Huge views with almost no likes or comments (`get_video` shows it) is a paid placement, not an outlier. Drop it and say so.
 - Ratio reflects title, thumbnail and topic together. Say "associated with", not "caused by".
 - Under 8 hits is a thin signal. Widen once, say so, and if still thin report "no clear pattern" instead of inventing one.
 - Thumbnails you did not view are "not reviewed". Never describe an image you have not seen.

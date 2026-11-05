@@ -20,6 +20,7 @@ Then connect the MCP once per client: https://tubelab.net/docs/api/mcp-server
 | "Why did my views die? Roast @mychannel" | `channel-teardown` | packaging diagnosis essay: decay trajectories, promise rungs, 5 to 8 ideas, title templates |
 | "What thumbnails work in home workouts right now" | `thumbnail-research` | thumbnail board, archetypes, rubric table, 3 directions for your next thumbnail |
 | "Thumbnails like this video's" | `thumbnail-research` | visual twins by image similarity vs topic twins, side by side |
+| "Thumbnail concepts for this title, here's the script" | `thumbnail-concepts` | style audit of your channel, bet and anchor, annotated and saved examples, 5 concepts, images or image prompts |
 | "Is woodworking worth entering?" | `niche-validator` | verdict memo: saturation, audience quality, formats carrying the niche, entry strategy with first 5 titles |
 | "Title formulas that are rising in my niche" | `title-formulas` | formula sheet with momentum and live examples, filled 3 ways, bent formulas, exhausted warnings |
 | "Who are my real competitors and how do I compare?" | `competitor-landscape` | comparison table, pillar matrix, gaps and overlaps, copy and avoid, positioning sentence |
@@ -35,7 +36,7 @@ Then connect the MCP once per client: https://tubelab.net/docs/api/mcp-server
 |---|---|---|
 | discover | `niche-finder` · `niche-validator` · `outlier-research` · `trend-report` | shipped |
 | analyze | `channel-teardown` · `thumbnail-research` · `competitor-landscape` · `comment-mining` · `transcript-intelligence` | shipped |
-| create | `video-ideation` · `title-formulas` | shipped |
+| create | `video-ideation` · `title-formulas` · `thumbnail-concepts` | shipped |
 | business | `monetization-research` · `sponsorship-prospecting` · `niche-watchlist` | shipped (audience and money filters need a Pro account) |
 | data | `tubelab-mcp` (tool map, craft rules, filter recipes, response fields, REST fallback) | shipped |
 

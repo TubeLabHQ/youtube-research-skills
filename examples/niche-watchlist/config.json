@@ -1,0 +1,11 @@
+{
+  "niches": [
+    {
+      "name": "business-advice",
+      "query": "business advice for entrepreneurs",
+      "language": ["en"],
+      "faceless": false,
+      "exclude": []
+    }
+  ]
+}

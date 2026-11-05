@@ -7,3 +7,7 @@ node_modules/
 
 # internal planning docs, not part of the published repo
 /plans/
+
+# thumbnails saved by skills during a run are local working files, not published
+examples/**/*.jpg
+thumbnail-concepts/

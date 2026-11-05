@@ -6,7 +6,7 @@ metadata:
   author: tubelab
   version: "1.0"
   requires: tubelab-mcp
-  credits: "3-4 per run (2 search_trending_formats at 1, 1 search_outliers at 2)"
+  credits: "3-6 per run (2 search_trending_formats at 1, 1-2 search_outliers at 2 to validate)"
   plan: starter
 ---
 
@@ -28,7 +28,7 @@ Titles with proof, not vibes. Every formula here comes from TubeLab's trending-f
 
 ## Credit budget
 
-Say before the first paid call: "About 3 to 4 credits: two trending-formats searches at 1, one outlier search at 2 to validate." Do not paginate.
+Say before the first paid call: "About 3 to 6 credits: two trending-formats searches at 1, one or two outlier searches at 2 to validate." Do not paginate.
 
 ## Workflow
 

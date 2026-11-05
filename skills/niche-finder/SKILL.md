@@ -34,7 +34,7 @@ Say before the first paid call: "About 14 to 22 credits: 3 channel searches at 5
 ## Workflow A: find what is working
 
 1. **Niche Finder default view.** `search_channels` with `query` (seed topics, or omit for discovery), `subscribersFrom: 1`, `medianViewsFrom: 1000`, `videosCountFrom: 2`, `classificationQuality: "neutral"`, `publishedAtFrom: "trimester"`, `excludeNiche: [slop list]`, `language`, a fixed `seed`, `size: 20`, no `sortBy`. Add `classificationIsFaceless: true` if faceless. This is the unbiased "what exists right now" sample. Expect noise: with a `query`, about a third of the seeded-random hits can be off-topic; drop those before clustering.
-2. **Money pass.** Same base plus `monetizationAdsense: true`, `revenueMonthlyEstimationFrom: 1000`, `subscribersFrom: 1000`, once with `sortBy: "recency"` (most recently active) and once with `sortBy: "foundAt"` (newest discoveries, where brand-new breakouts show up). Under 5 hits on a Starter account: rerun without the money filters and say so.
+2. **Money pass.** Same base plus `monetizationAdsense: true`, `revenueMonthlyEstimationFrom: 1000`, `subscribersFrom: 1000`, once with `sortBy: "recency"` (most recently active) and once with `sortBy: "foundAt"` (newest discoveries, where brand-new breakouts show up). Under 5 hits on a Starter account: rerun without the money filters and say so. With the money filters the index narrows and the semantic match loosens: expect half the hits to be off-topic and drop them before clustering.
 3. **Outliers Finder default view.** `search_outliers` with the same `query`, `viewCountFrom: 5000`, `type: "video"`, `classificationQuality: "neutral"`, `publishedAtFrom: "trimester"`, `excludeKeyword: [slop list]`, a fixed `seed`, `size: 30`, no `sortBy`. Catches formats that broke out inside niches the channel passes missed.
 4. **Widen rule.** Under 5 usable hits in any pass: `trimester` → `semester` → `year`, one step at a time, with one sentence in the output saying which pass was widened and why. Never drop `classificationQuality`.
 5. **Parse every hit into a card:** topic (2 to 4 words, from `semantic.niches` and titles) · job (what the viewer gets, as a verb phrase) · format (the repeatable packaging, from the sample `videos[]` titles) · audience (region · age · gender · income from `audience.dominant`, else "inferred") · money (`monetization` bands, `detections`) · age (`joinedDateEstimate`) · demand (`medianViewsEstimate`, `avgViewsToSubscribersRatio`) · proof line. Outliers: title, ratio, `channelSubscribers`, date. Cards make the moves mechanical: a transplant is "same audience, different topic, format absent".
@@ -82,6 +82,7 @@ Estimates shown as bands · thin passes · not checked (Shorts, other languages,
 - Prefer audience filters over RPM filters when the user wants AdSense income.
 - Revenue, RPM and audience are estimates. Say "estimate", give bands.
 - Under 5 hits is not a trend. Widen once, then report "thin signal".
+- A video with huge views and almost no likes or comments is usually a paid placement, not an outlier. Exclude it from patterns and say so.
 - Never invent a channel or a video. If you did not fetch it, it is not evidence.
 
 ## Example prompts
