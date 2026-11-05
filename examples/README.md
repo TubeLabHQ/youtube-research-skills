@@ -2,7 +2,7 @@
 
 Real outputs produced by an agent with the live TubeLab MCP, one folder per skill, all run on the same channel so the skills can be compared: https://www.youtube.com/@AlexHormozi. Each file starts with the credits spent and the exact calls made, and every number in it came from a tool response. Nothing here is fabricated; a missing example is better than a fake one.
 
-The whole set of runs cost 91 credits measured on the account (about 120 at list price; identical calls shared between skills are not charged twice).
+The whole set of runs cost 106 credits measured on the account (about 135 at list price; identical calls shared between skills are not charged twice).
 
 | Skill | Example | Credits (list) |
 |---|---|---|
@@ -18,6 +18,7 @@ The whole set of runs cost 91 credits measured on the account (about 120 at list
 | comment-mining | `comment-mining/2026-11-alexhormozi.md` | 0 |
 | transcript-intelligence | `transcript-intelligence/2026-11-alexhormozi.md` | 0 |
 | monetization-research | `monetization-research/2026-11-alexhormozi.md` | 15 |
+| sponsor-finder | `sponsor-finder/2026-11-alexhormozi.md` (a large seed; shows the thin-index case honestly) | 15 |
 | sponsorship-prospecting | `sponsorship-prospecting/2026-11-alexhormozi.md` | 20 |
 | niche-watchlist | `niche-watchlist/2026-11-alexhormozi.md` with `config.json` and `state.json` | 5 |
 
