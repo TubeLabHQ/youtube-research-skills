@@ -1,6 +1,6 @@
 ---
 name: trend-report
-description: Use when the user wants a trend report or recurring digest of what is working right now in a YouTube niche or for a channel. Requires the TubeLab MCP.
+description: Use when the user wants to know what is working right now in a YouTube niche or for a channel, which hooks to copy, or a recurring trend report. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Write a dated digest of what is winning in a niche right now, with spoken hooks and ideas to act on. Not for ideas alone (`video-ideation`) or one format in depth (`outlier-research`).
+Write a dated digest of what is winning in a niche right now, with spoken hooks and ideas to act on. Not for ideas alone (`video-ideation`).
 
 ## Workflow
 
@@ -50,6 +50,7 @@ Keep it under 450 words, with at most 5 rows per table.
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
 - Do not rank by raw views, or count the channel's own sister channels as winners.
 - Do not read a 1.5x on a 2M-subscriber channel, or six winners from one channel, as a trend.
+- Do not count huge views with almost no likes. It is usually paid.
 - Do not paraphrase a hook, or write one for a video with no transcript.
 - Do not pass a language to the trending formats search. The server rejects it.
 - Do not copy a winner's title into an idea.

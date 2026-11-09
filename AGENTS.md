@@ -7,8 +7,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | The user asks | Load |
 |---|---|
 | Find a niche, unsaturated niches, faceless ideas, twist or combine niches | `niche-finder` |
-| What is working in X, why did this video blow up, hooks and formats to steal | `outlier-research` |
-| Trend report, what is trending this week or month, weekly digest, hooks working right now | `trend-report` |
+| What is working in X, why did this video blow up, trend report, weekly digest, hooks and formats to steal | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
 | Analyze or roast my channel, why did views drop, packaging diagnosis, title rewrites | `channel-analysis` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails | `thumbnail-concepts` |
@@ -17,9 +16,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Who are my competitors, how do I compare, competitive landscape | `competitor-research` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
 | Script structure, beat sheet, hook of this video, script skeleton | `transcript-intelligence` |
-| How do channels like mine make money, raise RPM, what to sell, who sponsors them | `monetization-research` |
-| Find creators to sponsor for a product, prospect list for a brand | `sponsorship-prospecting` |
-| Who could sponsor my channel, brands paying channels like mine, sponsor list | `sponsor-finder` |
+| How do channels like mine make money, raise RPM, what to sell, who could sponsor my channel | `monetization-research` |
 | Watch a niche, which channels broke out since last run, scheduled digest | `niche-watchlist` |
 | How do TubeLab tools work, which filter, credits, REST | `tubelab-mcp` |
 

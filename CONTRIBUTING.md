@@ -4,7 +4,7 @@ Skills here are short research workflows. Models are smart and see the TubeLab t
 
 ## Add a skill
 
-1. Copy `skills/outlier-research` to `skills/<your-skill>`. Name: lowercase, hyphens, max 64 chars, equal to the folder name.
+1. Copy `skills/trend-report` to `skills/<your-skill>`. Name: lowercase, hyphens, max 64 chars, equal to the folder name.
 2. Write the frontmatter. `description` is the only text an agent sees before deciding to load the skill, and it is loaded for every skill in every chat: under 40 words, starting with "Use when the user wants to ...", naming the job rather than listing trigger phrases, and saying it requires the TubeLab MCP.
 3. Write the body with these sections, in this order: Overview · Workflow · Output Format · Common Pitfalls. The Overview ends with one "Not for" line naming the sibling skills. The workflow is 4 to 6 steps of one line each, and step 1 is "Clarify scope only if needed" with the defaults. Filter and ranking rules go in Common Pitfalls as "Do not" lines, with the reason when it is not obvious. End the Output Format with a limit on words, table rows and caveats: reports are read, not archived.
 4. One file. The artifact layout goes inline in the "Output Format" section as a fenced block. No `assets/`, no `references/`, no generated files: skills are uploaded one folder at a time on claude.ai and ChatGPT, and pasted as one message in clients without skills, so your SKILL.md must stand alone. Name sibling skills in prose (`tubelab-mcp`), never as relative links. Scripts are optional accelerators; the workflow must run on tool calls alone.
@@ -34,7 +34,7 @@ node scripts/validate-skills.mjs
 - **Commits follow Conventional Commits** (the commitizen pattern): `type(scope): subject` in the imperative, lower case, no period. Types: `feat`, `fix`, `docs`, `refactor`, `chore`, `ci`, `test`. Scope is the skill or area.
 
 ```text
-feat(sponsor-finder): rank brands by warmth
+feat(comment-mining): rank comments by likes
 fix(tubelab-mcp): note that lexical outlier search ignores the query
 docs(readme): link the claude directory listing
 chore(examples): rerun niche-finder on @channel

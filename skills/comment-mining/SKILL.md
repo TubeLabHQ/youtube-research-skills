@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Turn the top comments under a set of videos into what the audience asks, objects to and wants next, in their own words. Not for why a video performed (`outlier-research`) or its structure (`transcript-intelligence`).
+Turn the top comments under a set of videos into what the audience asks, objects to and wants next, in their own words. Not for a video's structure (`transcript-intelligence`).
 
 ## Workflow
 
