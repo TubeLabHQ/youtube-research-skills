@@ -6,7 +6,7 @@ Skills here are short research workflows. Models are smart and see the TubeLab t
 
 1. Copy `skills/outlier-research` to `skills/<your-skill>`. Name: lowercase, hyphens, max 64 chars, equal to the folder name.
 2. Write the frontmatter. `description` is the only text an agent sees before deciding to load the skill, and it is loaded for every skill in every chat: under 40 words, starting with "Use when the user wants to ...", naming the job rather than listing trigger phrases, and saying it requires the TubeLab MCP.
-3. Write the body with these sections, in this order: Overview · When to Use · Workflow · Output Format · Common Pitfalls. The workflow is one line per step, and step 1 is "Clarify scope only if needed" with the defaults. Filter and ranking rules go in Common Pitfalls as "Do not" lines, with the reason when it is not obvious.
+3. Write the body with these sections, in this order: Overview · Workflow · Output Format · Common Pitfalls. The Overview ends with one "Not for" line naming the sibling skills. The workflow is 4 to 6 steps of one line each, and step 1 is "Clarify scope only if needed" with the defaults. Filter and ranking rules go in Common Pitfalls as "Do not" lines, with the reason when it is not obvious. End the Output Format with a limit on words, table rows and caveats: reports are read, not archived.
 4. One file. The artifact layout goes inline in the "Output Format" section as a fenced block. No `assets/`, no `references/`, no generated files: skills are uploaded one folder at a time on claude.ai and ChatGPT, and pasted as one message in clients without skills, so your SKILL.md must stand alone. Name sibling skills in prose (`tubelab-mcp`), never as relative links. Scripts are optional accelerators; the workflow must run on tool calls alone.
 5. Follow the conventions below, run the validator, and add one real run under `examples/<skill>/<date>.md`.
 
@@ -24,7 +24,7 @@ node scripts/validate-skills.mjs
 - **Estimates are estimates.** Revenue, RPM, audience: bands, labelled.
 - **Describe the job, not the tool.** "Find what is working in the niche", not "call `search_outliers`" or "use the TubeLab connector in Claude". Tool details belong in `tubelab-mcp`.
 - **No prices.** Credit costs are fine; plan prices change, link to https://tubelab.net/pricing.
-- **Around 500 words at most, output template included.** A workflow skill that needs more is two skills.
+- **Around 300 words, frontmatter and output template included.** A workflow skill that needs more is two skills.
 
 ## Repo conventions
 

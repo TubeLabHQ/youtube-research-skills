@@ -4,7 +4,7 @@ description: Use when the user wants to know what is working in a YouTube niche,
 license: MIT
 metadata:
   author: tubelab
-  version: "3.0"
+  version: "4.0"
   requires: tubelab-mcp
 ---
 
@@ -12,26 +12,15 @@ metadata:
 
 ## Overview
 
-Find videos that beat their own channel's normal performance and explain the repeatable patterns behind them.
-
-## When to Use
-
-Use this skill when the user asks to:
-
-- find what is working in a niche
-- explain why a video blew up
-- get hooks, formats or titles to copy
-
-Do not use this to pick a niche (`niche-finder`), for one channel's ideas (`video-ideation`), for a dated digest (`trend-report`), or for thumbnails (`thumbnail-concepts`).
+Find videos that beat their own channel's normal performance and explain the patterns behind them. Not for picking a niche (`niche-finder`) or one channel's ideas (`video-ideation`).
 
 ## Workflow
 
 1. Clarify scope only if needed. Default to English long-form.
-2. Find recent outliers on the topic, from two different angles.
-3. Keep at most 2 videos per channel and rank by ratio.
-4. Read the top 5 and drop paid placements.
-5. Explain why each winner likely worked: topic, promise, format and title mechanic.
-6. Extract the patterns, the hooks to copy and five ideas for the user's topic.
+2. Find recent outliers on the topic from two different angles.
+3. Drop off-topic hits and keep at most 2 videos per channel.
+4. Explain why the winners likely worked.
+5. Extract the repeatable patterns.
 
 ## Output Format
 
@@ -41,31 +30,24 @@ Do not use this to pick a niche (`niche-finder`), for one channel's ideas (`vide
 Sample: {n} outliers from {n} channels · Window: {used} · Confidence: {level, why}
 
 ## Biggest Outliers
-| Title (verbatim) | Channel | Subs | Views | Ratio | Date | Why it likely worked |
-|---|---|---:|---:|---:|---|---|
+| Title (verbatim) | Channel (handle) | Views | Ratio | Date | Why it likely worked |
+|---|---|---:|---:|---|---|
 
-## Repeatable Patterns
-1. **{Pattern}:** {format, title mechanic, examples, median ratio}
-
-## Hooks to Copy
-- "{Exact title}" · @handle · views · ratio · date
-
-## Content Ideas
-| Idea | Draft title | Pattern | Source outlier |
-|---|---|---|---|
+## Patterns to Copy
+1. **{Pattern}:** {what to do, with examples}
 
 ## Caveats
 - ...
 ```
 
+Keep it under 300 words, with at most 5 table rows and 3 caveats.
+
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom`. Start at `month`, widen one step at a time and say so.
-- Do not search without `classificationQuality` at `"neutral"` or above, or the results fill with slop.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
 - Do not treat raw views as the signal. 3M views at ratio 1.1 is the channel's normal.
+- Do not trust ratios from channels with almost no subscribers.
+- Do not count huge views with almost no likes. It is usually paid.
 - Do not call something a pattern with fewer than 3 outliers from different channels.
-- Do not count huge views with almost no likes or comments. It is usually a paid placement.
-- Do not describe a thumbnail you have not viewed, or paraphrase a title you present as a hook.
-- Do not say "caused by". A ratio reflects title, thumbnail and topic together.
-- Do not run more than three searches or paginate a paid search.
-- Do not invent a channel, a title or a number.
+- Do not describe a thumbnail you have not viewed, or say "caused by".
+- Do not run more than three searches, or invent a channel, a title or a number.

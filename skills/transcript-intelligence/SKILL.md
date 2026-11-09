@@ -4,7 +4,7 @@ description: Use when the user wants to break down a YouTube video's hook, scrip
 license: MIT
 metadata:
   author: tubelab
-  version: "3.0"
+  version: "4.0"
   requires: tubelab-mcp
 ---
 
@@ -12,45 +12,25 @@ metadata:
 
 ## Overview
 
-Break down how videos are built from the words actually spoken, and turn the structure into a template for a new script.
-
-## When to Use
-
-Use this skill when the user asks to:
-
-- see how a video is structured or what its hook is
-- build a beat sheet or compare hooks
-- prepare a skeleton for a new script
-
-Do not use this for why a video got views (`outlier-research`), a channel analysis (`channel-analysis`), or ideas (`video-ideation`).
+Break down how videos are built from the words actually spoken, and turn the structure into a template. Not for why a video got views (`outlier-research`).
 
 ## Workflow
 
-1. Clarify scope only if needed. Read 1 to 5 videos.
-2. Pull each video's details and transcript.
-3. Quote the first 30 seconds as the hook and name its type.
-4. Build a beat sheet of 6 to 12 beats, with claims, open loops, calls to action and pace.
-5. Compare the videos and write a reusable structure.
-6. If the user gave a topic, write a script skeleton in the same structure.
+1. Clarify scope only if needed. Read 1 to 3 videos.
+2. Quote the first 30 seconds as the hook and name its type.
+3. Build a beat sheet of 5 to 8 beats.
+4. Write a reusable structure, and a script skeleton if the user gave a topic.
 
 ## Output Format
 
 ```markdown
 # Script Breakdown: {video or channel}
 
-Videos: {n} · Transcripts: {n} · Confidence: {level, why}
-
 ## {Title} · @handle · {views} · {duration}
-- **Hook (verbatim):** "..." · {type}
-- **Beat sheet:** m:ss {beat} · what it does
-- **Claims:** m:ss "..." (backed | asserted)
-- **Open loops:** opens m:ss · closes m:ss
-- **Calls to action:** m:ss · {type}
-- **Pace:** {n} words per minute
-- **Quotable lines:** "..."
+**Hook (verbatim):** "..." · {type}
 
-## Across Videos
-- ...
+| Time | Beat | What it does |
+|---|---|---|
 
 ## Structure Template
 [Hook] → [Block] → [Payoff] → [CTA]
@@ -62,12 +42,13 @@ Videos: {n} · Transcripts: {n} · Confidence: {level, why}
 - ...
 ```
 
+Keep it under 300 words per video, with at most 3 caveats.
+
 ## Common Pitfalls
 
 - Do not paraphrase the hook. The exact words are the finding.
 - Do not write a summary and call it a beat sheet.
 - Do not call something a pattern from one video.
 - Do not trust numbers in captions. Check them against the description.
-- Do not read more than five transcripts without asking. They are long.
 - Do not paste a full transcript into the output.
 - Do not invent a timestamp or a quote. Mark unclear words [unclear].

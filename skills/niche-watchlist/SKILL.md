@@ -4,7 +4,7 @@ description: Use when the user wants to monitor YouTube niches over time and get
 license: MIT
 metadata:
   author: tubelab
-  version: "3.0"
+  version: "4.0"
   requires: tubelab-mcp
 ---
 
@@ -12,56 +12,36 @@ metadata:
 
 ## Overview
 
-Watch niches on a schedule and report only what changed since the last run.
-
-## When to Use
-
-Use this skill when the user asks to:
-
-- watch a niche for new or breakout channels
-- get a recurring digest of new channels
-- run the watchlist
-
-Do not use this for a one-off niche hunt (`niche-finder`), a go or no-go (`niche-validator`), or video trends (`trend-report`).
+Watch niches on a schedule and report only what changed since the last run. Not for a one-off hunt (`niche-finder`).
 
 ## Workflow
 
-1. Clarify scope only if needed. Read `watchlist/config.json`. If it is missing, ask for 1 to 5 niches and write it.
-2. Load `watchlist/state.json`, which stores each channel seen with its subscribers and median views. No state means a first run.
-3. Search each niche once, newest discovered first, for channels that joined in the last year.
-4. Compare with the state: new channels, movers up more than 50 percent, and channels dropped from the sample.
-5. Read each new channel and mark breakouts.
-6. Write `watchlist/<date>.md` and update the state.
-7. If asked to schedule it, one run a day is plenty.
+1. Clarify scope only if needed. Read `watchlist/config.json`, or ask for 1 to 5 niches and write it with the exact search settings.
+2. Load `watchlist/state.json`, the channels seen with their subscribers and median views.
+3. Search each niche once with the saved settings, newest discovered first.
+4. Find channels discovered since the last run and channels up more than 50 percent.
+5. Read the new channels, write `watchlist/<date>.md` and update the state.
 
 ## Output Format
 
 ```markdown
 # Watchlist Digest: {date}
 
-Niches: {n} · New: {n} · Movers: {n} · Dropped: {n} · First run: {yes | no}
+Niches: {n} · New: {n} · Movers: {n}
 
 ## {Niche}
-### Breakouts
-- {Channel} (@handle) · {subs} · median {n} · joined {date} · "{top title}" · {views} · ratio {n}. {Why it matters.}
-
-### Movers
-- @handle · subs {from} to {to} · median {from} to {to}
-
-### New
-- @handle · {subs} · median {n} · {format}
-
-### Dropped
-- @handle · last seen {date}
+| Channel (handle) | Status | Subs | Median views | Proof (title · views · ratio) |
+|---|---|---:|---:|---|
 ```
+
+Keep it under 200 words, with at most 5 rows per niche.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom`, or `classificationQuality` at `"neutral"` or above.
-- Do not paginate. Page 1 of the newest-discovered sort is the newest 20.
-- Do not call a first run a breakout wave. There is no baseline.
-- Do not call a channel a breakout without at least 1K median views.
-- Do not report dropped as terminated. It only left the newest sample.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above.
+- Do not change the search settings between runs, or the differences are noise.
+- Do not call a channel new because it left and re-entered the sample. Check when it was discovered.
+- Do not call a first run a breakout wave.
+- Do not call a channel a breakout without 1K median views and at least 5 videos.
 - Do not skip the digest when nothing changed. Silence looks like a failed run.
-- Do not edit a past digest.
-- Do not invent a channel or a number.
+- Do not paginate, or invent a channel or a number.
