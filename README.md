@@ -51,7 +51,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, from a keyword or a channel | Verdict, formats that work, gaps, entry plan |
 | [`outlier-research`](skills/outlier-research/) | Find videos that beat their channel's baseline in a niche and why | Outlier table and patterns to copy |
 | [`trend-report`](skills/trend-report/) | Get a dated digest of what is trending in a niche or for a channel | Trending videos with verbatim hooks, patterns, five ideas, learnings |
-| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Ten ideas ranked by demand and fit, each with its proof |
+| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Six ideas ranked by demand and fit, each with its proof |
 | [`title-formulas`](skills/title-formulas/) | Use title formulas with momentum, filled for your topic | Formula table with verdicts and filled titles |
 | [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts for one video, or study what thumbnails work in a niche | Examples that work, three concepts, images or image prompts |
 | [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | Positioning, what works, what holds it back, tests for the next uploads |
@@ -64,7 +64,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, state file |
 | [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, filters, response fields, quirks, REST fallback | Craft rules and recipes the other skills rely on; no artifact |
 
-Every skill is one `SKILL.md`. Real outputs for every skill, all run on the same channel, are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/).
+Every skill is one `SKILL.md`. Real outputs for every skill are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/).
 
 ## Example Prompts
 

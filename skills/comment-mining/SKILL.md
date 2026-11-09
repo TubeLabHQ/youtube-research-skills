@@ -44,7 +44,7 @@ Videos: {n} · Unique comments: {n} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 300 words, with at most 8 table rows and 3 caveats.
+Keep it under 300 words, with at most 8 rows per table and 3 caveats.
 
 ## Common Pitfalls
 

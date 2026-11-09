@@ -81,7 +81,7 @@ Full field lists in [references/response-shapes.md](references/response-shapes.m
 - `get_video_comments` returns "Failed Dependency" or "No comments found" when comments are disabled: treat as no data, not as a failure. Its `comments[]` can contain duplicate entries; dedupe on author plus text, and treat `publishedAt` as coarse (month granularity or relative strings).
 - Empty `hits` with `pagination.total: 0`: widen recency, drop one filter or rephrase `query`. Keep the quality floor.
 - HTTP 429 means the rate limit (about 30 calls per window, shared across sessions). Wait for the reset and retry; pace reads rather than firing them all at once.
-- `pagination.total` has stopped at exactly 80 on searches, so do not use it to measure how crowded a niche is.
+- `pagination.total` has come back as exactly twice `size`, so do not use it to measure how crowded a niche is.
 - `get_channel` has no audience or monetization fields; those appear only on search hits.
 
 ## Spending credits

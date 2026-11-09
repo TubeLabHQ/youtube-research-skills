@@ -41,7 +41,7 @@ Based on: ... · Image: ... · Text: ...
 - ...
 ```
 
-Keep it under 300 words, with at most 5 table rows.
+Keep it under 300 words, with at most 5 rows per table.
 
 ## Common Pitfalls
 

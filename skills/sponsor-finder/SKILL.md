@@ -18,7 +18,7 @@ Find the brands already paying channels with the user's audience and show how to
 
 1. Clarify scope only if needed. Target channels from 0.3x to 3x the user's subscribers.
 2. Read the user's channel, including sponsors it already has.
-3. Find sponsored channels on the same topic, and check their audience.
+3. Find channels on the same topic and size, and check their audience.
 4. Read the closest 10 for brands, promo codes and sponsor reads.
 5. Rank brands by how close they are in size, audience and recency.
 
@@ -37,13 +37,13 @@ Audience: {proxy} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 250 words, with at most 5 table rows and 3 caveats.
+Keep it under 250 words, with at most 5 rows per table and 3 caveats.
 
 ## Common Pitfalls
 
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above. Loosen the size band instead.
 - Do not look for brand names in the index, or list a brand you did not read or hear.
-- Do not trust the sponsored flag alone. It often shows channels with no sponsor.
+- Do not rely on the sponsored filter. It misses sponsors and flags channels with none, so read descriptions.
 - Do not call every read a sponsor. Some are affiliate deals or the creator's own products.
 - Do not pad a thin list. If the channel sells only its own offers, or nothing is found, say so.
 - Do not pitch a current partner as new.

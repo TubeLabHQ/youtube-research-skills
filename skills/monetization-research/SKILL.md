@@ -18,7 +18,7 @@ Show how a channel could earn more by studying its competitors and other channel
 
 1. Clarify scope only if needed. With no channel, audit the niche for a new entrant.
 2. Record how the channel earns today from its descriptions.
-3. Find similar channels, in and outside its niche, with the same audience.
+3. Find channels of similar size, in and outside its niche, with the same audience.
 4. Read the best 8 for exact sponsors, products, courses and services.
 5. Rank the opportunities by evidence and fit.
 
@@ -43,7 +43,7 @@ Audience: {estimate} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 300 words, with at most 5 table rows and 3 caveats.
+Keep it under 300 words, with at most 5 rows per table and 3 caveats.
 
 ## Common Pitfalls
 

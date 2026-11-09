@@ -50,7 +50,7 @@ Goal: {reach | conversion} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 400 words, with at most 5 table rows and 3 caveats.
+Keep it under 400 words, with at most 5 rows per table and 3 caveats.
 
 ## Common Pitfalls
 

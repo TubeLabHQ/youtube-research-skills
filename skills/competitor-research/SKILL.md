@@ -48,7 +48,7 @@ Competitors: {n} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 350 words, with at most 6 table rows and 3 caveats.
+Keep it under 350 words, with at most 6 rows per table and 3 caveats.
 
 ## Common Pitfalls
 
@@ -56,6 +56,6 @@ Keep it under 350 words, with at most 6 table rows and 3 caveats.
 - Do not compare against channels with a different audience, such as an Indian channel for a channel targeting the US.
 - Do not trust similar-channel results on a large channel. They are often tiny or off-topic.
 - Do not stop at an empty search. Name likely competitors, verify them with free reads, and say so.
-- Do not compare raw views across channels, or mix Shorts with long-form.
+- Do not rank competitors by raw views, or mix Shorts with long-form.
 - Do not run more than two paid searches.
 - Do not invent a channel or a title.

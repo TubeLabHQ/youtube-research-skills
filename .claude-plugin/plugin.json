@@ -1,7 +1,7 @@
 {
   "name": "youtube-research",
   "displayName": "YouTube Research (TubeLab)",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Skills that turn Claude into a YouTube strategist: niche finding, outlier research, video ideation, channel analysis and thumbnail research, powered by the TubeLab MCP.",
   "author": {
     "name": "TubeLab",

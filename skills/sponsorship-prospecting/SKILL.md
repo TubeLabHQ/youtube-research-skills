@@ -20,7 +20,7 @@ Build a short prospect list for a brand: channels with the right audience, stead
 2. Find channels on topics this audience watches, both unsponsored and already sponsored.
 3. Check each one's audience from the results and drop mismatches.
 4. Read the top 10 for cadence, recent views and contact hints.
-5. Rank by audience match, then steady views.
+5. Rank by audience match, then reach and steady views.
 
 ## Output Format
 
@@ -37,7 +37,7 @@ Tier: {tier} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 300 words, with at most 10 table rows and 3 caveats.
+Keep it under 300 words, with at most 10 rows per table and 3 caveats.
 
 ## Common Pitfalls
 

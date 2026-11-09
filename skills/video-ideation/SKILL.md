@@ -19,7 +19,7 @@ Generate video ideas for one channel, each backed by an outlier that proves dema
 1. Clarify scope only if needed. Assume the goal is reach, or conversion if the channel sells something.
 2. Learn the channel's normal views, best videos and what flopped.
 3. Find current outliers in its niche, at most 2 per channel.
-4. Adapt the best into 10 ideas for this channel.
+4. Adapt the best into 6 ideas for this channel.
 5. Rank by demand and fit.
 
 ## Output Format
@@ -37,7 +37,7 @@ Goal: {reach | conversion} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 350 words, with at most 10 table rows and 3 caveats.
+Keep it under 350 words, with at most 6 rows per table and 3 caveats.
 
 ## Common Pitfalls
 

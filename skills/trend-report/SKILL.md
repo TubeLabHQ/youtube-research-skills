@@ -43,7 +43,7 @@ Sample: {n} winners · Window: {used}
 1. ...
 ```
 
-Keep it under 450 words, with at most 5 table rows.
+Keep it under 450 words, with at most 5 rows per table.
 
 ## Common Pitfalls
 

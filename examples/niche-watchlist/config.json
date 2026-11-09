@@ -5,7 +5,16 @@
       "query": "business advice for entrepreneurs",
       "language": ["en"],
       "faceless": false,
-      "exclude": []
+      "exclude": [],
+      "search": {
+        "query": ["business advice for entrepreneurs"],
+        "language": ["en"],
+        "publishedAtFrom": "month",
+        "classificationQuality": "neutral",
+        "sortBy": "foundAt",
+        "sortOrder": "desc",
+        "size": 20
+      }
     }
   ]
 }
