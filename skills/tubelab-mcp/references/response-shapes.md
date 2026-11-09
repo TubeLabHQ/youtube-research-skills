@@ -98,7 +98,7 @@ item.videos[] (up to 120, newest first)
 item.shorts[] (get_channel_shorts)
 ```
 
-This is the raw material for a channel teardown: compute last-4 average, median, decay of repeated formats, and list positive/negative outliers from `videos[]`. The payload is large; summarize it.
+This is the raw material for a channel analysis: compute last-4 average, median, decay of repeated formats, and list positive/negative outliers from `videos[]`. The payload is large; summarize it.
 
 ## get_video
 

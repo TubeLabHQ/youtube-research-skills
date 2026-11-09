@@ -10,11 +10,11 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | What is working in X, why did this video blow up, hooks and formats to steal | `outlier-research` |
 | Trend report, what is trending this week or month, weekly digest, hooks working right now | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
-| Roast my channel, why did views die, packaging diagnosis, title rewrites | `channel-teardown` |
+| Analyze or roast my channel, why did views drop, packaging diagnosis, title rewrites | `channel-analysis` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails | `thumbnail-concepts` |
 | Is X worth entering, is this niche saturated, go or no-go | `niche-validator` |
 | Title formulas, trending title templates, fill a formula for my topic | `title-formulas` |
-| Who are my competitors, how do I compare, competitive landscape | `competitor-landscape` |
+| Who are my competitors, how do I compare, competitive landscape | `competitor-research` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
 | Script structure, beat sheet, hook of this video, script skeleton | `transcript-intelligence` |
 | How do channels like mine make money, raise RPM, what to sell, who sponsors them | `monetization-research` |
@@ -28,7 +28,7 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 ## Rules every skill follows
 
 1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
-2. Content Authenticity is never off: `classificationQuality: "neutral"` for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result.
+2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result.
 3. Rank by `averageViewsRatio`, not raw views. Show both.
 4. Proof line on every claim: channel (handle) · video title verbatim · views · ratio · date. No invented channels or numbers.
 5. Revenue, RPM and audience are estimates. Present as bands, labelled.
@@ -46,4 +46,4 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 
 ## Repo conventions for contributors
 
-See `CONTRIBUTING.md`. Each workflow skill is one self-contained `SKILL.md` with the sections Overview · When to Use · Data Sources · Workflow · Output Format · Quality Guardrails · Common Pitfalls; only `tubelab-mcp` has a `references/` folder. Keep it simple, do not over-engineer, Conventional Commits (`type(scope): subject`). Run `node scripts/validate-skills.mjs` before opening a PR.
+See `CONTRIBUTING.md`. Each workflow skill is one self-contained `SKILL.md` with the sections Overview · Workflow · Output Format · Common Pitfalls; only `tubelab-mcp` has a `references/` folder. Keep it simple, do not over-engineer, Conventional Commits (`type(scope): subject`). Run `node scripts/validate-skills.mjs` before opening a PR.
