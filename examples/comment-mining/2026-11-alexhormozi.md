@@ -1,32 +1,54 @@
-# Voice of Audience: Alex Hormozi (@AlexHormozi), latest 4 videos
+# Voice of Audience: [Alex Hormozi](https://www.youtube.com/@AlexHormozi), latest 12 videos
 
 Run: 2026-11-09 · Credits used: 0 · Live TubeLab MCP · `skills/comment-mining/SKILL.md`.
 
-**More "vs" episodes: "we need alex vs 10 billionaires" has 1,300 likes, and more-of-this requests appear under all 4 videos.**
-Videos: 4 · Comments kept: 301 · Confidence: medium, top ~100 comments per video skew positive and questions get few likes
-
-| Comment (verbatim) | Type | Likes | Video |
-|---|---|---:|---|
-| "we need alex vs 10 billionaires" | Request | 1,300 | Change My Mind, Win $10,000 |
-| "We need Alex vs 10 failing businesses" | Request | 360 | Change My Mind, Win $10,000 |
-| "Fun idea, but I think finding people who don't really know who Alex would have been more interesting." | Objection | 355 | Change My Mind, Win $10,000 |
-| "Man, that background is burning my eyes at 11pm LOL" | Objection | 234 | How To Make More Money Than You Deserve (My 2027 Framework) |
-| "…I want more videos like these where u talk about the knowledge u got from being exposed too so many businesses…" | Request | 158 | How To Make More Money Than You Deserve (My 2027 Framework) |
-| "Mann I'm just trying afford to go to the dentist 🤣🤣" | Objection | 104 | If You Only Watch One Wealth Video, Make It This |
-| "Y'all gotta make this a series" | Request | 63 | If You Only Watch One Wealth Video, Make It This |
-| "…For someone building that proof today, would you count volume of attempts as credibility even before the results arrive?" | Question | 47 | How I Would Build a Personal Brand in 2027 (If I Had to Start Over) |
+- **Biggest ask:** more of the show formats, with the next episode named · 2,096 likes · 6 videos
+- **Sample:** 12 videos, 885 comments
+- **Confidence:** Medium. Top comments only, praise-heavy; 40 book and trading promos (2,965 likes) removed; theme 5 rests on low-like comments.
 
 ## Themes
-- More of this format, as a series · under 4 videos · they ask for repeats and spin-offs, not new topics
-- "Where does my business fit?" · under 4 videos · accounting firm, tax strategist, "who to hire, when to hire": lots of people asking, few likes on each
-- Out of reach · under 3 videos · "I've still never seen Alex talk to a single farmer." (3); wealth advice reads as written for people who already have money
+1. **More of the show formats, sequels named**
+   - 6 videos · 2,096 likes
+   - "we need alex vs 10 billionaires" · [Change My Mind](https://www.youtube.com/watch?v=Uzr0gv4N4-s)
+   - Means: viewers are pitching the next episode themselves.
+2. **Label the Scale or Fail episodes**
+   - 3 videos · 625 likes
+   - "I really like this format. But feels like your hiding that it’s the scale or fail show?" · [$10M Service Business](https://www.youtube.com/watch?v=o64cI6tebnU)
+   - Means: titles and thumbnails hide the series, so fans skip episodes.
+3. **Show what happened after**
+   - 4 videos · 289 likes
+   - "Suggestion - can we check in on the eliminated businesses next year to see how they’re doing?" · [8 Entrepreneurs Compete](https://www.youtube.com/watch?v=eq1bnI0JoXU)
+   - Means: the payoff they want is the numbers months later, losers included.
+4. **Practitioners say the fix breaks in their trade**
+   - 4 videos · 272 likes
+   - "As a CPA, I’ll highlight deferred taxes are not the same as no taxes" · [One Wealth Video](https://www.youtube.com/watch?v=Ys3o-iqGcoE)
+   - Means: dentists, roofers and gym owners correct details; three say the theme park has since closed.
+5. **Does this work in my industry?**
+   - 6 videos · 64 likes
+   - "WOULD LOVE to have a video with an ecom or product business" · [Required Viewing](https://www.youtube.com/watch?v=uaLNfijnp-8)
+   - Means: accounting, car sales, B2B, lawn care and ecom owners want their version.
+
+| Comment (verbatim) | Type | Likes | Video (link) |
+|---|---|---:|---|
+| "we need alex vs 10 billionaires" | Request | 1,300 | [Change My Mind](https://www.youtube.com/watch?v=Uzr0gv4N4-s) |
+| "Fun idea, but I think finding people who don't really know who Alex would have been more interesting." | Objection | 355 | [Change My Mind](https://www.youtube.com/watch?v=Uzr0gv4N4-s) |
+| "Man, that background is burning my eyes at 11pm LOL" | Objection | 234 | [2027 Framework](https://www.youtube.com/watch?v=pwZJcLZc3_Y) |
+| "I like how Alex Hormozi's videos has Alex Hormozi ads. What a concept." | Objection | 74 | [2027 Framework](https://www.youtube.com/watch?v=pwZJcLZc3_Y) |
+| "Why did you stop including the episode number and series name?" | Question | 69 | [$10M Service Business](https://www.youtube.com/watch?v=o64cI6tebnU) |
+| "It would be so helpful if he did a more in depth video of creating or structuring VSLs." | Request | 58 | [Required Viewing](https://www.youtube.com/watch?v=uaLNfijnp-8) |
+| "I feel like this stuff is the easy part. Finding good employees that do quality work is the hard part." | Objection | 54 | [$10M Service Business](https://www.youtube.com/watch?v=o64cI6tebnU) |
+| "Well that didn't age well. They are now permanently closed only one month after releasing this episode" | Objection | 25 | [Failing Theme Park](https://www.youtube.com/watch?v=xRxVpjeHmeA) |
+| "What is your money algorithm?" | Question | 23 | [One Wealth Video](https://www.youtube.com/watch?v=Ys3o-iqGcoE) |
+| "Question: HOW do you track that?" | Question | 2 | [Social media playbook](https://www.youtube.com/watch?v=21flGkcZO3A) |
 
 ## Their Words
-- "please" · 10 times
-- "format" · 11 times
-- "we need" · 6 times
+- "format" · 51 times
+- "value" · 22 times
+- "series" · 20 times
+- "gold" · 11 times
+- "Shark Tank" · 5 times
 
 ## Video Ideas
-1. **Alex vs 10 Billionaires: Change My Mind** · answers "we need alex vs 10 billionaires" · 1,300
-2. **10 Failing Business Owners Try to Change My Mind** · answers "We need Alex vs 10 failing businesses" · 360
-3. **The Wealth Game When You Can Barely Afford the Dentist** · answers "Mann I'm just trying afford to go to the dentist 🤣🤣" · 104
+1. **Alex vs 10 Billionaires: Change My Mind** · answers more of the show formats
+2. **Scale or Fail: Where Are the Eliminated Businesses Now?** · answers show what happened after
+3. **5 Owners Tell Me My Advice Fails in Their Industry** · answers practitioners say the fix breaks

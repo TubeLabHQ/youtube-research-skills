@@ -1,24 +1,35 @@
-# Competitor Research: Chris Koerner on The Koerner Office Podcast (@thekoerneroffice)
+# Competitor Research: [Chris Koerner on The Koerner Office Podcast](https://www.youtube.com/@thekoerneroffice)
 
 Run: 2026-11-09 · Credits used: 0 · Live TubeLab MCP · `skills/competitor-research/SKILL.md`.
 
-**Greg Isenberg is the same size (740K vs 726K subs) and has twice the 90-day median (161,500 vs 82,500; 0.218 vs 0.114 per sub). He wins with AI tools named in the title, which Koerner leaves unnamed.**
-Set from: known (Noah Kagan dropped: no long-form upload since 2024) · Confidence: medium. All channels were checked with free reads and no search was run. Dates are monthly estimates, so the window is approximate.
+- **Biggest gap:** [Greg Isenberg](https://www.youtube.com/@GregIsenberg) earns 0.218 median views per subscriber to Koerner's 0.114, on named AI-tool videos.
+- **Set from:** known, verified by free reads; [Noah Kagan](https://www.youtube.com/@noahkagan) dropped, inactive since 2024.
+- **Confidence:** medium; upload dates are month-rounded, and Codie and Charlie overlap partly.
 
-| Channel (handle) | Subs | Median views | Median / subs | Uploads, 90 days | Topics |
+| Channel (link) | Subs | Median views | Median / subs | Uploads, 90 days | Topics |
 |---|---:|---:|---:|---:|---|
-| Chris Koerner (@thekoerneroffice) | 726K | 82,500 | 0.114 | 42 | Overlooked small businesses, AI side hustles, operator interviews |
-| Greg Isenberg (@GregIsenberg) | 740K | 161,500 | 0.218 | 30 | New AI tools, AI startup ideas, agent tutorials |
-| Starter Story (@starterstory) | 898K | 83,000 | 0.092 | 26 | App, SaaS and website founder stories |
-| My First Million (@MyFirstMillionPod) | 971K | 55,000 | 0.057 | 30 | Interviews with credentialed guests, business ideas |
-| Codie Sanchez (@CodieSanchezCT) | 2.27M | 108,000 | 0.048 | 11 | Buying businesses, sales, money habits |
-| Jordan Welch (@JordanWelch) | 2.02M | 93,500 | 0.046 | 6 | Beginner AI businesses, dropshipping |
+| [The Koerner Office](https://www.youtube.com/@thekoerneroffice) | 726K | 82,500 | 0.114 | 42 | Solo businesses, AI side hustles, guests |
+| [Greg Isenberg](https://www.youtube.com/@GregIsenberg) | 740K | 161,500 | 0.218 | 30 | AI tool launches |
+| [Starter Story](https://www.youtube.com/@starterstory) | 898K | 83,000 | 0.092 | 26 | App revenue breakdowns |
+| [My First Million](https://www.youtube.com/@MyFirstMillionPod) | 971K | 55,000 | 0.057 | 30 | Ideas, founder guests |
+| [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT) | 2.27M | 108,000 | 0.048 | 11 | Buying businesses, sales |
+| [Charlie Chang](https://www.youtube.com/@CharlieChang) | 1.46M | 22,000 | 0.015 | 15 | AI tutorials, side hustles |
 
 ## Gaps to Win
+1. **Name the new AI tool in the title** (also Charlie Chang's [The ONLY Grok Bot Tutorial You Need 2026](https://www.youtube.com/watch?v=q1IwR88mhaA), 480,000 views, 4.58x)
+   - ![](https://i.ytimg.com/vi/4mTLpuQpB80/hqdefault.jpg)
+   - [Greg Isenberg](https://www.youtube.com/@GregIsenberg) · [Jev is HERE. How to use it](https://www.youtube.com/watch?v=4mTLpuQpB80) · 778,000 views, 5.07x, Oct 2026
+   - Fit: his unnamed [This Tool Makes AI Agents Stupid Simple](https://www.youtube.com/watch?v=y33ecMVHxNU) drew 30,000 views, 0.22x.
+2. **App and SaaS founder revenue breakdowns** (also [How This SaaS Hit $69K/Month In Just 2 Months](https://www.youtube.com/watch?v=BA_fC95p43c), 314,000 views, 2.17x)
+   - ![](https://i.ytimg.com/vi/NuYO7DWzlaM/hqdefault.jpg)
+   - [Starter Story](https://www.youtube.com/@starterstory) · [I built an app that makes $2K PER DAY](https://www.youtube.com/watch?v=NuYO7DWzlaM) · 365,000 views, 2.53x, Oct 2026
+   - Fit: his build-along [Watch Me Build an App With AI and Make a Sale in 85 Minutes](https://www.youtube.com/watch?v=UItZIyRpWSw) got 51,000 views, 0.37x.
+3. **Lead the guest title with a credential** (also [4 wild AI predictions from a $39B tech founder](https://www.youtube.com/watch?v=3JNYPOS2o5Q), 264,000 views, 2.85x)
+   - ![](https://i.ytimg.com/vi/bi23y0x-MhA/hqdefault.jpg)
+   - [My First Million](https://www.youtube.com/@MyFirstMillionPod) · [Sam Altman's coach destroys your limiting beliefs for 86 minutes straight](https://www.youtube.com/watch?v=bi23y0x-MhA) · 403,000 views, 4.34x, Oct 2026
+   - Fit: [I Thought I Understood Credit Cards Until I Talked to This Guy](https://www.youtube.com/watch?v=lN9HGQhiGgM) hit 2.02x with no credential named.
 
-1. **A named AI tool with a money angle, at launch** · Greg Isenberg (@GregIsenberg) · "Jev is HERE. How to use it" · 778,000 · 5.07x · 2026-10-09. Greg has two more named-platform videos at 2x or more. Koerner's unnamed-tool videos stall ("This Tool Makes AI Agents Stupid Simple", 0.22x). If he names the tool and shows a dollar result he tested himself, it fits his operator angle.
-2. **App and website revenue stories, told by the founder** · Starter Story (@starterstory) · "I built an app that makes $2K PER DAY" · 365,000 · 2.53x · 2026-10-19. A second winner, "How This SaaS Hit $69K/Month In Just 2 Months", reached 2.17x. Koerner's guest income stories already win ("She Makes $2K Every Saturday From Her Parents' Front Porch", 3.52x) and his solo build demos do not (0.37x). He can point that guest format at software.
-3. **The guest's credential in the title** · My First Million (@MyFirstMillionPod) · "Sam Altman's coach destroys your limiting beliefs for 86 minutes straight" · 403,000 · 4.34x · 2026-10-09. It repeats with "4 wild AI predictions from a $39B tech founder" (2.85x). Koerner's guest titles say only "He", "She" or "This Guy". Adding the credential changes the title, not the format.
-
-Copy: Greg's "[Named tool] will create 1,000 millionaires" frame, and Starter Story's 15 to 17 minute founder cut. · Avoid: generic sales and mindset videos. Codie Sanchez has none of 11 uploads at 2x or more.
-Positioning: The operator who puts real dollars into every new tool and small business, then brings on the people already making money from them.
+## Moves
+- **Copy:** Starter Story's thumbnail: founder holds the product beside one huge number ("$2K PER DAY").
+- **Avoid:** generic self-help; [Find Your Passion in 20 Minutes, Not 20 Years](https://www.youtube.com/watch?v=NbAqXzS7Q44) got 0.41x, Codie's [Success is Hard Until You Understand This Formula](https://www.youtube.com/watch?v=4XQ50qWSRO4) 0.09x.
+- **Positioning:** The operator of 7 businesses and 8 RV parks who tests each new AI tool and app model on real businesses.

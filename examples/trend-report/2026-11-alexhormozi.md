@@ -1,43 +1,45 @@
-# Trend Report: @AlexHormozi · 2026-11-09
+# Trend Report: [Alex Hormozi](https://www.youtube.com/@AlexHormozi) · 2026-11-09
 Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/trend-report/SKILL.md`.
 
-**Stakes beat advice. Since 9 Oct, Hormozi's three stunt videos averaged 2.33× his baseline, while his six advice uploads averaged 0.97×. Best stunt: "Can I Save This Failing Theme Park in 90 Days?" (1,800,000 · 3.67×). Weakest advice video: "If I could start over in business, I’d do this sooner" (179,000 · 0.36×). The niche's two biggest business outliers are also deadline stunts.**
-Sample: 5 winners · Window: last month · Confidence: medium. Each pattern appears on 3 or more channels, but 3 winners come from channels under 3K subscribers. A Hormozi clip channel and paid brand ads were excluded.
+- **Top finding:** Proof stunts hit up to 26.95x; Hormozi's top recent upload is one: [Change My Mind, Win $10,000](https://www.youtube.com/watch?v=Uzr0gv4N4-s), 823K, 1.68x.
+- **Sample:** 9 winners from 9 channels, 5 featured; English long-form, 2026-10-09 to 2026-11-09.
+- **Confidence:** Medium. Each pattern has three channels, but five of nine winners come from channels under 50K subscribers.
 
 ## Winners
-### [Millionaire Starts Over at McDonald’s To Prove It’s Not Luck](https://www.youtube.com/watch?v=OAjjVF14Oew)
-Carson Reed (@carsonreed16) · 250,716 · 26.95× · 2026-10-24
-Hook: "over the next 30 days, I'm going to be working at McDonald's and starting a business fully from scratch, just to find out one thing. Can I get rich again starting with nothing?"
-Why: It turns the viewer's doubt ("was it luck?") into a 30-day test with a clear result.
-
-### [The "Arbitrage" Secret That Built a $100k/Month Business](https://www.youtube.com/watch?v=coe4fmu5cE8)
-Pace Morby (@PaceMorby) · 294,449 · 19.71× · 2026-10-16
-Hook: "So, you're telling me I can just go on Craigslist and arbitrage other people's services? I'm like, "Yes.""
-Why: It opens on a skeptic's question, then gives a simple mechanism and an exact monthly number.
-
-### [Watch Me Start & Sell a SaaS in 7 Days](https://www.youtube.com/watch?v=YB5YYnrCOPM)
-Henry SaaS (@HenrySaaS) · 67,573 · 14.26× · 2026-10-18
-Hook: "In the next 7 days, I'm going to go from zero to making my first dollar with a brand new SaaS business."
-Why: A tight deadline gives someone who already exited a business a reason to start again from zero.
-
-### [laziest way to make money with ai in 2027](https://www.youtube.com/watch?v=DWAxo1Hwvyc)
-Alex (@alexpdfbusiness) · 161,352 · 13.36× · 2026-10-09
-Hook: "You know, no one wants to believe this, but this is probably the laziest way to make money. Check how much I made selling little $6 items like this"
-Why: It promises the least possible effort and shows proof of earnings in the first ten seconds.
-
-### [How I replaced my salary using just my evenings (step by step)](https://www.youtube.com/watch?v=wAF9FjR_QTs)
-Jack Biggerstaff (@jackbiggerstaff) · 74,485 · 11.13× · 2026-10-26
-Hook: "Okay, so this is how I replaced my income using just my evenings. And for context, I'm Jack. I was an engineer for 12 years"
-Why: A small time box and a concrete goal make the plan easy to picture.
+1. **[Millionaire Starts Over at McDonald's To Prove It's Not Luck](https://www.youtube.com/watch?v=OAjjVF14Oew)**
+   - ![](https://i.ytimg.com/vi/OAjjVF14Oew/mqdefault.jpg)
+   - [Carson Reed](https://www.youtube.com/@carsonreed16) · 250.7K views, 26.95x, 2026-10-24
+   - Hook: "Was it all just luck? And if I lost everything, would I be able to do it all over again?"
+   - Why: one doubt, a 30-day clock, and a uniform in the thumbnail that proves the fall.
+2. **[The "Arbitrage" Secret That Built a $100k/Month Business](https://www.youtube.com/watch?v=coe4fmu5cE8)**
+   - ![](https://i.ytimg.com/vi/coe4fmu5cE8/mqdefault.jpg)
+   - [Pace Morby](https://www.youtube.com/@PaceMorby) · 294.4K views, 19.71x, 2026-10-16
+   - Hook: "So, you're telling me I can just go on Craigslist and arbitrage other people's services?"
+   - Why: opens on a skeptic's question, then answers it; thumbnail shows Craigslist and "YOU FIND. THEY WORK."
+3. **[Watch Me Start & Sell a SaaS in 7 Days](https://www.youtube.com/watch?v=YB5YYnrCOPM)**
+   - ![](https://i.ytimg.com/vi/YB5YYnrCOPM/mqdefault.jpg)
+   - [Henry SaaS](https://www.youtube.com/@HenrySaaS) · 67.6K views, 14.26x, 2026-10-18
+   - Hook: "In the next 7 days, I'm going to go from zero to making my first dollar with a brand new SaaS business."
+   - Why: the thumbnail shows the result first, a column of $49.00 "Succeeded" payments.
+4. **[How I replaced my salary using just my evenings (step by step)](https://www.youtube.com/watch?v=wAF9FjR_QTs)**
+   - ![](https://i.ytimg.com/vi/wAF9FjR_QTs/mqdefault.jpg)
+   - [Jack Biggerstaff](https://www.youtube.com/@jackbiggerstaff) · 74.5K views, 11.13x, 2026-10-26
+   - Hook: "Okay, so this is how I replaced my income using just my evenings."
+   - Why: the constraint is the whole promise; the thumbnail is just "7pm → 10pm".
+5. **[How I made $83,500 off two hoodies with my clothing brand](https://www.youtube.com/watch?v=vt5epoinwHA)**
+   - ![](https://i.ytimg.com/vi/vt5epoinwHA/mqdefault.jpg)
+   - [Rob Prsa](https://www.youtube.com/@robprsa) · 86.9K views, 9.09x, 2026-10-11
+   - Hook: "But what I want to do in this video is explain to you how I made $83,500 from two hoodies that I sold for my brand."
+   - Why: an exact figure on a tiny input, read off a sales screen in the first 30 seconds.
 
 ## Patterns
-- **Deadline stunt with something to prove** · Carson Reed 26.95×, Henry SaaS 14.26×, Dubibubi "I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS)" 236,320 · 4.77×
-- **Exact monthly figure plus one plain mechanism** · Pace Morby 19.71×, GovClose "The Most OVERLOOKED $35K/Month Business For People Over 50" 69,296 · 4.66×, Adrian Dimac "how I make $32k/mo from 1 "boring" business (just copy me)" 46,636 · 4.49×
-- **Low-effort promise** · Alex 13.36×, Jack Biggerstaff 11.13×, Maria Wendt "Build This Once, Make Sales Every Day (I Made $23M From This)" 78,743 · 5.89×
+- **Restart under a clock, to prove it:** Carson Reed 26.95x, Henry SaaS 14.26x, [Dubibubi](https://www.youtube.com/@Dubibubiii)'s [10-day AI money run](https://www.youtube.com/watch?v=xEKaDesfQK0) 4.77x.
+- **Exact dollars from one small thing:** Pace Morby 19.71x, Rob Prsa 9.09x, [Maria Wendt](https://www.youtube.com/@MariaWendt)'s ["I Made $23M From This"](https://www.youtube.com/watch?v=aNiDkDlLA3M) 5.89x.
+- **The time limit is the promise:** Jack Biggerstaff 11.13x, [Alex](https://www.youtube.com/@alexpdfbusiness)'s ["laziest way"](https://www.youtube.com/watch?v=DWAxo1Hwvyc) 13.36x, [Molly Keyser](https://www.youtube.com/@MollyKeyser)'s ["1hr a day"](https://www.youtube.com/watch?v=GVMpbOGsMIg) 3.95x.
 
 ## Ideas
-1. **Can I Build a $100K Business in 30 Days Without My Name?** · Deadline stunt. It answers the "it's just his audience" doubt.
-2. **I Have 90 Days to Save This Dying Gym** · Deadline stunt that repeats his 3.67× theme-park rescue format.
-3. **The $40K/Month Service Business Nobody Wants to Run** · Exact figure plus a boring mechanism, aimed at his service-business viewers.
-4. **How I'd Replace Your Salary in 90 Evenings** · Low-effort promise with a time box. It turns his start-over advice into a schedule.
-5. **The Laziest Offer That Still Makes $10K a Month** · Low-effort promise plus an exact figure.
+1. **I Lost Everything Twice. Can I Rebuild From $0 in 30 Days?** · restart under a clock, built on his gym-loss story.
+2. **I Gave a Stranger 7 Days to Make Their First Dollar** · restart under a clock, run as a Scale or Fail episode.
+3. **How One Offer Change Added $[real figure] to a Gym (Receipts on Screen)** · exact dollars, from a portfolio company.
+4. **How to Build a Business in Two Hours a Night (Keep Your Job)** · time limit as the promise; suits his 20s-and-30s audience.
+5. **Change My Mind: You Can't Get Rich Working Only Evenings** · takes his 1.68x debate format and adds the time-limit promise.

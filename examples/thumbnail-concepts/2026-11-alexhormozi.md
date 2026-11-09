@@ -2,24 +2,27 @@
 
 Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/thumbnail-concepts/SKILL.md`.
 
-**Lead with: 1, because it shows one of the beliefs the title hides, in the composition that is running hottest (5.06x).**
-Keep from the channel: real studio photos, white all-caps with one yellow word, and his face, since every recent upload and every debate winner I viewed is face-led. The live thumbnail shows the setup ("1 CENTIMILLIONAIRE vs 10 ENTREPRENEURS") but no belief: Alex Hormozi (@AlexHormozi) · Change My Mind, Win $10,000 · 828,879 views · 1.68x · 2026-10-30.
-This is not your channel, so the prompts leave a slot for a real photo of the host and do not generate his face.
+- **Lead with:** Concept 1. The title withholds which opinion is up for $10,000; the current thumbnail shows the cast, not the take.
+- **Keep:** his face (all 8 recent thumbnails viewed show it; every winning example here shows faces too), bold white sans text with one yellow word, real set photos.
+- **Current:** ![](https://i.ytimg.com/vi/Uzr0gv4N4-s/maxresdefault.jpg) [Change My Mind, Win $10,000](https://www.youtube.com/watch?v=Uzr0gv4N4-s) · 828,879 views · 1.68× · 2026-10-30
 
-### 1. The quoted hot take
-Based on: CLASH (@Clash) · NFL MVP vs 10 Die-Hard Football Fans (Ft. Cam Newton) · 1,684,093 views · 5.06x · 2026-10-06
-Image: the host in the centre foreground, half-smirking, with ten challengers in a soft-focus semicircle behind; the eye goes to the quote, then the face.
-Text: "PROFIT IS OVERRATED" (OVERRATED yellow)
-Prompt: YouTube thumbnail 16:9, bright white studio, ten business owners on chairs in a blurred semicircle, empty centre foreground for a host photo, top third "PROFIT IS OVERRATED" in quotes, heavy white all-caps sans-serif, OVERRATED in yellow, high contrast.
+### 1. The Take in Quotes
+- ![](https://i.ytimg.com/vi/7XUpSDsiFHM/maxresdefault.jpg)
+- **Based on:** [CLASH (@Clash)](https://www.youtube.com/@Clash) · [NFL MVP vs 10 Die-Hard Football Fans (Ft. Cam Newton)](https://www.youtube.com/watch?v=7XUpSDsiFHM) · 1,684,093 views, 5.06× · 2026-10-06
+- **Image:** Hormozi centre, chest-up, flat skeptical face; 10 entrepreneurs seated in a semicircle behind. Eye path: quote, face, crowd.
+- **Text:** "NO WEEKENDS." with WEEKENDS in yellow (his opening take, [0:38](https://www.youtube.com/watch?v=Uzr0gv4N4-s&t=38s))
+- **Prompt:** YouTube thumbnail 16:9. Foreground centre: [PHOTO SLOT: real photo of Alex Hormozi, backwards cap, beard, flannel, arms crossed, unimpressed]. Behind him, out of focus, 10 business people on chairs in a semicircle, white studio. Top: huge bold white quoted text "NO WEEKENDS." with WEEKENDS in yellow, black outline. High contrast, no other text.
 
-### 2. Two camps
-Based on: Lift 365 Fitness (@Lift365Fitness) · Strength vs Aesthetics, Winner gets $10,000 · 610,002 views · 13.84x · 2026-06-17
-Image: the frame split in two, the host alone on the left with arms crossed, four entrepreneurs on the right, one label over each side; the eye goes to the gap between them.
-Text: HUSTLE | BALANCE
-Prompt: YouTube thumbnail 16:9, studio backdrop, left half empty for a host photo, right half four entrepreneurs in business casual facing camera, white all-caps "HUSTLE" over the left, "BALANCE" over the right, even bright light.
+### 2. The Stake on the Table
+- ![](https://i.ytimg.com/vi/Yw0e_ETi_Fg/maxresdefault.jpg)
+- **Based on:** [Take Take Take (@TakeTakeTakeApp)](https://www.youtube.com/@TakeTakeTakeApp) · [Beat This Super Grandmaster, Win $100](https://www.youtube.com/watch?v=Yw0e_ETi_Fg) · 796,720 views, 3.47× · 2026-06-30
+- **Image:** Hormozi at the debate table holding a handwritten whiteboard; a $10,000 cash stack beside the mic. Eye path: board, cash, face.
+- **Text:** "Profit is overrated" handwritten (chapter at [33:39](https://www.youtube.com/watch?v=Uzr0gv4N4-s&t=2019s))
+- **Prompt:** YouTube thumbnail 16:9. [PHOTO SLOT: real photo of Alex Hormozi seated at a black table, holding a white whiteboard toward camera, slight smirk]. Whiteboard, green marker, handwritten: "Profit is overrated". On the table: a tall stack of banded $100 bills and a podcast mic. Soft studio light, dark background.
 
-### 3. The challenger strikes back
-Based on: Alex Monahan (@AlexMonahan1) · "Sports Betting Is a Scam" vs $160M Founder (Debate) · 41,136 views · 4.80x · 2026-04-21
-Image: a two-shot across the table, a woman entrepreneur leaning in and pointing while the host leans back laughing, the crowd blurred behind; the eye follows her finger to him.
-Text: NO WEEKENDS?
-Prompt: YouTube thumbnail 16:9, black debate table with microphones, a fictional woman entrepreneur leaning in and pointing, fired up, right side empty for a host photo, blurred seated audience, white all-caps "NO WEEKENDS?" top left with WEEKENDS in yellow.
+### 3. One vs Ten, Two Camps
+- ![](https://i.ytimg.com/vi/TCheS8JkgMU/maxresdefault.jpg)
+- **Based on:** [Lift 365 Fitness (@Lift365Fitness)](https://www.youtube.com/@Lift365Fitness) · [Strength vs Aesthetics, Winner gets $10,000](https://www.youtube.com/watch?v=TCheS8JkgMU) · 610,002 views, 13.84× · 2026-06-17 (channel has 2,410 subscribers)
+- **Image:** Split frame: Hormozi alone on the right, 10 entrepreneurs crowded on the left. Eye path: lone figure, crowd, labels.
+- **Text:** "BALANCE" over the crowd, "ALL IN" over him ([20:34](https://www.youtube.com/watch?v=Uzr0gv4N4-s&t=1234s), [24:16](https://www.youtube.com/watch?v=Uzr0gv4N4-s&t=1456s))
+- **Prompt:** YouTube thumbnail 16:9, split composition. Left two thirds: 10 diverse entrepreneurs standing shoulder to shoulder, arms crossed. Right third: [PHOTO SLOT: real photo of Alex Hormozi standing alone, cap, beard, arms crossed]. Bold white labels across the top: "BALANCE" over the left group, "ALL IN" in yellow over the right. Studio lighting, dark backdrop.
