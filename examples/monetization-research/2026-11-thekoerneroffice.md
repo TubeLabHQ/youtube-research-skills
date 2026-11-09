@@ -1,32 +1,32 @@
-# Monetization Research: [The Koerner Office](https://www.youtube.com/@thekoerneroffice)
+# Monetization Research: The Koerner Office (@thekoerneroffice)
+Run: 2026-11-09 · Credits used: 10 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
 
-Run: 2026-11-09 · Credits used: 15 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
-
-- **Biggest gap:** Nothing sold for the RV and mobile-home park pillar. The channel's own description promises "Showing you how to invest in mobile home and RV parks" and says it owns "8 RV parks", but none of the 8 descriptions read links to an offer for it.
-- **Peers:** 5. Four named ([Codie Sanchez](https://www.youtube.com/@CodieSanchezCT), [Starter Story](https://www.youtube.com/@starterstory), [My First Million](https://www.youtube.com/@MyFirstMillionPod), [Greg Isenberg](https://www.youtube.com/@GregIsenberg)) and one from search ([Luke Davis](https://www.youtube.com/@lukedavisvlogs)). The other 36 unique search hits had a different audience. The Builders is used below only as an RPM reference.
-- **Confidence:** Medium. Descriptions and offer pages are first-hand. Several peer prices are not public, and TubeLab returned no RPM band for this channel.
+- **Biggest gap:** The [channel](https://www.youtube.com/@thekoerneroffice) promises "how to invest in mobile home and RV parks" but sells no investing product.
+- **Peers:** 5, from named ([Starter Story](https://www.youtube.com/@starterstory), [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT), [My First Million](https://www.youtube.com/@MyFirstMillionPod), [Noah Kagan](https://www.youtube.com/@noahkagan)) and search ([Luke Davis](https://www.youtube.com/@lukedavisvlogs)).
+- **Confidence:** Medium. Read 6 video descriptions and opened offer pages. Most peer prices are hidden; both audience searches were mostly off-audience.
 
 ## Methods, Best First
 | Method | This channel | Who does it | Opportunity |
 |---|---|---|---|
-| Events | Weak: the [lifetime tier](https://tkowners.com/pricing) only lists "Exclusive live events" | [Growth Accelerator Workshop](https://contrarianthinking.co/our-courses/), Austin, Dec 11-12 2026, on [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT); [private investor summit](https://youtu.be/2ughdRSNGOo) on [Luke Davis](https://www.youtube.com/@lukedavisvlogs) | A paid on-site workshop at his own parks |
-| Courses | [Doing](https://buy.stripe.com/aFadRae8f9W07ke86r3843I): $19 plans per episode, plus [Playmakers AI](https://playmakersai.com/) (page shows only its title, "Become a High-Paid AI Consultant", and no price) | [Contrarian Academy](https://contrarianthinking.co/our-courses/), "a data backed acquisition system to buy your first or your next business", on Codie Sanchez | A full acquisition program for his RV-park pillar |
-| Communities | [Doing](https://tkowners.com/pricing), up to $1,999 lifetime | [Hampton](https://joinhampton.com/mfm), application only ("Average member does $25m/year"), on [My First Million](https://youtu.be/Sd_Vn1j8qrI); [Bull Market Blueprint](https://bullmarketblueprint.com) tiers set by capital ($100K+, $500K+, $1M+) on Luke Davis | An application tier for members who already run a business |
-| Software | [Doing](https://lazybooks.com/) (accounting) | [IdeaBrowser](https://www.ideabrowser.com) on [Greg Isenberg](https://youtu.be/67BmkptgTms) (page returned 429, not opened); Starter Story's "case study database" [at 1:22](https://youtu.be/pwvnH9S4j60?t=82) | Turn the plan library into a subscription |
-| Services | Missing | [Late Checkout Agency](https://latecheckout.agency/) on Greg Isenberg; "Concierge" on the [Contrarian page](https://contrarianthinking.co/our-courses/) | A done-with-you launch for premium members |
-| Sponsors | Doing ([beehiiv](https://youtu.be/4dlE1X84usg), [Bizee](https://youtu.be/lN9HGQhiGgM), [AppLovin](https://youtu.be/63wuYegsz9o), [Laundry Spot](https://youtu.be/-S2DPfEDRU4)); the brands to the right are peers' sponsors, none of them current | HubSpot: [read at 3:07](https://youtu.be/pwvnH9S4j60?t=187) on Starter Story and [Smart CRM](https://clickhubspot.com/e2263e) on [Codie](https://youtu.be/v2jRsAFnqXY); [Mercury](http://mercury.com/) and [Somewhere](https://www.somewhere.com/mfm) ($500 off) on [My First Million](https://youtu.be/Sd_Vn1j8qrI) | Pitch HubSpot first: it appears on three peers |
-| Affiliates | [Doing](https://www.gohighlevel.com/chris-koerner?fp_ref=tkopod) (GoHighLevel) | No peer link in the sample was labelled as an affiliate | The channel already links guest programs such as the [Credit Counsel Elite bootcamp](https://creditcounselelite.com/cjk-gain-access); confirm each one pays a revenue share |
-| Ads, RPM levers | No RPM band returned for this channel | [The Builders](https://www.youtube.com/@TheBuilders_Kscope) RPM band 17.5-25.5 (estimate), upper-middle-income audience | [Credit-card episode](https://youtu.be/lN9HGQhiGgM): 282,000 views, 2.02×, 2026-09-28. Test whether more finance episodes raise RPM in Studio |
-| Newsletters | [Doing](https://tkopod.com) | [Shaan's weekly email](https://www.shaanpuri.com) on My First Million | Low: already running |
-| Merch | Missing | No peer in the sample sells merch | Low: no proof |
+| Investing course or community | Missing: [chrisjkoerner.com](https://www.chrisjkoerner.com/) lists no investing offer, and [mhpguy.com](https://mhpguy.com) shows none | [Contrarian Academy](https://contrarianthinking.co/our-courses/), "for business Buyers", on [@CodieSanchezCT](https://www.youtube.com/@CodieSanchezCT) | He owns 8 RV parks and teaches the topic, but nothing is for sale |
+| High-ticket application tier | Weak: [TKOwners](https://tkowners.com/pricing) tops out at $1,999 lifetime ($99/month) | [Hampton](http://joinhampton.com/mfm), "Average member does $25m/year", on [@MyFirstMillionPod](https://www.youtube.com/@MyFirstMillionPod) | Add a vetted operator tier above lifetime |
+| Sponsors | Doing: [beehiiv](https://www.youtube.com/watch?v=-S2DPfEDRU4), [Bizee](https://www.youtube.com/watch?v=lN9HGQhiGgM), [Symphony](https://www.youtube.com/watch?v=y33ecMVHxNU) | [HubSpot](https://clickhubspot.com/b4qr) on [@starterstory](https://www.youtube.com/@starterstory); [Mercury](http://mercury.com/) and [Somewhere](https://www.somewhere.com/mfm) on [@MyFirstMillionPod](https://www.youtube.com/@MyFirstMillionPod) | Pitch these three: the same audience, and none of them on his channel |
+| Ticketed events | Weak: [members-only Shark Tank night](https://www.youtube.com/watch?v=a8qQzY3a1us) | [Growth Accelerator Workshop](https://contrarianthinking.co/our-courses/), Austin, Dec 2026 to Feb 2027, on [@CodieSanchezCT](https://www.youtube.com/@CodieSanchezCT); [investor summit](https://www.youtube.com/watch?v=2ughdRSNGOo) on [@lukedavisvlogs](https://www.youtube.com/@lukedavisvlogs) | Sell public tickets to the pitch night |
+| Book | Missing | [Million Dollar Weekend](https://milliondollarweekend.com) on [@noahkagan](https://www.youtube.com/@noahkagan) | Lessons from "the 75+ businesses I've started" |
+| Sponsor-funded data products | Weak: he sells [$19 plans](https://buy.stripe.com/aFadRae8f9W07ke86r3843I) himself | ["Free database: simple apps making millions"](https://www.youtube.com/watch?v=NuYO7DWzlaM) on [@starterstory](https://www.youtube.com/@starterstory) | A sponsor pays for the download, not the viewer |
+| Software | [Doing: Lazybooks](https://lazybooks.com/) | [AppSumo](https://social.appsumo.com/browse-appsumo) on [@noahkagan](https://www.youtube.com/@noahkagan) | Low: already in place |
+| Courses | [Doing: Playmakers AI](https://playmakersai.com) | [Acquisition Foundations](https://contrarianthinking.co/our-courses/) on [@CodieSanchezCT](https://www.youtube.com/@CodieSanchezCT) | Low: already in place |
+| Affiliate | [Doing: HighLevel](https://www.youtube.com/watch?v=DimX9OZyhPw) | [Somewhere, $500 off](https://www.somewhere.com/mfm) on [@MyFirstMillionPod](https://www.youtube.com/@MyFirstMillionPod) | Low: already in place |
+| Newsletter | [Doing: tkopod.com](https://tkopod.com) | [noahkagan.com](https://noahkagan.com/) on [@noahkagan](https://www.youtube.com/@noahkagan) | Low: already in place |
+| Ads, RPM lever | The [credit-card episode](https://www.youtube.com/watch?v=lN9HGQhiGgM): 282K views, 2.02x | [@lukedavisvlogs](https://www.youtube.com/@lukedavisvlogs), investing and wealth, estimated RPM band $12–16 | Make more money-management episodes (estimate, unverified for this channel) |
 
 ## Open Products to Test
-1. **RV and mobile-home park investing program with an on-site weekend**
-   - Evidence: the [channel description](https://www.youtube.com/@thekoerneroffice) names this as pillar 4, but none of the 8 descriptions read sells it. Codie sells [Contrarian Academy and Austin workshops](https://contrarianthinking.co/our-courses/), and Luke Davis runs a [summit](https://youtu.be/2ughdRSNGOo) for [BMB](https://bullmarketblueprint.com) members.
-   - First test: add a waitlist link to the next four descriptions and count signups.
-2. **Business-plan library subscription**
-   - Evidence: single $19 plans ([laundromat](https://buy.stripe.com/aFadRae8f9W07ke86r3843I), [pallets](https://buy.stripe.com/8x25kE4xFecgeMG2M73843t), [front-porch bakery](https://buy.stripe.com/8x23cw2px5FKfQKcmH3843U)). A viewer wrote "I need to rewatch this video as a class with my notepad" (56 likes) under the [credit-card episode](https://youtu.be/lN9HGQhiGgM). Starter Story builds its [3:07 read](https://youtu.be/pwvnH9S4j60?t=187) around an idea database.
-   - First test: offer every plan as one annual bundle to the 762 free [Skool](https://www.skool.com/tkowners/about) members.
-3. **Application-only operator tier above the $1,999 lifetime plan**
-   - Evidence: [Hampton](https://joinhampton.com/mfm) on My First Million, and [BMB's](https://bullmarketblueprint.com) Platinum and Inner Circle tiers, where prices are given only on a consultation call.
-   - First test: open 20 seats by application. Neither peer publishes a price, so set one and see if the seats fill.
+1. **RV and mobile home park investing course with a deal-review community**
+   - Evidence: the [channel description](https://www.youtube.com/@thekoerneroffice) promises this; [chrisjkoerner.com](https://www.chrisjkoerner.com/) lists no investing offer.
+   - First test: a $19 "RV park business plan" through Stripe, like his [laundromat plan](https://buy.stripe.com/aFadRae8f9W07ke86r3843I).
+2. **Application-only operator tier above TKOwners Lifetime**
+   - Evidence: [Hampton](http://joinhampton.com/mfm) screens applicants; [TKOwners](https://tkowners.com/pricing) stops at $1,999 lifetime.
+   - First test: an application form for TKOwners members with revenue, with the price set after interviews.
+3. **Sponsor-funded "overlooked businesses" database**
+   - Evidence: My First Million runs an ["Unsexy business ideas database"](https://www.youtube.com/watch?v=Sd_Vn1j8qrI) through [HubSpot](https://clickhubspot.com/4qub).
+   - First test: pitch HubSpot a database built from his "Most Overlooked" episodes, such as [$1M Business Every Town Needs](https://www.youtube.com/watch?v=-S2DPfEDRU4) (1M views, 7.17x).

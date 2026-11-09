@@ -1,28 +1,35 @@
 # Niche Ideas: business advice, entrepreneurship, sales and money
 
-Run: 2026-11-09 · Credits used: 14 · Live TubeLab MCP · `skills/niche-finder/SKILL.md`.
+Run: 2026-11-09 · Credits used: 15 · Live TubeLab MCP · `skills/niche-finder/SKILL.md`.
 
-- **Best idea:** Shadow the Top Seller. [The Science of Scaling](https://www.youtube.com/@ScienceofScaling)'s "24 Hours with" episodes pull 122,000 to 412,000 views while most of its sales-tip videos stay under 3,000 (channel median 2,400).
-- **Sample:** 32 channels, 100 outliers, 12 title formulas (English, last 3 to 12 months, quality neutral or above)
-- **Confidence:** Medium. Each parent format is proven; each opening rests on one 40-hit search.
+- **Best idea:** Why Most [Boring Business] Owners Go Broke, idea 1
+- **Sample:** 103 outliers, 20 new channels
+- **Confidence:** Medium; every parent is a recent outlier, but each open check is a single search.
 
-1. **Shadow the Top Seller** · aspiring salespeople and small owners, on-camera field documentary
-   - Bent from: sales advice; swap talking-head tips for one full day beside the top earner in a physical trade
-   - ![](https://i.ytimg.com/vi/yybIRmF83ek/hqdefault.jpg)
-   - [The Science of Scaling](https://www.youtube.com/@ScienceofScaling) · [24 Hours with New York City's #1 Real Estate Broker](https://www.youtube.com/watch?v=yybIRmF83ek) · 391,751 views, 10.8x, 2026-07-23
-   - Open check: 40 hits in 12 months; sales-shadow episodes come from only 3 channels, and the leader uses it in 4 of its last 30 uploads
-   - First video: 24 Hours With the Top Seller at a Livestock Auction
+1. **Why Most [Boring Business] Owners Go Broke** · would-be owners, faceless cost-breakdown explainer
+   - Bent from: Cost Matrix's trucking-only teardowns, moved to laundromats, car washes, vending and franchises.
+   - ![](https://i.ytimg.com/vi/qSfsALLciPM/maxresdefault.jpg)
+   - [Cost Matrix (@CostMatrix)](https://www.youtube.com/@CostMatrix) · [Why Most Hotshot Truckers Go Broke](https://www.youtube.com/watch?v=qSfsALLciPM) · 111,621 views, 6.9x, 2026-10-17
+   - Open check: 13 "go broke" outliers in six months; only trucking and [insurance agents](https://www.youtube.com/watch?v=Xd3ZRgl-Hxk) cover owner economics.
+   - First video: Why Most Laundromat Owners Go Broke
 
-2. **Offline Sales Speedruns** · would-be closers, on-camera live challenge
-   - Bent from: "(I Show Everything)" speedruns; move them off Shopify and onto phones, doors and booths, one sales channel per episode, race to $1,000
-   - ![](https://i.ytimg.com/vi/tdYvRKVr0pk/hqdefault.jpg)
-   - [Glencoco](https://www.youtube.com/channel/UCgAe66iu3nOIOHzm1-1mF6Q) · [speedrunning cold calls till I make $1000 (i show everything)](https://www.youtube.com/watch?v=tdYvRKVr0pk) · 329,971 views, ratio not returned (the formula averages 7.1x across 19 videos), 2025-11-07
-   - Open check: 40 hits in 12 months are dropshipping, digital products and reselling; zero cold-call or door-to-door runs, and the two originals come from a dialer company and a coaching funnel
-   - First video: Speedrunning $1,000 Selling Pressure Washing by Phone Only (I Show Everything)
+2. **The Seller's Side of the Counter** · sales-curious workers, faceless POV story; write and voice it yourself, mass-produced AI POV gets demonetized
+   - Bent from: buyer-side POV dealership stories, flipped to the salesperson's view of the same deal.
+   - ![](https://i.ytimg.com/vi/by_Ah5cDyP8/maxresdefault.jpg)
+   - [Lucas Grant (@LucasGrant-usa)](https://www.youtube.com/@LucasGrant-usa) · [POV: What Happens When You Start Paying Cash for Cars](https://www.youtube.com/watch?v=by_Ah5cDyP8) · 304,619 views, 21.2x, 2026-08-31
+   - Open check: 1 of 20 POV sales outliers is seller-side ([Alex.MD0](https://www.youtube.com/@Alex.MDMoney_Deadline), 5.4x); POV money itself is crowded.
+   - First video: POV: You're the Car Salesman When a Cash Buyer Walks In
 
-3. **Real Listing POV** · aspiring buyers of boring businesses, faceless illustrated explainer, hand-scripted (AI-voiced POV clones risk demonetization)
-   - Bent from: POV business-empire explainers; replace the $0-to-$500M fantasy with one real for-sale listing walked through as the buyer: price, loan, owner cash flow, first-year fixes
-   - ![](https://i.ytimg.com/vi/g4ImbLZAIo8/hqdefault.jpg)
-   - [Biz Life POV](https://www.youtube.com/@DAGOLDENTOOTH) · [Pov: Building a Holding Company — $0 to $500M, Level by Level](https://www.youtube.com/watch?v=g4ImbLZAIo8) · 283,804 views, 9.7x, 2026-06-30
-   - Open check: 40 hits; 6 POV channels run the empire arc, 4 with near-identical holding-company titles; 1 grounded POV, from a 630-subscriber channel ([Plain Finance](https://www.youtube.com/@Plain_Finance), 6.9x)
-   - First video: POV: You Buy This $380K Laundromat Listing With an SBA Loan
+3. **Selling to the Rich** · aspiring high-ticket closers, on-camera interviews with luxury salespeople
+   - Bent from: founder-interview shows like [The Venture Podcast](https://www.youtube.com/@theventurepod), guest swapped for whoever sells the jet, yacht or mansion.
+   - ![](https://i.ytimg.com/vi/S127bo87EBo/maxresdefault.jpg)
+   - [True Wealth Show (@truewealthshow)](https://www.youtube.com/@truewealthshow) · [I sell private jets to billionaires: your guide to buying with Steve Varsano](https://www.youtube.com/watch?v=S127bo87EBo) · 170,214 views, 14.2x, 2026-08-11
+   - Open check: 1 of 20 luxury outliers is a salesperson interview; the rest are lifestyle tours and rankings.
+   - First video: I Asked a Superyacht Broker How He Closes Billionaires
+
+4. **24 Hours Inside a Boring Business** · young would-be owners, on-camera immersion vlog
+   - Bent from: "24 hours inside" market and [big-tech](https://www.youtube.com/watch?v=0Rqoe5quCJQ) docs, moved to one-owner car washes and scrapyards.
+   - ![](https://i.ytimg.com/vi/w5Ro_sh5FRs/maxresdefault.jpg)
+   - [The Science of Scaling (@ScienceofScaling)](https://www.youtube.com/@ScienceofScaling) · [I Spent 24 Hours Inside the Fish Market Selling $25M a Day](https://www.youtube.com/watch?v=w5Ro_sh5FRs) · 344,078 views, 9.5x, 2026-08-27
+   - Open check: not run; the check budget covered the top 3 only.
+   - First video: I Spent 24 Hours Running a Small-Town Car Wash With Its Owner
