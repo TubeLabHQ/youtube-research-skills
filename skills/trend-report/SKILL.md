@@ -1,10 +1,10 @@
 ---
 name: trend-report
-description: Use when the user wants to know what is working right now in a YouTube niche or for a channel, which hooks to copy, or a recurring trend report. Requires the TubeLab MCP.
+description: Use when the user wants to know what works now in a YouTube niche, why a video blew up, which hooks to copy, or a trend report. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,46 +12,40 @@ metadata:
 
 ## Overview
 
-Write a dated digest of what is winning in a niche right now, with spoken hooks and ideas to act on. Not for ideas alone (`video-ideation`).
+A dated report on what is winning in a niche now. Pick winners by ratio: beating its own channel's average says more than a big view count. A pattern needs three winners from different channels. To explain one video that blew up, compare it with its channel's normal videos.
 
 ## Workflow
 
-1. Clarify scope only if needed. Default to the last month.
-2. If given a channel, learn its niche and voice.
-3. Find the current winners, at most 2 per channel.
-4. Quote each winner's opening hook from its transcript.
-5. Write the shared patterns, five ideas and three learnings.
+1. Clarify scope only if needed. Default to the last month. Given a channel, its own videos are the baseline for the top finding, not winners.
+2. Search for outliers, at most 2 winners per channel. Reads are free; two or three searches is enough.
+3. Take each top winner's hook from its transcript. No transcript, no hook.
 
 ## Output Format
 
 ```markdown
-# Trend Report for {@channel or niche} on {date}
+# Trend Report: {niche or @channel} · {date}
 
-Sample: {n} winners · Window: {used}
+**{Top finding in numbers, two sentences at most.}**
+Sample: {n} winners · Window: {used} · Confidence: {level, short reason}
 
-## Trending Videos
-| Video | Channel (handle) | Views | Ratio | Date | Hook (verbatim) | Why it worked |
-|---|---|---:|---:|---|---|---|
+## Winners
+### [{Title verbatim}]({url})
+{Channel (handle)} · {views} · {ratio} · {date}
+Hook: "{first one or two sentences, verbatim}"
+Why: {one line}
 
-## Winning Patterns
-- ...
+## Patterns
+- {Pattern} · {winners that show it}
 
-## Video Ideas
-- **{Title}** · Why: ...
-
-## Learnings
-1. ...
+## Ideas
+1. **{Title}** · {pattern, why it fits}
 ```
 
-Keep it under 450 words, with at most 5 rows per table.
+About 600 words: five winners, three patterns, five ideas, one line per field. Cut ideas before proof; add no sections.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not rank by raw views, or count the channel's own sister channels as winners.
-- Do not read a 1.5x on a 2M-subscriber channel, or six winners from one channel, as a trend.
-- Do not count huge views with almost no likes. It is usually paid.
-- Do not paraphrase a hook, or write one for a video with no transcript.
-- Do not pass a language to the trending formats search. The server rejects it.
-- Do not copy a winner's title into an idea.
-- Do not run more than five searches, or invent a channel, a view count or a quote.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or results fill with slop.
+- Do not promise a small channel's multiple. It proves a format, not a result.
+- Do not count another audience or language, sister channels, or paid placements (huge views, almost no likes) as winners.
+- Do not copy a winner's title. Keep the mechanism, change the topic.

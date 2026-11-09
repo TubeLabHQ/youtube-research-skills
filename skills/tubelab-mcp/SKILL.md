@@ -1,6 +1,6 @@
 ---
 name: tubelab-mcp
-description: Use when a TubeLab tool call fails or returns nothing, when unsure which search tool or filter to use, or when the user asks how the TubeLab MCP tools, credits or REST API work. The data layer every workflow skill assumes: tool map with costs, identifier rules, craft rules, signal fields, quirks and the REST fallback.
+description: Use when a TubeLab tool call fails or returns nothing, when unsure which search tool or filter to use, or when the user asks how the TubeLab MCP tools, credits or REST API work. The data layer every workflow skill assumes, with tool costs, filter rules, quirks and the REST fallback.
 license: MIT
 metadata:
   author: tubelab
@@ -26,7 +26,7 @@ TubeLab is a read-only index of public YouTube data, enriched for research: a gr
 | `search_related_channels` | 5 credits | Channels similar to one or more channel IDs. Competitor sets. |
 | `search_outliers` | 2 credits | Videos that outperformed their own channel. What is working now. |
 | `search_related_outliers` | 2 credits | Outliers similar to a title, a video, a thumbnail (`thumbnailVideoId`, image similarity) or a channel's videos (`relatedChannelId`). |
-| `search_trending_formats` | 1 credit | Title formulas with momentum stats and example videos. |
+| `search_trending_formats` | 1 credit | Title formulas with usage stats and example videos. |
 | `get_channel`, `get_channel_videos` | free | Same payload: channel stats plus up to 120 long-form videos with outlier flags. One call is enough. |
 | `get_channel_shorts` | free | Shorts sample with outlier flags. |
 | `get_video` | free | Title, description, tags, publish date, views, likes, comment count. |
@@ -81,12 +81,13 @@ Full field lists in [references/response-shapes.md](references/response-shapes.m
 - `get_video_comments` returns "Failed Dependency" or "No comments found" when comments are disabled: treat as no data, not as a failure. Its `comments[]` can contain duplicate entries; dedupe on author plus text, and treat `publishedAt` as coarse (month granularity or relative strings).
 - Empty `hits` with `pagination.total: 0`: widen recency, drop one filter or rephrase `query`. Keep the quality floor.
 - HTTP 429 means the rate limit (about 30 calls per window, shared across sessions). Wait for the reset and retry; pace reads rather than firing them all at once.
+- Channel reads and transcripts run 75K characters and up. Some clients save oversized responses to a file named by timestamp, and parallel reads have overwritten each other's file: fetch large reads one at a time and parse the saved file.
 - `pagination.total` has come back as exactly twice `size`, so do not use it to measure how crowded a niche is.
-- `get_channel` has no audience or monetization fields; those appear only on search hits.
+- `get_channel` has no audience, monetization, revenue or RPM fields; those appear only on search hits, and a channel may not appear in a search for itself.
 
 ## Spending credits
 
-Spend paid searches on finding candidates and free reads on understanding them. Two searches per job is the default, three the ceiling; never paginate a paid search in a loop. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Tell the user the credits used at the end, not a budget at the start.
+Spend paid searches on finding candidates and free reads on understanding them. About three searches per job is a sane norm (`niche-finder` needs more); never paginate a paid search in a loop. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Tell the user the credits used at the end, not a budget at the start.
 
 ## REST fallback (no MCP)
 

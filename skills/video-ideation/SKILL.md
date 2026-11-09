@@ -4,7 +4,7 @@ description: Use when the user wants video ideas for a YouTube channel, what to 
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,39 +12,35 @@ metadata:
 
 ## Overview
 
-Generate video ideas for one channel, each backed by an outlier that proves demand and a channel video that proves fit. Not for finding a niche (`niche-finder`) or a channel analysis (`channel-analysis`).
+Six ideas for one channel, each with two proofs: an outlier that shows demand now, and one of the channel's own videos that shows fit. Demand without fit belongs on someone else's channel. Adapt the winner, never copy it.
 
 ## Workflow
 
 1. Clarify scope only if needed. Assume the goal is reach, or conversion if the channel sells something.
-2. Learn the channel's normal views, best videos and what flopped.
-3. Find current outliers in its niche, at most 2 per channel.
-4. Adapt the best into 6 ideas for this channel.
-5. Rank by demand and fit.
+2. Read the channel: median, best videos by ratio, flops.
+3. Search for outliers in its niche and one adjacent niche, at most 2 winners per channel. Reads are free; about three searches is enough.
+4. Change one thing in each winner (topic, audience, angle or format) and pair it with its fit proof. Rank by the weaker proof. For a new channel, say there is no fit proof and rank on demand.
 
 ## Output Format
 
 ```markdown
 # Video Ideas: {channel} (@handle)
 
-Goal: {reach | conversion} · Confidence: {level, why}
+**{Best idea and why, in one line.}**
+Goal: {reach or conversion} · Confidence: {level, short reason}
 
-## Ideas
-| Title | Source outlier (handle · title · views · ratio · date) | Fit (channel video that proves it) |
-|---|---|---|
-
-## Caveats
-- ...
+1. **{Title}**
+   Demand: {proof}
+   Fit: {own title · views · ratio · date}
+   Angle: {what changed, why it suits}
 ```
 
-Keep it under 350 words, with at most 6 rows per table and 3 caveats.
+About 500 words: six ideas, strongest first, one proof each: channel (handle) · title verbatim · views · ratio · date. Add no sections.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not use channels with a different audience as proof, such as an Indian channel for a channel targeting the US.
-- Do not rank by raw views, or use the channel's own sister channels as proof.
-- Do not count huge views with almost no likes, or trust ratios from tiny channels.
-- Do not mix Shorts with long-form. They rarely transfer.
-- Do not copy a title. Rewrite it under 60 characters for this channel.
-- Do not run more than three searches, or invent a channel or a video.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or results fill with slop.
+- Do not take demand from another audience or language, sister channels, or paid placements (huge views, almost no likes).
+- Do not trust ratios from channels with a few hundred subscribers.
+- Do not mix Shorts and long-form, or pitch a video the channel already made.
+- Do not write titles over 60 characters.

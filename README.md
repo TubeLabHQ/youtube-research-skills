@@ -4,7 +4,7 @@ Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](htt
 
 These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, and watch a niche over time.
 
-This is not endpoint routing. Each skill is a short research workflow: what to find, what to avoid, which filters matter, and the artifact to produce. Every number comes from a tool response, every claim carries a channel, a title, a view count, an outlier ratio and a date.
+This is not endpoint routing. Each skill is a short research workflow: the judgment an expert strategist brings, the traps to avoid, and the report to produce. Every number comes from a tool response, every finding carries a channel, a title, a view count, an outlier ratio and a date.
 
 ## Install
 
@@ -47,18 +47,18 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 
 | Skill | Use it when you want to... | Output |
 |---|---|---|
-| [`niche-finder`](skills/niche-finder/) | Find niches that are working now and bend them into new, unsaturated ideas | Working niches with proof, new ideas with open-ness checks |
-| [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, from a keyword or a channel | Verdict, formats that work, gaps, entry plan |
-| [`trend-report`](skills/trend-report/) | Get a dated digest of what is trending in a niche or for a channel | Trending videos with verbatim hooks, patterns, five ideas, learnings |
-| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Six ideas ranked by demand and fit, each with its proof |
-| [`title-formulas`](skills/title-formulas/) | Use title formulas with momentum, filled for your topic | Formula table with verdicts and filled titles |
-| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts for one video, or study what thumbnails work in a niche | Examples that work, three concepts, images or image prompts |
-| [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | Positioning, what works, what holds it back, tests for the next uploads |
-| [`competitor-research`](skills/competitor-research/) | Compare a channel against its real neighbours | Comparison table, gaps to win, copy and avoid, positioning |
-| [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | What the audience asks and wants, their words, three ideas |
-| [`transcript-intelligence`](skills/transcript-intelligence/) | Break down a video's structure, hook and beats from its transcript | Hook verbatim, beat sheet, structure template, script skeleton |
+| [`niche-finder`](skills/niche-finder/) | Find niches that are working now and bend them into new, unsaturated ideas | Three to five new niche ideas, each with proof, an openness check and a first video |
+| [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, from a keyword or a channel | Verdict, channels breaking in, formats that work, entry plan |
+| [`trend-report`](skills/trend-report/) | See what is working in a niche or for a channel, and why | Up to five winning videos with verbatim hooks and why they worked, patterns, ideas |
+| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Six ideas, each with demand proof and fit proof |
+| [`title-formulas`](skills/title-formulas/) | Get titles you can publish, built on formulas proven in your niche | About eight titles, each with its formula and proof |
+| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts for one video, or study what thumbnails work in a niche | Three concepts, each built from a viewed thumbnail, images or prompts |
+| [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | One-line diagnosis, what works, what holds it back, next 3 tests |
+| [`competitor-research`](skills/competitor-research/) | Compare a channel against its real neighbours | How the set was built, comparison table, gaps, positioning |
+| [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | What the audience asks and wants in their words, video ideas |
+| [`transcript-intelligence`](skills/transcript-intelligence/) | Break down a video's structure, hook and beats from its transcript | Hook verbatim, beat sheet, structure template, optional skeleton |
 | [`monetization-research`](skills/monetization-research/) | Audit how channels like yours, and channels with your audience, make money | How it earns today, ranked opportunities, sponsors to pitch, RPM levers |
-| [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, state file |
+| [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, config and state files |
 | [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, filters, response fields, quirks, REST fallback | Craft rules and recipes the other skills rely on; no artifact |
 
 Every skill is one `SKILL.md`. Real outputs for every skill are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/).
@@ -66,11 +66,11 @@ Every skill is one `SKILL.md`. Real outputs for every skill are in [`examples/`]
 ## Example Prompts
 
 ```text
-Find me 3 unsaturated faceless niches in English with real AdSense money, then twist the best one into 5 novel channel ideas.
+Find me 3 unsaturated faceless niches in English with real AdSense money, then twist the best one into new channel ideas.
 ```
 
 ```text
-Trend report for @mychannel this month. Hooks word for word, and 10 ideas I can make.
+Trend report for @mychannel this month. Hooks word for word, and ideas I can make.
 ```
 
 ```text
@@ -110,7 +110,7 @@ The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, respon
 2. **Outlier over raw views.** A 50K video on a 5K-average channel says more than 2M on a giant. Rank by ratio, show both.
 3. **Recency first.** Every search sets a window. Widen one step at a time, and say so.
 4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result.
-5. **Cited outputs.** Channel · title verbatim · views · ratio · date on every claim. No invented channels, ever.
+5. **Cited outputs.** Every finding carries channel · title verbatim · views · ratio · date. No invented channels, ever.
 6. **Estimates are estimates.** Revenue, RPM and audience are model outputs, shown as labelled bands.
 7. **Credit-aware.** Searches cost credits, reads are free: go deep with free reads, never loop a paid search.
 8. **Public data only.** Everything comes from public YouTube pages via TubeLab.

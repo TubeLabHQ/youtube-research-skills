@@ -1,10 +1,10 @@
 ---
 name: monetization-research
-description: Use when the user wants to understand how a YouTube channel or niche makes money, how to raise RPM, what to sell, or who could sponsor it. Requires the TubeLab MCP.
+description: Use when the user wants to know how a YouTube channel or niche makes money, how to raise RPM, what to sell, or who could sponsor it. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,50 +12,39 @@ metadata:
 
 ## Overview
 
-Show how a channel could earn more by studying its competitors and other channels with the same audience.
+How a channel could earn more, from what its peers already do. The evidence is in descriptions and sponsor reads, free to read; the index only flags that money exists. Channels in other niches with the same audience show what it already buys. Revenue, RPM and audience are estimates: show bands.
 
 ## Workflow
 
-1. Clarify scope only if needed. With no channel, audit the niche for a new entrant.
-2. Record how the channel earns today from its descriptions.
-3. Find channels of similar size, in and outside its niche, with the same audience.
-4. Read the best 8 for exact sponsors, products, courses and services.
-5. Rank the opportunities by evidence and fit.
+1. Clarify scope only if needed. With no channel, audit the niche.
+2. Read the channel's descriptions: how it earns and who already pays it.
+3. Name similar-size, same-audience peers, in and outside the niche. Search once if you cannot name five.
+4. Read 6 to 8 for links, codes and sponsor reads; rank by frequency and fit.
 
 ## Output Format
 
 ```markdown
 # Monetization Research: {channel or niche}
 
-Audience: {estimate} · Confidence: {level, why}
-
-## Today
-{How it earns now, in two sentences.}
+**{Biggest opportunity, one line.}**
+Today: {how it earns, who pays} · Confidence: {level, short reason}
+Audience: {estimated band, only if a search gave one}
 
 ## Opportunities
-| Method | Proof (handle · what was seen) | Fit | First step |
-|---|---|---|---|
+1. **{Method}** · {proof} · First step: {action}
 
 ## Sponsors to Pitch
-| Brand | Seen on (handle · title · date) | Why it fits |
-|---|---|---|
+- {Brand} · {proof} · {fit}
 
 ## RPM Levers
-- ...
-
-## Caveats
-- ...
+- {Lever} · {evidence}
 ```
 
-Keep it under 350 words, with at most 5 rows per table and 3 caveats.
+About 400 words: three opportunities, five sponsors, proof as channel (handle) · title · date · what was seen. Cut items before proof; add no sections.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not quote revenue, RPM or audience as a single figure. Use bands labelled as estimates.
-- Do not say a method is absent because the index has no detection. Read the descriptions.
-- Do not look for brands in detection fields. They appear only in descriptions and transcripts.
-- Do not call every read a sponsor, or pitch a current partner as new. Some are affiliate deals or the creator's own products.
-- Do not copy a method without the authority behind it. A 2K channel cannot run a 500K channel's course funnel.
-- Do not stop at thin results. Say the peer set is weak and what you read instead.
-- Do not run more than four searches, or invent a brand or a price.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or slop fills the results.
+- Do not call every mention a sponsor (some are affiliates or own products), or pitch a current partner.
+- Do not copy a 500K channel's course funnel onto a 2K channel. It lacks the trust.
+- Do not hide how the peer set was built, or that it is weak.

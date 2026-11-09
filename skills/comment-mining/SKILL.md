@@ -1,10 +1,10 @@
 ---
 name: comment-mining
-description: Use when the user wants to know what a YouTube audience asks, complains about or requests in the comments, or wants their exact language for scripts and ads. Requires the TubeLab MCP.
+description: Use when the user wants to know what a YouTube audience asks, wants or complains about in the comments, in their own words. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,46 +12,42 @@ metadata:
 
 ## Overview
 
-Turn the top comments under a set of videos into what the audience asks, objects to and wants next, in their own words. Not for a video's structure (`transcript-intelligence`).
+What the audience asks, objects to and wants next, in their own words. Likes are votes: a question with 900 likes is 900 people asking. Quotes stay verbatim; interpretation goes on its own line.
 
 ## Workflow
 
-1. Clarify scope only if needed. Default to 5 videos.
-2. Read the top comments on the videos given, a channel's recent best, or a topic's top outliers.
-3. Remove spam, duplicates and the creator's replies.
-4. Group what is left by likes into questions, objections and requests.
-5. Turn the biggest ones into three video ideas.
+1. Clarify scope only if needed. Default to 5 videos: those given, else the channel's latest (its best if asked), else a topic's top outliers. Comments are free; finding videos costs one search.
+2. Remove spam, repeated rows (the data has them) and the creator's replies.
+3. Group the rest into questions, objections and requests, weighted by likes.
 
 ## Output Format
 
 ```markdown
 # Voice of Audience: {channel, topic or videos}
 
-Videos: {n} · Unique comments: {n} · Confidence: {level, why}
+**{Biggest ask, with likes and video count.}**
+Videos: {n} · Comments kept: {n} · Confidence: {level, short reason}
 
-## What They Ask and Want
 | Comment (verbatim) | Type | Likes | Video |
 |---|---|---:|---|
 
+## Themes
+- {Theme} · under {n} videos · {meaning}
+
 ## Their Words
-- {Phrase the audience uses} · seen {n} times
+- "{phrase}" · {n} times
 
 ## Video Ideas
-| Title | Answers | Likes behind it |
-|---|---|---:|
-
-## Caveats
-- ...
+1. **{Title}** · answers {comment} · {likes}
 ```
 
-Keep it under 300 words, with at most 8 rows per table and 3 caveats.
+About 400 words: eight comments, three themes, three ideas, one line each. Cut items before quotes; add no sections.
 
 ## Common Pitfalls
 
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above.
 - Do not present a paraphrase as a quote.
-- Do not call something a theme unless it appears under 3 or more videos.
-- Do not rank spam. Book promos and bot replies often collect high likes.
-- Do not read a quiet comment section as a happy one. Top comments skew positive.
+- Do not call it a theme unless it appears under 3 or more videos. Under one, it is a local reaction.
+- Do not rank spam. Book promos and bots collect likes.
+- Do not read a quiet section as a happy one. Top comments skew positive.
 - Do not treat disabled comments as a finding. Say "no data".
-- Do not run more than one paid search. If you need one, set `publishedAtFrom` and `classificationQuality` at `"neutral"` or above.
-- Do not invent a comment, an author or a like count.

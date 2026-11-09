@@ -1,10 +1,10 @@
 ---
 name: thumbnail-concepts
-description: Use when the user wants thumbnail concepts or images for a YouTube video, to see what thumbnails work in a niche, or to compare their thumbnails. Requires the TubeLab MCP.
+description: Use when the user wants thumbnail concepts or images for a YouTube video, or to see which thumbnails work in a niche. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,43 +12,36 @@ metadata:
 
 ## Overview
 
-Research what already works, then produce three thumbnail concepts for a video. Each shows the problem the viewer already cares about and what makes this video different. Not for titles (`title-formulas`).
+Three thumbnail concepts for one video, each built from one that already works. A thumbnail shows what the title withholds: the thing the viewer already cares about, plus what is new in this video.
 
 ## Workflow
 
-1. Clarify scope only if needed. With only a niche, study what works there.
+1. Clarify scope only if needed. With only a niche, report the 5 best examples and what they share.
 2. View the channel's recent thumbnails and decide what to keep.
-3. Find and view up to 8 strong examples for the topic and the video's angle.
-4. Write three concepts, each built from an example, and star the strongest.
-5. Generate the images if you can, or write one ready-to-paste prompt per concept.
+3. View up to 8 examples: the same idea in the niche, and compositions from other niches with the same kind of reveal.
+4. Build each concept from one viewed example. Generate the images if you can, or write a prompt per concept.
 
 ## Output Format
 
 ```markdown
 # Thumbnail Concepts: "{title}"
 
-Keep from the channel: ...
+**Lead with: {concept 1}, because {why}.**
+Keep from the channel: {style, colours, face or not}
 
-## Examples
-| Title (verbatim) | Channel (handle) | Ratio | Why it works |
-|---|---|---:|---|
-
-## Concepts
-### ★ 1. {Name}
-Based on: ... · Image: ... · Text: ...
-
-## Prompts
-- ...
+### 1. {Name}
+Based on: {channel (handle) · title verbatim · views · ratio}
+Image: {what is in frame, where the eye goes}
+Text: {3 words or fewer, or none}
+Prompt: {ready to paste}
 ```
 
-Keep it under 300 words, with at most 5 rows per table.
+About 400 words: three concepts, strongest first, one line per field. Use only examples you viewed; add no sections.
 
 ## Common Pitfalls
 
-- Do not search without `classificationQuality` at `"positive"`. Viral thumbnails on low-effort channels teach the wrong lesson.
-- Do not search without `publishedAtFrom`. Widen dates or rephrase, never lower the quality floor.
-- Do not rank by raw views, or describe a thumbnail you did not view.
-- Do not let thumbnail text repeat the title. Use 3 words or fewer.
-- Do not keep the person by default. Faceless beating the face is a finding.
-- Do not generate a real person's face unless it is the user's own channel.
-- Do not run more than six searches, or invent a channel, a title or a ratio.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"positive"`. Viral thumbnails on low-effort channels teach the wrong lesson. Widen the dates, never the floor.
+- Do not describe a thumbnail you have not viewed.
+- Do not let thumbnail text repeat the title.
+- Do not keep the face by default. If faceless wins in this niche, say so.
+- Do not generate a real person's face. Leave a slot in the prompt for a real photo of them.

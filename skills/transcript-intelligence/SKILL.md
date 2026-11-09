@@ -4,7 +4,7 @@ description: Use when the user wants to break down a YouTube video's hook, scrip
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,43 +12,40 @@ metadata:
 
 ## Overview
 
-Break down how videos are built from the words actually spoken, and turn the structure into a template. Not for what is working in a niche (`trend-report`).
+How a video is built, from the words actually spoken, as a structure the user can reuse. The hook is the exact first 30 seconds, quoted. Name each beat by what it does to keep the viewer watching (opens a question, raises the stakes, pays off), not by its topic. Transcripts are free. Not for what is working in a niche (`trend-report`).
 
 ## Workflow
 
 1. Clarify scope only if needed. Read 1 to 3 videos.
-2. Quote the first 30 seconds as the hook and name its type.
-3. Build a beat sheet of 5 to 8 beats.
-4. Write a reusable structure, and a script skeleton if the user gave a topic.
+2. Quote the first 30 seconds and say what the hook does.
+3. Build 5 to 8 timed beats, noting where each open question starts and is answered.
 
 ## Output Format
 
 ```markdown
 # Script Breakdown: {video or channel}
 
-## {Title} · @handle · {views} · {duration}
-**Hook (verbatim):** "..." · {type}
+**{Main finding in one line.}** Confidence: {level, short reason}
 
-| Time | Beat | What it does |
+## {Title} · @handle · {views} · {ratio} · {duration}
+Hook (0:00 to 0:30): "{verbatim}" · {what it does}
+
+| Time | Beat | What it does for the viewer |
 |---|---|---|
 
-## Structure Template
-[Hook] → [Block] → [Payoff] → [CTA]
+## Structure
+{Hook} → {beat} → {payoff} → {call to action}
 
 ## Script Skeleton
 {Only if a topic was given.}
-
-## Caveats
-- ...
 ```
 
-Keep it under 300 words per video, with at most 3 caveats.
+About 500 words per video, one line per beat. Quote only the hook; add no sections.
 
 ## Common Pitfalls
 
 - Do not paraphrase the hook. The exact words are the finding.
 - Do not write a summary and call it a beat sheet.
-- Do not call something a pattern from one video.
-- Do not trust numbers in captions. Check them against the description.
-- Do not paste a full transcript into the output.
-- Do not invent a timestamp or a quote. Mark unclear words [unclear].
+- Do not call a structure a pattern from one video. With several, keep only what they share.
+- Do not trust numbers in captions. Check them against the description, and mark unclear words [unclear].
+- Do not paste the full transcript.
