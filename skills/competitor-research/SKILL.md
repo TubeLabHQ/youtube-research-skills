@@ -1,10 +1,10 @@
 ---
 name: competitor-research
-description: Use when the user wants to find a YouTube channel's real competitors, compare it with them, and see the gaps and what to copy. Requires the TubeLab MCP.
+description: Use when the user wants to find a YouTube channel's real competitors, how it compares, and the gaps to win. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,50 +12,45 @@ metadata:
 
 ## Overview
 
-Find the channels closest to a YouTube channel, compare them, and show what to copy and how to stand apart. Not for one channel's analysis (`channel-analysis`) or how competitors earn (`monetization-research`).
+Find the channels competing for the same viewers. A similar channel is not always a competitor. A competitor serves the same audience with an overlapping promise. The value is the gap, what competitors win with that this channel does not cover. Not for how they earn (`monetization-research`).
 
 ## Workflow
 
-1. Clarify scope only if needed. Include any competitors the user names.
-2. Find 5 channels of similar size and audience.
-3. Compare their views, cadence and main topics with the channel's.
-4. Find what competitors win with that the channel misses.
-5. Decide what to copy and write one positioning sentence.
+1. Clarify scope only if needed.
+2. Start with channels the user names and ones you know. Verify each with free reads (topic, audience, language, size) and keep five. Fetch and view every featured thumbnail; say if one fails.
+3. Search for similar channels only if you cannot name five.
+4. Use medians over the last 90 days.
 
 ## Output Format
 
 ```markdown
-# Competitor Research: {channel} (@handle)
+# Competitor Research: [{channel}]({url})
 
-Competitors: {n} · Confidence: {level, why}
+- **Biggest gap:** {one line, in numbers}
+- **Set from:** {named, search, known}
+- **Confidence:** {level, brief why}
 
-## Comparison
-| Channel (handle) | Subs | Median views | Uploads /90d | Main topics |
-|---|---:|---:|---:|---|
+| Channel (link) | Subs | Median views | Median / subs | Uploads, 90 days | Topics |
+|---|---:|---:|---:|---:|---|
 
 ## Gaps to Win
-| Gap | Proof (handle · title · views · ratio · date) |
-|---|---|
+1. **{Gap}**
+   - ![]({thumbnail})
+   - [{channel}]({url}) · [{title}]({url}) · {views, ratio, date}
+   - Fit: {short}
 
-## Copy and Avoid
-- Copy:
-- Avoid:
-
-## Positioning
-{One sentence.}
-
-## Caveats
-- ...
+## Moves
+- **Copy:** ...
+- **Avoid:** ...
+- **Positioning:** {one sentence}
 ```
 
-Keep it under 350 words, with at most 6 rows per table and 3 caveats.
+About 400 words: your channel first, three gaps. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut items before proof. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not compare against channels with a different audience, such as an Indian channel for a channel targeting the US.
-- Do not trust similar-channel results on a large channel. They are often tiny or off-topic.
-- Do not stop at an empty search. Name likely competitors, verify them with free reads, and say so.
-- Do not rank competitors by raw views, or mix Shorts with long-form.
-- Do not run more than two paid searches.
-- Do not invent a channel or a title.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or results fill with slop.
+- Do not trust search lookalikes. They are often tiny or off-topic, worst for large channels.
+- Do not compare raw medians across sizes; use median per subscriber.
+- Do not mix in Shorts.
+- Do not build a gap on one lucky video; it should win twice.

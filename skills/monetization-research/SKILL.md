@@ -1,10 +1,10 @@
 ---
 name: monetization-research
-description: Use when the user wants to understand how a YouTube channel or niche makes money, how to raise RPM, what to sell, or who could sponsor it. Requires the TubeLab MCP.
+description: Use when the user wants monetization gaps for a YouTube channel or niche, what to sell, how to raise RPM, or who could sponsor it. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,50 +12,40 @@ metadata:
 
 ## Overview
 
-Show how a channel could earn more by studying its competitors and other channels with the same audience.
+Find the monetization gaps: what this audience already pays for elsewhere that the channel lacks, and open products nobody in the niche sells. The evidence is in descriptions, offer pages and sponsor reads, all free.
 
 ## Workflow
 
-1. Clarify scope only if needed. With no channel, audit the niche for a new entrant.
-2. Record how the channel earns today from its descriptions.
-3. Find channels of similar size, in and outside its niche, with the same audience.
-4. Read the best 8 for exact sponsors, products, courses and services.
-5. Rank the opportunities by evidence and fit.
+1. Clarify scope only if needed. With no channel, audit the niche.
+2. Read the channel's descriptions: how it earns and who pays it.
+3. Find peers: competitors you can name, plus same-audience channels from one or two audience-filter searches. Drop off-audience hits.
+4. Open their actual offers: what, for whom, price, link. A brand only heard links to its video moment.
 
 ## Output Format
 
 ```markdown
 # Monetization Research: {channel or niche}
 
-Audience: {estimate} · Confidence: {level, why}
+- **Biggest gap:** {one line}
+- **Peers:** {n}, from {named, search}
+- **Confidence:** {level, brief why}
 
-## Today
-{How it earns now, in two sentences.}
-
-## Opportunities
-| Method | Proof (handle · what was seen) | Fit | First step |
+## Methods, Best First
+| Method | This channel | Who does it | Opportunity |
 |---|---|---|---|
+| {method} | {missing, weak or [doing]({link})} | [{offer}]({link}) on [{channel}]({url}) | {short} |
 
-## Sponsors to Pitch
-| Brand | Seen on (handle · title · date) | Why it fits |
-|---|---|---|
-
-## RPM Levers
-- ...
-
-## Caveats
-- ...
+## Open Products to Test
+1. **{Specific offer}**
+   - Evidence: {linked proof}
+   - First test: {short}
 ```
 
-Keep it under 350 words, with at most 5 rows per table and 3 caveats.
+About 600 words. Rows span products, courses, communities, newsletters, services, sponsors, affiliates, merch, events, software and ads with RPM levers. Sponsor rows list peers' brands, none current. Three open products. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut items before proof. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not quote revenue, RPM or audience as a single figure. Use bands labelled as estimates.
-- Do not say a method is absent because the index has no detection. Read the descriptions.
-- Do not look for brands in detection fields. They appear only in descriptions and transcripts.
-- Do not call every read a sponsor, or pitch a current partner as new. Some are affiliate deals or the creator's own products.
-- Do not copy a method without the authority behind it. A 2K channel cannot run a 500K channel's course funnel.
-- Do not stop at thin results. Say the peer set is weak and what you read instead.
-- Do not run more than four searches, or invent a brand or a price.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or slop fills the results.
+- Do not call every mention a sponsor; some are affiliates or own products.
+- Do not rank high what this channel already runs well.
+- Do not copy a 500K channel's course funnel onto a 2K channel lacking the trust.

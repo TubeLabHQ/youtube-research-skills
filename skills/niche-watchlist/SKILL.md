@@ -1,10 +1,10 @@
 ---
 name: niche-watchlist
-description: Use when the user wants to monitor YouTube niches over time and get digests of new or breakout channels since the last run. Requires the TubeLab MCP.
+description: Use when the user wants to monitor YouTube niches on a schedule and get a digest of new or breakout channels. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,36 +12,48 @@ metadata:
 
 ## Overview
 
-Watch niches on a schedule and report only what changed since the last run. Not for a one-off hunt (`niche-finder`).
+Watch niches on a schedule and report only what changed since the last run. The files below keep a fixed shape so each run compares with the last.
 
 ## Workflow
 
-1. Clarify scope only if needed. Read `watchlist/config.json`, or ask for 1 to 5 niches and write it with the exact search settings.
-2. Load `watchlist/state.json`, the channels seen with their subscribers and median views.
-3. Search each niche once with the saved settings, newest discovered first.
-4. Find channels discovered since the last run and channels up more than 50 percent.
-5. Read the new channels, write `watchlist/<date>.md` and update the state.
+1. Read `watchlist/config.json`, or ask for 1 to 5 niches and write it.
+2. Read `watchlist/state.json`. If missing, this run is a baseline, not a breakout wave.
+3. Run each saved search once, as saved. Compare only the channels it returns.
+4. New means first seen since the last run. A mover is up over 50 percent on its stored median views.
+5. Write `watchlist/<date>.md` every run; refresh stored values.
+
+`watchlist/config.json`:
+
+```json
+{ "niches": [ { "name": "budget travel", "search": { "query": ["budget travel tips"], "language": ["en"],
+  "publishedAtFrom": "month", "classificationQuality": "neutral",
+  "sortBy": "foundAt", "sortOrder": "desc", "size": 20 } } ] }
+```
+
+`watchlist/state.json`:
+
+```json
+{ "lastRun": "<date>", "niches": { "budget travel": { "<channelId>":
+  { "handle": "@name", "subscribers": 0, "medianViews": 0, "firstSeen": "<date>" } } } }
+```
 
 ## Output Format
 
 ```markdown
 # Watchlist Digest: {date}
 
-Niches: {n} · New: {n} · Movers: {n}
+- **Since {last run}:** {n new, n movers, "No change" or "Baseline"}
 
 ## {Niche}
-| Channel (handle) | Status | Subs | Median views | Proof (title · views · ratio) |
+| Channel (link) | Status | Subs | Median | Best video (link · views · ratio) |
 |---|---|---:|---:|---|
 ```
 
-Keep it under 200 words, with at most 5 rows per niche.
+About 200 words, five rows per niche, a line per quiet niche. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above.
-- Do not change the search settings between runs, or the differences are noise.
-- Do not call a channel new because it left and re-entered the sample. Check when it was discovered.
-- Do not call a first run a breakout wave.
-- Do not call a channel a breakout without 1K median views and at least 5 videos.
-- Do not skip the digest when nothing changed. Silence looks like a failed run.
-- Do not paginate, or invent a channel or a number.
+- Do not save a search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above.
+- Do not change a saved search between runs. An edited niche starts a new baseline.
+- Do not call a channel new because it re-entered the sample. Check first-seen.
+- Do not call a breakout below 1K median views or 5 videos.

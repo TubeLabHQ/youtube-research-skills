@@ -2,13 +2,13 @@
   "niches": [
     {
       "name": "business-advice",
-      "query": "business advice for entrepreneurs",
-      "language": ["en"],
-      "faceless": false,
-      "exclude": [],
       "search": {
-        "query": ["business advice for entrepreneurs"],
-        "language": ["en"],
+        "query": [
+          "business advice for entrepreneurs"
+        ],
+        "language": [
+          "en"
+        ],
         "publishedAtFrom": "month",
         "classificationQuality": "neutral",
         "sortBy": "foundAt",

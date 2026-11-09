@@ -1,10 +1,10 @@
 ---
 name: niche-finder
-description: Use when the user wants to find a YouTube niche, an untapped or faceless channel idea, or to twist and combine niches into something new. Requires the TubeLab MCP.
+description: Use when the user wants to find a YouTube niche, an untapped or faceless channel idea, or to twist or combine niches. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,42 +12,38 @@ metadata:
 
 ## Overview
 
-Find what is working on YouTube right now, then bend it into channel ideas that do not exist yet. Not for an existing channel (`video-ideation`) or a go or no-go (`niche-validator`).
+The product is new channel ideas, not a list of existing niches. The best openings sit beside proven demand: a format that works in one topic and is missing from another, or a working niche for an audience nobody serves.
 
 ## Workflow
 
-1. Clarify scope only if needed. Ask once about faceless or on camera.
-2. Find the channels and outlier videos working right now.
-3. Group them into niches and judge demand, supply and audience.
-4. Bend the best into new ideas: fuse two formats, swap the audience, or move a format to a topic where it is absent.
-5. Check the top 3 ideas with one search each. Few hits beside a healthy parent niche means open.
+1. Clarify scope only if needed: a starting topic or none, faceless or on camera.
+2. Lead with outlier searches; search channels only to see if newcomers break in. Group by topic, format and audience.
+3. Bend the strongest: fuse two formats, swap the audience, or move a format where it is absent.
+4. Check the top 3 with one search each. Few hits beside a healthy parent means open.
+5. Expect about six searches. Fetch and view every featured thumbnail; say if one fails.
 
 ## Output Format
 
 ```markdown
-# Niche Shortlist: {topic or "discovery"}
+# Niche Ideas: {topic or "open discovery"}
 
-Sample: {n} channels, {n} outliers · Confidence: {level, why}
+- **Best idea:** {idea, its number}
+- **Sample:** {n} outliers
+- **Confidence:** {level, brief why}
 
-## Working Niches
-| Niche | Proof (handle · title · views · ratio · date) | Saturation |
-|---|---|---|
-
-## New Ideas
-| Idea | How it was bent | Hits found | First title |
-|---|---|---:|---|
-
-## Caveats
-- ...
+1. **{Idea}** · {audience, format}
+   - Bent from: {parent niche, the move}
+   - ![]({thumbnail})
+   - [{channel}]({url}) · [{title}]({url}) · {views, ratio, date}
+   - Open check: {hits found}
+   - First video: {title}
 ```
 
-Keep it under 350 words, with at most 5 rows per table and 3 caveats.
+About 400 words: three to five ideas. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut ideas before proof. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not start with a subscriber floor, but do not trust ratios from channels with almost no subscribers.
-- Do not transplant on words alone. "For seniors" on a topic seniors do not watch is dead.
-- Do not present compilation, AI filler, reaction or animal niches without a warning.
-- Do not count huge views with almost no likes. It is usually paid.
-- Do not run more than six searches, or invent a channel or a number.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or results fill with slop.
+- Do not trust ratios from near-zero-subscriber channels, huge views with almost no likes (usually paid), or the language tag (Hindi or Urdu can be tagged English).
+- Do not transplant on words alone; the audience must already watch the topic.
+- Do not offer reupload, compilation or AI filler niches without a demonetization warning.

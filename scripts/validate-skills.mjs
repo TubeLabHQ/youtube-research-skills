@@ -9,6 +9,7 @@
 //   - SKILL.md exists and has YAML frontmatter with name + description
 //   - name: 1-64 chars, [a-z0-9-], no leading/trailing/double hyphen, == folder
 //   - description: 1-1024 chars, mentions TubeLab (routing convention, warning)
+//   - unquoted top-level values strict YAML would reject (": ", " #", leading indicator)
 //   - metadata (if present) is a flat string map
 //   - SKILL.md body < 500 lines
 //   - relative links and backticked skill paths resolve to real files
@@ -16,6 +17,7 @@
 //   - description under 500 chars (warning): it is loaded for every skill in every chat
 //   - workflow skills (everything except tubelab-mcp) have an "## Output Format" section with the
 //     artifact layout inline, and no PROMPT.md / assets/ / references/ (SKILL.md is self-contained)
+//   - workflow skills (warnings): SKILL.md at most 350 words including frontmatter, description under 40 words
 
 import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
@@ -71,6 +73,8 @@ function parseFrontmatter(text, file) {
     currentKey = top[1];
     currentMap = null;
     const value = top[2];
+    if (!/^["'|>]/.test(value) && /: |:$| #|^[@`*&!%{[]/.test(value))
+      errors.push(`${file}: frontmatter.${currentKey} needs quotes (an unquoted value with ": ", " #" or a leading YAML indicator breaks strict parsers)`);
     if (value === '' || value === '|' || value === '>') {
       if (['metadata'].includes(currentKey)) {
         currentMap = {};
@@ -146,6 +150,10 @@ function validateSkill(name) {
     for (const extra of ['PROMPT.md', 'assets', 'references']) {
       if (existsSync(join(dir, extra))) errors.push(`${file}: remove ${extra} and fold it into SKILL.md (workflow skills are one file)`);
     }
+    const words = text.split(/\s+/).filter(Boolean).length;
+    if (words > 350) warnings.push(`${file}: ${words} words, aim for 350 or fewer including frontmatter and template`);
+    const descWords = (fm.description || '').split(/\s+/).filter(Boolean).length;
+    if (descWords > 40) warnings.push(`${file}: description is ${descWords} words, keep it under 40`);
     if (/\.\.\/tubelab-mcp\//.test(body)) errors.push(`${file}: do not link into ../tubelab-mcp; name the skill in prose so SKILL.md stands alone when uploaded or pasted`);
   }
 }

@@ -1,6 +1,6 @@
 # Agent routing guide
 
-This repository is a set of Agent Skills for YouTube research on top of the TubeLab MCP. Skills live in `skills/<name>/SKILL.md`. Read the one that matches the ask, then follow it. `skills/tubelab-mcp` is the data layer every workflow skill links to; load it when a tool call fails, returns nothing, or you are unsure which filter to use.
+This repository is a set of Agent Skills for YouTube research on top of the TubeLab MCP. Skills live in `skills/<name>/SKILL.md`. Read the one that matches the ask, then follow it. `skills/tubelab-mcp` is the data layer every workflow skill names; load it when a tool call fails, returns nothing, or you are unsure which filter to use.
 
 ## Which skill for which ask
 
@@ -9,14 +9,14 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Find a niche, unsaturated niches, faceless ideas, twist or combine niches | `niche-finder` |
 | What is working in X, why did this video blow up, trend report, weekly digest, hooks and formats to steal | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
-| Analyze or roast my channel, why did views drop, packaging diagnosis, title rewrites | `channel-analysis` |
+| Analyze or roast my channel, why did views drop, what to change first | `channel-analysis` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails | `thumbnail-concepts` |
 | Is X worth entering, is this niche saturated, go or no-go | `niche-validator` |
-| Title formulas, trending title templates, fill a formula for my topic | `title-formulas` |
+| Titles for my video, title formulas, trending title templates, rewrite a title | `title-formulas` |
 | Who are my competitors, how do I compare, competitive landscape | `competitor-research` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
-| Script structure, beat sheet, hook of this video, script skeleton | `transcript-intelligence` |
-| How do channels like mine make money, raise RPM, what to sell, who could sponsor my channel | `monetization-research` |
+| Script structure, beat sheet, hook of this video, script skeleton | `script-breakdown` |
+| Monetization gaps, what to sell, how channels like mine make money, raise RPM, who could sponsor my channel | `monetization-research` |
 | Watch a niche, which channels broke out since last run, scheduled digest | `niche-watchlist` |
 | How do TubeLab tools work, which filter, credits, REST | `tubelab-mcp` |
 
@@ -27,9 +27,9 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
 2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result.
 3. Rank by `averageViewsRatio`, not raw views. Show both.
-4. Proof line on every claim: channel (handle) · video title verbatim · views · ratio · date. No invented channels or numbers.
+4. Every finding carries its proof from a tool response: channel (handle) · video title verbatim · views · ratio · date. Link everything cited (videos, channels, moments, brands, products) with a URL from tool data, never guessed; a sponsor only heard links to its video moment. Look at the thumbnail of every video you analyze by fetching the image from its link. Invent nothing.
 5. Revenue, RPM and audience are estimates. Present as bands, labelled.
-6. Searches cost credits; channel, video, transcript and comment reads are free. Two searches is the default, never paginate a paid search in a loop.
+6. Searches cost credits; channel, video, transcript and comment reads are free. Search to find candidates, read to understand them. About three searches per job (`niche-finder` needs more); never paginate a paid search in a loop.
 7. End with the artifact laid out in the skill's "Output Format" section.
 
 ## Connecting the MCP

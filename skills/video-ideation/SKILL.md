@@ -4,7 +4,7 @@ description: Use when the user wants video ideas for a YouTube channel, what to 
 license: MIT
 metadata:
   author: tubelab
-  version: "4.0"
+  version: "5.0"
   requires: tubelab-mcp
 ---
 
@@ -12,39 +12,37 @@ metadata:
 
 ## Overview
 
-Generate video ideas for one channel, each backed by an outlier that proves demand and a channel video that proves fit. Not for finding a niche (`niche-finder`) or a channel analysis (`channel-analysis`).
+Six ideas for one channel, each with two proofs: an outlier that shows demand now, and one of the channel's own videos that shows fit. Demand without fit belongs on someone else's channel. Adapt the winner, never copy it.
 
 ## Workflow
 
-1. Clarify scope only if needed. Assume the goal is reach, or conversion if the channel sells something.
-2. Learn the channel's normal views, best videos and what flopped.
-3. Find current outliers in its niche, at most 2 per channel.
-4. Adapt the best into 6 ideas for this channel.
-5. Rank by demand and fit.
+1. Clarify scope only if needed. Assume reach as the goal, or conversion if it sells.
+2. Read the channel: median, best videos by ratio, flops.
+3. Search for outliers in its niche and one adjacent niche, at most 2 winners per channel. About three searches suffice.
+4. Change one thing in each winner (topic, audience, angle, format) and pair it with fit proof; rank by the weaker. A new channel has no fit proof: say so, rank on demand. Fetch and view every featured thumbnail; say if one fails.
 
 ## Output Format
 
 ```markdown
-# Video Ideas: {channel} (@handle)
+# Video Ideas: [{channel}]({url})
 
-Goal: {reach | conversion} · Confidence: {level, why}
+- **Best idea:** {title, why}
+- **Goal:** {reach or conversion}
+- **Confidence:** {level, brief why}
 
-## Ideas
-| Title | Source outlier (handle · title · views · ratio · date) | Fit (channel video that proves it) |
-|---|---|---|
-
-## Caveats
-- ...
+1. **{Title}**
+   - ![]({thumbnail})
+   - Demand: [{channel}]({url}) · [{title}]({url}) · {views, ratio, date}
+   - Fit: [{own title}]({url}) · {views, ratio, date}
+   - Angle: {what changed}
 ```
 
-Keep it under 350 words, with at most 6 rows per table and 3 caveats.
+About 500 words: six ideas. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut items before proof. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with slop.
-- Do not use channels with a different audience as proof, such as an Indian channel for a channel targeting the US.
-- Do not rank by raw views, or use the channel's own sister channels as proof.
-- Do not count huge views with almost no likes, or trust ratios from tiny channels.
-- Do not mix Shorts with long-form. They rarely transfer.
-- Do not copy a title. Rewrite it under 60 characters for this channel.
-- Do not run more than three searches, or invent a channel or a video.
+- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or results fill with slop.
+- Do not take demand from another audience or language (tags miss Hindi or Urdu; check title and thumbnail), sister channels, or paid placements (huge views, almost no likes).
+- Do not trust ratios from channels with a few hundred subscribers.
+- Do not mix in Shorts, or pitch a video the channel already made.
+- Do not write titles over 60 characters.
