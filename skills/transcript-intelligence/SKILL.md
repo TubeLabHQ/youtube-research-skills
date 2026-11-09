@@ -1,10 +1,10 @@
 ---
 name: transcript-intelligence
-description: Use when the user asks how a video is structured, what the hook is, to break down a script or the first 30 seconds, for the beat sheet or retention structure of a video, or for a skeleton for a new script. Pulls transcripts with the TubeLab MCP, quotes the hook verbatim and builds a timestamped beat sheet.
+description: Use when the user wants to break down a YouTube video's hook, script structure or beat sheet, or build a skeleton for a new script. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "2.0"
+  version: "3.0"
   requires: tubelab-mcp
 ---
 
@@ -12,94 +12,62 @@ metadata:
 
 ## Overview
 
-Structure and hooks from the words actually spoken, not from the title. Transcripts on the TubeLab MCP are free reads: read one to five videos, compare them, end in a skeleton for a scriptwriter, every quote verbatim and every timestamp from the transcript.
+Break down how videos are built from the words actually spoken, and turn the structure into a template for a new script.
 
 ## When to Use
 
 Use this skill when the user asks to:
 
-- find out how a video is structured, what its hook is, or break down the first 30 seconds
-- build a beat sheet or retention structure, compare hooks across videos
+- see how a video is structured or what its hook is
+- build a beat sheet or compare hooks
 - prepare a skeleton for a new script
 
-Do not use this for why the video got views (`outlier-research`), a channel diagnosis (`channel-teardown`), or ideas (`video-ideation`).
-
-## Data Sources
-
-| Tool | Use it for |
-|---|---|
-| `get_video_transcript` | Transcript text and timed `events[]` |
-| `get_video` | Title, duration, date, description, views |
-| `get_channel_videos` | A channel's top videos by ratio, when no IDs are given |
-
-Filters and response fields are in `tubelab-mcp`.
+Do not use this for why a video got views (`outlier-research`), a channel analysis (`channel-analysis`), or ideas (`video-ideation`).
 
 ## Workflow
 
-1. **Clarify scope only if needed**
-   - Videos: 1 to 5 URLs or IDs; ask before reading more. Goal: a teardown, or a skeleton for the user's own topic.
-
-2. **Resolve and read**
-   - Extract the bare 11-character ID. From a channel, `get_channel_videos` and pick the top videos by `statistics.averageViewsRatio`.
-   - `get_video` per video for title, `duration`, date, description and views.
-   - `get_video_transcript` per video, from `events[]` (`startMs`, `text`). Never echo a transcript. On error or empty `events`, record "no transcript available" and continue with title and description.
-
-3. **Hook, verbatim**
-   - Join `events[].text` while `startMs < 30000`. Quote exactly, in the spoken language. Type: cold open, question, claim, story, contrast, promise plus proof.
-
-4. **Beat sheet, claims, loops, CTAs, pace**
-   - Beats: each shift in subject, device or energy, `startMs` as m:ss, 6 to 12 beats, each named with what it does for retention.
-   - Claims with timestamps, backed or asserted. Open loops: where each opens and closes, or "never closed". CTAs with timestamps and the share of runtime at which the first appears.
-   - Pace: words divided by `duration` in minutes; shortest, longest and median segment.
-
-5. **Compare, template, skeleton**
-   - Across 2 or more videos: what the hooks share, where the first loop opens, where the first CTA sits, pace. One video is a single observation.
-   - Template: the recurring structure with `[bracketed]` slots and target durations. Skeleton, if a topic was given: hook draft in the same device, beats with target timestamps, loops, CTA positions.
-   - Quotable lines ranked by how self-contained they are; the hook first.
+1. Clarify scope only if needed. Read 1 to 5 videos.
+2. Pull each video's details and transcript.
+3. Quote the first 30 seconds as the hook and name its type.
+4. Build a beat sheet of 6 to 12 beats, with claims, open loops, calls to action and pace.
+5. Compare the videos and write a reusable structure.
+6. If the user gave a topic, write a script skeleton in the same structure.
 
 ## Output Format
 
 ```markdown
-# Script Teardown: {video title | n videos from @handle}
+# Script Breakdown: {video or channel}
 
-## Summary
-- Videos: {n} · Transcripts available: {n of n}
-- Confidence: High/Medium/Low
+Videos: {n} · Transcripts: {n} · Confidence: {level, why}
 
-## 1. Per video
-### {Title verbatim} · @handle · {views} · {duration m:ss} · {published}
-- **Hook (0:00 to 0:30, verbatim):** "{...}" · type: {cold open | question | claim | story | contrast | promise}
-- **Beat sheet:** 0:00 {beat} · what it does · 0:42 {beat} · … (6 to 12)
-- **Claims and numbers:** m:ss "{claim}" (backed | asserted) …
-- **Open loops:** opens m:ss "{promise}" → closes m:ss | never closed
-- **CTAs:** m:ss {type} … · first CTA at {x}% of runtime
-- **Pace:** {n} wpm · segments: shortest, longest, median
-- **Quotable lines:** "{verbatim}" (m:ss) …
+## {Title} · @handle · {views} · {duration}
+- **Hook (verbatim):** "..." · {type}
+- **Beat sheet:** m:ss {beat} · what it does
+- **Claims:** m:ss "..." (backed | asserted)
+- **Open loops:** opens m:ss · closes m:ss
+- **Calls to action:** m:ss · {type}
+- **Pace:** {n} words per minute
+- **Quotable lines:** "..."
 
-## 2. Across videos (2 or more)
-Hooks: {shared device, length, first words} · first loop at {m:ss} · first CTA at {x}% · pace {range}
+## Across Videos
+- ...
 
-## 3. Structure template
-[Hook: {device}, 0:00 to 0:30] → [{Block}, to m:ss] → … → [Payoff] → [CTA]
+## Structure Template
+[Hook] → [Block] → [Payoff] → [CTA]
 
-## 4. Skeleton for "{user's topic}" (only when a topic was given)
-Hook draft (same device) · beats with target timestamps · loops to open and close · CTA positions · pace target
+## Script Skeleton
+{Only if a topic was given.}
 
-## 5. Caveats
-Captions misspell names and numbers; verify before quoting. No transcript: {videos}. Timestamps are caption start times.
+## Caveats
+- ...
 ```
-
-## Quality Guardrails
-
-- Quote the hook and every quotable line verbatim, unclear words marked [unclear].
-- Every timestamp comes from `events[].startMs`; otherwise write "not in transcript".
-- Five transcripts is the ceiling without asking; a 30-minute transcript is 100KB or more.
-- A pattern needs 2 or more videos.
 
 ## Common Pitfalls
 
-- Do not paraphrase the hook; the exact words are the finding.
+- Do not paraphrase the hook. The exact words are the finding.
 - Do not write a summary and call it a beat sheet.
-- Do not trust numbers in captions (fifteen hundred becomes 15 100); cross-check the description.
-- Do not pull a transcript the user did not ask for.
-- Do not invent a timestamp or a quote.
+- Do not call something a pattern from one video.
+- Do not trust numbers in captions. Check them against the description.
+- Do not read more than five transcripts without asking. They are long.
+- Do not paste a full transcript into the output.
+- Do not invent a timestamp or a quote. Mark unclear words [unclear].

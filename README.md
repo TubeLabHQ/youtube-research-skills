@@ -4,7 +4,7 @@ Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](htt
 
 These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, tear down a channel's packaging, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, prospect creators, and watch a niche over time.
 
-This is not endpoint routing. Each skill is a complete research workflow: which TubeLab tool to call, with which filters, in what order, what to compute, and the artifact to produce. Every number comes from a tool response, every claim carries a channel, a title, a view count, an outlier ratio and a date.
+This is not endpoint routing. Each skill is a short research workflow: what to find, what to avoid, which filters matter, and the artifact to produce. Every number comes from a tool response, every claim carries a channel, a title, a view count, an outlier ratio and a date.
 
 ## Install
 
@@ -54,8 +54,8 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Idea bank ranked by demand and fit, top 5 with thumbnail concept and opening line |
 | [`title-formulas`](skills/title-formulas/) | Use title formulas with momentum, filled for your topic | Formula sheet with live examples, filled titles, bent formulas, exhausted warnings |
 | [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts for one video, or study what thumbnails work in a niche | Style audit, bet and anchor, annotated examples, five concepts, images or image prompts |
-| [`channel-teardown`](skills/channel-teardown/) | Diagnose why a channel's views died and fix its packaging | Essay with decay trajectories, lenses, ideas, title templates, rewrites on request |
-| [`competitor-landscape`](skills/competitor-landscape/) | Compare a channel against its real neighbours | Comparison table, pillar matrix, gaps and overlaps, copy and avoid, positioning |
+| [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | Report with positioning, pillars, what works, what is declining, tests, rewrites on request |
+| [`competitor-research`](skills/competitor-research/) | Compare a channel against its real neighbours | Comparison table, pillar matrix, gaps and overlaps, copy and avoid, positioning |
 | [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | Voice-of-audience report, verbatims, vocabulary, five ideas |
 | [`transcript-intelligence`](skills/transcript-intelligence/) | Break down a video's structure, hook and beats from its transcript | Hook verbatim, beat sheet, claims, quotable lines, structure template, script skeleton |
 | [`monetization-research`](skills/monetization-research/) | Audit how channels like yours, and channels with your audience, make money | Niche mix vs audience twins, exact mechanics as read, ranked opportunities, RPM levers |
@@ -101,7 +101,7 @@ tubelab-mcp
 YouTube research workflows
  ├─ discover    niche-finder · niche-validator · outlier-research · trend-report
  ├─ create      video-ideation · title-formulas · thumbnail-concepts
- ├─ analyze     channel-teardown · competitor-landscape · comment-mining · transcript-intelligence
+ ├─ analyze     channel-analysis · competitor-research · comment-mining · transcript-intelligence
  └─ business    monetization-research · sponsor-finder · sponsorship-prospecting · niche-watchlist
 ```
 

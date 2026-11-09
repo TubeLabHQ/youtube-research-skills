@@ -1,10 +1,10 @@
 ---
 name: title-formulas
-description: Use when the user asks for title ideas, title templates, trending title formats, how to title a video, titles that are working right now, or to rewrite a title with a proven formula. Pulls formulas with volume and momentum from the TubeLab MCP trending-formats index, validates them against live outliers, and fills each one for the user's topic.
+description: Use when the user wants YouTube title ideas, title templates, trending title formats, or to rewrite a title with a proven formula. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "2.0"
+  version: "3.0"
   requires: tubelab-mcp
 ---
 
@@ -12,96 +12,65 @@ metadata:
 
 ## Overview
 
-Give the user title formulas that are working now, filled for their topic. The TubeLab MCP's trending-formats index holds the template behind outlier titles with how many videos use it and how they perform: pull formulas by relevance and momentum, validate them against live outliers in the user's niche, fill, bend, flag the exhausted.
+Give the user title formulas that are working now, proven in their niche and filled for their topic.
 
 ## When to Use
 
 Use this skill when the user asks to:
 
-- get title ideas or title templates for a topic
-- see which title formats are trending or working right now
-- title a specific video, or rewrite a title with a proven formula
+- get title ideas or templates for a topic
+- see which title formats are trending
+- title a video or rewrite a title
 
-Not for what to make (`video-ideation`) or a packaging diagnosis (`channel-teardown`).
-
-## Data Sources
-
-| Tool | Use it for |
-|---|---|
-| `search_trending_formats` | Title frameworks with counts, ratio, triggers, momentum, examples |
-| `search_outliers` | Validating a formula's `pattern` in the user's niche |
-
-Filters and response fields are in `tubelab-mcp`.
+Do not use this for what to make (`video-ideation`) or a full channel analysis (`channel-analysis`).
 
 ## Workflow
 
-1. **Clarify scope only if needed**
-   - Topic (required), emotion wanted (none by default; maps to `clickTrigger`: curiosity, open loop, solution, question, controversy, fear, urgency)
-   - Authority the channel can claim (ask once); titles must not exceed it. The index is English.
-
-2. **Formulas by relevance**
-   - `search_trending_formats` with `query: ["<topic>"]`, `size: 12`. Do not pass `language` (the live server rejects it); `quality` defaults to `positive`.
-   - Per hit: `framework` (template with `[X]` slots), `pattern` (wildcard), `clickTrigger[]`, `overall_stats.doc_count`, `overall_avg_views_ratio`, `overall_median_views`, `videos[]`.
-
-3. **Formulas by momentum**
-   - Same call without `query`, `sortBy: "lastVideosCountChangePercentage"`, `size: 12`. Add `clickTrigger: ["<emotion>"]` only when asked. Merge with step 2, dedupe on `id`.
-
-4. **Choose**
-   - Keep 5 to 8: `doc_count` of 18 or more and `overall_avg_views_ratio` above 2, plus momentum hits whose template fits the topic. Rank by average ratio, then video count. Drop templates that only work in one unrelated niche (read the `videos[]` titles).
-
-5. **Validate in the niche**
-   - Top 1 to 2 formulas: `search_outliers` with `titlePattern: "<the hit's pattern>"` (must contain `*` and two letters), `publishedAtFrom: "semester"`, `classificationQuality: "neutral"`, `sortBy: "averageViewsRatio"`, `size: 20`.
-   - Two or more on-topic outliers above ratio 3 confirms it; none means "untested here", not a reason to drop it.
-
-6. **Fill each formula three ways**
-   - Under 60 characters, promise rung 3 or higher (1 bare promise, 2 plus constraint, 3 named mechanism, 4 implicit promise), with an authority signal the channel can back.
-
-7. **Bend two formulas**
-   - Fuse the opening of one with the mechanism of another: "The [X] & [Y] Setup" + "I tried [X] for [N] days" becomes "I ran the [X] & [Y] setup for [N] days". Label "untested" unless validated.
-
-8. **Exhausted warnings**
-   - Flag when `lastAvgViewsRatioChangePercentage` is negative, all `videos[]` examples are older than a trimester, or step 5 ratios fall run over run. Ship them marked: "change the promise, keep the mechanism".
+1. Clarify scope only if needed. Ask once what authority the channel can claim.
+2. Pull the formulas most relevant to the topic and the ones gaining momentum.
+3. Keep 5 to 8 with real volume, a strong ratio and examples that fit the topic.
+4. Check the top 1 to 2 against live outliers in the niche.
+5. Fill each formula three ways for the topic.
+6. Bend two formulas into new ones.
+7. Flag the formulas that are wearing out.
 
 ## Output Format
 
 ```markdown
-# Formula Sheet: {topic}
+# Title Formulas: {topic}
 
-## Summary
-- Formulas kept: {n} of {n} returned · validated in niche: {names}
-- Authority available: {what the channel can claim}
-- Confidence: High/Medium/Low
+Kept: {n} · Validated in niche: {names} · Authority: {what the channel can claim}
 
-## 1. Formulas
-| # | Formula (framework) | Click trigger | Videos using it | Avg ratio | Median views | Momentum | Example (@handle · title verbatim · views · ratio · date) |
+## Formulas
+| Formula | Trigger | Videos | Avg ratio | Momentum | Example (handle · title · views · ratio · date) |
+|---|---|---:|---:|---|---|
 
-## 2. Validation in {niche}
-| Formula | On-topic outliers (n) | Best (@handle · title verbatim · views · ratio · date) | Verdict |
+## Validation
+| Formula | On-topic outliers | Best example | Verdict |
+|---|---:|---|---|
 
-## 3. Filled titles (3 per formula, under 60 characters, rung 3+)
+## Filled Titles
 ### {Formula}
-1. {title} · rung {3-4} · authority: {what backs it}
+1. {Title}
 
-## 4. Bent formulas (untested unless validated)
-- **{new framework}** = {formula A} + {formula B} · example title · why it should hold
+## Bent Formulas
+- **{New formula}** = {A} + {B} · example title · untested
 
-## 5. Exhausted
-- {formula} · why (falling ratio, stale examples) · how to refresh it
+## Wearing Out
+- {Formula} · why · how to refresh it
 
-## 6. Notes and Caveats
-- Ratios reflect title, thumbnail and topic together · formulas untested in this niche are marked
+## Caveats
+- ...
 ```
-
-## Quality Guardrails
-
-- Always set `publishedAtFrom` on the validation search and keep `classificationQuality: "neutral"`.
-- Rank formulas by average ratio and momentum, not volume alone.
-- Every example carries channel, title verbatim, views, ratio, date. If the index did not return it, it is not on the sheet.
-- Four searches is the ceiling. Never paginate a paid search.
 
 ## Common Pitfalls
 
-- Do not trust a formula with 200 videos and a falling ratio; everyone already used it.
-- Do not rewrite `pattern` before passing it as `titlePattern`; rewriting drops the match.
-- Do not assume cross-niche momentum formulas fit; read their example titles first.
-- Do not fill above the channel's authority, and do not invent a formula, a count or an example video.
+- Do not validate without `publishedAtFrom`, or `classificationQuality` at `"neutral"` or above.
+- Do not pass a language to the trending formats search. The server rejects it, and the index is English.
+- Do not reword a formula's pattern when searching with it. The match breaks.
+- Do not trust a formula with many videos and a falling ratio. Everyone has already used it.
+- Do not assume a trending formula fits. Read its example titles first.
+- Do not drop a formula with no hits in the niche. Call it untested.
+- Do not write titles over 60 characters or above the channel's authority.
+- Do not run more than four searches or paginate a paid search.
+- Do not invent a formula, a count or an example.

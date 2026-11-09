@@ -13,8 +13,8 @@ The whole set of runs cost 106 credits measured on the account (about 135 at lis
 | video-ideation | `video-ideation/2026-11-alexhormozi.md` | 4 |
 | title-formulas | `title-formulas/2026-11-alexhormozi.md` | 6 |
 | thumbnail-concepts | `thumbnail-concepts/2026-11-alexhormozi.md` plus the annotated `thumbnail-concepts/alexhormozi/index.md` (images viewed, not committed) | 14 |
-| channel-teardown | `channel-teardown/2026-11-alexhormozi.md` | 9 |
-| competitor-landscape | `competitor-landscape/2026-11-alexhormozi.md` | 12 |
+| channel-analysis | `channel-analysis/2026-11-alexhormozi.md` | 9 |
+| competitor-research | `competitor-research/2026-11-alexhormozi.md` | 12 |
 | comment-mining | `comment-mining/2026-11-alexhormozi.md` | 0 |
 | transcript-intelligence | `transcript-intelligence/2026-11-alexhormozi.md` | 0 |
 | monetization-research | `monetization-research/2026-11-alexhormozi.md` | 15 |

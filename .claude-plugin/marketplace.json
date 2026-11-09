@@ -6,7 +6,7 @@
     {
       "name": "youtube-research",
       "source": "./",
-      "description": "YouTube research skills (niche finder, outlier research, video ideation, channel teardown, thumbnail research) plus the TubeLab MCP server, registered on install.",
+      "description": "YouTube research skills (niche finder, outlier research, video ideation, channel analysis, thumbnail research) plus the TubeLab MCP server, registered on install.",
       "category": "research",
       "tags": ["youtube", "tubelab", "mcp", "research"]
     }
