@@ -2,7 +2,7 @@
 
 Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](https://tubelab.net/youtube-mcp).
 
-These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, tear down a channel's packaging, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, prospect creators, and watch a niche over time.
+These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, and watch a niche over time.
 
 This is not endpoint routing. Each skill is a short research workflow: what to find, what to avoid, which filters matter, and the artifact to produce. Every number comes from a tool response, every claim carries a channel, a title, a view count, an outlier ratio and a date.
 
@@ -49,7 +49,6 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 |---|---|---|
 | [`niche-finder`](skills/niche-finder/) | Find niches that are working now and bend them into new, unsaturated ideas | Working niches with proof, new ideas with open-ness checks |
 | [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, from a keyword or a channel | Verdict, formats that work, gaps, entry plan |
-| [`outlier-research`](skills/outlier-research/) | Find videos that beat their channel's baseline in a niche and why | Outlier table and patterns to copy |
 | [`trend-report`](skills/trend-report/) | Get a dated digest of what is trending in a niche or for a channel | Trending videos with verbatim hooks, patterns, five ideas, learnings |
 | [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Six ideas ranked by demand and fit, each with its proof |
 | [`title-formulas`](skills/title-formulas/) | Use title formulas with momentum, filled for your topic | Formula table with verdicts and filled titles |
@@ -58,9 +57,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | [`competitor-research`](skills/competitor-research/) | Compare a channel against its real neighbours | Comparison table, gaps to win, copy and avoid, positioning |
 | [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | What the audience asks and wants, their words, three ideas |
 | [`transcript-intelligence`](skills/transcript-intelligence/) | Break down a video's structure, hook and beats from its transcript | Hook verbatim, beat sheet, structure template, script skeleton |
-| [`monetization-research`](skills/monetization-research/) | Audit how channels like yours, and channels with your audience, make money | How it earns today, ranked opportunities, RPM levers |
-| [`sponsor-finder`](skills/sponsor-finder/) | Find the brands already sponsoring channels with your audience and size | Brands to pitch with proof and your matching video |
-| [`sponsorship-prospecting`](skills/sponsorship-prospecting/) | Build a creator prospect list for a product or brand | Ten prospects with audience fit, sponsor history and best placement |
+| [`monetization-research`](skills/monetization-research/) | Audit how channels like yours, and channels with your audience, make money | How it earns today, ranked opportunities, sponsors to pitch, RPM levers |
 | [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, state file |
 | [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, filters, response fields, quirks, REST fallback | Craft rules and recipes the other skills rely on; no artifact |
 
@@ -99,10 +96,10 @@ tubelab-mcp
         │
         ▼
 YouTube research workflows
- ├─ discover    niche-finder · niche-validator · outlier-research · trend-report
+ ├─ discover    niche-finder · niche-validator · trend-report
  ├─ create      video-ideation · title-formulas · thumbnail-concepts
  ├─ analyze     channel-analysis · competitor-research · comment-mining · transcript-intelligence
- └─ business    monetization-research · sponsor-finder · sponsorship-prospecting · niche-watchlist
+ └─ business    monetization-research · niche-watchlist
 ```
 
 The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, response fields and quirks. Each workflow produces an artifact a creator can act on or a studio can hand to a client, not raw JSON.

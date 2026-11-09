@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Break down how videos are built from the words actually spoken, and turn the structure into a template. Not for why a video got views (`outlier-research`).
+Break down how videos are built from the words actually spoken, and turn the structure into a template. Not for what is working in a niche (`trend-report`).
 
 ## Workflow
 

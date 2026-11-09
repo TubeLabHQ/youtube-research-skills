@@ -1,6 +1,6 @@
 ---
 name: monetization-research
-description: Use when the user wants to understand how a YouTube channel or niche makes money, how to raise RPM, or what to sell to its audience. Requires the TubeLab MCP.
+description: Use when the user wants to understand how a YouTube channel or niche makes money, how to raise RPM, what to sell, or who could sponsor it. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Show how a channel could earn more by studying its competitors and other channels with the same audience. Not for a brand seeking creators (`sponsorship-prospecting`) or a full sponsor list (`sponsor-finder`).
+Show how a channel could earn more by studying its competitors and other channels with the same audience.
 
 ## Workflow
 
@@ -36,6 +36,10 @@ Audience: {estimate} · Confidence: {level, why}
 | Method | Proof (handle · what was seen) | Fit | First step |
 |---|---|---|---|
 
+## Sponsors to Pitch
+| Brand | Seen on (handle · title · date) | Why it fits |
+|---|---|---|
+
 ## RPM Levers
 - ...
 
@@ -43,7 +47,7 @@ Audience: {estimate} · Confidence: {level, why}
 - ...
 ```
 
-Keep it under 300 words, with at most 5 rows per table and 3 caveats.
+Keep it under 350 words, with at most 5 rows per table and 3 caveats.
 
 ## Common Pitfalls
 
@@ -51,6 +55,7 @@ Keep it under 300 words, with at most 5 rows per table and 3 caveats.
 - Do not quote revenue, RPM or audience as a single figure. Use bands labelled as estimates.
 - Do not say a method is absent because the index has no detection. Read the descriptions.
 - Do not look for brands in detection fields. They appear only in descriptions and transcripts.
+- Do not call every read a sponsor, or pitch a current partner as new. Some are affiliate deals or the creator's own products.
 - Do not copy a method without the authority behind it. A 2K channel cannot run a 500K channel's course funnel.
 - Do not stop at thin results. Say the peer set is weak and what you read instead.
 - Do not run more than four searches, or invent a brand or a price.
