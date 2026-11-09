@@ -12,12 +12,15 @@
 //   - unquoted top-level values strict YAML would reject (": ", " #", leading indicator)
 //   - metadata (if present) is a flat string map
 //   - SKILL.md body < 500 lines
-//   - relative links and backticked skill paths resolve to real files
+//   - relative links and backticked scripts/ paths resolve to real files
 //   - no hard-coded ISO dates (use recency tokens: month|trimester|semester|year)
 //   - description under 500 chars (warning): it is loaded for every skill in every chat
+//   - no skill has PROMPT.md / assets/ / references/ (SKILL.md is self-contained; the API reference lives
+//     at https://tubelab.net/docs/skill.md)
 //   - workflow skills (everything except tubelab-mcp) have an "## Output Format" section with the
-//     artifact layout inline, and no PROMPT.md / assets/ / references/ (SKILL.md is self-contained)
-//   - workflow skills (warnings): SKILL.md at most 350 words including frontmatter, description under 40 words
+//     artifact layout inline
+//   - workflow skills (warnings): at most 650 words of instruction (frontmatter and prose, fenced blocks not
+//     counted), description under 40 words
 
 import { readdirSync, readFileSync, existsSync, statSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
@@ -136,7 +139,7 @@ function validateSkill(name) {
     const abs = resolve(dir, target);
     if (!existsSync(abs)) errors.push(`${file}: link target not found: ${m[1]}`);
   }
-  const pathRe = /`((?:references|scripts)\/[A-Za-z0-9_./-]+)`/g;
+  const pathRe = /`(scripts\/[A-Za-z0-9_./-]+)`/g;
   for (const m of prose.matchAll(pathRe)) {
     if (!existsSync(resolve(dir, m[1]))) errors.push(`${file}: referenced file not found: ${m[1]}`);
   }
@@ -145,13 +148,13 @@ function validateSkill(name) {
     errors.push(`${file}: hard-coded date "${m[0]}" (use recency tokens: month, trimester, semester, year)`);
   }
   // workflow skills are self-contained: output layout inline, no generated or side files
+  for (const extra of ['PROMPT.md', 'assets', 'references']) {
+    if (existsSync(join(dir, extra))) errors.push(`${file}: remove ${extra} and fold it into SKILL.md (every skill is one file)`);
+  }
   if (!DATA_SKILLS.has(name)) {
     if (!/^## Output Format\s*$/m.test(body)) errors.push(`${file}: workflow skill needs an "## Output Format" section with the artifact layout inline`);
-    for (const extra of ['PROMPT.md', 'assets', 'references']) {
-      if (existsSync(join(dir, extra))) errors.push(`${file}: remove ${extra} and fold it into SKILL.md (workflow skills are one file)`);
-    }
-    const words = text.split(/\s+/).filter(Boolean).length;
-    if (words > 350) warnings.push(`${file}: ${words} words, aim for 350 or fewer including frontmatter and template`);
+    const words = text.replace(/```[\s\S]*?```/g, '').split(/\s+/).filter(Boolean).length;
+    if (words > 650) warnings.push(`${file}: ${words} words of instruction outside fenced blocks, aim for 650 or fewer`);
     const descWords = (fm.description || '').split(/\s+/).filter(Boolean).length;
     if (descWords > 40) warnings.push(`${file}: description is ${descWords} words, keep it under 40`);
     if (/\.\.\/tubelab-mcp\//.test(body)) errors.push(`${file}: do not link into ../tubelab-mcp; name the skill in prose so SKILL.md stands alone when uploaded or pasted`);

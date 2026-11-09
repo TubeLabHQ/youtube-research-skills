@@ -2,7 +2,7 @@
 
 Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](https://tubelab.net/youtube-mcp).
 
-These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, and watch a niche over time.
+These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, build sponsor prospect lists for brands, and watch a niche over time.
 
 This is not endpoint routing. Each skill is a short research workflow: the judgment an expert strategist brings, the traps to avoid, and the report to produce. Every number comes from a tool response, every finding carries a linked channel and title, a view count, an outlier ratio and a date.
 
@@ -41,32 +41,33 @@ Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp
 - ChatGPT desktop app and Codex: skills live in the **Skills** sidebar and in `.agents/skills/` of a repo; Codex also installs them with `$skill-installer`.
 - Any chat client that cannot install skills: paste `skills/tubelab-mcp/SKILL.md` and then the skill you want into the chat. Every skill is one file, so this works as is.
 
-Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free.
+Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free. Most runs cost 0 to 15 credits. `niche-finder` costs about 40. `niche-validator`, `video-ideation` and `sponsorship-prospecting` cost about 10 to 30, because they run more searches.
 
 ## Available Skills
 
 | Skill | Use it when you want to... | Output |
 |---|---|---|
-| [`niche-finder`](skills/niche-finder/) | Find niches that are working now and bend them into new, unsaturated ideas | Three to five new niche ideas, each with proof, an openness check and a first video |
-| [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, from a keyword or a channel | Verdict, channels breaking in, formats that work, entry plan |
+| [`niche-finder`](skills/niche-finder/) | Find breakout channels and cash cows with two preset searches, and turn them into new niche ideas | Ten ranked niche ideas, each with proof and a way to earn beyond AdSense |
+| [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche with the Niche Analyzer scores, from a keyword or a channel | Market Size, Unsaturated and Profitable scores, verdict, channels breaking in, formats, gaps, bending ideas, entry plan |
 | [`trend-report`](skills/trend-report/) | See what is working in a niche or for a channel, and why | Up to five winning videos with verbatim hooks and why they worked, patterns, ideas |
-| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one specific channel | Six ideas, each with demand proof and fit proof |
-| [`title-formulas`](skills/title-formulas/) | Get titles you can publish, and the trending formulas behind them | About eight titles with proof, plus a table of their formulas, proven or untested |
-| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts for one video, or study what thumbnails work in a niche | Three concepts, each built from a viewed thumbnail, images or prompts |
+| [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one channel from four sources: its own winning formats, its niche, related niches and channels with the same audience | About ten ideas, each with a twist and linked proof, ranked by potential and fit |
+| [`title-formulas`](skills/title-formulas/) | Get titles you can publish, built on formulas from the trending index, your niche and neighbouring niches | About eight titles with proof, plus a table of their formulas with each one's source, proven or untested |
+| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts that join your video's new angle with the problem your viewers know | Patterns that work for each, three concepts that combine them, images or prompts |
 | [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | One-line diagnosis, what works, what holds it back, next 3 tests |
-| [`competitor-research`](skills/competitor-research/) | Compare a channel against its real neighbours | How the set was built, comparison table, gaps, positioning |
+| [`competitor-research`](skills/competitor-research/) | Compare a channel against 12 to 15 real neighbours: peers, leaders and fast risers | How the set was built, comparison table, gaps, positioning |
 | [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | Themes with verbatim quotes and likes, top comments, the audience's words, video ideas |
 | [`script-breakdown`](skills/script-breakdown/) | Break down a video's structure, hook and beats from its transcript | Hook verbatim, typed beats with linked timestamps, one-line layout, optional skeleton |
-| [`monetization-research`](skills/monetization-research/) | Find monetization gaps and what to sell, from how peers and same-audience channels earn | Methods table best first with linked peer offers and sponsors, three products to test |
-| [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, config and state files |
-| [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, filters, response fields, quirks, REST fallback | Craft rules and recipes the other skills rely on; no artifact |
+| [`monetization-research`](skills/monetization-research/) | Find monetization gaps and what to sell for your channel (the creator's side), from how peers and same-audience channels earn | Table of monetization method gaps, best first, with linked peer offers and sponsors; three products to test |
+| [`sponsorship-prospecting`](skills/sponsorship-prospecting/) | Find YouTube channels to sponsor for your product, matched to your buyer (the brand's side) | 10 to 15 scored prospects with audience, current sponsors and contact path; the best fits with an outreach angle and a cost band; a CSV |
+| [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, each with a short analysis: worth studying or not, working topics, title formulas, best recent video. Config and state files |
+| [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, craft rules, quirks found in testing, and where the full API reference lives | Rules the other skills rely on; no artifact |
 
 Every skill is one `SKILL.md`. Real outputs for every skill are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/).
 
 ## Example Prompts
 
 ```text
-Find me 3 unsaturated faceless niches in English with real AdSense money, then twist the best one into new channel ideas.
+Find me unsaturated faceless niche ideas in English with real money in them, ranked.
 ```
 
 ```text
@@ -89,6 +90,10 @@ Who could sponsor my channel? Find the brands already paying channels my size wi
 Who are my real competitors and how do I compare? youtube.com/@handle
 ```
 
+```text
+We sell an invoicing app to US freelancers. Which YouTube channels should we sponsor?
+```
+
 ## How the Skills Work Together
 
 ```text
@@ -99,21 +104,22 @@ YouTube research workflows
  ├─ discover    niche-finder · niche-validator · trend-report
  ├─ create      video-ideation · title-formulas · thumbnail-concepts
  ├─ analyze     channel-analysis · competitor-research · comment-mining · script-breakdown
- └─ business    monetization-research · niche-watchlist
+ └─ business    monetization-research · sponsorship-prospecting · niche-watchlist
 ```
 
-The workflow skills lean on `tubelab-mcp` for tool costs, filter recipes, response fields and quirks. Each workflow produces an artifact a creator can act on or a studio can hand to a client, not raw JSON.
+The workflow skills lean on `tubelab-mcp` for tool costs, craft rules and quirks. The full parameter and REST reference lives at https://tubelab.net/docs/skill.md. Each workflow produces an artifact a creator can act on or a studio can hand to a client, not raw JSON.
 
 ## Design Principles
 
 1. **Workflow-first, tool-second.** Users ask for an outcome, not a search.
 2. **Outlier over raw views.** A 50K video on a 5K-average channel says more than 2M on a giant. Rank by ratio, show both.
 3. **Recency first.** Every search sets a window. Widen one step at a time, and say so.
-4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result.
-5. **Cited outputs.** Every finding carries channel · title verbatim · views · ratio · date, and everything cited is linked (videos, channels, moments, brands, products) with a URL from tool data; a sponsor only heard links to its video moment. Nothing invented.
+4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result. The one exception is `niche-watchlist`, whose saved search leaves it out.
+5. **Cited outputs.** Every finding carries channel · title verbatim · views · ratio · date. Everything cited is linked with a URL from tool data: videos, channels, moments, brands and products. A sponsor that was only heard links to the video moment. Nothing invented.
 6. **Estimates are estimates.** Revenue, RPM and audience are model outputs, shown as labelled bands.
 7. **Credit-aware.** Searches cost credits, reads are free: go deep with free reads, never loop a paid search.
 8. **Public data only.** Everything comes from public YouTube pages via TubeLab.
+9. **Plain language.** Skills and reports use short, full sentences that anyone can follow on first read.
 
 ## Links
 
