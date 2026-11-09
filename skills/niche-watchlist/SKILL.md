@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Watch niches on a schedule and report only what changed since the last run. The files have a fixed shape so runs compare.
+Watch niches on a schedule and report only what changed since the last run. The files below keep a fixed shape so each run compares with the last.
 
 ## Workflow
 
@@ -20,7 +20,7 @@ Watch niches on a schedule and report only what changed since the last run. The 
 2. Read `watchlist/state.json`. If missing, this run is a baseline, not a breakout wave.
 3. Run each saved search once, as saved. Compare only the channels it returns.
 4. New means first seen since the last run. A mover is up over 50 percent on its stored median views.
-5. Write `watchlist/<date>.md` every run, then refresh the stored values.
+5. Write `watchlist/<date>.md` every run; refresh stored values.
 
 `watchlist/config.json`:
 
@@ -42,14 +42,14 @@ Watch niches on a schedule and report only what changed since the last run. The 
 ```markdown
 # Watchlist Digest: {date}
 
-**{n new, n movers, or "No change"} since {last run}** · Baseline: {yes or no}
+- **Since {last run}:** {n new, n movers, "No change" or "Baseline"}
 
 ## {Niche}
-| Channel (handle) | Status | Subs | Median views | Best video (title · views · ratio) |
+| Channel (link) | Status | Subs | Median | Best video (link · views · ratio) |
 |---|---|---:|---:|---|
 ```
 
-About 200 words, five rows per niche, one line for a quiet niche. Add no sections.
+About 200 words, five rows per niche, a line per quiet niche. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 

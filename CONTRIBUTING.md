@@ -6,7 +6,7 @@ Skills here are short research workflows. Models are smart, and over-detailed in
 
 1. Copy `skills/trend-report` to `skills/<your-skill>`. Name: lowercase, hyphens, max 64 chars, equal to the folder name.
 2. Write the frontmatter. `description` is loaded in every chat and decides whether the skill loads: one sentence under 40 words, starting "Use when the user wants to ...", naming the job rather than trigger phrases, ending "Requires the TubeLab MCP."
-3. Write the body in four sections, in order. **Overview:** what the user gets and the one or two ideas a strategist brings; a "Not for" line only where a sibling skill is easy to confuse. **Workflow:** three to five one-line steps a capable model would not take unprompted; step 1 is "Clarify scope only if needed" with the defaults. **Output Format:** a light skeleton opening with a bold answer in numbers, a sentence or two; tables only to compare short fields, proof in lines not cells, one `Confidence:` line. Close with one line: a word target matched to the template, item counts, one proof per item, and "Cut items before proof; add no sections." **Common Pitfalls:** four to six "Do not" lines with the reason: thinking errors and data traps of the job, at most one on filter hygiene.
+3. Four body sections, in order. **Overview:** what the user gets and the one or two ideas a strategist brings; a "Not for" line only where a sibling is easy to confuse. **Workflow:** three to five one-line steps a capable model would not take unprompted; step 1 is "Clarify scope only if needed" with the defaults. **Output Format:** bullets, no paragraphs: a summary with bold labels (verdict, goal, confidence), then each finding a bold label with sub-bullets, a thumbnail image when a video is the subject, everything cited linked, tables only for short fields. Close with one line: word target, item counts, one proof per item, "One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut items before proof." **Common Pitfalls:** four to six "Do not" lines with the reason: thinking errors and data traps, at most one on filter hygiene.
 4. One file, with the artifact layout inline in Output Format as a fenced block. No `assets/`, `references/` or generated files: a skill is uploaded as one folder or pasted as one message, so SKILL.md must stand alone. Name sibling skills in backticks (`tubelab-mcp`), never as relative links. Scripts are optional; the workflow runs on tool calls alone.
 5. Follow the conventions below, run the validator, and add one real run under `examples/<skill>/<date>.md`.
 
@@ -19,12 +19,12 @@ node scripts/validate-skills.mjs
 - **Search discipline.** Search to find candidates, read to understand them: searches cost credits, reads are free. About three searches per job, no paid search paginated in a loop, no budget announcements.
 - **Recency tokens, never dates.** `month`, `trimester`, `semester`, `year`; the validator rejects ISO dates. Widen one step at a time, and say so.
 - **Content Authenticity rule.** `classificationQuality` at `"neutral"` or above by default, `"positive"` for thumbnail work, never dropped to widen.
-- **Proof line.** Every finding carries channel (handle) · video title verbatim · views · ratio · date, from a tool response. Rank by ratio, show views too.
+- **Proof line.** Every finding carries channel (handle) · video title verbatim · views · ratio · date from a tool response; everything cited is linked (videos, channels, moments, brands, products) with a URL from tool data; a sponsor only heard links to its video moment. A skill that judges videos fetches and views their thumbnails. Rank by ratio, show views too.
 - **Estimates are estimates.** Revenue, RPM, audience: bands, labelled.
 - **Describe the job, not the tool.** "Find what is working in the niche", not "call `search_outliers`". Tool names and parameters live in `tubelab-mcp`, except the recency and quality line in Common Pitfalls.
 - **No prices.** Credit costs are fine; plan prices change, link to https://tubelab.net/pricing.
 - **Plain words.** Short sentences, no coined jargon, no em dashes.
-- **Under 320 words** including frontmatter and template (the validator warns above). A workflow skill that needs more is two skills.
+- **At most 350 words** including frontmatter and template (the validator warns above). A workflow skill that needs more is two skills.
 
 ## Repo conventions
 

@@ -12,39 +12,45 @@ metadata:
 
 ## Overview
 
-Find the channels competing for the same viewers. Similar is not competing: a competitor serves the same audience with an overlapping promise. The value is the gap, what competitors win with that this channel does not cover. Not for how they earn (`monetization-research`).
+Find the channels competing for the same viewers. A similar channel is not always a competitor. A competitor serves the same audience with an overlapping promise. The value is the gap, what competitors win with that this channel does not cover. Not for how they earn (`monetization-research`).
 
 ## Workflow
 
 1. Clarify scope only if needed.
-2. Start with the channels the user names and the ones you know. Verify each with free reads (topic, audience, language, size) and keep about 5.
-3. Search for similar channels only if you cannot name five. It is weak, worst for large channels.
-4. Compute every median over the last 90 days.
+2. Start with channels the user names and ones you know. Verify each with free reads (topic, audience, language, size) and keep five. Fetch and view every featured thumbnail; say if one fails.
+3. Search for similar channels only if you cannot name five.
+4. Use medians over the last 90 days.
 
 ## Output Format
 
 ```markdown
-# Competitor Research: {channel} (@handle)
+# Competitor Research: [{channel}]({url})
 
-**{Biggest gap, in numbers.}**
-Set from: {named, search, known} · Confidence: {level, short reason}
+- **Biggest gap:** {one line, in numbers}
+- **Set from:** {named, search, known}
+- **Confidence:** {level, brief why}
 
-| Channel (handle) | Subs | Median views | Median / subs | Uploads, 90 days | Topics |
+| Channel (link) | Subs | Median views | Median / subs | Uploads, 90 days | Topics |
 |---|---:|---:|---:|---:|---|
 
 ## Gaps to Win
-1. {Gap} · {proof} · {why this channel can own it}
+1. **{Gap}**
+   - ![]({thumbnail})
+   - [{channel}]({url}) · [{title}]({url}) · {views, ratio, date}
+   - Fit: {short}
 
-Copy: ... · Avoid: ...
-Positioning: {one sentence}
+## Moves
+- **Copy:** ...
+- **Avoid:** ...
+- **Positioning:** {one sentence}
 ```
 
-About 400 words. The channel is the first row; three gaps, one proof each: channel (handle) · title verbatim · views · ratio · date. Cut items before proof; add no sections.
+About 400 words: your channel first, three gaps. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut items before proof. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or results fill with slop.
-- Do not keep a channel because search returned it. Tiny and off-topic lookalikes are common.
-- Do not compare raw medians across sizes. Median per subscriber is fairer.
-- Do not mix Shorts with long-form.
-- Do not build a gap on one lucky video. It should win more than once.
+- Do not trust search lookalikes. They are often tiny or off-topic, worst for large channels.
+- Do not compare raw medians across sizes; use median per subscriber.
+- Do not mix in Shorts.
+- Do not build a gap on one lucky video; it should win twice.

@@ -12,4 +12,4 @@ Optional quarterly additions: `channel-analysis` ("Analyze @client") when growth
 
 Scheduling: a Claude Code routine or `/loop`, or cron calling `claude -p "run the monthly client report playbook for @client"` on the first of the month. The watchlist keeps its own state in `watchlist/`, so the delta is real month to month.
 
-Rules: every finding in the report carries channel · title verbatim · views · ratio · date; revenue, RPM and audience are bands labelled "estimate"; the report is dated and names the window used.
+Rules: every finding carries channel · title verbatim · views · ratio · date, and everything cited is linked (videos, channels, moments, brands, products) with a URL from tool data; a sponsor only heard links to its video moment; revenue, RPM and audience are bands labelled "estimate"; the report is dated and names the window used.

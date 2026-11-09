@@ -26,7 +26,7 @@ TubeLab is a read-only index of public YouTube data, enriched for research: a gr
 | `search_related_channels` | 5 credits | Channels similar to one or more channel IDs. Competitor sets. |
 | `search_outliers` | 2 credits | Videos that outperformed their own channel. What is working now. |
 | `search_related_outliers` | 2 credits | Outliers similar to a title, a video, a thumbnail (`thumbnailVideoId`, image similarity) or a channel's videos (`relatedChannelId`). |
-| `search_trending_formats` | 1 credit | Title formulas with usage stats and example videos. |
+| `search_trending_formats` | 1 credit | Title formulas with usage stats and example videos. English only; pass no `language`. |
 | `get_channel`, `get_channel_videos` | free | Same payload: channel stats plus up to 120 long-form videos with outlier flags. One call is enough. |
 | `get_channel_shorts` | free | Shorts sample with outlier flags. |
 | `get_video` | free | Title, description, tags, publish date, views, likes, comment count. |
@@ -41,6 +41,7 @@ Costs are per call, whatever the `size`. Identical requests repeated within a sh
 - Channel tools accept a channel ID (`UC...`), a URL or a handle (`@name`). Prefer the ID when a search hit already gave it.
 - Video tools need the bare 11-character video ID. Extract it from `watch?v=ID`, `youtu.be/ID`, `shorts/ID` or `embed/ID` and strip `&t=` and other params.
 - Search hits carry `id` (video) and `snippet.channelId`. Use those; never guess an ID.
+- Report links, built only from tool data: video `https://www.youtube.com/watch?v=<id>`; moment the same plus `&t=<seconds>s` (`startMs` / 1000); channel `https://www.youtube.com/@<handle>`, or `https://www.youtube.com/channel/<channelId>` without a handle; brands, products and offers use the URL as read in a description, or the video moment where only heard.
 
 ## Craft rules
 
@@ -53,7 +54,7 @@ Costs are per call, whatever the `size`. Identical requests repeated within a sh
 7. **Slop list.** Pair the quality floor with `excludeNiche` (channels) or `excludeKeyword` (outliers). Default list, trimmed to the niche and extended with the user's own: `music, song, lofi, movies, trailer, compilation, kids, nursery, news, politics, lingerie, haul, asmr, reaction, live stream`.
 8. **Estimates are estimates.** Revenue, RPM and audience fields are model outputs. Order with them, present bands, never quote them as facts or filter on them unless asked.
 9. **Thin signal.** Under 5 hits is not a trend. Say so, widen once, and if still thin report "no signal" instead of inventing one.
-10. **Proof line.** Every claim about a channel or video carries: channel (handle) · video title verbatim · views · ratio · publish date. Label estimates. If you did not fetch it, you do not know it.
+10. **Proof line.** Every claim about a channel or video carries: channel (handle) · video title verbatim · views · ratio · publish date. Everything cited is linked (videos, channels, moments, brands, products) with a URL from tool data, brand and offer links from descriptions as read; a sponsor only heard links to its video moment. Label estimates. If you did not fetch it, you do not know it.
 
 Recipes for the common intents (app default views, small channels punching up, new entrants, faceless, money, first-world audience, consistent performers, title formula in the wild, thumbnail twins, Shorts, other languages): [references/filters.md](references/filters.md).
 
@@ -63,6 +64,7 @@ Full field lists in [references/response-shapes.md](references/response-shapes.m
 
 - **Channel hit:** `semantic.niches[]` (cluster on this), `statistics.medianViewsEstimate` (demand; the average is inflated by outliers), `avgViewsToSubscribersRatio` (above 1 is healthy), `viewVariationCoefficient` (lower is steadier), `positiveOutliersCount`, `joinedDateEstimate` (age), `classification`, `monetization` bands, `detections.*.detected`, `audience.dominant`, and 4 sample `videos[]` with `isPositiveOutlier`.
 - **Outlier hit:** `snippet.title` (quote verbatim), `statistics.averageViewsRatio`, `zScore`, `viewCount`, `snippet.channelSubscribers`, `publishedAt`, `thumbnails.high.url`, `classification`.
+- **Thumbnails:** `thumbnails.high.url` on a video hit, or `https://i.ytimg.com/vi/<id>/hqdefault.jpg` for any video ID. Show one in a report as a markdown image. Tools return the link, not the picture, so always download and open the thumbnail of every video you analyze. If an image truly cannot be fetched, say it was not viewed and never describe it unseen.
 - **Trending format hit:** `framework` (template with `[X]` slots), `pattern` (feed it to `search_outliers.titlePattern`), `clickTrigger[]`, `overall_stats.doc_count`, `overall_avg_views_ratio`, `videos[]` examples. The momentum percentages are sort keys only; the hit does not carry them, so "rising" means "appears in the momentum-sorted list".
 - **`get_channel`:** `item.statistics` (median, average, variation coefficient, outlier counts) and `item.videos[]` each with `averageViewsRatio`, `zScore`, `isPositiveOutlier`, `isNegativeOutlier`. Large payload: extract, never echo.
 - **`get_video_transcript`:** `items[0].transcript` and `events[]` with `startMs` and `text`. A 30-minute video returns 100KB+; for a hook, read `events[]` until `startMs` passes 45000 and stop. Transcripts keep the spoken language.
@@ -76,9 +78,9 @@ Full field lists in [references/response-shapes.md](references/response-shapes.m
 - Channel sample dates (`publishedAtEstimate`) and comment dates are month-granular; comment `likeCount` is often null.
 - Index statistics (`medianViewsEstimate` on a search hit) and the live `get_channel` statistics diverge on small or young channels. When you read a channel, use the live value and say which one you used.
 - `search_related_outliers` with a `title` anchor has returned off-topic hits and ignored `publishedAtFrom` and `classificationQuality` on the live server; `videoId`, `thumbnailVideoId` and `relatedChannelId` anchors behave. `search_outliers` with `by: "lexical"` has ignored the query. Treat both as "check the hits are on topic before spending more".
-- `language` on outlier searches matches the indexed title language, not the audio: English titles with Hindi or Tamil narration pass `["en"]`. Check `defaultAudioLanguage` from `get_video` when it matters.
+- `language` on outlier searches matches the indexed title language, not the audio: English-tagged titles can be Hindi, Urdu or Tamil videos; the title script and thumbnail text usually reveal it. Check `defaultAudioLanguage` from `get_video` when it matters.
 - `channelVideoCountTo` caps at 120 because channels are sampled to 120 videos. `titlePattern` must contain `*` and at least two letters. Ranges must satisfy from < to.
-- `get_video_comments` returns "Failed Dependency" or "No comments found" when comments are disabled: treat as no data, not as a failure. Its `comments[]` can contain duplicate entries; dedupe on author plus text, and treat `publishedAt` as coarse (month granularity or relative strings).
+- `get_video_comments` returns "Failed Dependency" or "No comments found" when comments are disabled: treat as no data, not as a failure. Its `comments[]` can contain duplicate entries; dedupe on author plus text, and treat `publishedAt` as coarse (month granularity or relative strings). `authorIsChannelOwner` has come back null on every row, pinned creator comments included, so spot the creator's replies by matching the author handle to the channel's.
 - Empty `hits` with `pagination.total: 0`: widen recency, drop one filter or rephrase `query`. Keep the quality floor.
 - HTTP 429 means the rate limit (about 30 calls per window, shared across sessions). Wait for the reset and retry; pace reads rather than firing them all at once.
 - Channel reads and transcripts run 75K characters and up. Some clients save oversized responses to a file named by timestamp, and parallel reads have overwritten each other's file: fetch large reads one at a time and parse the saved file.

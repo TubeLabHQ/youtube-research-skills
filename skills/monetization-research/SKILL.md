@@ -1,6 +1,6 @@
 ---
 name: monetization-research
-description: Use when the user wants to know how a YouTube channel or niche makes money, how to raise RPM, what to sell, or who could sponsor it. Requires the TubeLab MCP.
+description: Use when the user wants monetization gaps for a YouTube channel or niche, what to sell, how to raise RPM, or who could sponsor it. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
@@ -12,39 +12,40 @@ metadata:
 
 ## Overview
 
-How a channel could earn more, from what its peers already do. The evidence is in descriptions and sponsor reads, free to read; the index only flags that money exists. Channels in other niches with the same audience show what it already buys. Revenue, RPM and audience are estimates: show bands.
+Find the monetization gaps: what this audience already pays for elsewhere that the channel lacks, and open products nobody in the niche sells. The evidence is in descriptions, offer pages and sponsor reads, all free.
 
 ## Workflow
 
 1. Clarify scope only if needed. With no channel, audit the niche.
-2. Read the channel's descriptions: how it earns and who already pays it.
-3. Name similar-size, same-audience peers, in and outside the niche. Search once if you cannot name five.
-4. Read 6 to 8 for links, codes and sponsor reads; rank by frequency and fit.
+2. Read the channel's descriptions: how it earns and who pays it.
+3. Find peers: competitors you can name, plus same-audience channels from one or two audience-filter searches. Drop off-audience hits.
+4. Open their actual offers: what, for whom, price, link. A brand only heard links to its video moment.
 
 ## Output Format
 
 ```markdown
 # Monetization Research: {channel or niche}
 
-**{Biggest opportunity, one line.}**
-Today: {how it earns, who pays} · Confidence: {level, short reason}
-Audience: {estimated band, only if a search gave one}
+- **Biggest gap:** {one line}
+- **Peers:** {n}, from {named, search}
+- **Confidence:** {level, brief why}
 
-## Opportunities
-1. **{Method}** · {proof} · First step: {action}
+## Methods, Best First
+| Method | This channel | Who does it | Opportunity |
+|---|---|---|---|
+| {method} | {missing, weak or [doing]({link})} | [{offer}]({link}) on [{channel}]({url}) | {short} |
 
-## Sponsors to Pitch
-- {Brand} · {proof} · {fit}
-
-## RPM Levers
-- {Lever} · {evidence}
+## Open Products to Test
+1. **{Specific offer}**
+   - Evidence: {linked proof}
+   - First test: {short}
 ```
 
-About 400 words: three opportunities, five sponsors, proof as channel (handle) · title · date · what was seen. Cut items before proof; add no sections.
+About 600 words. Rows span products, courses, communities, newsletters, services, sponsors, affiliates, merch, events, software and ads with RPM levers. Sponsor rows list peers' brands, none current. Three open products. One fact per bullet, under 25 words except quotes; no extra sections or bullets. Cut items before proof. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or slop fills the results.
-- Do not call every mention a sponsor (some are affiliates or own products), or pitch a current partner.
-- Do not copy a 500K channel's course funnel onto a 2K channel. It lacks the trust.
-- Do not hide how the peer set was built, or that it is weak.
+- Do not call every mention a sponsor; some are affiliates or own products.
+- Do not rank high what this channel already runs well.
+- Do not copy a 500K channel's course funnel onto a 2K channel lacking the trust.

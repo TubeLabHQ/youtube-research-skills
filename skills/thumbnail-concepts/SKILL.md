@@ -16,27 +16,30 @@ Three thumbnail concepts for one video, each built from one that already works. 
 
 ## Workflow
 
-1. Clarify scope only if needed. With only a niche, report the 5 best examples and what they share.
-2. View the channel's recent thumbnails and decide what to keep.
-3. View up to 8 examples: the same idea in the niche, and compositions from other niches with the same kind of reveal.
-4. Build each concept from one viewed example. Generate the images if you can, or write a prompt per concept.
+1. Clarify scope only if needed. With only a niche, show the 5 best examples as images and what they share.
+2. View the channel's recent thumbnails; decide what to keep.
+3. View up to 8 examples: the same idea in the niche, and other niches' compositions with the same kind of reveal.
+4. Build each concept from one viewed example. Generate images if you can, else write prompts.
 
 ## Output Format
 
 ```markdown
 # Thumbnail Concepts: "{title}"
 
-**Lead with: {concept 1}, because {why}.**
-Keep from the channel: {style, colours, face or not}
+- **Lead with:** {concept 1, why}
+- **Keep:** {style, colours, face or not}
+- **Current:** ![]({current, if published})
 
 ### 1. {Name}
-Based on: {channel (handle) · title verbatim · views · ratio}
-Image: {what is in frame, where the eye goes}
-Text: {3 words or fewer, or none}
-Prompt: {ready to paste}
+- ![]({example})
+- **Based on:** [{channel}]({url}) · [{title}]({url}) · {views, ratio}
+- **Image:** {what is in frame, eye path}
+- **Text:** {3 words at most, or none}
+- **Prompt:** {ready to paste}
+- ![]({generated, if made})
 ```
 
-About 400 words: three concepts, strongest first, one line per field. Use only examples you viewed; add no sections.
+About 400 words: three concepts. One fact per bullet, under 25 words except quotes and prompts; no extra sections or bullets. Show every thumbnail cited as an image, cutting text first. Link everything you cite (videos, channels, moments, brands, offers), built from IDs, handles and links in the data, never guessed.
 
 ## Common Pitfalls
 
