@@ -2,33 +2,21 @@
 
 Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/channel-analysis/SKILL.md`.
 
-**Summary.** Healthy: 4.62M subscribers, median long-form video 341,000 views, last-4 median 572,000 (1.68x). The clearest gap is how one series gets titled.
-Goal: conversion (descriptions lead with a free roadmap) · Confidence: medium, titles and views only.
+**Healthy: 5 of the last 6 finished long-form uploads beat the 341K median (ratio 0.70). The misses are hot-seat episodes titled by series name (166K–287K).**
+Positioning: business owners and ambitious 20-to-30-somethings, taught how to make more money by a founder with proof.
+Goal: conversion (descriptions lead with an Acquisition.com roadmap) · Confidence: medium. It rests on a 120-video sample with no lead data. The Nov 7–8 uploads are still gathering views and are not judged.
 
-## Positioning
-Serves ambitious people in their 20s and 30s and service-business owners who want more money. The promise is an operator's exact playbook, in a blunt second-person voice.
+## What Works
+1. Stakes in the title · Alex Hormozi (@AlexHormozi) · "Can I Save This Failing Theme Park in 90 Days?" · 1.8M · 3.67 · 2026-09-11
+2. Scale or Fail footage, titled as the viewer's outcome · Alex Hormozi (@AlexHormozi) · "How I Would Build a $10M Service Business (If I Had to Start Over)" · 1.4M · 2.85 · 2026-08-29
+3. Titles that speak directly to ambitious viewers · Alex Hormozi (@AlexHormozi) · "If you’re ambitious but inconsistent, please watch this" · 2.1M · 4.28 · 2025-12-12
 
-## What Is Working
-| Video | Views | Ratio | Date | Why |
-|---|---:|---:|---|---|
-| If you’re ambitious but inconsistent, please watch this | 2.1M | 4.28x | ~Jan 2026 | Names the viewer and their flaw |
-| Can I Save This Failing Theme Park in 90 Days? | 1.8M | 3.67x | 2026-09-11 | Makeover with one business, stakes, deadline |
-| How I Would Build a $10M Service Business (If I Had to Start Over) | 1.4M | 2.85x | 2026-08-29 | Also a makeover, sold as his playbook |
+## What Holds It Back
+1. The Scale or Fail tag loses views each time it returns (Episode 1: 758K) · Alex Hormozi (@AlexHormozi) · "$100M Worth of Marketing Knowledge in 32 Minutes | Scale or Fail" · 166K · 0.34 · 2026-08-07 · Fix: drop the tag and title each episode by its outcome.
+2. Year-swap repeats (the 2026 version got 926K) · Alex Hormozi (@AlexHormozi) · "My Actual Social Media Strategy For 2027 - The Algorithm" · 227K · 0.46 · 2026-08-15 · Fix: change the promise, not the year.
+3. Vague start-over titles · Alex Hormozi (@AlexHormozi) · "If I could start over in business, I’d do this sooner" · 179K · 0.36 · 2026-10-16 · Fix: name the business and the number, as the Personal Brand 2027 version did (766K, 1.56).
 
-## What Is Holding It Back
-| Problem | Proof (title · views · ratio · date) | Fix |
-|---|---|---|
-| Makeovers titled by format or deal size lag (15 videos, median 224,000) | Helping 6 Business Owners Scale in 33 Minutes · 98K · 0.20x · 2026-04-24 | Title around one business and its stakes |
-| Start-over titles without a specific target fall flat | If I could start over in business, I’d do this sooner · 179K · 0.36x · 2026-10-16 | Name the business and the number |
-
-## Tests for the Next 3 Uploads
-| Title | Based on | Pass if |
-|---|---|---|
-| Can I Save This Failing {Business} in 90 Days? | Theme Park episode, 3.67x | Beats 341,000 in 30 days |
-| How I Would Build a {$X} {Business Type} (If I Had to Start Over) | Brandon Dawson (@BrandonDawsonOfficial) · If I had to Start A Business With Zero Money, I’d do THIS · 125,773 · 21.52x · 2026-08-11 | Ratio above 1.0 in 30 days |
-| Your Life If You Start a Business at {Age} | Mervin Finance (@Mervin_Finance) · Your Life If You Start Building Wealth at 36 - What I Wish I Knew · 578,545 · 14.54x · 2026-08-10 | Beats 341,000 in 30 days |
-
-## Caveats
-- Ratios compare with the channel mean (490,600). "~" dates are estimates.
-- The last two uploads are days old; format groups come from title keywords in a small sample.
-- Thumbnails, retention and CTR were not reviewed, so causes are inferred.
+## Next 3 Tests
+1. **Can I Save This Failing Restaurant in 90 Days?** · Based on: Brian Beers (@brianbeers) · "Nobody Could Save This Business... So I Bought It" · 86,901 · 3.60 · 2026-10-18 · Pass if: 700K+ by day 30
+2. **How I Would Build a $3M Home Service Business (If I Had to Start Over)** (next Scale or Fail episode) · Based on: Alex Hormozi (@AlexHormozi) · "How I Would Build a $10M Service Business (If I Had to Start Over)" · 1.4M · 2.85 · 2026-08-29 · Pass if: 500K+ by day 30
+3. **If You're Building a Business in Your 20s, Watch This** · Based on: Logan Chierotti (@RealLoganChierotti) · "If You're Building A Business In Your 20's, Watch This" · 101,886 · 8.13 · 2026-09-09 · Pass if: 500K+ by day 30

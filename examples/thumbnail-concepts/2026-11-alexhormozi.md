@@ -2,29 +2,24 @@
 
 Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/thumbnail-concepts/SKILL.md`.
 
-Keep from the channel: heavy top headline, one loaded word highlighted ("bankrupt" on its 3.67x theme-park video). Change the current "1 CENTIMILLIONAIRE vs 10 ENTREPRENEURS" (1.68x, 823,000 views): it sells the format, not the belief.
+**Lead with: 1, because it shows one of the beliefs the title hides, in the composition that is running hottest (5.06x).**
+Keep from the channel: real studio photos, white all-caps with one yellow word, and his face, since every recent upload and every debate winner I viewed is face-led. The live thumbnail shows the setup ("1 CENTIMILLIONAIRE vs 10 ENTREPRENEURS") but no belief: Alex Hormozi (@AlexHormozi) · Change My Mind, Win $10,000 · 828,879 views · 1.68x · 2026-10-30.
+This is not your channel, so the prompts leave a slot for a real photo of the host and do not generate his face.
 
-## Examples
-| Title (verbatim) | Channel (handle) | Ratio · views | Why it works |
-|---|---|---:|---|
-| Beat me in League, win $1000 | Team Liquid League of Legends (@TeamLiquidLoL) | 11.56x · 812,160 | Host points at the prize, crowd behind |
-| I BET $10,000 AGAINST THE MOST DANGEROUS GYM IN AMERICA | Spencer Kozej (@SpencerKozej) | 9.72x · 192,357 | No text; the lineup is the threat |
-| I Offered a HATER $1,000 If He Beat this PRO... | RealYX (@Realyxqjc2) | 4.88x · 161,448 | Prize above two labeled sides |
-| “Sports Betting Is a Scam” vs $160M Founder (Debate) | Alex Monahan (@AlexMonahan1) | 4.80x · 41,136 | Closest match: founder, delighted challenger, panel |
-| Beat This Super Grandmaster, Win $100 | Take Take Take (@TakeTakeTakeApp) | 3.47x · 796,720 | Handwritten stakes on a whiteboard |
+### 1. The quoted hot take
+Based on: CLASH (@Clash) · NFL MVP vs 10 Die-Hard Football Fans (Ft. Cam Newton) · 1,684,093 views · 5.06x · 2026-10-06
+Image: the host in the centre foreground, half-smirking, with ten challengers in a soft-focus semicircle behind; the eye goes to the quote, then the face.
+Text: "PROFIT IS OVERRATED" (OVERRATED yellow)
+Prompt: YouTube thumbnail 16:9, bright white studio, ten business owners on chairs in a blurred semicircle, empty centre foreground for a host photo, top third "PROFIT IS OVERRATED" in quotes, heavy white all-caps sans-serif, OVERRATED in yellow, high contrast.
 
-## Concepts
-### ★ 1. The Whiteboard
-Based on: Grandmaster · Image: whiteboard held up at the debate table, cash stack beside it · Text: NO WEEKENDS
+### 2. Two camps
+Based on: Lift 365 Fitness (@Lift365Fitness) · Strength vs Aesthetics, Winner gets $10,000 · 610,002 views · 13.84x · 2026-06-17
+Image: the frame split in two, the host alone on the left with arms crossed, four entrepreneurs on the right, one label over each side; the eye goes to the gap between them.
+Text: HUSTLE | BALANCE
+Prompt: YouTube thumbnail 16:9, studio backdrop, left half empty for a host photo, right half four entrepreneurs in business casual facing camera, white all-caps "HUSTLE" over the left, "BALANCE" over the right, even bright light.
 
-### 2. Two Sides
-Based on: HATER · Image: two people face off over cash, one label each · Text: GRIND vs BALANCE
-
-### 3. The Lineup
-Based on: Dangerous Gym · Image: ten challengers staring down the camera, cash in front · Text: none
-
-## Prompts
-All photoreal, 16:9. No real faces; composite the host's photo afterward.
-- 1: Person in flannel, face hidden behind a whiteboard reading "NO WEEKENDS" in green marker. Dark debate table, tall cash stack, blurred audience.
-- 2: Two silhouettes across a table, cash stack between. Left red-lit, "GRIND"; right blue-lit, "BALANCE"; small "vs". Heavy white sans.
-- 3: Ten fictional business people shoulder to shoulder, arms crossed, staring at camera, dim studio, banded cash foreground. No text.
+### 3. The challenger strikes back
+Based on: Alex Monahan (@AlexMonahan1) · "Sports Betting Is a Scam" vs $160M Founder (Debate) · 41,136 views · 4.80x · 2026-04-21
+Image: a two-shot across the table, a woman entrepreneur leaning in and pointing while the host leans back laughing, the crowd blurred behind; the eye follows her finger to him.
+Text: NO WEEKENDS?
+Prompt: YouTube thumbnail 16:9, black debate table with microphones, a fictional woman entrepreneur leaning in and pointing, fired up, right side empty for a host photo, blurred seated audience, white all-caps "NO WEEKENDS?" top left with WEEKENDS in yellow.

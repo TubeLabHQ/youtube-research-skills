@@ -1,31 +1,43 @@
-# Trend Report for @AlexHormozi on 2026-11-09
-
+# Trend Report: @AlexHormozi · 2026-11-09
 Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/trend-report/SKILL.md`.
 
-Sample: 5 winners · Window: last month
+**Stakes beat advice. Since 9 Oct, Hormozi's three stunt videos averaged 2.33× his baseline, while his six advice uploads averaged 0.97×. Best stunt: "Can I Save This Failing Theme Park in 90 Days?" (1,800,000 · 3.67×). Weakest advice video: "If I could start over in business, I’d do this sooner" (179,000 · 0.36×). The niche's two biggest business outliers are also deadline stunts.**
+Sample: 5 winners · Window: last month · Confidence: medium. Each pattern appears on 3 or more channels, but 3 winners come from channels under 3K subscribers. A Hormozi clip channel and paid brand ads were excluded.
 
-## Trending Videos
-| Video | Channel (handle) | Views | Ratio | Date | Hook (verbatim) | Why it worked |
-|---|---|---:|---:|---|---|---|
-| The "Arbitrage" Secret That Built a $100k/Month Business | Pace Morby (@PaceMorby) | 294,449 | 19.71x | 2026-10-16 | "So, you're telling me I can just go on Craigslist and arbitrage other people's [music] services?" | Voices the objection first |
-| 9 Things To Do Before 2027 To Start Building Wealth | Erin Confortini (@itserinconfortini) | 152,929 | 10.54x | 2026-10-15 | "I have really big money goals for 2027, and I feel like you do, too." | Year-end deadline |
-| Growing a Business Isn't Hard. It's Misunderstood. | Will Barron (@wbarron) | 201,118 | 7.63x | 2026-10-09 | "When I first started building businesses around 12 years or so ago, I thought that growth came down to well, things like working harder" | Confesses the old belief |
-| Build This Once, Make Sales Every Day (I Made $23M From This) | Maria Wendt (@MariaWendt) | 78,743 | 5.89x | 2026-10-13 | "I make $23 million and get around 400 orders every single day with this one [music] thing." | Result first, one mechanism |
-| Asking Young Millionaires How They Got Rich! | Hard Knocks Business (@HardKnocksBusiness) | 125,307 | 5.43x | 2026-10-13 | "College is supposed to be the safest path to success, but everyone in this video dropped out and still became a millionaire." | Attacks the safe path |
+## Winners
+### [Millionaire Starts Over at McDonald’s To Prove It’s Not Luck](https://www.youtube.com/watch?v=OAjjVF14Oew)
+Carson Reed (@carsonreed16) · 250,716 · 26.95× · 2026-10-24
+Hook: "over the next 30 days, I'm going to be working at McDonald's and starting a business fully from scratch, just to find out one thing. Can I get rich again starting with nothing?"
+Why: It turns the viewer's doubt ("was it luck?") into a 30-day test with a clear result.
 
-## Winning Patterns
-- Reversal: hard work, licenses and college framed as the wrong path.
-- One lever: arbitrage, a landing page.
-- Proof early: Maria opens on $23 million; Will says "1.4 billion in net new revenue" inside 20 seconds.
+### [The "Arbitrage" Secret That Built a $100k/Month Business](https://www.youtube.com/watch?v=coe4fmu5cE8)
+Pace Morby (@PaceMorby) · 294,449 · 19.71× · 2026-10-16
+Hook: "So, you're telling me I can just go on Craigslist and arbitrage other people's services? I'm like, "Yes.""
+Why: It opens on a skeptic's question, then gives a simple mechanism and an exact monthly number.
 
-## Video Ideas
-- **I Took Over a Dying Gym Using Only Other People's Services** · Why: arbitrage inside his rescue format.
-- **The One Page That Would Replace My Sales Team** · Why: single-asset promise, his territory.
-- **What I'd Finish Before December 31 If I Had $0** · Why: deadline plus his start-over frame.
-- **I Asked 10 Dropout Millionaires What They'd Never Do Again** · Why: street-interview proof.
-- **You Don't Need a License, You Need a Phone Number** · Why: the objection becomes the title.
+### [Watch Me Start & Sell a SaaS in 7 Days](https://www.youtube.com/watch?v=YB5YYnrCOPM)
+Henry SaaS (@HenrySaaS) · 67,573 · 14.26× · 2026-10-18
+Hook: "In the next 7 days, I'm going to go from zero to making my first dollar with a brand new SaaS business."
+Why: A tight deadline gives someone who already exited a business a reason to start again from zero.
 
-## Learnings
-1. His best ratio since March is a rescue, not advice: "Can I Save This Failing Theme Park in 90 Days?" 1,800,000 · 3.67x · est. 2026-10-09.
-2. A year label alone fails: "My Actual Social Media Strategy For 2027 - The Algorithm" 227,000 · 0.46x · est. 2026-09-09.
-3. Winners have 18,100 to 461,000 subscribers: format signals, not multiples for his 4.62M channel.
+### [laziest way to make money with ai in 2027](https://www.youtube.com/watch?v=DWAxo1Hwvyc)
+Alex (@alexpdfbusiness) · 161,352 · 13.36× · 2026-10-09
+Hook: "You know, no one wants to believe this, but this is probably the laziest way to make money. Check how much I made selling little $6 items like this"
+Why: It promises the least possible effort and shows proof of earnings in the first ten seconds.
+
+### [How I replaced my salary using just my evenings (step by step)](https://www.youtube.com/watch?v=wAF9FjR_QTs)
+Jack Biggerstaff (@jackbiggerstaff) · 74,485 · 11.13× · 2026-10-26
+Hook: "Okay, so this is how I replaced my income using just my evenings. And for context, I'm Jack. I was an engineer for 12 years"
+Why: A small time box and a concrete goal make the plan easy to picture.
+
+## Patterns
+- **Deadline stunt with something to prove** · Carson Reed 26.95×, Henry SaaS 14.26×, Dubibubi "I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS)" 236,320 · 4.77×
+- **Exact monthly figure plus one plain mechanism** · Pace Morby 19.71×, GovClose "The Most OVERLOOKED $35K/Month Business For People Over 50" 69,296 · 4.66×, Adrian Dimac "how I make $32k/mo from 1 "boring" business (just copy me)" 46,636 · 4.49×
+- **Low-effort promise** · Alex 13.36×, Jack Biggerstaff 11.13×, Maria Wendt "Build This Once, Make Sales Every Day (I Made $23M From This)" 78,743 · 5.89×
+
+## Ideas
+1. **Can I Build a $100K Business in 30 Days Without My Name?** · Deadline stunt. It answers the "it's just his audience" doubt.
+2. **I Have 90 Days to Save This Dying Gym** · Deadline stunt that repeats his 3.67× theme-park rescue format.
+3. **The $40K/Month Service Business Nobody Wants to Run** · Exact figure plus a boring mechanism, aimed at his service-business viewers.
+4. **How I'd Replace Your Salary in 90 Evenings** · Low-effort promise with a time box. It turns his start-over advice into a schedule.
+5. **The Laziest Offer That Still Makes $10K a Month** · Low-effort promise plus an exact figure.

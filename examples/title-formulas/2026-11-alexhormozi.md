@@ -1,39 +1,15 @@
-# Title Formulas: Business and Entrepreneurship Advice
-Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/title-formulas/SKILL.md`.
+# Titles: how to get your first 10 customers for a service business
 
-Authority: Founder of Acquisition.com, co-founder of Skool.
+Run: 2026-11-09 · Credits used: 5 · Live TubeLab MCP · `skills/title-formulas/SKILL.md`.
 
-## Formulas
-| Formula | Videos | Avg ratio | Example title | Verdict |
-|---|---:|---:|---|---|
-| How To Actually Make Money [X] | 26 | 6.40 | How to Actually Make Money Online No-BS Guide | Best: 5 live hits |
-| The [X] Every [Y] Needs | 231 | 6.65 | The Scene Every Salesman Needs to See | Untested |
-| How I Became [X] | 199 | 5.17 | How I Became a Millionaire | Untested |
-| [X] + [Y] = $[Z] (I Show Everything) | 19 | 7.14 | speedrunning an entire shopify store (I show everything) | Untested, thin |
-| The Economics of Owning a [X] | 218 | 4.20 | The Economics of Owning a Gym | Caution: median 971.5 |
+**Use: "If I Wanted My First 10 Customers, I’d Do This"** · the channel's "If I Wanted to…, I'd Do This" titles hit 3.26x and 4.08x against a 490,600 average; "first N clients" outliers in the niche run 9.66x.
+Can claim: founder of Acquisition.com, a start-over playbook · Confidence: high on the channel formulas, medium on niche outliers (channels under 10K subs).
 
-## Filled Titles
-### How To Actually Make Money [X]
-1. How To Actually Make Money Selling Services
-2. How To Actually Make Money With Skool
-
-### The [X] Every [Y] Needs
-1. The Offer Every Founder Needs
-2. The Sales Script Every Founder Needs
-
-### How I Became [X]
-1. How I Became Acquisition.com's Founder
-2. How I Became Skool's Co-Founder
-
-### [X] + [Y] = $[Z] (I Show Everything)
-1. Stranger + 26 Minutes = $1,000,000 (I Show Everything)
-2. Stranger + 31 Minutes = $3,000,000 (I Show Everything)
-
-### The Economics of Owning a [X]
-1. The Economics of Owning a Service Business
-2. The Economics of Owning a Skool Community
-
-## Caveats
-- Top: Kushal Lodha (@KushalLodha548) · "How To Actually Make Money From IPOs in 2026 | Kushal Lodha #374" · 540,955 views · 8.67x · 2026-08-25.
-- No formula matches @AlexHormozi's 120 sampled titles. Closest: "How Acquisition.com Makes Money" · 167,000 views · 0.34x · 2026-05-09.
-- Ratio-change values not returned; declines unchecked.
+1. **If I Wanted My First 10 Customers, I’d Do This** · If I Wanted to [X], I'd Do This · Alex Hormozi (@AlexHormozi) · "If I Wanted to Make My First $100K in 2026, I’d Do This" · 1.6M · 3.26x · 2026-03
+2. **If you have zero customers, please watch this** · If you're [X], please watch this · Alex Hormozi (@AlexHormozi) · "If you’re ambitious but inconsistent, please watch this" · 2.1M · 4.28x · 2026-01
+3. **How I’d Get My First 10 Customers (If I Had to Start Over)** · How I Would [X] (If I Had to Start Over) · Alex Hormozi (@AlexHormozi) · "How I Would Build a $10M Service Business (If I Had to Start Over)" · 1.4M · 2.85x · 2026-09
+4. **How to Get Your First 10 Customers Without a Network** · [X] Without [Y] · Gurmeet Oberoi (@Gurmeetoberoi925) · "How I got my first 5 clients without a network" · 13,661 · 9.66x · 2026-08-24
+5. **How I’d Actually Get 10 Customers (Start to Finish)** · How [X] Actually Gets Customers (Start to Finish) · Saad Belcaid (@SaadBelcaid) · "How Someone Doing $200K/mo Actually Gets Customers (Start to Finish)" · 4,390 · 4.33x · 2026-07-21
+6. **Cold Calls + Door Knocks = 10 Customers (I Show Everything)** · [X] + [Y] = $[Z] (I Show Everything) · untested here; index: 19 videos, 7.14x average. Only if you film the outreach.
+7. **The First 10 Customers Plan Every Service Business Needs** · The [X] Every [Y] Needs · untested here; index: 231 videos, 6.65x average.
+8. **How To Get New Customers When Nobody Knows You** · [X] How To Get New [Y] · untested here; 0 outliers in the niche this semester; index: 307 videos, 4.92x average.

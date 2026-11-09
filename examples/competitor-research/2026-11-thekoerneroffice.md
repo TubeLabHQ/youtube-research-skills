@@ -1,34 +1,24 @@
 # Competitor Research: Chris Koerner on The Koerner Office Podcast (@thekoerneroffice)
 
-Run: 2026-11-09 · Credits used: 7 · Live TubeLab MCP · `skills/competitor-research/SKILL.md`.
+Run: 2026-11-09 · Credits used: 0 · Live TubeLab MCP · `skills/competitor-research/SKILL.md`.
 
-Competitors: 5 · Confidence: medium, chosen by topic because similar-channel results were off-topic; audience overlap unverified
+**Greg Isenberg is the same size (740K vs 726K subs) and has twice the 90-day median (161,500 vs 82,500; 0.218 vs 0.114 per sub). He wins with AI tools named in the title, which Koerner leaves unnamed.**
+Set from: known (Noah Kagan dropped: no long-form upload since 2024) · Confidence: medium. All channels were checked with free reads and no search was run. Dates are monthly estimates, so the window is approximate.
 
-## Comparison
-| Channel (handle) | Subs | Median views | Uploads /90d | Main topics |
-|---|---:|---:|---:|---|
-| Chris Koerner (@thekoerneroffice) | 726,000 | 64,000 | 42 | Cheap small businesses, side hustles, AI money |
-| Starter Story (@starterstory) | 898,000 | 99,000 | 26 | App and micro-SaaS founder cases |
-| Greg Isenberg (@GregIsenberg) | 740,000 | 109,000 | 30 | AI startup ideas, new tools |
-| My First Million (@MyFirstMillionPod) | 971,000 | 48,000 | 30 | Business ideas, founder interviews |
-| Patrick Dang (@patrickdang) | 429,000 | 11,000 | 13 | AI side hustles for 9-5 workers |
-| Noelle Randall (@NoelleRandall1) | 1,090,000 | 10,000 | 53 | Real estate, credit, wealth |
+| Channel (handle) | Subs | Median views | Median / subs | Uploads, 90 days | Topics |
+|---|---:|---:|---:|---:|---|
+| Chris Koerner (@thekoerneroffice) | 726K | 82,500 | 0.114 | 42 | Overlooked small businesses, AI side hustles, operator interviews |
+| Greg Isenberg (@GregIsenberg) | 740K | 161,500 | 0.218 | 30 | New AI tools, AI startup ideas, agent tutorials |
+| Starter Story (@starterstory) | 898K | 83,000 | 0.092 | 26 | App, SaaS and website founder stories |
+| My First Million (@MyFirstMillionPod) | 971K | 55,000 | 0.057 | 30 | Interviews with credentialed guests, business ideas |
+| Codie Sanchez (@CodieSanchezCT) | 2.27M | 108,000 | 0.048 | 11 | Buying businesses, sales, money habits |
+| Jordan Welch (@JordanWelch) | 2.02M | 93,500 | 0.046 | 6 | Beginner AI businesses, dropshipping |
 
 ## Gaps to Win
-| Gap | Proof (handle · title · views · ratio · date) |
-|---|---|
-| Side hustles built around a day job; none of 72 sampled Koerner titles say "night" or "9-5" | @patrickdang · "11 High Paying Claude AI Side Hustles You Can Do At Night 🌙" · 537,240 · 8.94x · 2026-09-14 |
-| Naming a just-launched tool; Koerner's unnamed tool title "This Tool Makes AI Agents Stupid Simple" got 30,000 at 0.22x | @GregIsenberg · "Jev is HERE. How to use it" · 778,448 · 5.07x · 2026-09-18 |
-| Short first-person app-revenue cases; Koerner averages 36.5 minutes, Starter Story 14.9 | @starterstory · "I built an app that makes $2K PER DAY" · 367,843 · 2.53x · 2026-10-18 |
 
-## Copy and Avoid
-- Copy: named-tool titles for launches, the day-job constraint, first-person revenue claims in a shorter cut.
-- Avoid: vague tool titles and off-core topics ("Stop Rambling: 7 Tricks to Make People Respect You", 10,000, 0.07x).
+1. **A named AI tool with a money angle, at launch** · Greg Isenberg (@GregIsenberg) · "Jev is HERE. How to use it" · 778,000 · 5.07x · 2026-10-09. Greg has two more named-platform videos at 2x or more. Koerner's unnamed-tool videos stall ("This Tool Makes AI Agents Stupid Simple", 0.22x). If he names the tool and shows a dollar result he tested himself, it fits his operator angle.
+2. **App and website revenue stories, told by the founder** · Starter Story (@starterstory) · "I built an app that makes $2K PER DAY" · 365,000 · 2.53x · 2026-10-19. A second winner, "How This SaaS Hit $69K/Month In Just 2 Months", reached 2.17x. Koerner's guest income stories already win ("She Makes $2K Every Saturday From Her Parents' Front Porch", 3.52x) and his solo build demos do not (0.37x). He can point that guest format at software.
+3. **The guest's credential in the title** · My First Million (@MyFirstMillionPod) · "Sam Altman's coach destroys your limiting beliefs for 86 minutes straight" · 403,000 · 4.34x · 2026-10-09. It repeats with "4 wild AI predictions from a $39B tech founder" (2.85x). Koerner's guest titles say only "He", "She" or "This Guy". Adding the credential changes the title, not the format.
 
-## Positioning
-Koerner is the operator who finds cheap, real-world businesses anyone can start and proves them with owners and his own tests, while rivals chase AI tools and apps.
-
-## Caveats
-- Similar-channel results were off-topic. @patrickdang and @NoelleRandall1 came from the outlier search; I named the other three and verified them with free reads.
-- These reads returned no audience data, so fit rests on language and topic.
-- Medians are raw and from different sample windows. Median per subscriber: @GregIsenberg 15%, @starterstory 11%, Koerner 9%, @MyFirstMillionPod 5%. Upload counts use estimated dates.
+Copy: Greg's "[Named tool] will create 1,000 millionaires" frame, and Starter Story's 15 to 17 minute founder cut. · Avoid: generic sales and mindset videos. Codie Sanchez has none of 11 uploads at 2x or more.
+Positioning: The operator who puts real dollars into every new tool and small business, then brings on the people already making money from them.
