@@ -1,5 +1,5 @@
 # 💰 Monetization Research: The Koerner Office (@thekoerneroffice)
-Run: 2026-11-09 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
+Run: 2026-11-10 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
 
 - **Biggest gap:** The [channel](https://www.youtube.com/@thekoerneroffice) promises to teach mobile home and RV park investing, but it sells nothing on that topic.
 - **Peers:** 5, from named ([Starter Story](https://www.youtube.com/@starterstory), [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT), [My First Million](https://www.youtube.com/@MyFirstMillionPod), [Noah Kagan](https://www.youtube.com/@noahkagan)) and search ([Luke Davis](https://www.youtube.com/@lukedavisvlogs)).
@@ -20,6 +20,15 @@ Run: 2026-11-09 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
 | ✅ Affiliate links | He earns from a [HighLevel](https://www.youtube.com/watch?v=DimX9OZyhPw) link that gives viewers 30 days free. | [Somewhere](https://www.somewhere.com/mfm) offers My First Million listeners $500 off. | Low. This is already in place. |
 | ✅ Software | He sells [Lazybooks](https://lazybooks.com/), an accounting app. | Noah Kagan's [AppSumo](https://social.appsumo.com/browse-appsumo). | Low. This is already in place. |
 | ✅ Newsletter | He runs a free weekly newsletter at [tkopod.com](https://tkopod.com). | Noah Kagan's newsletter at [noahkagan.com](https://noahkagan.com/). | Low. This is already in place. |
+
+## 🤝 Sponsors on Channels Like This
+✅ this channel already works with the brand.
+
+- [HubSpot](https://clickhubspot.com/e2263e) · [Starter Story](https://www.youtube.com/@starterstory) ([link in description](https://www.youtube.com/watch?v=hnxn16HtLIk)), [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT) ([link in description](https://www.youtube.com/watch?v=v2jRsAFnqXY))
+- [Bizee](https://bizee.com) ✅ · [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT) ([sponsor read](https://www.youtube.com/watch?v=_IwYLXAXzx8&t=279s))
+- [beehiiv](https://beehiiv.com/mfm-challenge) ✅ · [My First Million](https://www.youtube.com/@MyFirstMillionPod) ([link in description](https://www.youtube.com/watch?v=Sd_Vn1j8qrI))
+- [Mercury](http://mercury.com/) · [My First Million](https://www.youtube.com/@MyFirstMillionPod) ([link in description](https://www.youtube.com/watch?v=Sd_Vn1j8qrI))
+- [Somewhere](https://www.somewhere.com/mfm) · [My First Million](https://www.youtube.com/@MyFirstMillionPod) ([link in description](https://www.youtube.com/watch?v=Sd_Vn1j8qrI))
 
 ## 🧪 Open Products to Test
 1. **A course on investing in RV and mobile home parks**

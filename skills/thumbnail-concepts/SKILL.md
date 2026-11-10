@@ -16,8 +16,8 @@ Three thumbnail concepts for one video. A strong thumbnail joins what the viewer
 
 ## Workflow
 
-1. Clarify scope only if needed. Split the video into two plain lines: its unique angle (what is new or different about it) and the familiar problem (what this audience already cares about). With only a niche and no video, study the familiar problem alone.
-2. Run two outlier searches: one for videos with the unique angle, wherever they are, and one for videos on the familiar problem. Two searches are the norm.
+1. Clarify scope only if needed. Split the video into two plain lines: its unique angle (what is new or different about it) and the familiar problem (what this audience already cares about). With only a niche and no video, study the familiar problem alone. If the user wants a title too, follow `title-formulas` first and design for the chosen title, so the thumbnail shows what the title leaves out.
+2. Run two outlier searches: one for videos with the unique angle, wherever they are, and one for videos on the familiar problem. Two searches are the norm. Reuse outliers already found in this conversation first, if they meet the quality floor in Common Pitfalls.
 3. View the thumbnails of the outliers worth studying in each set, up to 8 in all. Before designing anything, write down what works in each set. Note compositions (how the frame is arranged, the shot, where people and objects sit) and details that pull the eye (a prop, a gesture, a word, a visual trick).
 4. Look at the channel's recent thumbnails and note what to keep.
 5. Build each concept from one unique-angle pattern and one familiar-problem pattern. Generate the images if you can, or else write one prompt per concept.
