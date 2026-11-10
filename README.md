@@ -78,7 +78,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | Skill | Use it when you want to... | Output |
 |---|---|---|
 | [`title-formulas`](skills/title-formulas/) | Get titles you can publish, built on formulas from the trending index, your niche and neighbouring niches. Pairs with `thumbnail-concepts`: titles first | About eight titles with proof, plus a table of their formulas with each one's source, proven or untested |
-| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts that join your video's new angle with the problem your viewers know. Pairs with `title-formulas`: the thumbnail for the chosen title | Patterns that work for each, three concepts that combine them, images or prompts |
+| [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts that join your video's new angle with the problem your viewers know. Pairs with `title-formulas`: the thumbnail for the chosen title | 50 or more thumbnails viewed, the patterns in the ones worth studying, three concepts that combine them, images or prompts |
 
 ### 💰 Monetization team
 
