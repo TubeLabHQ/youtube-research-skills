@@ -1,15 +1,18 @@
 # ⚖️ Niche Verdict: business advice for entrepreneurs
-Run: 2026-11-09 · Live TubeLab MCP · `skills/niche-validator/SKILL.md`.
+Run: 2026-11-10 · Live TubeLab MCP · `skills/niche-validator/SKILL.md`.
 
-- **Verdict:** Enter with a twist. Demand (74) and ad pay (81) are strong, but the big channels reach only 16% of their subscribers per video (14).
-- **Sample:** 13 on-topic English channels from 68 videos in two searches, last 3 months, not widened. 10 channels feed the scores.
+- **Verdict:** Enter with a twist. Ad pay is strong (81) and demand is fair (62). It is crowded (45), but new channels still break in.
+- **Sample:** 13 on-topic English channels, 68 videos from two searches, last 3 months, not widened.
 - **Left out of the scores:** [Brandon Bryant](https://www.youtube.com/@Wallstreetpaper), [Will Barron](https://www.youtube.com/@wbarron) and [Alex M H Smith](https://www.youtube.com/@AlexMHSmith). Their views per subscriber (1.22 to 1.32) are above three times the median (0.19).
 
-| Score | 0 to 100 | Band | Based on |
-|---|---:|---|---|
-| Market Size | 74 | 🟢 | viral views potential 740,800, average views 98,820, set by one video (59 🟡 without Alex Hormozi's 2.1M) |
-| Unsaturated | 14 | 🔴 | reach beyond subscribers 0.16 |
-| Profitable | 81 | 🟢 | RPM $5.65 to $7.95, from 10 channels |
+## 📊 Scores
+Formula scores come from the sample, computed like TubeLab's Niche Analyzer. My read is my own judgment of this exact niche, from everything I read. Both run from 0 to 100.
+
+| Score | Formula | My read | Based on |
+|---|---|---|---|
+| Market Size | 74 🟢 | 62 🟡 | viral views potential 740,800, average views 98,820, set by one video (59 🟡 without [Alex Hormozi](https://www.youtube.com/@AlexHormozi)'s 2.1M), so I count that video for less |
+| Unsaturated | 14 🔴 | 45 🔴 | reach beyond subscribers 0.16, but newcomers still break in: 60 channels under a year old pass 1,000 median views |
+| Profitable | 81 🟢 | 81 🟢 | RPM $5.65 to $7.95, from 10 channels |
 
 Revenue estimate, unreliable outside English-speaking audiences:
 
@@ -17,14 +20,10 @@ Revenue estimate, unreliable outside English-speaking audiences:
 |---|---|---|---|---|
 | Revenue | $6 to $8 | $57 to $80 | $565 to $795 | $5,650 to $7,950 |
 
-These numbers are estimates from a small sample. They are not measurements.
-
 ## 🚀 Breaking In
-- [Tanay Kothari](https://www.youtube.com/@tankots) · joined July 2026, 19,700 subscribers, 155,000 median views. He films life as an AI startup founder.
-- [LadyBossBlueprint](https://www.youtube.com/@BossMCsBluePrint) · joined August 2026, 5,300 subscribers, 10,000 median views. It is a faceless channel about leaving a job to start a firm.
-- [The Venture Podcast](https://www.youtube.com/@theventurepod) · joined July 2026, 1,990 subscribers, 9,300 median views. It interviews founders about how they built their companies.
-
-The young-channel search found 60 English channels from the last year with more than 1,000 median views, so new channels can still get in.
+- [Tanay Kothari](https://www.youtube.com/@tankots) · joined July 2026, 19,700 subscribers, 155,000 median views
+- [LadyBossBlueprint](https://www.youtube.com/@BossMCsBluePrint) · joined August 2026, 5,300 subscribers, 10,000 median views
+- [The Venture Podcast](https://www.youtube.com/@theventurepod) · joined July 2026, 1,990 subscribers, 9,300 median views
 
 ## ✅ Formats That Work
 
@@ -53,10 +52,10 @@ The young-channel search found 60 English channels from the last year with more 
 - [Founders, Inc.](https://www.youtube.com/@fdotinc) · [if you're building hardware, watch this](https://www.youtube.com/watch?v=r16wMQg3hf0) · 226,086 views, 4.63x, 2026-08-26
 
 ## 🎯 Gaps and Ideas
-- **Leaders never cover:** The leaders talk about starting a business. Almost none of them help owners whose business already runs and is stuck.
-- **Proof the gap pays:** The two channels that do this, [Will Barron](https://www.youtube.com/@wbarron) and [Alex M H Smith](https://www.youtube.com/@AlexMHSmith), get over 1.2 views per subscriber. The big channels get 0.16.
-- **Start-over for owners:** Use the start-over format for people who already own a business. One example: "If I had to rebuild my agency, I would fix this first."
+- **Leaders never cover:** The leaders talk about starting a business, and almost none help owners whose business already runs and is stuck.
+- **Fixes for stuck owners:** [Will Barron](https://www.youtube.com/@wbarron) and [Alex M H Smith](https://www.youtube.com/@AlexMHSmith) do this and get over 1.2 views per subscriber, against 0.16 for the big channels.
+- **Start-over for owners:** Use the start-over format for people who already own a business, such as "If I had to rebuild my agency, I would fix this first."
 
 ## 🧭 Entry Plan
-- **Angle:** Advice for owners of small service businesses who are already running. Package it in the start-over and overlooked-ideas formats.
+- **Angle:** Advice for owners of small service businesses that already run, packaged in the start-over and overlooked-ideas formats.
 - **First titles:** "If I Had to Rebuild My Service Business From Zero, I'd Fix This First" · "9 Overlooked Fixes That Make a Small Business More Profitable" · "If Your Business Is Stuck Under $1M, Watch This"

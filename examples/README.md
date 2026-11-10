@@ -10,6 +10,7 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | monetization-research | [2026-11-thekoerneroffice.md](monetization-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |
 | niche-finder | [2026-11-open-discovery.md](niche-finder/2026-11-open-discovery.md) | open discovery, no starting topic |
 | niche-validator | [2026-11-business-advice.md](niche-validator/2026-11-business-advice.md) | business advice for entrepreneurs |
+| niche-validator | [2026-11-war-dead-dna.md](niche-validator/2026-11-war-dead-dna.md) | a new idea, scored on the two niches it draws on |
 | niche-watchlist | [2026-11-09.md](niche-watchlist/2026-11-09.md), with [config.json](niche-watchlist/config.json) and [state.json](niche-watchlist/state.json) | business advice |
 | script-breakdown | [2026-11-alexhormozi.md](script-breakdown/2026-11-alexhormozi.md) | one @AlexHormozi video |
 | sponsorship-prospecting | [2026-11-bookkeeping-app.md](sponsorship-prospecting/2026-11-bookkeeping-app.md) | an invoicing and bookkeeping app for US freelancers |
