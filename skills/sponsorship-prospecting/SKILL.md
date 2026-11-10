@@ -12,16 +12,16 @@ metadata:
 
 ## Overview
 
-A scored list of YouTube channels worth sponsoring for one product. A brand pays for views by the right people, not for subscribers. So judge reach by the median views of recent long videos, and fit by how closely the audience's country, age, gender and income match the buyer.
+A scored list of YouTube channels worth sponsoring for one product. A brand pays for views by the right people, not for subscribers. So judge reach by median views, and fit by how closely the audience's country, age, gender and income match the buyer.
 
 ## Workflow
 
 1. Clarify scope only if needed: the product, the buyer, and any budget.
-2. Start with outlier searches on the topics the buyer watches; they are cheap and find most prospects. Then run one channel search with the buyer's audience filters; only channel-search hits carry audience estimates. Where a prospect has none, write "no estimate" and judge fit from who the channel says it serves. Expect about three to five searches; reads are free.
-3. Keep two pools. Channels that already take sponsors are proven, and their current sponsors show what sells to this audience, including the user's competitors. A channel tied to a competing product has little sponsor room, but its deal shows what sells to this buyer; say so. Channels with the right audience and no sponsor yet are cheaper and more open.
-4. Read each shortlisted channel. Note its upload rhythm, how steady its views are, sponsor mentions in the descriptions of two or three recent videos (link the brand and the video), and a public contact path from the channel's own description or links. Fetch and view the thumbnail of each video you feature, and say so if one fails to load.
-5. Score each prospect from 1 to 5 on audience fit, topic fit, reach (median views), steady views, sponsor room (none yet, some, or crowded), brand safety and contact path. Rank by total, breaking ties on audience fit.
-6. Estimate a cost band per sponsored video from median views. Unless the user gives a rate, assume $20 to $40 per 1,000 median views, and note that small channels often set a minimum fee above it. Label it as an estimate, and never state a creator's rate as fact.
+2. Start with outlier searches on the topics the buyer watches; they are cheap and find most prospects. Then run one channel search with the buyer's audience filters; it returns few on-topic hits. Only channel-search hits carry audience estimates; where a prospect has none, write "no estimate" and judge fit from who the channel says it serves. Skip the similar-channels search. Expect three to five searches; reads are free.
+3. Keep two pools. Channels that already take sponsors are proven, and their sponsors show what sells to this audience. One tied to a competing product has little room left; say so. Channels with the right audience and no sponsor yet are cheaper and more open.
+4. Read each shortlisted channel. Note its median views (the last ten or so long videos, skipping any under a week old), upload rhythm, how steady its views are, sponsor mentions in the descriptions of two or three recent videos, and a public contact path from the channel's description, links or recent video descriptions. Fetch and view the thumbnail of each video you feature, and say so if one fails to load.
+5. Score each prospect from 1 to 5 on audience fit (counted double), topic fit, reach, steady views, sponsor room (none yet, some, or crowded), brand safety and contact path. Rank by total. Drop any prospect whose audience is likely outside the buyer's country, whatever its total.
+6. Estimate a cost band per sponsored video from median views. Unless the user gives a rate, assume $20 to $40 per 1,000 median views, and note that small channels often set a minimum fee above it. Label it as an estimate, not as the creator's rate.
 
 ## Output Format
 
@@ -36,7 +36,7 @@ A scored list of YouTube channels worth sponsoring for one product. A brand pays
 
 Median views come from each channel's last {n} long videos. Audience fields are estimates.
 
-| Channel (link) | Subs | Median views | Audience (estimate) | Sponsors now | Fit (total score) | Contact |
+| Channel (link) | Subs | Median views | Audience (estimate) | Sponsors now (competitors marked) | Fit (total score) | Contact |
 |---|---:|---:|---|---|---:|---|
 
 ## ✅ Best Fits
@@ -47,7 +47,7 @@ Median views come from each channel's last {n} long videos. Audience fields are 
 
 - **Why it fits:** {one sentence}
 - **Proof:** [{title}]({video url}) · {views, ratio, date}
-- **Sponsors now:** {linked brands, or "none found"}
+- **Sponsors now:** {linked brands, or "none found"; say if one is a competitor of the product}
 - **Outreach angle:** {one sentence the brand could open with, tied to a specific video}
 - **Estimated cost:** {band per sponsored video, labelled as an estimate}
 
@@ -69,8 +69,8 @@ channel,url,subscribers,median_views,audience,sponsors_now,fit_score,contact
 
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, or the results fill with low-effort videos.
 - Do not rank by subscribers. A mismatched big channel is a worse buy than a matched small one.
-- Do not present audience fields as facts. They are estimates, so the brand should ask the creator for a screenshot of their analytics before paying.
-- Do not trust the language tag for the audience's country. It can call a Hindi or Urdu video English, so check titles, thumbnails and the audience fields.
-- Do not list made-for-kids channels, dormant channels (no upload in about the last month), or channels whose views swing wildly from video to video.
+- Do not present audience fields as facts. They are estimates, so ask the creator for an analytics screenshot before paying.
+- Do not trust the language tag for the audience's country. It can call a Hindi or Urdu video English.
+- Do not list made-for-kids channels, dormant channels (no upload in about the last month), or channels whose views swing wildly.
 - Do not publish private contact details. Use only what the channel shows publicly.
-- Do not trust "no sponsor" from the flag alone. It misses some sponsors.
+- Do not trust the sponsor flag alone. It misses some sponsors and flags some channels with none visible, so check the descriptions either way.

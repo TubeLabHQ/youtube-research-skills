@@ -1,6 +1,6 @@
 # ✍️ Titles: How to get your first 10 customers for a service business
 
-Run: 2026-11-09 · Credits used: 9 · Live TubeLab MCP · `skills/title-formulas/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/title-formulas/SKILL.md`.
 
 - **Use:** "How I'd Get My First 10 Customers (If I Had to Start Over)" · All three of your Start Over videos beat your average, at 1.56x to 2.85x.
 - **Can claim:** You founded Acquisition.com and co-founded Skool.com. So "I would" titles are safe, but "I got" titles need your own story.

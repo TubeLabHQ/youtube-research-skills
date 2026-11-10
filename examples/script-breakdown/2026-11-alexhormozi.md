@@ -1,6 +1,6 @@
 # 🎬 Script Breakdown: Can I Save This Failing Theme Park in 90 Days?
 
-Run: 2026-11-09 · Credits used: 0 · Live TubeLab MCP · `skills/script-breakdown/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/script-breakdown/SKILL.md`.
 
 - **Main finding:** The video keeps jumping ahead to show results, but it answers the hook's two questions only at [25:42](https://www.youtube.com/watch?v=xRxVpjeHmeA&t=1542s).
 

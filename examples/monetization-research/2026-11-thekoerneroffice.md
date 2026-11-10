@@ -1,5 +1,5 @@
 # 💰 Monetization Research: The Koerner Office (@thekoerneroffice)
-Run: 2026-11-09 · Credits used: 10 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/monetization-research/SKILL.md`.
 
 - **Biggest gap:** The [channel](https://www.youtube.com/@thekoerneroffice) promises to teach mobile home and RV park investing, but it sells nothing on that topic.
 - **Peers:** 5, from named ([Starter Story](https://www.youtube.com/@starterstory), [Codie Sanchez](https://www.youtube.com/@CodieSanchezCT), [My First Million](https://www.youtube.com/@MyFirstMillionPod), [Noah Kagan](https://www.youtube.com/@noahkagan)) and search ([Luke Davis](https://www.youtube.com/@lukedavisvlogs)).

@@ -1,5 +1,5 @@
 # 🖼️ Thumbnail Concepts: "Change My Mind, Win $10,000"
-Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/thumbnail-concepts/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/thumbnail-concepts/SKILL.md`.
 
 - **Lead with:** Concept 1, because the same one-against-a-room format reached 5.06x with the hot take quoted.
 - **Keep from the channel:** Alex's face and beard, the flannel or black tee, and bold white capitals with one coloured word.

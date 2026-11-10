@@ -18,10 +18,10 @@ The product is new channel ideas, not a list of channels that already exist. Sta
 
 1. Clarify scope only if needed. If the user names a topic, add it as `query` to both presets. If the user names a language, use it instead of the preset languages.
 2. Run both presets below for 3 to 4 pages each. Page with `from` (0, 20, 40, 60) and keep every other setting the same. Each page is a paid channel search, so a full run is 6 to 8 searches.
-3. From the sample, pick high-quality channels and channels with a clear, repeatable format. Read the best ones, which is free. Fetch and view their thumbnails, and say so if one fails to load.
+3. From the sample, pick high-quality channels and channels with a clear, repeatable format. Read the best ones, which is free. For a channel you did not read, a video's ratio is its views over the channel's average views. Fetch and view their thumbnails, and say so if one fails to load.
 4. Turn them into new niches with one of the three moves in the Overview.
 5. For each idea, note one way it could earn beyond AdSense, such as sponsors, affiliates, a product or a community. Base it on what the parent channels or their audience already pay for.
-6. Rank the best 10 by opportunity, audience value, money and originality. Check that the top 3 are still open with one outlier search each, in the idea's language and over the last year. Count how many returned results closely match the idea, because the search total is capped and means nothing. If a checked idea is crowded, say so and rank it lower; do not keep searching for open ones.
+6. Rank the best 10 by opportunity, audience value, money and originality. Check the top 3 with one outlier search each, in the idea's language and over the last year. Count how many returned results closely match the idea, because the search total is capped and means nothing. When a checked idea is crowded, rank it lower and check the idea that takes its place, up to five checks in all. Say so for any top-3 idea left unchecked.
 
 Breakout channels, which are new channels doing better than their size:
 

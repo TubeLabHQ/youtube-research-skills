@@ -94,7 +94,7 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 
 ## Spending credits
 
-Spend paid searches on finding candidates and free reads on understanding them. Two to six searches per job is a sane norm, and a paid search is not paged in a loop. Two skills go deeper, because the sample is the product. `niche-finder` pages two channel searches 3 to 4 pages deep, about 35 to 45 credits. `niche-validator` runs five to seven searches, about 20 to 30 credits. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Tell the user the credits used at the end, not a budget at the start.
+Spend paid searches on finding candidates and free reads on understanding them. Two to six searches per job is a sane norm, and a paid search is not paged in a loop. One skill goes deeper, because the sample is the product: `niche-finder` pages two channel searches 3 to 4 pages deep. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Keep budgets and credit counts out of the report; give them if the user asks.
 
 ## Full reference
 

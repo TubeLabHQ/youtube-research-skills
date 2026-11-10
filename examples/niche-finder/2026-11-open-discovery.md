@@ -1,5 +1,5 @@
 # 🧩 Niche Ideas: open discovery
-Run: 2026-11-09 · Credits used: 42 at list price · Live TubeLab MCP · `skills/niche-finder/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/niche-finder/SKILL.md`.
 
 - **Best idea:** A faceless channel about unknown war dead who got their names back through DNA.
 - **Sample:** 114 channels from 6 pages, 3 per preset.
