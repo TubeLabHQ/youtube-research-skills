@@ -6,7 +6,7 @@
     {
       "name": "youtube-research",
       "source": "./",
-      "description": "YouTube research skills and six agency agents (niche scout, validator, trend analyst, script analyst, packaging team, money team) plus the TubeLab MCP server, registered on install.",
+      "description": "YouTube research skills and six agency agents (niche scout, validator, trend analyst, script analyst, packaging team, monetization team) plus the TubeLab MCP server, registered on install.",
       "category": "research",
       "tags": ["youtube", "tubelab", "mcp", "research"]
     }

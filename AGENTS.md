@@ -7,6 +7,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | The user asks | Load |
 |---|---|
 | Find a niche, unsaturated niches, faceless ideas, niches that earn beyond AdSense, twist or combine niches | `niche-finder` |
+| Bend this channel's format into another market, niche bending, which proven formats can I bring to my market | `niche-bending` |
 | What is working in X, why did this video blow up, trend report, weekly digest, hooks and formats to steal | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
 | Analyze or roast my channel, why did views drop, what to change first | `channel-analysis` |
@@ -29,12 +30,12 @@ The plugin ships six agents in `agents/`, one per role. Each loads the skills be
 
 | Agent | Skills |
 |---|---|
-| `niche-scout` | `niche-finder`; `niche-watchlist` to watch a niche over time |
-| `validator` | `niche-validator` |
-| `trend-analyst` | `trend-report` |
-| `script-analyst` | `script-breakdown` |
-| `packaging-team` | `title-formulas`, then `thumbnail-concepts` for the chosen title |
-| `money-team` | `monetization-research`; `sponsorship-prospecting` when the user is a brand choosing channels to sponsor |
+| 🔭 `niche-scout` | `niche-finder`; `niche-bending` to bend one channel's format, or a proven one, into new markets; `niche-watchlist` to watch a niche over time |
+| ⚖️ `validator` | `niche-validator` |
+| 📈 `trend-analyst` | `trend-report` |
+| 🎬 `script-analyst` | `script-breakdown` |
+| 🎨 `packaging-team` | `title-formulas`, then `thumbnail-concepts` for the chosen title |
+| 💰 `monetization-team` | `monetization-research`; `sponsorship-prospecting` when the user is a brand choosing channels to sponsor |
 
 ## Rules every skill follows
 

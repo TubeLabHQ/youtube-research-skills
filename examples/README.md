@@ -8,6 +8,7 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | comment-mining | [2026-11-alexhormozi.md](comment-mining/2026-11-alexhormozi.md) | @AlexHormozi, latest 12 videos |
 | competitor-research | [2026-11-thekoerneroffice.md](competitor-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |
 | monetization-research | [2026-11-thekoerneroffice.md](monetization-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |
+| niche-bending | [2026-11-thepaintexplainer.md](niche-bending/2026-11-thepaintexplainer.md) | @ThePaintExplainer's formats, bent into new markets |
 | niche-finder | [2026-11-open-discovery.md](niche-finder/2026-11-open-discovery.md) | open discovery, no starting topic |
 | niche-validator | [2026-11-business-advice.md](niche-validator/2026-11-business-advice.md) | business advice for entrepreneurs |
 | niche-validator | [2026-11-war-dead-dna.md](niche-validator/2026-11-war-dead-dna.md) | a new idea, scored on the two niches it draws on |
