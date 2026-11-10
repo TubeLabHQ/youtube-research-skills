@@ -18,8 +18,9 @@ Titles the user can publish, each built on a proven formula, followed by the for
 
 1. Clarify scope only if needed: the topic or draft title, and what the channel can truthfully claim.
 2. Collect formulas from three sources. First, the trending formulas that fit the topic. Second, outliers in this niche: work out the formula behind each winning title, meaning its repeated shape with the slots marked. Third, outliers in one or two neighbouring niches whose viewers are the same kind of people, such as NFL fans for a soccer channel.
-3. Label each formula. It is proven when an outlier in this niche or one of the channel's own wins uses it. A formula from a neighbouring niche stays untested here until an outlier in this niche uses it. Use about five searches in total.
+3. Label each formula. It is proven when an outlier in this niche or one of the channel's own wins uses it. A formula from a neighbouring niche stays untested here until an outlier in this niche uses it. Use about five searches in total, and reuse outliers already found in this conversation before searching again.
 4. Write each title in the channel's own voice.
+5. If the user wants a thumbnail too, finish the titles first. Then follow `thumbnail-concepts` for the chosen title.
 
 ## Output Format
 

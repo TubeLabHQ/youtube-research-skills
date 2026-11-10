@@ -11,17 +11,30 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Video ideas for my channel, what should I make next | `video-ideation` |
 | Analyze or roast my channel, why did views drop, what to change first | `channel-analysis` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails, which thumbnails work in a niche | `thumbnail-concepts` |
-| Is X worth entering, is this niche saturated, go or no-go, score this niche | `niche-validator` |
-| Titles for my video, title formulas, trending title templates, rewrite a title | `title-formulas` |
+| Is X worth entering, is this niche saturated, go or no-go, score this niche, compare a shortlist of niches | `niche-validator` |
+| Titles for my video, title formulas, trending title templates, rewrite a title, a title and a thumbnail together (titles first) | `title-formulas` |
 | Who are my competitors, how do I compare, competitive landscape, who is growing in my space | `competitor-research` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
-| Script structure, beat sheet, hook of this video, script skeleton | `script-breakdown` |
+| Script structure, beat sheet, hook of this video, script skeleton, how the top videos of a niche or channel are built | `script-breakdown` |
 | Monetization gaps for my channel, what to sell, how channels like mine make money, raise RPM, who could sponsor my channel (the creator's side) | `monetization-research` |
 | Which channels should we sponsor, creator prospect list for a product, match creators to a buyer (the brand's side) | `sponsorship-prospecting` |
 | Watch a niche, which channels broke out since last run, scheduled digest | `niche-watchlist` |
 | How do TubeLab tools work, which filter, credits, REST | `tubelab-mcp` |
 
-Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, monthly client report).
+Ordered chains for common jobs live in `playbooks/` (run the whole agency, launch a faceless channel, monthly client report).
+
+## Roles (Claude Code agents)
+
+The plugin ships six agents in `agents/`, one per role. Each loads the skills below and returns the skill's report. On other clients, load the skills directly.
+
+| Agent | Skills |
+|---|---|
+| `niche-scout` | `niche-finder`; `niche-watchlist` to watch a niche over time |
+| `validator` | `niche-validator` |
+| `trend-analyst` | `trend-report` |
+| `script-analyst` | `script-breakdown` |
+| `packaging-team` | `title-formulas`, then `thumbnail-concepts` for the chosen title |
+| `money-team` | `monetization-research`; `sponsorship-prospecting` when the user is a brand choosing channels to sponsor |
 
 ## Rules every skill follows
 

@@ -12,14 +12,14 @@ metadata:
 
 ## Overview
 
-Find the monetization gaps. These are things this audience already pays for elsewhere that the channel does not offer, and open products nobody in the niche sells. The evidence is in video descriptions, offer pages and sponsor reads, which are all free to read.
+Find the monetization gaps. These are things this audience already pays for elsewhere that the channel does not offer, and open products nobody in the niche sells. It also lists the brands that sponsor channels like this one. The evidence is in video descriptions, offer pages and sponsor reads, which are all free to read.
 
 ## Workflow
 
 1. Clarify scope only if needed. With no channel, audit the niche for a new entrant.
 2. Read the channel's descriptions to see how it earns and who already pays it.
 3. Find peers: competitors you can name, plus channels with the same audience from one or two searches using the audience filters. Drop results with a different audience.
-4. Open the peers' actual offers. Note what each one is, who it is for, the price if shown, and the link. If a brand is only mentioned out loud, link the moment in the video.
+4. Open the peers' actual offers. Note what each one is, who it is for, the price if shown, and the link. If a brand is only mentioned out loud, link the moment in the video. Keep a list of every sponsor and the peers that carry it.
 
 ## Output Format
 
@@ -36,19 +36,24 @@ Find the monetization gaps. These are things this audience already pays for else
 |---|---|---|---|
 | ❌ {method} | {what it would be here} | [{offer}]({link}) on [{channel}]({url}), {price} | {High, Medium or Low}, {why} |
 
+## 🤝 Sponsors on Channels Like This
+✅ this channel already works with the brand.
+
+- [{brand}]({the link the peer gives}) {✅ if this channel already works with it} · [{channel}]({url}) ([{sponsor read, or link in description}]({video or moment url})), [{channel}]({url}) ([{sponsor read, or link in description}]({video or moment url}))
+
 ## 🧪 Open Products to Test
 1. **{Specific offer}**
    - **Evidence:** {linked proof}
    - **First test:** {one sentence}
 ```
 
-- Length: about 700 words. Three open products.
+- Length: about 800 words. Up to eight sponsors, then three open products.
 - Language: plain words and short, complete sentences. Nothing compressed.
 - Bullets: one fact each, under 25 words, except quotes and verbatim titles. No extra sections or bullets.
 - If it runs long, cut whole items. Never cut proof, and never squeeze sentences.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
 - Rows: cover products, courses, communities, newsletters, services, sponsors, affiliates, merch, events, software, and ads with RPM levers. Put ❌ rows first, highest potential on top, and ✅ rows last.
-- Sponsors: the sponsors row links brands seen on peers, not the channel's current sponsors.
+- Sponsors: list brands seen on peers, starting with the brand on the most peers. Say whether each is a sponsor read or only a link in the description. Leave out a peer's own products and the company that owns its show. Mark ✅ only when the channel's own videos or descriptions show the brand.
 
 ## Common Pitfalls
 

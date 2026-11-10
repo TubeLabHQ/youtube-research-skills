@@ -18,6 +18,10 @@ Skills here are short research workflows. Models are smart, and over-detailed in
 node scripts/validate-skills.mjs
 ```
 
+## Agents
+
+The files in `agents/` are thin wrappers for Claude Code: each names a role and the skills it loads, in about ten lines. The workflow lives in the skill, never in the agent file, so a change to how a job is done goes in the `SKILL.md`.
+
 ## Conventions (the validator checks dates, links, sections and size)
 
 - **Search discipline.** Search to find candidates, and read to understand them. Searches cost credits, and reads are free. Most skills use two to six searches, and do not page through a paid search. One skill is the exception: `niche-finder` pages its two channel searches 3 to 4 pages deep. No budget announcements.
