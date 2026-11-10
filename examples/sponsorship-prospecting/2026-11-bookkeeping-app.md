@@ -1,30 +1,27 @@
-# 🤝 Sponsorship Prospects: invoicing and bookkeeping app for US freelancers
+# 🤝 Sponsorship Prospects: invoicing and bookkeeping app for US freelancers ($15 a month)
 
-Run: 2026-11-09 · Credits used: 16 · Live TubeLab MCP · `skills/sponsorship-prospecting/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/sponsorship-prospecting/SKILL.md`.
 
-- **Best fit:** [I Am Coach Cassy](https://www.youtube.com/@iamcoachcassy). It is the only channel whose estimated audience matches your buyer: US, ages 25 to 34, middle income.
-- **Buyer:** US freelancers and one-person business owners, ages 25 to 44, middle to upper-middle income.
-- **Budget:** $5,000 for three videos, about $1,670 each. The top three below fit inside it at the estimated rates.
+- **Best fit:** [I Am Coach Cassy](https://www.youtube.com/@iamcoachcassy). It is the only prospect whose audience estimate matches your buyer, and its views are the steadiest.
+- **Buyer:** US freelancers and one-person businesses, aged 25 to 44, middle to upper-middle income.
+- **Budget:** $5,000 for three videos. The top three picks cost about $1,070 to $2,140 together at the assumed rate, leaving room for minimum fees.
 
 ## 🏆 Prospects
 
-Median views come from each channel's last 12 long videos older than a week. Audience fields are estimates.
+Median views come from each channel's last 10 long videos. Audience fields are estimates. I Am Coach Cassy had only 3 long videos in the sample.
 
-| Channel (link) | Subs | Median views | Audience (estimate) | Sponsors now | Fit (total score) | Contact |
+| Channel (link) | Subs | Median views | Audience (estimate) | Sponsors now (competitors marked) | Fit (total score) | Contact |
 |---|---:|---:|---|---|---:|---|
-| [I Am Coach Cassy](https://www.youtube.com/@iamcoachcassy) | 169K | 27,000 | US, women, 25–34, middle income | None found; flagged as sponsored | 29/35 | Email on the [channel page](https://www.youtube.com/@iamcoachcassy) |
-| [Cindy's Got Systems](https://www.youtube.com/@CindysGotSystems) | 20.2K | 10,800 | No estimate | None found | 27/35 | [sixfiguresystems.com](https://sixfiguresystems.com) |
-| [Richard Yu](https://www.youtube.com/@RichardYuBusiness) | 98.4K | 23,000 | No estimate | None found | 26/35 | Email on the [channel page](https://www.youtube.com/@RichardYuBusiness) |
-| [Lee Blue - DoubleStack](https://www.youtube.com/@DoubleStack) | 16.7K | 2,800 | No estimate | None found | 26/35 | [doublestack.net](https://doublestack.net/training/) |
-| [Toby Mathis Esq](https://www.youtube.com/@TobyMathis) | 673K | 56,500 | No estimate; a US law firm's channel | None; promotes its own firm | 25/35 | Email on the [channel page](https://www.youtube.com/@TobyMathis) |
-| [Mark J Kohler](https://www.youtube.com/@MarkJKohler) | 618K | 7,650 | No estimate; says it serves American entrepreneurs | None; promotes [his own firm](https://kkoslawyers.com/contact-us/) | 24/35 | [markjkohler.com](https://markjkohler.com/) |
-| [Bgo](https://www.youtube.com/@bgoofficial) | 46.5K | 3,400 | No estimate | None found | 24/35 | [codetoceo.com](https://www.codetoceo.com/?video=fgs85U3BAmE) |
-| [Cassidy Lynne](https://www.youtube.com/@CassidyLynne) | 85.8K | 3,400 | No estimate | [HoneyBook](http://share.honeybook.com/cassidylynne), [MPB](https://bit.ly/MPB-Oh-Shoot), [Aftershoot](https://aftershoot.com/friends?ref=cassidy), [Spider Holster](https://spiderholster.com/CASSIDY26), in [this video](https://www.youtube.com/watch?v=6v0ILL-sscc) | 23/35 | [cassidylynneeducation.com](https://cassidylynneeducation.com) |
-| [Keith Kalfas](https://www.youtube.com/@keith-kalfas) | 171K | 2,500 | No estimate | Jobber ambassador (channel page), [CallRail](https://keithkalfas.com/callrail) in [this video](https://www.youtube.com/watch?v=MmgLCGDBzdo) | 22/35 | [keithkalfas.com/call](https://keithkalfas.com/call) |
-| [The Bulletproof Handyman Business](https://www.youtube.com/@bulletproofhandyman) | 43.8K | 2,450 | No estimate | [Jobber](https://www.youtube.com/watch?v=UTrNhjQhvvU) and [Quo](https://www.youtube.com/watch?v=8AlPyu5TyXA) videos | 22/35 | Email on the [channel page](https://www.youtube.com/@bulletproofhandyman) |
-| [Chris Koerner](https://www.youtube.com/@thekoerneroffice) | 726K | 67,500 | No estimate | [Viktor](https://www.youtube.com/watch?v=-u0JuVUdPQA); owns [LazyBooks](https://lazybooks.com/) accounting software | 22/35 | [chrisjkoerner.com](https://www.chrisjkoerner.com/) |
-| [ItsKeaton](https://www.youtube.com/@ItsKeaton) | 85.6K | 6,700 | No estimate | HighLevel affiliate in [this video](https://www.youtube.com/watch?v=87DiRqIPyDs) | 20/35 | None public found |
-| [Home Service Millionaire](https://www.youtube.com/@HomeServiceMillionaire) | 19.7K | 5,350 | No estimate | Promotes his own CRM, [Homeworks](https://home.works) | 20/35 | None public found |
+| [I Am Coach Cassy](https://www.youtube.com/@iamcoachcassy) | 169K | 27,000 | US, women, 25–34, middle income | None named; Amazon storefront only ([video](https://www.youtube.com/watch?v=Ozltni9GD94)) | 35/40 | Collab email in [video description](https://www.youtube.com/watch?v=xHAdsArMP50) |
+| [Creative Hive](https://www.youtube.com/@CreativeHiveCo) | 306K | 18,000 | No estimate; serves makers starting handmade businesses | None found; own bootcamps ([video](https://www.youtube.com/watch?v=AWcMfxdkdP8)) | 31/40 | Business email in [video description](https://www.youtube.com/watch?v=MtFT1MBVedI) |
+| [Cindy's Got Systems](https://www.youtube.com/@CindysGotSystems) | 20.2K | 8,400 | No estimate; serves solopreneurs and freelancers | None found ([video](https://www.youtube.com/watch?v=THpvwGJFNmw)) | 30/40 | [sixfiguresystems.com](https://sixfiguresystems.com) |
+| [Mel Abraham](https://www.youtube.com/@MelAbraham) | 99K | 12,000 | No estimate; CPA talking money and retirement | None found; own program ([video](https://www.youtube.com/watch?v=PJR90rWpgY0)) | 28/40 | Sponsor email in [video description](https://www.youtube.com/watch?v=PJR90rWpgY0) |
+| [Cassidy Lynne](https://www.youtube.com/@CassidyLynne) | 85.8K | 3,650 | No estimate; serves freelance photographers | [HoneyBook](http://share.honeybook.com/cassidylynne) (competitor), [MPB](https://bit.ly/MPB-Oh-Shoot), [Aftershoot](https://aftershoot.com/friends?ref=cassidy), [Spider Holster](https://spiderholster.com/CASSIDY26) ([video](https://www.youtube.com/watch?v=zM3_-HmS4ak)) | 27/40 | [cassidylynneeducation.com](https://cassidylynneeducation.com) |
+| [Home Service Millionaire](https://www.youtube.com/@HomeServiceMillionaire) | 19.7K | 5,350 | No estimate; serves US home service owners | Owns Homeworks software (competitor); promotes [a CRM](https://crtrlnk.co/j8zxiKI) ([video](https://www.youtube.com/watch?v=FoHw3fwJXx0)) | 27/40 | [skool.com/boardroom](https://www.skool.com/boardroom) |
+| [The Bulletproof Handyman Business](https://www.youtube.com/@bulletproofhandyman) | 43.8K | 2,450 | No estimate; serves one-person trade businesses | [Jobber](https://go.getjobber.com/bulletproofhandyman-yt4) (competitor) ([video](https://www.youtube.com/watch?v=UTrNhjQhvvU)) | 26/40 | [Email on the channel page](https://www.youtube.com/@bulletproofhandyman) |
+| [Mark J Kohler](https://www.youtube.com/@MarkJKohler) | 618K | 5,550 | No estimate; serves US small business owners | Own law firm and services only ([video](https://www.youtube.com/watch?v=lZXZIWiShdw)) | 25/40 | [KKOS contact page](https://kkoslawyers.com/contact-us/) |
+| [Hector Garcia CPA](https://www.youtube.com/@HectorGarciaCPA) | 346K | 2,500 | No estimate; serves accountants using QuickBooks | [QuickBooks](http://hectorgarcia.com/qb) discount (competitor) | 24/40 | [Email on the channel page](https://www.youtube.com/@HectorGarciaCPA) |
+| [Lex Roman](https://www.youtube.com/@lexromanwashere) | 8.37K | 1,150 | No estimate; serves creative business owners | [Fillout](https://www.fillout.com/?ref=Lex) and other affiliates ([video](https://www.youtube.com/watch?v=yTrL6Z-Jofs)) | 24/40 | [lexroman.com](https://lexroman.com) |
 
 ## ✅ Best Fits
 
@@ -32,57 +29,54 @@ Median views come from each channel's last 12 long videos older than a week. Aud
 
 [![](https://i.ytimg.com/vi/xHAdsArMP50/mqdefault.jpg)](https://www.youtube.com/watch?v=xHAdsArMP50)
 
-- **Why it fits:** She teaches creators and small business owners to earn from content, and her estimated audience is US women, 25 to 34.
-- **Proof:** [Content Creation for Dummies: How to Start From Scratch (Beginner Friendly Guide)](https://www.youtube.com/watch?v=xHAdsArMP50) · 32,312 views, 1.74 times her average, 2026-10-06
-- **Sponsors now:** None found in the description we read, although the data flags sponsored content. Ask her which brands she has run.
-- **Outreach angle:** Viewers of her beginner guide want to earn from content, so show them how to invoice their first brand deal.
-- **Estimated cost:** $540 to $1,080 per video, estimated at $20 to $40 per 1,000 median views. The sample held only three long videos.
+- **Why it fits:** The audience estimate is US women aged 25 to 34 on middle incomes, and she teaches small business owners to sell.
+- **Proof:** [Content Creation for Dummies: How to Start From Scratch (Beginner Friendly Guide)](https://www.youtube.com/watch?v=xHAdsArMP50) · 32,312 views · 1.7x her average · 2026-10-06
+- **Sponsors now:** None named in two recent descriptions, though TubeLab flags sponsored content. Ask what she has run before.
+- **Outreach angle:** Your beginner guide tells viewers content turns into sales. Our app handles the next step: sending the invoice and getting paid.
+- **Estimated cost:** About $540 to $1,080 per video, an estimate at $20 to $40 per 1,000 median views.
 
-### 2. [Cindy's Got Systems](https://www.youtube.com/@CindysGotSystems)
+### 2. [Creative Hive](https://www.youtube.com/@CreativeHiveCo)
 
-[![](https://i.ytimg.com/vi/9IGX8WtbdLA/mqdefault.jpg)](https://www.youtube.com/watch?v=9IGX8WtbdLA)
+[![](https://i.ytimg.com/vi/MtFT1MBVedI/mqdefault.jpg)](https://www.youtube.com/watch?v=MtFT1MBVedI)
 
-- **Why it fits:** The whole channel speaks to solopreneurs about running a one-person business with simple systems.
-- **Proof:** [How I'd make $10k in 90 days (starting from scratch)](https://www.youtube.com/watch?v=9IGX8WtbdLA) · 43,672 views, 2.08 times her average, 2026-10-24
-- **Sponsors now:** None found. She sells only her own coaching and membership.
-- **Outreach angle:** Her video has a chapter called "Do a little $10k math." Your app is where that $10k gets invoiced.
-- **Estimated cost:** $216 to $432 per video, estimated at $20 to $40 per 1,000 median views.
+- **Why it fits:** Mei Pak teaches makers to run handmade shops alone, and she keeps returning to profit math.
+- **Proof:** [I built a business from scratch to prove you can too (It made me $11,414)](https://www.youtube.com/watch?v=MtFT1MBVedI) · 686,316 views · 8.2x her average · 2026-09-26
+- **Sponsors now:** None found. Her descriptions sell only her own bootcamps.
+- **Outreach angle:** Your video warns about "the math mistake" that pays makers below minimum wage. Our app shows that number every month.
+- **Estimated cost:** About $360 to $720 per video, an estimate. She posts about once a month, so book early.
 
-### 3. [Richard Yu](https://www.youtube.com/@RichardYuBusiness)
+### 3. [Cindy's Got Systems](https://www.youtube.com/@CindysGotSystems)
 
-[![](https://i.ytimg.com/vi/e_YFwITLNNE/mqdefault.jpg)](https://www.youtube.com/watch?v=e_YFwITLNNE)
+[![](https://i.ytimg.com/vi/5TWkMHnYdfw/mqdefault.jpg)](https://www.youtube.com/watch?v=5TWkMHnYdfw)
 
-- **Why it fits:** He teaches one-person digital product sellers, who need clean books once sales start.
-- **Proof:** [i accidentally found a digital product that makes $14k every month](https://www.youtube.com/watch?v=e_YFwITLNNE) · 146,000 views, 3.34 times his average, about 2026-10-19
-- **Sponsors now:** None found. His channel page lists an email for partnerships.
-- **Outreach angle:** His video [$629k in 30 days selling digital products... 7 SIMPLE principles](https://www.youtube.com/watch?v=RLZJhTUzsg0) shows the sales; your app keeps the books.
-- **Estimated cost:** $460 to $920 per video, estimated at $20 to $40 per 1,000 median views.
+- **Why it fits:** She speaks straight to solopreneurs and freelancers, and no sponsor appears in her recent descriptions.
+- **Proof:** [How I make life-changing money, one boring system at a time.](https://www.youtube.com/watch?v=5TWkMHnYdfw) · 103,522 views · 5.0x her average · 2026-09-26
+- **Sponsors now:** None found in two recent descriptions.
+- **Outreach angle:** Your boring systems video is missing one. Invoicing and bookkeeping can run on their own for $15 a month.
+- **Estimated cost:** About $170 to $340 per video, an estimate. A small channel may set a minimum fee above this.
 
-### 4. [Lee Blue - DoubleStack](https://www.youtube.com/@DoubleStack)
+### 4. [Mel Abraham](https://www.youtube.com/@MelAbraham)
 
-[![](https://i.ytimg.com/vi/O9O_Feo8FLY/mqdefault.jpg)](https://www.youtube.com/watch?v=O9O_Feo8FLY)
+[![](https://i.ytimg.com/vi/-k8g4dzYi3U/mqdefault.jpg)](https://www.youtube.com/watch?v=-k8g4dzYi3U)
 
-- **Why it fits:** He coaches freelance web designers to sell monthly plans to local businesses, so his viewers bill clients every month.
-- **Proof:** [There’s A Better Way To Sell Websites Now](https://www.youtube.com/watch?v=O9O_Feo8FLY) · 15,000 views, 3.62 times his average, 2026-09-15
-- **Sponsors now:** None found. He sells only his own coaching.
-- **Outreach angle:** His video [Now Our Marketing Clients Are Worth $12k/year](https://www.youtube.com/watch?v=JxUWE7PoR-Y) needs a simple way to bill those clients monthly.
-- **Estimated cost:** $56 to $112 per video, estimated at $20 to $40 per 1,000 median views. It is a cheap fourth test.
+- **Why it fits:** He is a CPA who speaks to entrepreneurs about money, but his retirement topics may skew older than your buyer.
+- **Proof:** [Start Enjoying Your Money, It'll Make You Richer](https://www.youtube.com/watch?v=-k8g4dzYi3U) · 47,247 views · 1.8x his average · 2026-10-01
+- **Sponsors now:** None found. He sells his own investing program and lists a sponsor inbox.
+- **Outreach angle:** You tell viewers the numbers never lie. Self-employed viewers can only see their numbers if their books are kept.
+- **Estimated cost:** About $240 to $480 per video, an estimate. Ask for his age breakdown before booking.
 
 ## 📋 CSV
 
 ~~~csv
 channel,url,subscribers,median_views,audience,sponsors_now,fit_score,contact
-I Am Coach Cassy,https://www.youtube.com/@iamcoachcassy,169000,27000,"US, women, 25-34, middle income (estimate)",None found (flagged sponsored),29,email on channel page
-Cindy's Got Systems,https://www.youtube.com/@CindysGotSystems,20200,10800,No estimate,None found,27,https://sixfiguresystems.com
-Richard Yu,https://www.youtube.com/@RichardYuBusiness,98400,23000,No estimate,None found,26,email on channel page
-Lee Blue - DoubleStack,https://www.youtube.com/@DoubleStack,16700,2800,No estimate,None found,26,https://doublestack.net/training/
-Toby Mathis Esq,https://www.youtube.com/@TobyMathis,673000,56500,No estimate (US law firm channel),None (own firm),25,email on channel page
-Mark J Kohler,https://www.youtube.com/@MarkJKohler,618000,7650,No estimate (serves American entrepreneurs),None (own firm),24,https://markjkohler.com/
-Bgo,https://www.youtube.com/@bgoofficial,46500,3400,No estimate,None found,24,https://www.codetoceo.com/
-Cassidy Lynne,https://www.youtube.com/@CassidyLynne,85800,3400,No estimate,"HoneyBook, MPB, Aftershoot, Spider Holster",23,https://cassidylynneeducation.com
-Keith Kalfas,https://www.youtube.com/@keith-kalfas,171000,2500,No estimate,"Jobber ambassador, CallRail",22,https://keithkalfas.com/call
-The Bulletproof Handyman Business,https://www.youtube.com/@bulletproofhandyman,43800,2450,No estimate,"Jobber, Quo",22,email on channel page
-Chris Koerner,https://www.youtube.com/@thekoerneroffice,726000,67500,No estimate,"Viktor; owns LazyBooks",22,https://www.chrisjkoerner.com/
-ItsKeaton,https://www.youtube.com/@ItsKeaton,85600,6700,No estimate,HighLevel affiliate,20,None public found
-Home Service Millionaire,https://www.youtube.com/@HomeServiceMillionaire,19700,5350,No estimate,Own CRM (Homeworks),20,None public found
+I Am Coach Cassy,https://www.youtube.com/@iamcoachcassy,169000,27000,"US, women, 25-34, middle income (estimate)",none named,35,email in video description
+Creative Hive,https://www.youtube.com/@CreativeHiveCo,306000,18000,no estimate,none found,31,email in video description
+Cindy's Got Systems,https://www.youtube.com/@CindysGotSystems,20200,8400,no estimate,none found,30,https://sixfiguresystems.com
+Mel Abraham,https://www.youtube.com/@MelAbraham,99000,12000,no estimate,none found,28,email in video description
+Cassidy Lynne,https://www.youtube.com/@CassidyLynne,85800,3650,no estimate,"HoneyBook (competitor), MPB, Aftershoot, Spider Holster",27,https://cassidylynneeducation.com
+Home Service Millionaire,https://www.youtube.com/@HomeServiceMillionaire,19700,5350,no estimate,"own Homeworks software (competitor), unnamed CRM",27,https://www.skool.com/boardroom
+The Bulletproof Handyman Business,https://www.youtube.com/@bulletproofhandyman,43800,2450,no estimate,Jobber (competitor),26,email on channel page
+Mark J Kohler,https://www.youtube.com/@MarkJKohler,618000,5550,no estimate,own firms only,25,https://kkoslawyers.com/contact-us/
+Hector Garcia CPA,https://www.youtube.com/@HectorGarciaCPA,346000,2500,no estimate,QuickBooks (competitor),24,email on channel page
+Lex Roman,https://www.youtube.com/@lexromanwashere,8370,1150,no estimate,"Fillout, Shoutout, Ghost, Framer, Lovable",24,https://lexroman.com
 ~~~

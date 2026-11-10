@@ -1,5 +1,5 @@
 # 📈 Trend Report: [Alex Hormozi](https://www.youtube.com/@AlexHormozi) · 2026-11-09
-Run: 2026-11-09 · Credits used: 4 · Live TubeLab MCP · `skills/trend-report/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/trend-report/SKILL.md`.
 
 - **Top finding:** Hormozi's [best recent upload](https://www.youtube.com/watch?v=Uzr0gv4N4-s) got 823K views, 1.68 times his usual; videos testing a money claim got up to 26.95 times.
 - **Sample:** 9 winners from 2026-10-09 to 2026-11-09.

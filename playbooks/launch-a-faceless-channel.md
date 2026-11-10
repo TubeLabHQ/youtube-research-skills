@@ -1,6 +1,6 @@
 # Playbook: launch a faceless channel in one session
 
-Six skills in order, each feeding the next. Run the prompts one after another in the same chat so the agent carries the shortlist, the chosen niche and the titles forward. Budget for the whole chain: about 110 credits.
+Six skills in order, each feeding the next. Run the prompts one after another in the same chat so the agent carries the shortlist, the chosen niche and the titles forward.
 
 | Step | Skill | Prompt to paste | You get |
 |---|---|---|---|

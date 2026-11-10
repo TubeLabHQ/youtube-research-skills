@@ -41,7 +41,7 @@ Connect the TubeLab MCP once in your client: `https://public-api.tubelab.net/mcp
 - ChatGPT desktop app and Codex: skills live in the **Skills** sidebar and in `.agents/skills/` of a repo; Codex also installs them with `$skill-installer`.
 - Any chat client that cannot install skills: paste `skills/tubelab-mcp/SKILL.md` and then the skill you want into the chat. Every skill is one file, so this works as is.
 
-Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free. Most runs cost 0 to 15 credits. `niche-finder` costs about 40. `niche-validator`, `video-ideation` and `sponsorship-prospecting` cost about 10 to 30, because they run more searches.
+Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/docs/api/mcp-server). The MCP is included from the Starter plan. Searches cost credits (channels 5, outliers 2, trending formats 1); channel, video, transcript and comment reads are free.
 
 ## Available Skills
 

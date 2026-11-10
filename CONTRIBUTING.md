@@ -20,7 +20,7 @@ node scripts/validate-skills.mjs
 
 ## Conventions (the validator checks dates, links, sections and size)
 
-- **Search discipline.** Search to find candidates, and read to understand them. Searches cost credits, and reads are free. Most skills use two to six searches, and do not page through a paid search. Two skills are the exception. `niche-finder` pages its two channel searches 3 to 4 pages deep, and `niche-validator` pages its niche sample two or three pages deep. No budget announcements.
+- **Search discipline.** Search to find candidates, and read to understand them. Searches cost credits, and reads are free. Most skills use two to six searches, and do not page through a paid search. One skill is the exception: `niche-finder` pages its two channel searches 3 to 4 pages deep. No budget announcements.
 - **Recency tokens, never dates.** `month`, `trimester`, `semester`, `year`; the validator rejects ISO dates. Widen one step at a time, and say so.
 - **Content Authenticity rule.** `classificationQuality` at `"neutral"` or above by default, `"positive"` for thumbnail work, never dropped to widen. `niche-watchlist` is the exception: its saved search leaves the filter out.
 - **Proof line.** Every finding carries channel (handle) · video title verbatim · views · ratio · date, from a tool response. Link everything cited, with a URL from tool data: videos, channels, moments, brands and products. A sponsor that was only heard links to the video moment. A skill that judges videos fetches and views their thumbnails. Rank by ratio, and show views too.
@@ -46,8 +46,8 @@ chore(examples): rerun niche-finder on @channel
 
 ## Examples
 
-Every skill ships one real output in `examples/<skill>/`. Real means produced by an agent with the live MCP, with the credits spent noted at the top. Never fabricate one; a missing example beats a fake one.
+Every skill ships one real output in `examples/<skill>/`. Real means produced by an agent with the live MCP, with the run date noted at the top. Never fabricate one; a missing example beats a fake one.
 
 ## Pull requests
 
-CI runs the validator. Say which agent and client you tested with and paste the credit cost of your test run.
+CI runs the validator. Say which agent and client you tested with.

@@ -1,6 +1,6 @@
 # 🗣️ Voice of Audience: [Alex Hormozi](https://www.youtube.com/@AlexHormozi), latest 12 videos
 
-Run: 2026-11-09 · Credits used: 0 · Live TubeLab MCP · `skills/comment-mining/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/comment-mining/SKILL.md`.
 
 - **Biggest ask:** Viewers want more of the show-style videos, and they suggest the next episodes. These requests got 2,096 likes across 6 videos.
 - **Sample:** 12 videos, 885 comments

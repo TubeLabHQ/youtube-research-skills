@@ -1,6 +1,6 @@
 # Playbook: monthly client report
 
-For studios and agencies reporting on a client channel. Three skills, run in the same chat, then one paste into the client doc. Budget: about 10 to 25 credits per client per month (trend report 4, competitors 2 to 7, watchlist 5 per niche).
+For studios and agencies reporting on a client channel. Three skills, run in the same chat, then one paste into the client doc.
 
 | Step | Skill | Prompt to paste | Section of the report |
 |---|---|---|---|

@@ -32,7 +32,7 @@ Ordered chains for common jobs live in `playbooks/` (launch a faceless channel, 
 5. Link everything you cite: videos, channels, moments, brands and products. Use a URL from tool data, never a guessed one. A sponsor that was only heard links to the video moment where it was said.
 6. Look at the thumbnail of every video you analyze. Fetch the image from its link and open it.
 7. Revenue, RPM and audience are estimates. Present as bands, labelled.
-8. Searches cost credits. Channel, video, transcript and comment reads are free. Search to find candidates, and read to understand them. Most skills use two to six searches, and do not page through a paid search. Two skills go deeper, because the sample is the product. `niche-finder` pages its two channel searches 3 to 4 pages deep. `niche-validator` pages its niche sample two or three pages deep.
+8. Searches cost credits. Channel, video, transcript and comment reads are free. Search to find candidates, and read to understand them. Most skills use two to six searches, and do not page through a paid search. One skill goes deeper, because the sample is the product: `niche-finder` pages its two channel searches 3 to 4 pages deep.
 9. Write reports in plain language. Use short, full sentences, not dense or telegraphic notes, and no jargon. A reader who is not a YouTube strategist should understand every line on first read.
 10. End with the artifact laid out in the skill's "Output Format" section.
 

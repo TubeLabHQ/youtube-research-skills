@@ -1,6 +1,6 @@
 # 📊 Channel Analysis: [Alex Hormozi](https://www.youtube.com/@AlexHormozi)
 
-Run: 2026-11-09 · Credits used: 5 · Live TubeLab MCP · `skills/channel-analysis/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/channel-analysis/SKILL.md`.
 
 - **Diagnosis:** The channel is growing. Its last six uploads, not counting this week's, got a median of 693K views, double the usual 341K.
 - **Positioning:** It teaches ambitious people in their 20s and 30s to get rich and grow a business, backed by his $250M-a-year portfolio.

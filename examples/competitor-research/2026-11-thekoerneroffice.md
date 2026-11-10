@@ -1,5 +1,5 @@
 # ⚔️ Competitor Research: [Chris Koerner on The Koerner Office Podcast](https://www.youtube.com/@thekoerneroffice)
-Run: 2026-11-09 · Credits used: 7 · Live TubeLab MCP · `skills/competitor-research/SKILL.md`.
+Run: 2026-11-09 · Live TubeLab MCP · `skills/competitor-research/SKILL.md`.
 
 - **Biggest gap:** Patrick Dang's Claude side-hustle videos run 7x to 9x his average, while Koerner's AI tool videos sit near 0.2x.
 
