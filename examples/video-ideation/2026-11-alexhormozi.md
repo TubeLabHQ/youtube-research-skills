@@ -17,7 +17,6 @@ Potential and fit are judgment calls: High, Medium or Low.
 | 7 | Why People Quit (and How Knowing It Made Me Rich) | Related niche | Medium | High |
 | 8 | I'm (Politely) Begging You to Raise Your Prices | Niche outlier | Medium | Medium |
 | 9 | The Most Overlooked Business I'd Buy Instead of Start | Niche outlier | Medium | Medium |
-| 10 | How Brands Invent Your Problem, Then Sell You the Cure | Same audience | Low | Medium |
 
 ## 💡 Ideas
 
@@ -101,12 +100,3 @@ Potential and fit are judgment calls: High, Medium or Low.
 - **Proof:** [Chris Koerner on The Koerner Office Podcast](https://www.youtube.com/@thekoerneroffice) · [The Most Overlooked $81K/Month Business Anyone Can Start](https://www.youtube.com/watch?v=9U4MCbfL8MQ) · 404,670 views · 2.90× its average · 2026-09-11
 - **Twist:** Reverse it. Instead of a business to start, he names the boring business he would buy.
 - **Why it fits:** He presents himself as the founder of Acquisition.com, but [How Acquisition.com Makes Money](https://www.youtube.com/watch?v=hHkdbr6_JJs) reached only 0.34×, so this is untested.
-
-### 10. How Brands Invent Your Problem, Then Sell You the Cure
-
-[![](https://i.ytimg.com/vi/FQeXbui3CMI/mqdefault.jpg)](https://www.youtube.com/watch?v=FQeXbui3CMI)
-
-- **Source:** Same audience, with an assumed profile: men aged 25 to 44 in North America. Only one of ten matches fit.
-- **Proof:** [Quiet Wolf](https://www.youtube.com/@QuietWolfz) · [EP2 - They Invented Your Flaws. Then Sold You the Cure.](https://www.youtube.com/watch?v=FQeXbui3CMI) · 376,000 views · 1.72× its average · October 2026 (estimated date)
-- **Twist:** Adapt the reveal. Keep the marketing-trick exposé, but have him break down real offers on camera instead of a cartoon wolf.
-- **Why it fits:** Marketing lessons are steady for him, such as [14 Years of Marketing Advice in 35 Minutes](https://www.youtube.com/watch?v=JDR-R--4HhM) at 1.13×.
