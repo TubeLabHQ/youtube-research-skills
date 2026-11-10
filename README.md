@@ -2,9 +2,9 @@
 
 Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](https://tubelab.net/youtube-mcp).
 
-These skills help agents find niches that are working, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, build sponsor prospect lists for brands, and watch a niche over time.
+These skills help agents find niches that are working, bend a proven format into a new market, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, build sponsor prospect lists for brands, and watch a niche over time.
 
-Together they work like a full YouTube agency with six roles: a niche scout, a validator, a trend analyst, a script analyst, a packaging team and a money team. It runs on your machine or in your chat app, through your own agent and your own TubeLab account.
+Together they work like a full YouTube agency with six roles: a niche scout, a validator, a trend analyst, a script analyst, a packaging team and a monetization team. It runs on your machine or in your chat app, through your own agent and your own TubeLab account.
 
 This is not endpoint routing. Each skill is a short research workflow: the judgment an expert strategist brings, the traps to avoid, and the report to produce. Every number comes from a tool response, every finding carries a linked channel and title, a view count, an outlier ratio and a date.
 
@@ -49,22 +49,23 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 
 | Role | Skill | Use it when you want to... | Output |
 |---|---|---|---|
-| Niche scout | [`niche-finder`](skills/niche-finder/) | Find breakout channels and cash cows with two preset searches, and turn them into new niche ideas | Ten ranked niche ideas, each with proof and a way to earn beyond AdSense |
-| Niche scout | [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, each with a short analysis: worth studying or not, working topics, title formulas, best recent video. Config and state files |
-| Validator | [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, or compare a shortlist of up to three, with the Niche Analyzer scores and the agent's own read next to them; a new idea is scored on the two niches it draws on | Market Size, Unsaturated and Profitable scores, formula and own read, verdict, channels breaking in, formats, gaps, bending ideas, entry plan; a comparison table first for a shortlist |
-| Trend analyst | [`trend-report`](skills/trend-report/) | See what is working in a niche or for a channel, and why | Up to five winning videos with verbatim hooks and why they worked, patterns, ideas |
-| Script analyst | [`script-breakdown`](skills/script-breakdown/) | Break down a video's structure, hook and beats from its transcript. Given a niche or a channel, it picks the top videos itself | Hook verbatim, typed beats with linked timestamps, one-line layout, optional skeleton |
-| Packaging team | [`title-formulas`](skills/title-formulas/) | Get titles you can publish, built on formulas from the trending index, your niche and neighbouring niches. Pairs with `thumbnail-concepts`: titles first | About eight titles with proof, plus a table of their formulas with each one's source, proven or untested |
-| Packaging team | [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts that join your video's new angle with the problem your viewers know. Pairs with `title-formulas`: the thumbnail for the chosen title | Patterns that work for each, three concepts that combine them, images or prompts |
-| Money team | [`monetization-research`](skills/monetization-research/) | Find monetization gaps and what to sell for your channel (the creator's side), from how peers and same-audience channels earn | Table of monetization method gaps, best first, with linked peer offers; the brands that sponsor channels like yours; three products to test |
-| Money team | [`sponsorship-prospecting`](skills/sponsorship-prospecting/) | Find YouTube channels to sponsor for your product, matched to your buyer (the brand's side) | 10 to 15 scored prospects with audience, current sponsors and contact path; the best fits with an outreach angle and a cost band; a CSV |
-| Channel strategist | [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | One-line diagnosis, what works, what holds it back, next 3 tests |
-| Channel strategist | [`competitor-research`](skills/competitor-research/) | Compare a channel against 12 to 15 real neighbours: peers, leaders and fast risers | How the set was built, comparison table, gaps, positioning |
-| Audience researcher | [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | Themes with verbatim quotes and likes, top comments, the audience's words, video ideas |
-| Ideas | [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one channel from three sources: its own winning formats, its niche and related niches, plus same-audience channels on request | About ten ideas, each with a twist and linked proof, ranked by potential and fit |
-| Data layer | [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, craft rules, quirks found in testing, and where the full API reference lives | Rules the other skills rely on; no artifact |
+| 🔭 Niche scout | [`niche-finder`](skills/niche-finder/) | Find breakout channels and cash cows with two preset searches, and turn them into new niche ideas | Ten ranked niche ideas, each with proof and a way to earn beyond AdSense |
+| 🔭 Niche scout | [`niche-bending`](skills/niche-bending/) | Bend the proven format of one channel, or of channels that already earn, into a new market or language | Four to six ranked bends, each shown as the source niche and the bend with their thumbnails, with proof, who already does it, and first titles |
+| 🔭 Niche scout | [`niche-watchlist`](skills/niche-watchlist/) | Watch a niche and get the delta since the last run, on a schedule | Dated digest of new and moving channels, each with a short analysis: worth studying or not, working topics, title formulas, best recent video. Config and state files |
+| ⚖️ Validator | [`niche-validator`](skills/niche-validator/) | Decide go or no-go on one niche, or compare a shortlist of up to three, with the Niche Analyzer scores and the agent's own read next to them; a new idea is scored on the two niches it draws on | Market Size, Unsaturated and Profitable scores, formula and own read, verdict, channels breaking in, formats, gaps, bending ideas, entry plan; a comparison table first for a shortlist |
+| 📈 Trend analyst | [`trend-report`](skills/trend-report/) | See what is working in a niche or for a channel, and why | Up to five winning videos with verbatim hooks and why they worked, patterns, ideas |
+| 🎬 Script analyst | [`script-breakdown`](skills/script-breakdown/) | Break down a video's structure, hook and beats from its transcript. Given a niche or a channel, it picks the top videos itself | Hook verbatim, typed beats with linked timestamps, one-line layout, optional skeleton |
+| 🎨 Packaging team | [`title-formulas`](skills/title-formulas/) | Get titles you can publish, built on formulas from the trending index, your niche and neighbouring niches. Pairs with `thumbnail-concepts`: titles first | About eight titles with proof, plus a table of their formulas with each one's source, proven or untested |
+| 🎨 Packaging team | [`thumbnail-concepts`](skills/thumbnail-concepts/) | Get thumbnail concepts that join your video's new angle with the problem your viewers know. Pairs with `title-formulas`: the thumbnail for the chosen title | Patterns that work for each, three concepts that combine them, images or prompts |
+| 💰 Monetization team | [`monetization-research`](skills/monetization-research/) | Find monetization gaps and what to sell for your channel (the creator's side), from how peers and same-audience channels earn | Table of monetization method gaps, best first, with linked peer offers; the brands that sponsor channels like yours; three products to test |
+| 💰 Monetization team | [`sponsorship-prospecting`](skills/sponsorship-prospecting/) | Find YouTube channels to sponsor for your product, matched to your buyer (the brand's side) | 10 to 15 scored prospects with audience, current sponsors and contact path; the best fits with an outreach angle and a cost band; a CSV |
+| 🧭 Channel strategist | [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | One-line diagnosis, what works, what holds it back, next 3 tests |
+| 🧭 Channel strategist | [`competitor-research`](skills/competitor-research/) | Compare a channel against 12 to 15 real neighbours: peers, leaders and fast risers | How the set was built, comparison table, gaps, positioning |
+| 💬 Audience researcher | [`comment-mining`](skills/comment-mining/) | Mine top comments for questions, objections, requests and audience language | Themes with verbatim quotes and likes, top comments, the audience's words, video ideas |
+| 💡 Ideas | [`video-ideation`](skills/video-ideation/) | Get ranked video ideas for one channel from three sources: its own winning formats, its niche and related niches, plus same-audience channels on request | About ten ideas, each with a twist and linked proof, ranked by potential and fit |
+| 🔌 Data layer | [`tubelab-mcp`](skills/tubelab-mcp/) | Drive the TubeLab tools well: costs, craft rules, quirks found in testing, and where the full API reference lives | Rules the other skills rely on; no artifact |
 
-Every skill is one `SKILL.md`. Real outputs for every skill are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/), including [`youtube-agency.md`](playbooks/youtube-agency.md), which runs all six roles from a blank page to a first video and a money plan.
+Every skill is one `SKILL.md`. Real outputs for every skill are in [`examples/`](examples/). Ordered chains for common jobs are in [`playbooks/`](playbooks/), including [`youtube-agency.md`](playbooks/youtube-agency.md), which runs all six roles from a blank page to a first video and a monetization plan.
 
 ## The Agency (Claude Code agents)
 
@@ -72,12 +73,12 @@ The plugin also ships six agents, one per role. Each one is a thin wrapper: it l
 
 | Agent | What it does | Skills it loads |
 |---|---|---|
-| `niche-scout` | Finds breakout channels and cash cows and turns them into ten niche ideas, or watches a niche over time | `niche-finder`, `niche-watchlist` |
-| `validator` | Scores a niche, or a shortlist of up to three, and says go or no-go | `niche-validator` |
-| `trend-analyst` | Pulls what is winning right now, with the hooks word for word | `trend-report` |
-| `script-analyst` | Breaks the top videos down beat by beat | `script-breakdown` |
-| `packaging-team` | Writes titles, then thumbnails for the chosen title, from what is already getting clicked | `title-formulas`, `thumbnail-concepts` |
-| `money-team` | Shows what channels like yours sell and who sponsors them, or which channels a brand should sponsor | `monetization-research`, `sponsorship-prospecting` |
+| 🔭 `niche-scout` | Finds breakout channels and cash cows and turns them into ten niche ideas, bends a proven format into new markets, or watches a niche over time | `niche-finder`, `niche-bending`, `niche-watchlist` |
+| ⚖️ `validator` | Scores a niche, or a shortlist of up to three, and says go or no-go | `niche-validator` |
+| 📈 `trend-analyst` | Pulls what is winning right now, with the hooks word for word | `trend-report` |
+| 🎬 `script-analyst` | Breaks the top videos down beat by beat | `script-breakdown` |
+| 🎨 `packaging-team` | Writes titles, then thumbnails for the chosen title, from what is already getting clicked | `title-formulas`, `thumbnail-concepts` |
+| 💰 `monetization-team` | Shows what channels like yours sell and who sponsors them, or which channels a brand should sponsor | `monetization-research`, `sponsorship-prospecting` |
 
 In Claude Code, call one by name, for example `@agent-youtube-research:niche-scout find me faceless niche ideas`. Other clients do not load these agent files. They use the same skills directly, and the reports are the same.
 
@@ -88,7 +89,11 @@ Find me unsaturated faceless niche ideas in English with real money in them, ran
 ```
 
 ```text
-Run the whole agency for me: find niches, validate the top three, then give me the trend report, script breakdown, title, thumbnail and money plan for the winner.
+Bend @channel's best format into three new markets. Football first.
+```
+
+```text
+Run the whole agency for me: find niches, validate the top three, then give me the trend report, script breakdown, title, thumbnail and monetization plan for the winner.
 ```
 
 ```text
@@ -122,15 +127,15 @@ tubelab-mcp
         │
         ▼
 YouTube research agency
- ├─ niche scout          niche-finder · niche-watchlist
- ├─ validator            niche-validator
- ├─ trend analyst        trend-report
- ├─ script analyst       script-breakdown
- ├─ packaging team       title-formulas · thumbnail-concepts
- ├─ money team           monetization-research · sponsorship-prospecting
- ├─ channel strategist   channel-analysis · competitor-research
- ├─ audience researcher  comment-mining
- └─ ideas                video-ideation
+ ├─ 🔭 niche scout          niche-finder · niche-bending · niche-watchlist
+ ├─ ⚖️ validator            niche-validator
+ ├─ 📈 trend analyst        trend-report
+ ├─ 🎬 script analyst       script-breakdown
+ ├─ 🎨 packaging team       title-formulas · thumbnail-concepts
+ ├─ 💰 monetization team    monetization-research · sponsorship-prospecting
+ ├─ 🧭 channel strategist   channel-analysis · competitor-research
+ ├─ 💬 audience researcher  comment-mining
+ └─ 💡 ideas                video-ideation
 ```
 
 The workflow skills lean on `tubelab-mcp` for tool costs, craft rules and quirks. The full parameter and REST reference lives at https://tubelab.net/docs/skill.md. Each workflow produces an artifact a creator can act on or a studio can hand to a client, not raw JSON.
