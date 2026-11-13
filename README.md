@@ -2,7 +2,7 @@
 
 Practical AI agent skills for YouTube research, powered by the [TubeLab MCP](https://tubelab.net/youtube-mcp).
 
-These skills help agents find niches that are working, bend a proven format into a new market, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, reverse engineer how a channel grew, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, build sponsor prospect lists for brands, and watch a niche over time.
+These skills help agents find niches that are working, bend a proven format into a new market, explain why a video broke out, write trend reports, generate ideas and titles for a channel, analyze a channel, reverse engineer what works for a channel, research thumbnails, map competitors, mine comments and transcripts, audit monetization, find sponsors, build sponsor prospect lists for brands, and watch a niche over time.
 
 Together they work like a full YouTube agency with six roles: a niche scout, a validator, a trend analyst, a script analyst, a packaging team and a monetization team. It runs on your machine or in your chat app, through your own agent and your own TubeLab account.
 
@@ -92,7 +92,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | Skill | Use it when you want to... | Output |
 |---|---|---|
 | [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | One-line diagnosis, what works, what holds it back, next 3 tests |
-| [`reverse-engineer-channel`](skills/reverse-engineer-channel/) | Reverse engineer how a channel you admire grew, from its whole video list: turning points, formats, thumbnails and hooks | Growth timeline, turning points, formats, the best ten videos against the worst ten, hooks word for word, how it earns, five moves to copy, each with the skill and prompt to run next, and the moves to skip |
+| [`reverse-engineer-channel`](skills/reverse-engineer-channel/) | Reverse engineer a channel you admire into the formulas that work for it, from its whole video list | Its outliers, the formats that work with their topics, title formulas and thumbnail formulas, what doesn't work, hook formulas, script structure, how it earns, and five learnings to copy, each with the skill and prompt to run next |
 | [`competitor-research`](skills/competitor-research/) | Compare a channel against 12 to 15 real neighbours: peers, leaders and fast risers | How the set was built, comparison table, gaps, positioning |
 
 ### 💬 Audience researcher
@@ -153,7 +153,7 @@ Analyze @mychannel. Be direct. Why did the last six videos underperform?
 ```
 
 ```text
-Reverse engineer how @channel grew. What can I copy, and what should I skip?
+Reverse engineer @channel. Which formats, titles, thumbnails and hooks work, and what can I copy?
 ```
 
 ```text

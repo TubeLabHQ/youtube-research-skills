@@ -1,7 +1,7 @@
 {
   "name": "youtube-research",
   "displayName": "YouTube Research (TubeLab)",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "Skills and six agents that turn Claude into a YouTube research agency: niche scout, validator, trend analyst, script analyst, packaging team and monetization team, powered by the TubeLab MCP.",
   "author": {
     "name": "TubeLab",
