@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts only when the channel repeated it and its videos beat their neighbours. Every read is free. Not for the user's own channel (`channel-analysis`).
+One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts when it can be reused, even if the channel used it once. Every read is free. Not for the user's own channel (`channel-analysis`).
 
 ## Workflow
 
@@ -20,7 +20,7 @@ One channel taken apart into formulas the user can reuse. A formula is a pattern
 2. Read the channel's long-form list and its Shorts. The list holds the latest 120 videos, newest first, with rough dates. Read a video for its exact date.
 3. Find the outliers: videos with at least twice the list's average views, or the three highest. Then split the list into up to ten equal blocks and compare median views. A turning point is where the median jumps or falls, and stays there, after something changed.
 4. View every thumbnail, on numbered contact sheets.
-5. Group the videos into formats. A format is a set of topics, a title formula and a thumbnail formula, used three times or more. Count how many of its videos beat their neighbours, meaning the median of their own block, because older videos had longer to collect views. Rank videos the same way.
+5. Group the videos into formats. A format is a video idea that can be remade with a twist, whatever its title or thumbnail, even if used once. Count how many of its videos beat their neighbours, meaning the median of their own block, because older videos had longer to collect views. Rank videos the same way.
 6. Find what does not work: the formats, topics and habits of the weakest videos. Leave out last month's uploads and channel updates such as Q&As.
 7. Read the first 30 seconds of the five best videos and two weak ones. Name each opening's beats in words that fit any video, such as setup, stakes or twist. A hook formula is an order of beats that two or more strong openings share.
 8. Read the full transcripts of three of the best videos, from different formats. Mark each beat and its time, named the same way, and keep the layout they share.
@@ -43,7 +43,7 @@ One channel taken apart into formulas the user can reuse. A formula is a pattern
 
 [![]({thumbnail})]({video url}) [![]({thumbnail})]({video url}) [![]({thumbnail})]({video url})
 
-1. [{title}]({video url}) · {views, ratio} · {its format, or "one-off"}
+1. [{title}]({video url}) · {views, ratio} · {its format}
 
 - **Turning point, {month year} · {what changed}:** median views went from {views} to {views} · [{title}]({video url})
 
@@ -124,13 +124,13 @@ A video beats its neighbours when it has more views than the median of the video
 - Length: about 1,700 words. Up to six outliers, three turning points, four formats that work, three that do not, three hook formulas, one script example and ten ways it earns.
 - Language: plain words and short, complete sentences. Nothing compressed.
 - Bullets: one fact each, under 25 words, except quotes, verbatim titles, formulas and prompts. No extra sections or bullets.
-- If it runs long, cut whole items. Never cut proof, and never squeeze sentences.
+- If it runs long, cut whole items. Never cut proof.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
 - Thumbnails: the 320px `mqdefault.jpg` image, linked to its video, on its own line. A format that works shows its three best on one line, and the outliers share one line.
 - Quotes: only inside the collapsed examples, word for word, with misspelt names fixed. Never paste a full transcript.
 
 ## Common Pitfalls
 
-- Do not call one hit a format or a turning point.
+- One hit can be a format, but not a turning point.
 - Do not study only the hits. A trait the worst videos share is not why the best ones won.
 - Do not state a cause as fact. The data shows what changed, not why viewers came.

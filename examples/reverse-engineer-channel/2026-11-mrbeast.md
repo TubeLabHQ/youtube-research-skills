@@ -12,7 +12,7 @@ Run: 2026-11-12 · Live TubeLab MCP · `skills/reverse-engineer-channel/SKILL.md
 
 [![](https://i.ytimg.com/vi/0e3GPea1Tyg/mqdefault.jpg)](https://www.youtube.com/watch?v=0e3GPea1Tyg) [![](https://i.ytimg.com/vi/1WEAJ-DFkHE/mqdefault.jpg)](https://www.youtube.com/watch?v=1WEAJ-DFkHE) [![](https://i.ytimg.com/vi/KrLj6nc516A/mqdefault.jpg)](https://www.youtube.com/watch?v=KrLj6nc516A) [![](https://i.ytimg.com/vi/48h57PspBec/mqdefault.jpg)](https://www.youtube.com/watch?v=48h57PspBec) [![](https://i.ytimg.com/vi/zxYjTTXc-J8/mqdefault.jpg)](https://www.youtube.com/watch?v=zxYjTTXc-J8) [![](https://i.ytimg.com/vi/tnTPaLOaHz8/mqdefault.jpg)](https://www.youtube.com/watch?v=tnTPaLOaHz8)
 
-1. [$456,000 Squid Game In Real Life!](https://www.youtube.com/watch?v=0e3GPea1Tyg) · 982M views, ratio 3.59 · one-off
+1. [$456,000 Squid Game In Real Life!](https://www.youtube.com/watch?v=0e3GPea1Tyg) · 982M views, ratio 3.59 · a famous show recreated in real life
 2. [$1 vs $500,000 Plane Ticket!](https://www.youtube.com/watch?v=1WEAJ-DFkHE) · 613M views, ratio 2.24 · the "$1 vs" price ladder
 3. [$1 vs $100,000,000 Car!](https://www.youtube.com/watch?v=KrLj6nc516A) · 590M views, ratio 2.16 · the "$1 vs" price ladder
 4. [$1 vs $1,000,000,000 Yacht!](https://www.youtube.com/watch?v=48h57PspBec) · 584M views, ratio 2.14 · the "$1 vs" price ladder
@@ -52,6 +52,15 @@ A video beats its neighbours when it has more views than the median of the video
 - **Title formula:** "Last To Leave [Place], Wins $[Amount]" · [Last To Leave Circle Wins $500,000](https://www.youtube.com/watch?v=zxYjTTXc-J8) · 566M views, ratio 2.07
 - **Thumbnail formula:** [Jimmy or the players, in front] + [the arena behind them] + [bright daylight colours] + [day counter, top right]
 - **Length:** 28 minutes in the middle, from 15 to 58.
+
+### 4. A famous show recreated in real life · 1 of 1 beat their neighbours
+
+[![](https://i.ytimg.com/vi/0e3GPea1Tyg/mqdefault.jpg)](https://www.youtube.com/watch?v=0e3GPea1Tyg)
+
+- **Topics:** Squid Game, used once. Any show, film or game with rules the audience already knows could take its place.
+- **Title formula:** "$[Prize] [Famous Show] In Real Life!" · [$456,000 Squid Game In Real Life!](https://www.youtube.com/watch?v=0e3GPea1Tyg) · 982M views, ratio 3.59
+- **Thumbnail formula:** [Jimmy's face, close up, in the show's costume] + [the show's mask, broken, over half his face] + [a prop from the show on each side]
+- **Length:** 26 minutes.
 
 ## 🚫 What Doesn't Work
 
