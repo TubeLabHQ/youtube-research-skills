@@ -13,7 +13,7 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | niche-validator | [2026-11-business-advice.md](niche-validator/2026-11-business-advice.md) | business advice for entrepreneurs |
 | niche-validator | [2026-11-war-dead-dna.md](niche-validator/2026-11-war-dead-dna.md) | a new idea, scored on the two niches it draws on |
 | niche-watchlist | [2026-11-09.md](niche-watchlist/2026-11-09.md), with [config.json](niche-watchlist/config.json) and [state.json](niche-watchlist/state.json) | business advice |
-| reverse-engineer-channel | [2026-11-lemmino.md](reverse-engineer-channel/2026-11-lemmino.md) | @LEMMiNO, how it grew from lists to documentaries |
+| reverse-engineer-channel | [2026-11-mrbeast.md](reverse-engineer-channel/2026-11-mrbeast.md) | @MrBeast, the formats, hooks and script layout that carry the channel |
 | script-breakdown | [2026-11-alexhormozi.md](script-breakdown/2026-11-alexhormozi.md) | one @AlexHormozi video |
 | sponsorship-prospecting | [2026-11-bookkeeping-app.md](sponsorship-prospecting/2026-11-bookkeeping-app.md) | an invoicing and bookkeeping app for US freelancers |
 | thumbnail-concepts | [2026-11-alexhormozi.md](thumbnail-concepts/2026-11-alexhormozi.md) | one @AlexHormozi video |
