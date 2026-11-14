@@ -90,6 +90,7 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 - Empty `hits` with `pagination.total: 0`: widen recency, drop one filter or rephrase `query`. Keep the quality floor.
 - `pagination.total` has come back as exactly twice `size`. Do not use it to measure how crowded a niche is.
 - `get_channel` has no audience, monetization, revenue or RPM fields. Those appear only on search hits, and a channel may not appear in a search for itself.
+- `monetization.adsense: false` means a channel lost AdSense only on a hit that also has a `monetizationChangedAt` date, which is what the `monetizationChanged` filter returns. Without that date, false only means the channel is not monetized.
 - HTTP 429 is the rate limit, about 30 calls per window on the MCP, shared across sessions. Wait for the reset and retry. Pace reads rather than firing them all at once.
 
 ## Spending credits

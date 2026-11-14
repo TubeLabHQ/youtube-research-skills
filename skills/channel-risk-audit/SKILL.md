@@ -18,7 +18,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
 
 1. Read each channel for free: its top and newest videos and About text. Judge pace from video reads, since list dates can be months off.
 2. Look for one template across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
-3. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false after `monetizationChangedAt`, whatever the AdSense detection says.
+3. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
 4. If the audited channel appears in its own lost-AdSense search, its AdSense is off. Lead with that and the date, score look-alikes 40, band it high, and leave it off the list.
 5. Rate every other hit from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A removed channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
 6. Add up four parts. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
@@ -95,4 +95,4 @@ Gone from YouTube, then lost AdSense:
 - Do not flag AI use or upload pace alone. The policy targets interchangeable videos.
 - Do not call the score a probability. A low score is a valid result.
 - Do not suggest ways to hide from detection. Every fix changes the videos, such as adding original commentary.
-- Re-read the policy page when you can, because it changes.
+- Re-read the policy page, because it changes.
