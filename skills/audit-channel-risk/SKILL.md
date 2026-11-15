@@ -21,14 +21,13 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
 3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
 4. Note what already shows real people behind the channel: a real presenter on camera, and an About text naming who makes the videos.
 5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
-6. If the channel is in its own lost-AdSense search, or says in a video that it was demonetized, lead with that and the date, score demonetization 100, and leave it off the list.
-7. Rate every other hit from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A terminated channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
-8. Score two risks from 0 to 100, where higher is riskier. One strong signal is enough, so take the highest and never add them up. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
+6. Rate every hit but the channel itself from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A terminated channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
+7. Score two risks from 0 to 100, where higher is riskier. One strong signal is enough, so take the highest and never add them up. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
    - Termination: 15 points per close similar channel terminated, up to 100.
    - Demonetization: the higher of two signals.
      - Similar channels: 15 points per close one terminated or demonetized, up to 100.
      - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do.
-9. Compare several channels. One shared template is what spam systems look for.
+8. Compare several channels. One shared template is what spam systems look for.
 
 Terminated, then lost AdSense:
 
@@ -111,7 +110,6 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 <div class="cols">
   <div>
     <h3>Demonetization</h3>
-    <div class="row high"><i></i><span>Own AdSense off<small>{since {date} | as the channel says in its video of {date}, linked}</small></span><b>100</b></div> {only if step 6 applies}
     <div class="row {band}"><i></i><span>Similar channels terminated or demonetized<small>{n} close of {n} checked</small></span><b>{n}</b></div>
     <div class="row {band}"><i></i><span>Guidelines<small>{n} of {n} sections failed</small></span><b>{n}</b></div>
   </div>
@@ -173,5 +171,6 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 - Do not count a similar channel that gained AdSense, unless it is now terminated.
 - Do not count a later clone of the channel's own videos. Other channels in the same format count.
 - Do not flag AI use or upload pace alone.
+- Do not score the channel's own AdSense status. Off can mean it was never monetized.
 - A score is not a probability, and a low one is valid.
 - Never suggest hiding from detection. Every action changes the videos or shows who makes them.
