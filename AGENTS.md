@@ -11,6 +11,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | What is working in X, why did this video blow up, trend report, weekly digest, hooks and formats to steal | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
 | Analyze or roast my channel, why did views drop, what to change first | `channel-analysis` |
+| Will my channel get demonetized or terminated, is my channel at risk, audit my channels for monetization risk | `audit-channel-risk` |
 | Reverse engineer a channel, what works for it, its title, thumbnail and hook formulas, how it grew and earns, what can I copy from it | `reverse-engineer-channel` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails, which thumbnails work in a niche | `thumbnail-concepts` |
 | Is X worth entering, is this niche saturated, go or no-go, score this niche, compare a shortlist of niches | `niche-validator` |
@@ -41,7 +42,7 @@ The plugin ships six agents in `agents/`, one per role. Each loads the skills be
 ## Rules every skill follows
 
 1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
-2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result. `niche-watchlist` is the exception: its saved search leaves the filter out.
+2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result. `niche-watchlist` and `audit-channel-risk` are the exceptions: the watchlist's saved search and the audit's similar channel searches leave the filter out.
 3. Rank by `averageViewsRatio`, not raw views. Show both.
 4. Every finding carries its proof from a tool response: channel (handle) · video title verbatim · views · ratio · date. Invent nothing.
 5. Link everything you cite: videos, channels, moments, brands and products. Use a URL from tool data, never a guessed one. A sponsor that was only heard links to the video moment where it was said.

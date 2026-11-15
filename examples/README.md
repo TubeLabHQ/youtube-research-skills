@@ -5,6 +5,7 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | Skill | Example | Subject |
 |---|---|---|
 | channel-analysis | [2026-11-alexhormozi.md](channel-analysis/2026-11-alexhormozi.md) | @AlexHormozi |
+| audit-channel-risk | [2026-11-thepaintexplainer.html](audit-channel-risk/2026-11-thepaintexplainer.html), with a [screenshot](audit-channel-risk/2026-11-thepaintexplainer.png) | @ThePaintExplainer, which scores high for demonetization and low for termination |
 | comment-mining | [2026-11-alexhormozi.md](comment-mining/2026-11-alexhormozi.md) | @AlexHormozi, latest 12 videos |
 | competitor-research | [2026-11-thekoerneroffice.md](competitor-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |
 | monetization-research | [2026-11-thekoerneroffice.md](monetization-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |

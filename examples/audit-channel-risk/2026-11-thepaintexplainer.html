@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Channel Risk Audit: The Paint Explainer</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1c;--mut:#666;--line:#e3e3e3;--low:#0c8a4d;--med:#c26a00;--high:#d42a2a}
+@media(prefers-color-scheme:dark){:root{--bg:#0f0f0f;--fg:#f1f1f1;--mut:#9a9a9a;--line:#2b2b2b;--low:#3ddc97;--med:#ffa400;--high:#ff4e42}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+main{max-width:920px;margin:auto;padding:32px 16px 72px}
+a{color:inherit}
+h1{font-size:24px;margin:0}
+h2{font-size:19px;margin:44px 0 6px}
+h3{font-size:13px;margin:16px 0 0;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.mut{color:var(--mut)}
+.center{text-align:center}
+.low{--c:var(--low)}.med{--c:var(--med)}.high{--c:var(--high)}
+.gauges{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:40px 0 24px;text-align:center}
+.gauge{position:relative;width:200px;font-weight:600}
+.gauge svg{display:block;width:132px;margin:0 auto 8px;transform:rotate(-90deg)}
+.gauge circle{fill:none;stroke:var(--line);stroke-width:8}
+.gauge .arc{stroke:var(--c);fill:color-mix(in srgb,var(--c) 12%,transparent)}
+.gauge b{position:absolute;top:0;left:0;width:100%;line-height:132px;font-size:44px;color:var(--c)}
+.legend{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-size:13px}
+.legend i,.row i{flex:none;display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c)}
+.big{font-size:19px;max-width:660px;margin:24px auto 8px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 44px}
+.row{border-bottom:1px solid var(--line)}
+div.row,.row>summary{display:flex;align-items:center;gap:12px;padding:13px 0}
+.row>summary{cursor:pointer;list-style:none}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary::after{content:"+";color:var(--mut);width:12px;text-align:center}
+.row[open]>summary::after{content:"\2212"}
+.row span{flex:1}
+.row b{color:var(--c)}
+.row small{display:block;font-size:13px;color:var(--mut)}
+.proof{padding:0 24px 18px 22px}
+.proof p{margin:6px 0}
+.vids{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0}
+.vids a{width:200px;font-size:13px;line-height:1.35;text-decoration:none}
+.vids img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-bottom:6px;background:var(--line)}
+blockquote{margin:10px 0;padding-left:12px;border-left:3px solid var(--line);color:var(--mut)}
+ol{padding-left:22px}
+li{margin:12px 0}
+table{border-collapse:collapse;width:100%;margin-top:24px}
+td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Channel Risk Audit: <a href="https://www.youtube.com/@ThePaintExplainer">The Paint Explainer</a></h1>
+<p class="mut">15 November 2026 · checked against <a href="https://support.google.com/youtube/answer/1311392?hl=en">YouTube's channel monetization policies</a></p>
+
+<div class="gauges">
+  <div class="gauge high"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54"/><circle class="arc" cx="60" cy="60" r="54" pathLength="100" stroke-dasharray="100 100"/></svg><b>100</b>Demonetization risk</div>
+  <div class="gauge low"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="54"/><circle class="arc" cx="60" cy="60" r="54" pathLength="100" stroke-dasharray="15 100"/></svg><b>15</b>Termination risk</div>
+</div>
+<div class="legend"><span class="low"><i></i> 0–29 low</span><span class="med"><i></i> 30–59 medium</span><span class="high"><i></i> 60–100 high</span></div>
+<p class="big center">It has already happened: in <a href="https://www.youtube.com/watch?v=ZIl4S9piTEw">its video of 13 November 2026</a> the channel says YouTube demonetized it for generic or repetitive content, and 3 of its 4 closest similar channels lost AdSense between 7 October and 8 November 2026.</p>
+<p class="mut center">Higher is riskier. The highest signal sets each score.</p>
+
+<h2>Signals</h2>
+<div class="cols">
+  <div>
+    <h3>Demonetization</h3>
+    <div class="row high"><i></i><span>Own AdSense off<small>as the channel says in <a href="https://www.youtube.com/watch?v=ZIl4S9piTEw">its video of 13 Nov 2026</a></small></span><b>100</b></div>
+    <div class="row high"><i></i><span>Similar channels terminated or demonetized<small>4 close of 80 checked</small></span><b>60</b></div>
+    <div class="row high"><i></i><span>Guidelines<small>1 of 5 sections failed</small></span><b>100</b></div>
+  </div>
+  <div>
+    <h3>Termination</h3>
+    <div class="row low"><i></i><span>Similar channels terminated<small>1 of the 4 close ones</small></span><b>15</b></div>
+  </div>
+</div>
+
+<h2>Guidelines check</h2>
+<details class="row high">
+  <summary><i></i><span>Generic or Repetitive Content</span><b>100</b></summary>
+  <div class="proof">
+    <p>Each video tells different true stories with source links, but every one uses the same generic AI voice, 80 of the last 120 titles open on a superlative such as "Most", "Worst" or "Creepiest", and 34 are numbered sequels. The channel's own video of 13 November 2026 says YouTube demonetized it under this policy.</p>
+    <div class="vids">
+      <a href="https://www.youtube.com/watch?v=bIDBGnN5GhE"><img src="https://i.ytimg.com/vi/bIDBGnN5GhE/mqdefault.jpg" alt="">The Most Disturbing Events in Space (Pt. 3) · 663,556 views, 0.4×, 21 Jun 2026</a>
+      <a href="https://www.youtube.com/watch?v=_T73DugW_D8"><img src="https://i.ytimg.com/vi/_T73DugW_D8/mqdefault.jpg" alt="">The Worst Cave Deaths Ever (Pt. 1) · 6,858,070 views, 4.1×, 3 Jan 2025</a>
+      <a href="https://www.youtube.com/watch?v=6bWfSCVbxNQ"><img src="https://i.ytimg.com/vi/6bWfSCVbxNQ/mqdefault.jpg" alt="">Worst Ways People Got Trapped · 75,982 views, 0.05×, 27 Oct 2026</a>
+    </div>
+    <blockquote>Generic or repetitive content includes content that looks like it’s made with a template, or that may feel repetitive to viewers after watching several videos in a row from the same channel.</blockquote>
+    <p><strong>Fix:</strong> Narrate with a real human voice, so the videos stop sounding like the mass-produced copies that use the same AI voice. Try new title formulas, so the titles stop following one pattern.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>Reused content</span><b>0</b></summary>
+  <div class="proof">
+    <p>The videos read use the channel's own drawings and its own scripts with source links. Two credit another creator as inspiration ("Video and thumbnail style inspired by Box Head!"), but neither reuses other people's footage.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>Unsatisfying or Off-putting Content</span><b>0</b></summary>
+  <div class="proof">
+    <p>Death and disaster are frequent themes (64 of the last 120 titles), and some thumbnails show skulls and rotting faces. But each video read tells complete, sourced true stories, not shock clips stitched together, so none runs into this section.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>AI Personas Related to Sensitive Topics</span><b>0</b></summary>
+  <div class="proof">
+    <p>The AI voice narrates history and science. It never poses as a human expert giving health, legal, money or political advice.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>Quality principles for kids and family content</span><b>0</b></summary>
+  <div class="proof">
+    <p>Nothing on the channel is made for kids. Its topics, such as war crimes and serial killers, are for adults, so these rules do not apply.</p>
+  </div>
+</details>
+
+<h2>What happened to similar channels</h2>
+<details class="row med">
+  <summary><i></i><span><a href="https://www.youtube.com/@FinestExplainerr">Finest Explainer</a> · lost AdSense 8 Nov 2026</span><span class="mut" style="flex:none">closeness 80</span></summary>
+  <div class="proof">
+    <p>Same "The Most X" titles on the same subjects (computer viruses, internet mysteries, planets) and the same hand-drawn stick-figure thumbnails. After losing AdSense it posted "I need your help.", as this channel did.</p>
+    <div class="vids">
+      <a href="https://www.youtube.com/watch?v=zzH0tiIoBBA"><img src="https://i.ytimg.com/vi/zzH0tiIoBBA/mqdefault.jpg" alt="">The Most Dangerous Computer Viruses Explained In 8 Minutes (Pt.1)</a>
+      <a href="https://www.youtube.com/watch?v=CyV-lhrHbZg"><img src="https://i.ytimg.com/vi/CyV-lhrHbZg/mqdefault.jpg" alt="">The Most Disturbing Social Media Accounts</a>
+    </div>
+  </div>
+</details>
+<details class="row med">
+  <summary><i></i><span><a href="https://www.youtube.com/@TheCrookedExplainer">The Crooked Explainer</a> · lost AdSense 7 Oct 2026</span><span class="mut" style="flex:none">closeness 75</span></summary>
+  <div class="proof">
+    <p>"The Most X in History" and "Every X's Death Explained" titles on dark history, with labeled side-by-side drawings and gore in the thumbnails, like "Each Major Dictator's Death".</p>
+    <div class="vids">
+      <a href="https://www.youtube.com/watch?v=Rd1xNwLRLS4"><img src="https://i.ytimg.com/vi/Rd1xNwLRLS4/mqdefault.jpg" alt="">The Most Unexplainable Minds in History</a>
+      <a href="https://www.youtube.com/watch?v=TfEYb9B4ovc"><img src="https://i.ytimg.com/vi/TfEYb9B4ovc/mqdefault.jpg" alt="">Actual Dark Truth Behind Every Nursery Rhymes</a>
+    </div>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span><a href="https://www.youtube.com/channel/UC2d3g9sHpS5cD1gG_Aomm5w">KingAce1A</a> · terminated, last upload 30 Sep 2026</span><span class="mut" style="flex:none">closeness 65</span></summary>
+  <div class="proof">
+    <p>"The Most Terrifying ... on Earth" and "Pt.2" titles on places, punishments and space, with hand-drawn rage-comic stick figures in the thumbnails.</p>
+    <div class="vids">
+      <a href="https://www.youtube.com/watch?v=NXoirO2lVc4"><img src="https://cdn.tubelab.net/vi/NXoirO2lVc4.jpeg" alt="">The Most Terrifying Prisons on Earth in History We Still Can't Explain | Good Enough Compilation</a>
+      <a href="https://www.youtube.com/watch?v=9_oGTOJ5YD8"><img src="https://cdn.tubelab.net/vi/9_oGTOJ5YD8.jpeg" alt="">The Rarest Things in the Universe Pt.2 | Good Enough Compilation</a>
+    </div>
+  </div>
+</details>
+<details class="row med">
+  <summary><i></i><span><a href="https://www.youtube.com/@TheHistorianProfessor">Professor Historian</a> · lost AdSense 31 Oct 2026</span><span class="mut" style="flex:none">closeness 65</span></summary>
+  <div class="proof">
+    <p>"Ancient X We Still Can't Explain" and "Historical Myths That Turned Out to Be TRUE" titles, close to "Ancient Myths That Turned Out to Be True", with drawn round-headed characters and bold text in the thumbnails.</p>
+    <div class="vids">
+      <a href="https://www.youtube.com/watch?v=kC4hErBshbc"><img src="https://i.ytimg.com/vi/kC4hErBshbc/mqdefault.jpg" alt="">Ancient Technologies We Still Can't Explain</a>
+      <a href="https://www.youtube.com/watch?v=Bn1MhiGi7ZM"><img src="https://i.ytimg.com/vi/Bn1MhiGi7ZM/mqdefault.jpg" alt="">Historical Conspiracies That Turned Out to Be Real</a>
+    </div>
+  </div>
+</details>
+<p class="mut">One more close channel, <a href="https://www.youtube.com/channel/UC5zkNO3nEQSShUTCKfRdUWQ">Xojiakbar</a> (terminated, last upload 17 Sep 2026), is not counted. It started later and copies this channel's own hits, such as <a href="https://www.youtube.com/watch?v=Fey96S6wt7E">"The Worst Cave Deaths of all time"</a>.</p>
+
+<h2>Actions to reduce risk</h2>
+<ol>
+  <li><strong>Narrate with a real human voice</strong><br><span class="mut">Every video uses the same generic AI voice, which the channel says is also heard on other channels, so its videos blend in with the mass-produced copies.</span></li>
+  <li><strong>Try new title formulas</strong><br><span class="mut">80 of the last 120 titles open on a superlative such as "Most", "Worst" or "Creepiest", and 34 are numbered sequels.</span></li>
+  <li><strong>Add a real presenter on camera, and name the team in the About text</strong><br><span class="mut">No one appears on camera, and the About text says a real artist draws everything but never says who makes the videos.</span></li>
+</ol>
+</main>
+</body>
+</html>
