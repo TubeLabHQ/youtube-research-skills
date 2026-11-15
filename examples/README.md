@@ -5,8 +5,8 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | Skill | Example | Subject |
 |---|---|---|
 | channel-analysis | [2026-11-alexhormozi.md](channel-analysis/2026-11-alexhormozi.md) | @AlexHormozi |
-| audit-channel-risk | [2026-11-neural-pictures.md](audit-channel-risk/2026-11-neural-pictures.md) | @NeuralPicturesTV, a templated AI film channel that scores high |
-| audit-channel-risk | [2026-11-veritasium.md](audit-channel-risk/2026-11-veritasium.md) | @veritasium, an original channel that scores low |
+| audit-channel-risk | [2026-11-neural-pictures.md](audit-channel-risk/2026-11-neural-pictures.md) | @NeuralPicturesTV, a templated AI film channel that scores high for demonetization and medium for termination |
+| audit-channel-risk | [2026-11-veritasium.md](audit-channel-risk/2026-11-veritasium.md) | @veritasium, an original channel that scores 0 on both risks |
 | comment-mining | [2026-11-alexhormozi.md](comment-mining/2026-11-alexhormozi.md) | @AlexHormozi, latest 12 videos |
 | competitor-research | [2026-11-thekoerneroffice.md](competitor-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |
 | monetization-research | [2026-11-thekoerneroffice.md](monetization-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |

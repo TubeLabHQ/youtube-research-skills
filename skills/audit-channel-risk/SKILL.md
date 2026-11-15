@@ -12,24 +12,23 @@ metadata:
 
 ## Overview
 
-YouTube's [channel monetization policies](https://support.google.com/youtube/answer/1311392) remove monetization for mass-produced videos, reused material without original commentary, shock or manipulation formulas, and AI personas posing as human experts on health, legal, money or politics. The best evidence is what happened to the channel's closest look-alikes.
+YouTube's [channel monetization policies](https://support.google.com/youtube/answer/1311392?hl=en) decide which channels keep monetization, and they change often. Read the page on every run and check the channel against it, never against memory. The best evidence is what happened to the channel's closest look-alikes.
 
 ## Workflow
 
-1. Read each channel for free: its top and newest videos and About text. Judge pace from video reads, since list dates can be months off.
-2. Look for one template across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
-3. Note what already shows a real creator: an on-camera video presenting the channel, and an About text naming who makes the videos.
-4. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
-5. If the audited channel is in its own lost-AdSense search, lead with that and the date, score look-alikes 40, band demonetization high, and leave it off the list.
-6. Rate every other hit from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A removed channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
-7. Score two risks. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
+1. Read the policy page and list its sections that set a rule for a channel's videos, skipping those that only point to another page. If it will not open, ask the user to paste it.
+2. Read each channel for free: its top and newest videos and About text. Judge pace from video reads, since list dates can be months off.
+3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
+4. Note what already shows a real creator: an on-camera video presenting the channel, and an About text naming who makes the videos.
+5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
+6. If the audited channel is in its own lost-AdSense search, lead with that and the date, score look-alikes 40, band demonetization high, and leave it off the list.
+7. Rate every other hit from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A removed channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
+8. Score two risks. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
    - Termination: 5 points per close look-alike gone from YouTube, up to 100.
-   - Demonetization adds up four parts:
+   - Demonetization adds two parts:
      - Look-alikes: 5 points per close one gone or demonetized, up to 40.
-     - Mass-produced, 0 to 25: 0 when every video is built differently, 12 when most share one title formula and thumbnail layout, 25 when scripts share one arc too. Recompiling its own videos counts here.
-     - Reused material from others, 0 to 20: 0 when all is its own, 10 when some lean on others' clips or text with thin commentary, 20 when most do.
-     - Off-putting or AI-expert, 0 to 15: 0 when absent, 8 when a shock or humiliation hook recurs, 15 when most rely on it or an AI persona poses as a human expert.
-8. Compare several channels. One shared template is what spam systems look for.
+     - Guidelines, up to 60: per section, 0 when at most two videos run into it, 10 when more do, 20 when over half do.
+9. Compare several channels. One shared template is what spam systems look for.
 
 Gone from YouTube, then lost AdSense:
 
@@ -61,21 +60,23 @@ Gone from YouTube, then lost AdSense:
 | Demonetization risk | Points | Based on |
 |---|---|---|
 | Look-alikes gone or demonetized | {n}/40 | {n} close of {n} checked {after "The channel's own AdSense is off" if so} |
-| Mass-produced videos | {n}/25 | {what repeats} |
-| Reused material | {n}/20 | {what is reused} |
-| Off-putting or AI-expert content | {n}/15 | {what was found} |
+| Guidelines | {n}/60 | {n} of {n} sections failed |
 
 | Termination risk | Points | Based on |
 |---|---|---|
 | Look-alikes gone from YouTube | {n}/100 | {n} of the {n} close ones are gone, {n} lost AdSense only |
 
+## 📋 Guidelines Check
+- {✅ or ❌} [{section name as the page words it}]({policy page url}) · {n} points · {what was found, in a few words} {every section checked, failed ones first}
+
 ## 🚩 Red Flags
+{One per failed section, biggest first. Leave this section out when none failed.}
 ### 1. {Flag}
 
 [![]({thumbnail})]({video url})
 
 - [{title}]({video url}) · {views, ratio, date} {up to three videos, one bullet each}
-- **Rule:** {the policy line it runs into}
+- **Rule:** {the policy line it runs into, quoted from the page}
 - **Fix:** {one sentence}
 
 ## 👥 What Happened To Channels Like Yours
@@ -84,7 +85,7 @@ Gone from YouTube, then lost AdSense:
 ## ✅ Actions To Reduce Risk
 1. **{Action}**
    - **Why:** {one sentence}
-{The red flag fixes first, biggest first. Then one action for what step 3 found missing: an on-camera video presenting the channel and how its videos are made, an About text naming who makes them, or both. Never an action the channel already does.}
+{The red flag fixes first, biggest first. Then one action for what step 4 found missing: an on-camera video presenting the channel and how its videos are made, an About text naming who makes them, or both. Never an action the channel already does.}
 ```
 
 - Length: about 600 words per channel. Up to three red flags, five look-alikes and four actions.
@@ -100,6 +101,6 @@ Gone from YouTube, then lost AdSense:
 - Do not rate closeness by topic alone. One niche holds many formats.
 - Do not count a look-alike that gained AdSense, unless it is now gone.
 - Do not count a large original's later copycats. Check which came first.
-- Do not flag AI use or upload pace alone. The policy targets interchangeable videos.
+- Do not flag AI use or upload pace alone.
 - A score is not a probability, and a low one is valid.
 - Never suggest hiding from detection. Every action changes the videos or shows who makes them.
