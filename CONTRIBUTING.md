@@ -12,7 +12,7 @@ Skills here are short research workflows. Models are smart, and over-detailed in
    - **Output Format:** a fenced template of bullets, with no paragraphs. It opens with a short summary list with bold labels (the main finding, the sample). Each finding is a bold label with bulleted details, and field labels are bold. An item with a thumbnail is a `###` heading, with the thumbnail on its own line under it, linked to the video (`[![](thumb)](url)`). Never put a thumbnail in a list or a table cell. Use tables only to compare short fields. Under the template, add a short bullet list of report rules: length and item counts, plain language, one fact per bullet under 25 words (quotes and verbatim titles are exempt), what to cut first, links, and thumbnails as the 320px `mqdefault.jpg` image.
    - **Common Pitfalls:** four to six "Do not" lines, each with its reason. Most are thinking errors and data traps of the job. At most one is about filters.
 4. One file, with the artifact layout inline in Output Format as a fenced block. No `assets/`, `references/` or generated files: a skill is uploaded as one folder or pasted as one message, so SKILL.md must stand alone. Name sibling skills in backticks (`tubelab-mcp`), never as relative links. Scripts are optional; the workflow runs on tool calls alone.
-5. Follow the conventions below, run the validator, and add one real run under `examples/<skill>/<date>.md`.
+5. Follow the conventions below, run the validator, and add one real run under `examples/<skill>/<date>.md` (`audit-channel-risk` returns an HTML page, so its example is an `.html` file with a screenshot).
 
 ```bash
 node scripts/validate-skills.mjs
