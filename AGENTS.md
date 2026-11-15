@@ -42,7 +42,7 @@ The plugin ships six agents in `agents/`, one per role. Each loads the skills be
 ## Rules every skill follows
 
 1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
-2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result. `niche-watchlist` and `audit-channel-risk` are the exceptions: the watchlist's saved search and the audit's look-alike searches leave the filter out.
+2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result. `niche-watchlist` and `audit-channel-risk` are the exceptions: the watchlist's saved search and the audit's similar channel searches leave the filter out.
 3. Rank by `averageViewsRatio`, not raw views. Show both.
 4. Every finding carries its proof from a tool response: channel (handle) · video title verbatim · views · ratio · date. Invent nothing.
 5. Link everything you cite: videos, channels, moments, brands and products. Use a URL from tool data, never a guessed one. A sponsor that was only heard links to the video moment where it was said.
