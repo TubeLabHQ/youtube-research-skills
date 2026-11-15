@@ -17,7 +17,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
 ## Workflow
 
 1. Read the policy page and list its sections that set a rule for a channel's videos, skipping those that only point to another page. If it will not open, ask for a paste.
-2. Read each channel for free: its top and newest videos and About text. Judge pace from video reads, since list dates can be months off.
+2. Read each channel for free: its top and newest videos and About text.
 3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
 4. Note what already shows real people behind the channel: a real presenter on camera, and an About text naming who makes the videos.
 5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
@@ -26,7 +26,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
    - Termination: 15 points per close similar channel terminated, up to 100.
    - Demonetization: the higher of two signals.
      - Similar channels: 15 points per close one terminated or demonetized, up to 100.
-     - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do.
+     - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do. Drop it one level, 100 to 60 or 60 to 30, when the newest ten videos run into it at under half the older ones' rate, because the channel is moving off it.
 8. Compare several channels. One shared template is what spam systems look for.
 
 Terminated, then lost AdSense:
@@ -124,7 +124,7 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 <details class="row {band}">
   <summary><i></i><span>{section name as the page words it}</span><b>{n}</b></summary>
   <div class="proof">
-    <p>{what was found, one or two sentences}</p>
+    <p>{what was found, one or two sentences, then how many of the newest ten videos still do it against the older ones, and whether that lowered the score}</p>
     {The next three only for a failed section.}
     <div class="vids">
       <a href="{video url}"><img src="{thumbnail}" alt="">{title} · {views, ratio, date}</a> {up to three videos}
