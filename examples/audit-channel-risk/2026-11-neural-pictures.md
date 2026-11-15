@@ -50,9 +50,9 @@
 - [TruthStrikeStories](https://www.youtube.com/@TruthStrikeStory) · lost AdSense 7 Nov 2026 · closeness 65/100 · Dragon films titled "Full Fantasy Movie 4K", with a hero-and-dragon thumbnail.
 
 ## ✅ Actions To Reduce Risk
-1. **Retire the "Unaware He Was a … Legend" storyline.**
-   - **Why:** Three uploads in five days share its title, thumbnail and arc, and the 11 Nov title nearly repeats the top hit's.
-2. **Build hooks and thumbnails on the adventure, not on someone being humiliated.**
+1. **Try new title formulas.**
+   - **Why:** Three uploads in five days reuse "They Disrespected a … Unaware He Was a … Legend", with the same thumbnail and story.
+2. **Show the hero's skill in thumbnails, not people being mocked.**
    - **Why:** Milk poured on an old man, a pulled beard and a mocked wheelchair user sell all three videos.
-3. **Post one on-camera video on how a film gets made, and name yourself in the About text.**
-   - **Why:** No video shows the person behind the channel, and the About text says "I spent $40 and 2 hours on every minute of the film" without a name.
+3. **Add a real presenter on camera, and name who makes the films in the About text.**
+   - **Why:** No video shows a real person, and the About text says "I spent $40 and 2 hours on every minute of the film" without a name.

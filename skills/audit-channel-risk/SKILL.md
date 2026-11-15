@@ -19,7 +19,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
 1. Read the policy page and list its sections that set a rule for a channel's videos, skipping those that only point to another page. If it will not open, ask the user to paste it.
 2. Read each channel for free: its top and newest videos and About text. Judge pace from video reads, since list dates can be months off.
 3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
-4. Note what already shows a real creator: an on-camera video presenting the channel, and an About text naming who makes the videos.
+4. Note what already shows real people behind the channel: a real presenter on camera, and an About text naming who makes the videos.
 5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
 6. If the audited channel is in its own lost-AdSense search, lead with that and the date, score look-alikes 40, band demonetization high, and leave it off the list.
 7. Rate every other hit from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A removed channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
@@ -85,7 +85,7 @@ Gone from YouTube, then lost AdSense:
 ## ✅ Actions To Reduce Risk
 1. **{Action}**
    - **Why:** {one sentence}
-{The red flag fixes first, biggest first. Then one action for what step 4 found missing: an on-camera video presenting the channel and how its videos are made, an About text naming who makes them, or both. Never an action the channel already does.}
+{The red flag fixes first, biggest first. Then one action for what step 4 found missing: a real presenter on camera, in a video presenting the channel and how its videos are made, an About text naming who makes them, or both. Never an action the channel already does. Word each action as one plain thing to try, clear without its Why, like "Try new title formulas" or "Add a real presenter on camera".}
 ```
 
 - Length: about 600 words per channel. Up to three red flags, five look-alikes and four actions.
