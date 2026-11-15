@@ -92,7 +92,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 | Skill | Use it when you want to... | Output |
 |---|---|---|
 | [`channel-analysis`](skills/channel-analysis/) | Analyze a channel: positioning, what works, what is holding it back | One-line diagnosis, what works, what holds it back, next 3 tests |
-| [`channel-risk-audit`](skills/channel-risk-audit/) | Check whether one or several channels are at risk of losing monetization, from their own videos and what happened to the channels most like them | A risk score from 0 to 100 in four parts, red flags with proof, look-alikes that were removed or lost AdSense, fixes in order; a comparison table first for several channels |
+| [`audit-channel-risk`](skills/audit-channel-risk/) | Check whether one or several channels are at risk of being demonetized or terminated, from their own videos and what happened to the channels most like them | A demonetization score and a termination score out of 100, red flags with proof, look-alikes that were removed or lost AdSense, actions to reduce the risk in order; a comparison table first for several channels |
 | [`reverse-engineer-channel`](skills/reverse-engineer-channel/) | Reverse engineer a channel you admire into the formulas that work for it, from its whole video list | Its outliers, the formats that work with their topics, title formulas and thumbnail formulas, what doesn't work, hook formulas, script structure, how it earns, and five learnings to copy, each with the skill and prompt to run next |
 | [`competitor-research`](skills/competitor-research/) | Compare a channel against 12 to 15 real neighbours: peers, leaders and fast risers | How the set was built, comparison table, gaps, positioning |
 
@@ -186,7 +186,7 @@ YouTube research agency
  ├─ 🎬 script analyst       script-breakdown
  ├─ 🎨 packaging team       title-formulas · thumbnail-concepts
  ├─ 💰 monetization team    monetization-research · sponsorship-prospecting
- ├─ 🧭 channel strategist   channel-analysis · channel-risk-audit · reverse-engineer-channel · competitor-research
+ ├─ 🧭 channel strategist   channel-analysis · audit-channel-risk · reverse-engineer-channel · competitor-research
  ├─ 💬 audience researcher  comment-mining
  └─ 💡 ideas                video-ideation
 ```
@@ -198,7 +198,7 @@ The workflow skills lean on `tubelab-mcp` for tool costs, craft rules and quirks
 1. **Workflow-first, tool-second.** Users ask for an outcome, not a search.
 2. **Outlier over raw views.** A 50K video on a 5K-average channel says more than 2M on a giant. Rank by ratio, show both.
 3. **Recency first.** Every search sets a window. Widen one step at a time, and say so.
-4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result. The exceptions are `niche-watchlist`, whose saved search leaves it out, and `channel-risk-audit`, whose look-alike searches leave it out because the low-effort look-alikes are the evidence.
+4. **Content Authenticity is never off.** General and above for niches, outliers, ideas and titles; High for anything thumbnail-related. Never relaxed to widen a thin result. The exceptions are `niche-watchlist`, whose saved search leaves it out, and `audit-channel-risk`, whose look-alike searches leave it out because the low-effort look-alikes are the evidence.
 5. **Cited outputs.** Every finding carries channel · title verbatim · views · ratio · date. Everything cited is linked with a URL from tool data: videos, channels, moments, brands and products. A sponsor that was only heard links to the video moment. Nothing invented.
 6. **Estimates are estimates.** Revenue, RPM and audience are model outputs, shown as labelled bands.
 7. **Credit-aware.** Searches cost credits, reads are free: go deep with free reads, never loop a paid search.
