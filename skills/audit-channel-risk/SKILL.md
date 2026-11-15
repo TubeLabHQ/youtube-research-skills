@@ -26,7 +26,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
    - Termination: 15 points per close similar channel terminated, up to 100.
    - Demonetization: the higher of two signals.
      - Similar channels: 15 points per close one terminated or demonetized, up to 100.
-     - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do. Drop it one level, 100 to 60 or 60 to 30, when the newest ten videos run into it at under half the older ones' rate, because the channel is moving off it.
+     - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do. Drop it one level, 100 to 60 or 60 to 30, when the newest ten videos run into it at under half the older ones' rate.
 8. Compare several channels. One shared template is what spam systems look for.
 
 Terminated, then lost AdSense:
