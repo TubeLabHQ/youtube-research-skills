@@ -1,6 +1,6 @@
 ---
 name: audit-channel-risk
-description: Use when the user wants to know whether a YouTube channel is at risk of being demonetized or terminated, with a score for each, the red flags and what to fix first. Requires the TubeLab MCP.
+description: Use when the user wants to know whether a YouTube channel is at risk of being demonetized or terminated, with a score for each, the proof and what to fix first. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
@@ -12,22 +12,24 @@ metadata:
 
 ## Overview
 
-YouTube's [channel monetization policies](https://support.google.com/youtube/answer/1311392?hl=en) decide which channels keep monetization, and they change often. Read the page on every run and check the channel against it, never against memory. The best evidence is what happened to the channels most similar to it.
+YouTube's [channel monetization policies](https://support.google.com/youtube/answer/1311392?hl=en) decide which channels keep monetization, and they change often. Read the page on every run and check the channel against it, never against memory.
 
 ## Workflow
 
-1. Read the policy page and list its sections that set a rule for a channel's videos, skipping those that only point to another page. If it will not open, ask for a paste.
-2. Read each channel for free: its top and newest videos and About text. Judge pace from video reads, since list dates can be months off.
-3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite.
+1. Read the policy page and list the sections that set a rule for what videos contain. Skip those about the review, the creator's behaviour or another page. If it will not open, ask for a paste.
+2. Read each channel for free: its top and newest videos and About text.
+3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite. For the section on repetitive content, a video counts when:
+   - its script could swap names and places with an earlier video's and still work, or repeats its entries. A shared intro or outro does not count.
+   - its title has the shape used on over half the videos. Count shapes, not words.
 4. Note what already shows real people behind the channel: a real presenter on camera, and an About text naming who makes the videos.
-5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date, whatever the AdSense detection says. False alone only means not monetized.
+5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date. False alone only means not monetized.
 6. Rate every hit but the channel itself from 0 to 100: titles first, then thumbnails for title matches, then scripts if still unsure. A close one, 60 or more, shares the title formula and subject, and the thumbnail style. A terminated channel's thumbnails load from `https://cdn.tubelab.net/vi/<id>.jpeg`.
-7. Score two risks from 0 to 100, where higher is riskier. One strong signal is enough, so take the highest and never add them up. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
+7. Score two risks from 0 to 100, where higher is riskier. Take the highest signal, never a sum. Under 30 is low 🟢, 30 to 59 is medium 🟡, and 60 or more is high 🔴.
    - Termination: 15 points per close similar channel terminated, up to 100.
    - Demonetization: the higher of two signals.
      - Similar channels: 15 points per close one terminated or demonetized, up to 100.
-     - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do.
-8. Compare several channels. One shared template is what spam systems look for.
+     - Guidelines: its worst section. A section scores 0 when at most two videos, or under a tenth, run into it, 60 when more do, and 100 when over half do. Drop it one level, 100 to 60 or 60 to 30, when the newest ten videos run into it at under half the older ones' rate.
+8. With several channels, compare them. A shared template, presenter or description block, or uploads minutes apart, link channels as one network.
 
 Terminated, then lost AdSense:
 
@@ -93,7 +95,7 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 </head>
 <body>
 <main>
-{With several channels, one page: first a table of channel, both scores and biggest risk, then one line on what the channels repeat between them, then everything below once per channel, riskiest first.}
+{With several channels, one page: first a table of channel, both scores and biggest risk, then one line on what links the channels (a shared template, presenter, description block or upload times), then everything below once per channel, riskiest first.}
 
 <h1>Channel Risk Audit: <a href="{url}">{channel}</a></h1>
 <p class="mut">{run date} · checked against <a href="{policy page url}">YouTube's channel monetization policies</a></p>
@@ -104,14 +106,14 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 </div>
 <div class="legend"><span class="low"><i></i> 0–29 low</span><span class="med"><i></i> 30–59 medium</span><span class="high"><i></i> 60–100 high</span></div>
 <p class="big center">{biggest risk, one sentence with numbers}</p>
-<p class="mut center">Higher is riskier. The highest signal sets each score.</p>
+<p class="mut center">Higher is riskier. The highest signal sets each score. A low score means no signal was found, not that the channel is safe.</p>
 
 <h2>Signals</h2>
 <div class="cols">
   <div>
     <h3>Demonetization</h3>
     <div class="row {band}"><i></i><span>Similar channels terminated or demonetized<small>{n} close of {n} checked</small></span><b>{n}</b></div>
-    <div class="row {band}"><i></i><span>Guidelines<small>{n} of {n} sections failed</small></span><b>{n}</b></div>
+    <div class="row {band}"><i></i><span>Guidelines<small>{n} of {n} sections failed {a section fails when it scores above 0}</small></span><b>{n}</b></div>
   </div>
   <div>
     <h3>Termination</h3>
@@ -124,10 +126,10 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 <details class="row {band}">
   <summary><i></i><span>{section name as the page words it}</span><b>{n}</b></summary>
   <div class="proof">
-    <p>{what was found, one or two sentences}</p>
+    <p>{what was found, one or two sentences, then how many of the newest ten videos still do it against the older ones, and whether that lowered the score}</p>
     {The next three only for a failed section.}
     <div class="vids">
-      <a href="{video url}"><img src="{thumbnail}" alt="">{title} · {views, ratio, date}</a> {up to three videos}
+      <a href="{video url}"><img src="{thumbnail: the 320px mqdefault.jpg, or the TubeLab one for a terminated channel}" alt="">{title} · {views, ratio, date}</a> {up to three videos}
     </div>
     <blockquote>{the policy line it runs into, quoted from the page}</blockquote>
     <p><strong>Fix:</strong> {one sentence per thing to change}</p>
@@ -135,7 +137,7 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 </details>
 
 <h2>What happened to similar channels</h2>
-{One block per close one, closest first, up to ten. The band is high for terminated, med for lost AdSense.}
+{One block per close one, closest first, up to ten. The band is high for terminated, med for lost AdSense. If none is close, one line saying so and naming the nearest.}
 <details class="row {band}">
   <summary><i></i><span><a href="{url}">{channel}</a> · {terminated, last upload {date} | lost AdSense {date}}</span><span class="mut" style="flex:none">closeness {n}</span></summary>
   <div class="proof">
@@ -161,16 +163,14 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 - Chat: reply with only the two scores, the biggest risk and the file.
 - Language: plain words and short sentences. Say "similar channels" and "terminated".
 - Proof: every claim has its videos or channels under it.
-- Links: link every video and channel you cite, built from IDs and handles in the data. Never guess one.
-- Thumbnails: use the 320px `mqdefault.jpg` image, or the TubeLab one for a terminated channel.
+- Links: link every video and channel you cite, from IDs in the data.
 
 ## Common Pitfalls
 
 - Do not say why a similar channel was terminated. The data does not show why.
-- Do not rate closeness by topic alone. One niche holds many formats.
-- Do not count a similar channel that gained AdSense, unless it is now terminated.
+- Do not rate closeness by topic alone.
 - Do not count a later clone of the channel's own videos. Other channels in the same format count.
 - Do not flag AI use or upload pace alone.
 - Do not score the channel's own AdSense status. Off can mean it was never monetized.
-- A score is not a probability, and a low one is valid.
+- A score is not a probability, and a low one does not mean safe.
 - Never suggest hiding from detection. Every action changes the videos or shows who makes them.
