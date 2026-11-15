@@ -19,7 +19,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
 1. Read the policy page and list the sections that set a rule for what videos contain. Skip those about the review, the creator's behaviour or another page. If it will not open, ask for a paste.
 2. Read each channel for free: its top and newest videos and About text.
 3. Check the channel against each section, across titles, descriptions, thumbnails and three to five transcripts. View the thumbnails of the videos you cite. For the section on repetitive content, a video counts when:
-   - its script could swap names and places with another's and still work, or covers the same entries. A shared intro or outro does not count.
+   - its script could swap names and places with an earlier video's and still work, or repeats its entries. A shared intro or outro does not count.
    - its title has the shape used on over half the videos. Count shapes, not words.
 4. Note what already shows real people behind the channel: a real presenter on camera, and an About text naming who makes the videos.
 5. Run both searches below per channel, seeded with it, without the quality filter. Lost AdSense means `monetization.adsense` is false with a `monetizationChangedAt` date. False alone only means not monetized.
@@ -28,7 +28,7 @@ YouTube's [channel monetization policies](https://support.google.com/youtube/ans
    - Termination: 15 points per close similar channel terminated, up to 100.
    - Demonetization: the higher of two signals.
      - Similar channels: 15 points per close one terminated or demonetized, up to 100.
-     - Guidelines: its worst section. A section scores 0 when at most two videos run into it, 60 when more do, and 100 when over half do. Drop it one level, 100 to 60 or 60 to 30, when the newest ten videos run into it at under half the older ones' rate.
+     - Guidelines: its worst section. A section scores 0 when at most two videos, or under a tenth, run into it, 60 when more do, and 100 when over half do. Drop it one level, 100 to 60 or 60 to 30, when the newest ten videos run into it at under half the older ones' rate.
 8. With several channels, compare them. A shared template, presenter or description block, or uploads minutes apart, link channels as one network.
 
 Terminated, then lost AdSense:
