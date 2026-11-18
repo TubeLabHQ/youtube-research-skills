@@ -9,7 +9,7 @@ Six roles in order, from a blank page to a niche, a first video and a monetizati
 | 3 | 📈 Trend analyst | `trend-report` | "Trend report for the winning niche this month. Hooks word for word." | the videos winning now, with verbatim hooks and why they worked, patterns and ideas |
 | 4 | 🎬 Script analyst | `script-breakdown` | "Break down the two strongest outliers from the trend report, and give me a script skeleton for the first video." | hooks verbatim, typed beats with timestamps, a shared layout and a skeleton |
 | 5 | 🎨 Packaging team | `title-formulas`, then `thumbnail-concepts` | "Give me a title and a thumbnail for that first video." | about eight titles with proof, then three thumbnail concepts for the chosen title, with images or prompts |
-| 6 | 💰 Monetization team | `monetization-research` | "What do channels in this niche sell, and who sponsors them?" | monetization gaps with linked peer offers, the brands that sponsor channels like this, and three products to test |
+| 6 | 💰 Monetization team | `revenue-maxxing` | "What do channels in this niche sell, and who sponsors them?" | a stack score across ad revenue, sponsors, buyer intent, a newsletter and own products, with monetization gaps, sponsors and the moves in build order |
 
 In Claude Code with the plugin installed, each step can go to its agent: `@agent-youtube-research:niche-scout`, `@agent-youtube-research:validator`, and so on down the roles. Steps that do not need each other, such as the trend report and the monetization plan once the niche is chosen, can run at the same time. An agent does not see the chat, so each request should name the niche and any outliers it builds on. On other clients, run the prompts in order in one chat.
 

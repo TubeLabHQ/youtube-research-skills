@@ -84,7 +84,7 @@ Setup guides per client: [tubelab.net/docs/api/mcp-server](https://tubelab.net/d
 
 | Skill | Use it when you want to... | Output |
 |---|---|---|
-| [`monetization-research`](skills/monetization-research/) | Find monetization gaps and what to sell for your channel (the creator's side), from how peers and same-audience channels earn | Table of monetization method gaps, best first, with linked peer offers; the brands that sponsor channels like yours; three products to test |
+| [`revenue-maxxing`](skills/revenue-maxxing/) | Raise what your channel earns (the creator's side): ad revenue, sponsors, buyer intent, a newsletter and your own products, scored against peers | HTML page with a stack score, each of the five layers with its proof, monetization method gaps with linked peer offers, the brands that sponsor channels like yours, and the moves in build order |
 | [`sponsorship-prospecting`](skills/sponsorship-prospecting/) | Find YouTube channels to sponsor for your product, matched to your buyer (the brand's side) | 10 to 15 scored prospects with audience, current sponsors and contact path; the best fits with an outreach angle and a cost band; a CSV |
 
 ### 🧭 Channel strategist
@@ -127,7 +127,7 @@ The plugin also ships six agents, one per role. Each one is a thin wrapper: it l
 | 📈 `trend-analyst` | Pulls what is winning right now, with the hooks word for word | `trend-report` |
 | 🎬 `script-analyst` | Breaks the top videos down beat by beat | `script-breakdown` |
 | 🎨 `packaging-team` | Writes titles, then thumbnails for the chosen title, from what is already getting clicked | `title-formulas`, `thumbnail-concepts` |
-| 💰 `monetization-team` | Shows what channels like yours sell and who sponsors them, or which channels a brand should sponsor | `monetization-research`, `sponsorship-prospecting` |
+| 💰 `monetization-team` | Shows what channels like yours sell and who sponsors them, or which channels a brand should sponsor | `revenue-maxxing`, `sponsorship-prospecting` |
 
 In Claude Code, call one by name, for example `@agent-youtube-research:niche-scout find me faceless niche ideas`. Other clients do not load these agent files. They use the same skills directly, and the reports are the same.
 
@@ -185,7 +185,7 @@ YouTube research agency
  ├─ 📈 trend analyst        trend-report
  ├─ 🎬 script analyst       script-breakdown
  ├─ 🎨 packaging team       title-formulas · thumbnail-concepts
- ├─ 💰 monetization team    monetization-research · sponsorship-prospecting
+ ├─ 💰 monetization team    revenue-maxxing · sponsorship-prospecting
  ├─ 🧭 channel strategist   channel-analysis · audit-channel-risk · reverse-engineer-channel · competitor-research
  ├─ 💬 audience researcher  comment-mining
  └─ 💡 ideas                video-ideation

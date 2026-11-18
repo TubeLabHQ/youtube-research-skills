@@ -50,7 +50,7 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 ## Craft rules
 
 1. **Broad, then narrow.** Start with one wide search and read what comes back. Then add filters. Six filters on the first call often return nothing, and they cost the same.
-2. **Recency first.** Always set `publishedAtFrom` with a token: `month`, `trimester`, `semester` or `year`, never a date. If results are thin, widen one step at a time and say so in the report.
+2. **Recency first.** Always set `publishedAtFrom` with a token: `month`, `trimester`, `semester` or `year`, never a date. If results are thin, widen one step at a time and say so in the report. A lookup by handle is the exception: pass only the handle as `query`.
 3. **Content Authenticity stays on.** `classificationQuality: "neutral"` means General and above, because the server includes `positive`. Use `neutral` for niche, outlier, idea and title work. Use `positive` (High) for anything about thumbnails. Never drop it to widen a thin result. Widen recency or remove another filter instead. `negative` is only for auditing low-effort content. `niche-watchlist` and `audit-channel-risk` are the exceptions: the watchlist's saved search and the audit's similar channel searches leave the filter out.
 4. **Ratio over raw views.** `averageViewsRatio` is views divided by the channel's average. It and `zScore` say whether a format worked. Raw views only say the channel is big. Rank by ratio, show both, and keep the channel's subscriber count next to every ratio.
 5. **Semantic by default.** `by: "semantic"` understands topics. `by: "lexical"` matches exact words. `query` takes 1 to 3 phrasings of one topic, not a list of topics.
@@ -89,7 +89,7 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 - `get_video_comments` returns "Failed Dependency" or "No comments found" when comments are disabled. Treat that as no data, not a failure. Its `comments[]` can repeat entries, so dedupe on author plus text. `authorIsChannelOwner` has come back null on every row, even on the creator's pinned comments. Spot the creator's replies by matching the author handle to the channel's.
 - Empty `hits` with `pagination.total: 0`: widen recency, drop one filter or rephrase `query`. Keep the quality floor.
 - `pagination.total` has come back as exactly twice `size`. Do not use it to measure how crowded a niche is.
-- `get_channel` has no audience, monetization, revenue or RPM fields. Those appear only on search hits, and a channel may not appear in a search for itself.
+- `get_channel` has no audience, monetization, revenue or RPM fields. Those appear only on search hits. To get them for one channel, call `search_channels` with `query: ["@handle"]` and no other filter. With `publishedAtFrom` or `classificationQuality` set, the channel often does not come back. `search_related_channels` seeded with the channel also returns it first.
 - `monetization.adsense: false` means a channel lost AdSense only on a hit that also has a `monetizationChangedAt` date, which is what the `monetizationChanged` filter returns. Without that date, false only means the channel is not monetized.
 - HTTP 429 is the rate limit, about 30 calls per window on the MCP, shared across sessions. Wait for the reset and retry. Pace reads rather than firing them all at once.
 
