@@ -4,7 +4,7 @@ description: Use when the user wants to raise what a YouTube channel or niche ea
 license: MIT
 metadata:
   author: tubelab
-  version: "6.4"
+  version: "6.5"
   requires: tubelab-mcp
 ---
 
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Top-earning channels stack five layers: sponsors, buyer intent (videos that promise a result), a list to upsell, own products, and ad revenue, the least important. Score each against peers.
+Top-earning channels stack five layers: sponsors, buyer intent (videos promising a result), a list to upsell, own products, and ad revenue, the least important. Score each against peers.
 
 ## Workflow
 
@@ -28,7 +28,7 @@ Top-earning channels stack five layers: sponsors, buyer intent (videos that prom
    - Own products: ✅ for a linked product solving the problem the videos promise. 🟡 when it misses that problem or is not linked, ❌ when both.
    - Ad revenue: ✅ when videos average 8 minutes or more, 🟡 when some do.
 7. The stack score is their average, ad revenue counting half.
-8. Order actions: fast wins needing no other layer, like affiliate links on a video naming products, and deadlines first; then what another layer needs, like a list before a product; then the biggest win.
+8. Order actions: fast wins needing no other layer and deadlines first; then what another layer needs, like a list before a product; then the biggest win.
 9. Write three to five product ideas. Each sells a transformation viewers cannot get free from videos or social media, like "your first AI automation at work in 30 days", never information like a catch-up. Each solves a pain many viewers share or a top video's promise. Where jobs, money or health are at stake, one answers the fear behind the views, priced from a step 3 seller to the same viewers with a close problem. Price the rest from offers to these viewers, or "price untested".
 
 ## Output Format
@@ -176,5 +176,5 @@ td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:
 
 - Suggest only sponsors the channel would recommend anyway, never one selling what it could sell or what its videos argue against.
 - Do not over-maximize: strong channels get fewer actions.
-- Under 10K subscribers, start with affiliate links and a free download, then a cheap product; sponsors wait, and a course starts as a small group.
+- Under 10K subscribers, start with a free download, then a cheap product; sponsors wait; courses start as small groups. Affiliate links only when videos name costly things viewers buy, or peers link them.
 - Monetize the content as it is: beyond buyer intent, never change visuals, voice, topics or format.
