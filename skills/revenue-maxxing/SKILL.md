@@ -4,7 +4,7 @@ description: Use when the user wants to raise what a YouTube channel or niche ea
 license: MIT
 metadata:
   author: tubelab
-  version: "6.3"
+  version: "6.4"
   requires: tubelab-mcp
 ---
 
@@ -17,9 +17,9 @@ Top-earning channels stack five layers: sponsors, buyer intent (videos that prom
 ## Workflow
 
 1. No channel? Score what a newcomer should build.
-2. Read the channel's About, top and newest videos, descriptions and thumbnails, noting each offer, list and sponsor.
+2. Read the channel's About, top and newest videos, descriptions, thumbnails and two transcripts (reads are often spoken). Note each offer, list and sponsor.
 3. Look up the channel and the peer that earns in the most ways by handle, one per search, no other filter, not even `publishedAtFrom`. Find peers selling to the same viewers in any format: ones the user names or you know, checked by a free read; one or two searches seeded with the channel, with `publishedAtFrom` and `classificationQuality` `"neutral"` or above, which also return the channel's band; and one with niche words and `detectionsMonetization` course, product, community and services, for sellers and prices. Drop off-audience hits.
-4. Open peers' offers and sponsor reads: what, for whom, price, link. Read three transcripts from the channel and that peer.
+4. Open peers' offers and sponsor reads: what, price, link. Read that peer's top transcript.
 5. Mine comments on the top five to ten videos for pains: questions, complaints, "how do I", "I wish", favouring the richest viewers.
 6. Score each layer ✅ 100, 🟡 50, ❌ 0.
    - Sponsors: ✅ for regular reads, 🟡 for occasional reads or affiliate links only. Also ✅ when its own products fill that slot. A read against the channel's message counts as none.
