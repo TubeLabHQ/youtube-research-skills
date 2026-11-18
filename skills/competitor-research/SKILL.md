@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-Find the channels competing for the same viewers. A similar channel is not always a competitor. A competitor serves the same audience with an overlapping promise. The value is the gap: what competitors win with that this channel does not cover. Not for how they earn (`monetization-research`).
+Find the channels competing for the same viewers. A similar channel is not always a competitor. A competitor serves the same audience with an overlapping promise. The value is the gap: what competitors win with that this channel does not cover. Not for how they earn (`revenue-maxxing`).
 
 ## Workflow
 

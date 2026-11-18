@@ -185,7 +185,7 @@ A video beats its neighbours when it has more views than the median of the video
    - **Run next:** `script-breakdown` · "Outline my [challenge] video as rounds that get bigger every 2 minutes, with a running total on screen and one offer to quit in each round."
 5. **Place your own product inside the sponsor segment.**
    - **Proof:** [$10,000 Every Day You Survive In The Wilderness](https://www.youtube.com/watch?v=U_LlX4t0A9I&t=965s) · 416M views, ratio 1.52, June 1, 2024
-   - **Run next:** `monetization-research` · "What product could my channel about [topic] sell, and how could I show it inside sponsor segments the way MrBeast shows Feastables?"
+   - **Run next:** `revenue-maxxing` · "What product could my channel about [topic] sell, and how could I show it inside sponsor segments the way MrBeast shows Feastables?"
 
 - ❌ **Do not copy the star cast:** [Beat Ronaldo, Win $1,000,000](https://www.youtube.com/watch?v=0BjlBnfHcHM) needed Ronaldo and Tom Brady, and even here famous-cast battles beat their neighbours only 1 time in 5.
 - ❌ **Do not copy the prize sizes:** [Eat Everything In A Grocery Store, Win $1,000,000](https://www.youtube.com/watch?v=plN7JMbadRg) needed a whole grocery store and a $1,000,000 prize. The rule carries over to a small channel, but the amount does not.

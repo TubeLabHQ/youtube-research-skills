@@ -25,7 +25,7 @@ One channel taken apart into formulas the user can reuse. A formula is a pattern
 7. Read the first 30 seconds of the five best videos and two weak ones. Name each opening's beats in words that fit any video, such as setup, stakes or twist. A hook formula is an order of beats that two or more strong openings share.
 8. Read the full transcripts of three of the best videos, from different formats. Mark each beat and its time, named the same way, and keep the layout they share.
 9. Find how the channel earns, from its description, the descriptions of the ten best and five newest videos, and sponsor reads in the transcripts.
-10. Write five learnings to copy, best first. Each names the skill that runs it, such as `title-formulas`, `thumbnail-concepts`, `script-breakdown` or `monetization-research`, and a prompt to paste. Add two or three things not to copy, because they need this channel's fame, budget or access.
+10. Write five learnings to copy, best first. Each names the skill that runs it, such as `title-formulas`, `thumbnail-concepts`, `script-breakdown` or `revenue-maxxing`, and a prompt to paste. Add two or three things not to copy, because they need this channel's fame, budget or access.
 
 ## Output Format
 

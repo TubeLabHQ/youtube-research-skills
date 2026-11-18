@@ -19,7 +19,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Who are my competitors, how do I compare, competitive landscape, who is growing in my space | `competitor-research` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
 | Script structure, beat sheet, hook of this video, script skeleton, how the top videos of a niche or channel are built | `script-breakdown` |
-| Monetization gaps for my channel, what to sell, how channels like mine make money, raise RPM, who could sponsor my channel (the creator's side) | `monetization-research` |
+| Monetization gaps for my channel, what to sell, how channels like mine make money, raise RPM, build a newsletter or products, who could sponsor my channel (the creator's side) | `revenue-maxxing` |
 | Which channels should we sponsor, creator prospect list for a product, match creators to a buyer (the brand's side) | `sponsorship-prospecting` |
 | Watch a niche, which channels broke out since last run, scheduled digest | `niche-watchlist` |
 | How do TubeLab tools work, which filter, credits, REST | `tubelab-mcp` |
@@ -37,11 +37,11 @@ The plugin ships six agents in `agents/`, one per role. Each loads the skills be
 | 📈 `trend-analyst` | `trend-report` |
 | 🎬 `script-analyst` | `script-breakdown` |
 | 🎨 `packaging-team` | `title-formulas`, then `thumbnail-concepts` for the chosen title |
-| 💰 `monetization-team` | `monetization-research`; `sponsorship-prospecting` when the user is a brand choosing channels to sponsor |
+| 💰 `monetization-team` | `revenue-maxxing`; `sponsorship-prospecting` when the user is a brand choosing channels to sponsor |
 
 ## Rules every skill follows
 
-1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so.
+1. Always set `publishedAtFrom` (tokens: `month`, `trimester`, `semester`, `year`). Widen one step at a time and say so. A lookup by handle is the exception: it takes no other filter.
 2. Content Authenticity is never off: `classificationQuality` at `"neutral"` or above for niches, outliers, ideation and titles; `"positive"` for anything thumbnail-related. Never drop it to widen a thin result. `niche-watchlist` and `audit-channel-risk` are the exceptions: the watchlist's saved search and the audit's similar channel searches leave the filter out.
 3. Rank by `averageViewsRatio`, not raw views. Show both.
 4. Every finding carries its proof from a tool response: channel (handle) · video title verbatim · views · ratio · date. Invent nothing.
