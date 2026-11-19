@@ -14,7 +14,7 @@ metadata:
 
 A niche taken apart through 10 to 12 of its channels: the patterns that win, the versions that flop, and who can copy each. Prefer emerging channels, with 3K to 300K subscribers. Read every video through five lenses:
 
-- **The shelf:** YouTube groups videos by what viewers watch together, not by topic. A new video must first fit the winners' format and length.
+- **Working formats:** YouTube groups videos by what viewers watch together, not by topic. A new video must first fit the winners' format and length.
 - **New and specific:** new enough to stop a scroll, specific enough to feel real: a price, a document, a job, a place. Flops tend to be familiar and general.
 - **Anchors:** names, brands, tools or terms that tell YouTube which viewers to send.
 - **Dead versions:** recent videos with a winner's promise that flopped.
@@ -42,7 +42,7 @@ Not for a dated digest of last month's winners (`trend-report`), whether to ente
 - **Sample:** {n} channels ({n} emerging, {n} established) · {n} winners, {n} flops · {n} thumbnails viewed · {n} openings read
 - **Start with:** {the one pattern to make first, and why}
 
-## 📺 The Shelf
+## 📺 Working Formats
 
 - **Format:** {the format the winners share}
 - **Length:** {usual length of the winners}
@@ -84,7 +84,7 @@ Medians cover each channel's last three months of long videos. {The given channe
 
 ### {Pattern name}: dead versions
 
-- [{channel}]({url}) · [{title}]({video url}) · {views, ratio to its median, date} · **{too familiar, too general, wrong anchor or wrong shelf}:** {one line}
+- [{channel}]({url}) · [{title}]({video url}) · {views, ratio to its median, date} · **{too familiar, too general, wrong anchor or wrong format}:** {one line}
 
 ## 🎯 Gaps To Win
 

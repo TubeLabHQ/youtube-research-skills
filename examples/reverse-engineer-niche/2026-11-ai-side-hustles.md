@@ -7,7 +7,7 @@ Run: 2026-11-19 · Live TubeLab MCP · `skills/reverse-engineer-niche/SKILL.md`.
 
 Four channels with English titles but Hindi audio, and one in French, were left out.
 
-## 📺 The Shelf
+## 📺 Working Formats
 
 - **Format:** one person on camera, then screen recordings of the tools, the store or the payout.
 - **Length:** mostly 9 to 23 minutes. Full courses of 30 minutes and more also win.
@@ -143,7 +143,7 @@ Medians cover each channel's last three months of long videos.
 ### A ranked list: dead versions
 
 - [Shawn Builds AI](https://www.youtube.com/@shawnbuildsai) · [Top 5 AI Tools for Business and Freelancing for Beginners (Productivity Hack)](https://www.youtube.com/watch?v=9Q2XMUZoHow) · 340 views, 0.02x, Aug 2026 · **Wrong anchor:** a list of tools, not of ways to earn.
-- [Dark Horse Entrepreneur](https://www.youtube.com/@DarkHorseEntrepreneur) · [EP 556 The 12-Minute AI Side Gig Fix | Make Money Online Faster](https://www.youtube.com/watch?v=9pKo55zVPdM) · 27 views, 0.18x, Aug 2026 · **Wrong shelf:** a podcast episode label and cover art, with no face.
+- [Dark Horse Entrepreneur](https://www.youtube.com/@DarkHorseEntrepreneur) · [EP 556 The 12-Minute AI Side Gig Fix | Make Money Online Faster](https://www.youtube.com/watch?v=9pKo55zVPdM) · 27 views, 0.18x, Aug 2026 · **Wrong format:** a podcast episode label and cover art, with no face.
 - [Edmond Remington](https://www.youtube.com/@edmondremington) · [7 AI Side Hustles Students Can Start In 2026](https://www.youtube.com/watch?v=Igp8KfrOugo) · 2,100 views, 0.40x of its full-list median, Mar 2026 · **Too familiar:** the same list before he added a test or follow-up.
 
 ### Sell one AI service: dead versions
@@ -155,7 +155,7 @@ Medians cover each channel's last three months of long videos.
 ### I let AI make me money: dead versions
 
 - [Shawn Builds AI](https://www.youtube.com/@shawnbuildsai) · [I asked Claude Code to make me as much money as possible](https://www.youtube.com/watch?v=OIzXPF1pUJk) · 152 views, 0.01x, Jul 2026 · **Too general:** no deadline or target. The thumbnail says "HOLY SH*T" instead of a number.
-- [Shawn Builds AI](https://www.youtube.com/@shawnbuildsai) · [How Claude AI Helped Me Make $2,000 In One Weekend (Even Though I'm Lazy)](https://www.youtube.com/watch?v=AzkK3L984gg) · 309 views, 0.02x, Jun 2026 · **Wrong shelf:** posted when the channel taught Claude for business, so its viewers came for tools.
+- [Shawn Builds AI](https://www.youtube.com/@shawnbuildsai) · [How Claude AI Helped Me Make $2,000 In One Weekend (Even Though I'm Lazy)](https://www.youtube.com/watch?v=AzkK3L984gg) · 309 views, 0.02x, Jun 2026 · **Wrong format:** posted when the channel taught Claude for business, so its viewers came for tools.
 - [Dubibubi](https://www.youtube.com/@Dubibubiii) · [I Vibecoded EVERY Subscription To Save Money (24 Hour Challenge)](https://www.youtube.com/watch?v=M3LlWSRrp6g) · 2,700 views, 0.06x, Aug 2026 · **Wrong anchor:** saving money, not making it.
 
 ## 🧠 Next Steps

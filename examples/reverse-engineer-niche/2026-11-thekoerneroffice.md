@@ -7,7 +7,7 @@ Run: 2026-11-19 · Live TubeLab MCP · `skills/reverse-engineer-niche/SKILL.md`.
 
 Adrian Dimac was left out: only seven long videos in three months, mostly off topic. Side Hustle Nation had no video at twice its median.
 
-## 📺 The Shelf
+## 📺 Working Formats
 
 - **Format:** a narrated breakdown of a business you could own, often faceless, with a money figure on the thumbnail.
 - **Length:** mostly 18 to 27 minutes. Koerner's top three run 33 to 35 minutes.
@@ -126,7 +126,7 @@ Medians cover each channel's last three months of long videos. The Koerner Offic
 
 - [Cost Anatomy](https://www.youtube.com/@CostAnatomy56) · [The Economics of Owning a McDonald's Explained](https://www.youtube.com/watch?v=lp1lJoOQpmE) · 426 views, 0.43x, Sep 2026 · **Too familiar:** the most covered franchise there is, in the same template that won with a software company.
 - [Cost Anatomy](https://www.youtube.com/@CostAnatomy56) · [The Economics of Owning A Pet Store Explained](https://www.youtube.com/watch?v=2UPbmXqpx_4) · 121 views, 0.12x, Aug 2026 · **Too general:** no surprising number or trick in the title or thumbnail.
-- [Boss Talks Money](https://www.youtube.com/@BossTalksMoney) · [Why Course Selling Is Actually One of The BEST Business Models?](https://www.youtube.com/watch?v=K0_qz9kvIVU) · 1,300 views, 0.26x, Oct 2026 · **Wrong shelf:** an online course, on a channel whose viewers come for street businesses.
+- [Boss Talks Money](https://www.youtube.com/@BossTalksMoney) · [Why Course Selling Is Actually One of The BEST Business Models?](https://www.youtube.com/watch?v=K0_qz9kvIVU) · 1,300 views, 0.26x, Oct 2026 · **Wrong format:** an online course, on a channel whose viewers come for street businesses.
 
 ## 🎯 Gaps To Win
 
