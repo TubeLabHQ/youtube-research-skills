@@ -16,7 +16,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails, which thumbnails work in a niche | `thumbnail-concepts` |
 | Is X worth entering, is this niche saturated, go or no-go, score this niche, compare a shortlist of niches | `niche-validator` |
 | Titles for my video, title formulas, trending title templates, rewrite a title, a title and a thumbnail together (titles first) | `title-formulas` |
-| Reverse engineer a niche, what works and what flops in X, what to avoid, who are my competitors, how do I compare, competitive landscape, who is growing in my space | `reverse-engineer-niche` |
+| Reverse engineer a niche, niche guidelines, what works and what flops in X, what to avoid, who are my competitors, how do I compare, competitive landscape, who is growing in my space | `reverse-engineer-niche` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
 | Script structure, beat sheet, hook of this video, script skeleton, how the top videos of a niche or channel are built | `script-breakdown` |
 | Monetization gaps for my channel, what to sell, how channels like mine make money, raise RPM, build a newsletter or products, who could sponsor my channel (the creator's side) | `revenue-maxxing` |
