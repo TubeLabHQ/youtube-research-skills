@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reverse Engineering: AI side hustles and automation</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1c;--mut:#666;--line:#e3e3e3;--low:#d42a2a;--med:#c26a00;--high:#0c8a4d}
+@media(prefers-color-scheme:dark){:root{--bg:#0f0f0f;--fg:#f1f1f1;--mut:#9a9a9a;--line:#2b2b2b;--low:#ff4e42;--med:#ffa400;--high:#3ddc97}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+main{max-width:920px;margin:auto;padding:32px 16px 72px}
+a{color:inherit}
+h1{font-size:24px;margin:0}
+h2{font-size:19px;margin:44px 0 6px}
+h3{font-size:16px;margin:28px 0 4px}
+.mut{color:var(--mut)}
+.low{--c:var(--low)}.med{--c:var(--med)}.high{--c:var(--high)}
+.row i{flex:none;display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c)}
+.row{border-bottom:1px solid var(--line)}
+.row>summary{display:flex;align-items:center;gap:12px;padding:13px 0;cursor:pointer;list-style:none}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary::after{content:"+";color:var(--mut);width:12px;text-align:center}
+.row[open]>summary::after{content:"\2212"}
+.row span{flex:1}
+.row b{flex:none;color:var(--c)}
+.row small{display:block;font-size:13px;color:var(--mut)}
+.proof{padding:0 24px 18px 22px}
+.proof p{margin:6px 0}
+.proof ul{margin:6px 0;padding-left:20px}
+.proof li{margin:4px 0}
+.vids{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0}
+.vids a{width:200px;font-size:13px;line-height:1.35;text-decoration:none}
+.vids img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-bottom:6px;background:var(--line)}
+blockquote{margin:10px 0;padding-left:12px;border-left:3px solid var(--line);color:var(--mut)}
+ol,ul{padding-left:22px}
+li{margin:12px 0}
+table{border-collapse:collapse;width:100%;margin-top:12px;font-size:15px}
+td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+.n{text-align:right}
+.me td{font-weight:700}
+@media(max-width:480px){table{font-size:13px}td,th{padding-right:6px}}
+</style>
+</head>
+<body>
+<main>
+<h1>🧭 Reverse Engineering: AI side hustles and automation</h1>
+<p class="mut">2026-11-19 · 12 channels (12 emerging, 0 established) · 12 winners · 11 flops cited</p>
+<ul>
+  <li><strong>What wins:</strong> a money promise made concrete, with a price, a buyer or a deadline. Twelve winners beat their own channel's median by 2x to 1,464x.</li>
+  <li><strong>Start with:</strong> the "I let AI make me money" test. It works on three channels from 3K to 51K subscribers, and anyone with a laptop and a week can film one.</li>
+</ul>
+
+<h2>📺 Working Formats</h2>
+<ul>
+  <li><strong>Format:</strong> one person on camera, then screen recordings of the tools, the store or the payout.</li>
+  <li><strong>Length:</strong> mostly 9 to 23 minutes. Full courses of 30 minutes and more also win.</li>
+  <li><strong>Where to differ:</strong> keep the format, but put a price, a buyer or a deadline in the title. The vague versions flop.</li>
+</ul>
+
+<h2>👥 The Sample</h2>
+<p class="mut">Medians cover each channel's last three months of long videos.</p>
+<table>
+  <tr><th>Channel</th><th>Type</th><th class="n">Subs</th><th class="n">Median views</th><th class="n">Median per sub</th></tr>
+  <tr><td><a href="https://www.youtube.com/@edmondremington">Edmond Remington</a></td><td>emerging</td><td class="n">12.9K</td><td class="n">23,000</td><td class="n">1.78</td></tr>
+  <tr><td><a href="https://www.youtube.com/@EverygenAI">Everygen AI</a></td><td>emerging</td><td class="n">3.2K</td><td class="n">6,100</td><td class="n">1.89</td></tr>
+  <tr><td><a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a></td><td>emerging</td><td class="n">10.7K</td><td class="n">17,000</td><td class="n">1.59</td></tr>
+  <tr><td><a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a></td><td>emerging</td><td class="n">51.4K</td><td class="n">47,000</td><td class="n">0.91</td></tr>
+  <tr><td><a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a></td><td>emerging</td><td class="n">5.3K</td><td class="n">3,400</td><td class="n">0.64</td></tr>
+  <tr><td><a href="https://www.youtube.com/@aridebby">Ari Debby</a></td><td>emerging</td><td class="n">10.1K</td><td class="n">5,700</td><td class="n">0.56</td></tr>
+  <tr><td><a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a></td><td>emerging</td><td class="n">3.1K</td><td class="n">772</td><td class="n">0.25</td></tr>
+  <tr><td><a href="https://www.youtube.com/@alexpdfbusiness">Alex</a></td><td>emerging</td><td class="n">32.4K</td><td class="n">6,600</td><td class="n">0.20</td></tr>
+  <tr><td><a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a></td><td>emerging</td><td class="n">27.1K</td><td class="n">5,000</td><td class="n">0.18</td></tr>
+  <tr><td><a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a></td><td>emerging</td><td class="n">28.3K</td><td class="n">3,800</td><td class="n">0.13</td></tr>
+  <tr><td><a href="https://www.youtube.com/@michtortiyt">Michele Torti</a></td><td>emerging</td><td class="n">86K</td><td class="n">5,850</td><td class="n">0.07</td></tr>
+  <tr><td><a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a></td><td>emerging</td><td class="n">8.3K</td><td class="n">153</td><td class="n">0.02</td></tr>
+</table>
+<p class="mut">Four channels with English titles but Hindi audio, and one in French, were left out.</p>
+
+<h2>🧩 Patterns That Work</h2>
+<h3>1. The laziest way, for people with nothing · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=DWAxo1Hwvyc"><img src="https://i.ytimg.com/vi/DWAxo1Hwvyc/mqdefault.jpg" alt="">laziest way to make money with ai in 2027 · 277,000 views, 42x, Oct 2026</a>
+  <a href="https://www.youtube.com/watch?v=2wwkGPNmy_I"><img src="https://i.ytimg.com/vi/2wwkGPNmy_I/mqdefault.jpg" alt="">Laziest Way to Make Money with AI (If You're Broke) · 137,000 views, 36x, Sep 2026</a>
+  <a href="https://www.youtube.com/watch?v=XrU6hYDmQrk"><img src="https://i.ytimg.com/vi/XrU6hYDmQrk/mqdefault.jpg" alt="">EASY Ways to Make Money With AI (If You Have NO Money) 💀 · 10,000 views, 13x, Oct 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "[Laziest / Easiest] Way to Make Money with AI ([If You're Broke / If You Have No Money / In Year])"</li>
+  <li><strong>Thumbnail:</strong> [face, calm, right] + [the product as an equation, PDF + PNG = cash, or 1 hour = $100] + [one tool logo]</li>
+  <li><strong>Hook:</strong> doubt → proof of money → name the method</li>
+  <li><strong>Angle:</strong> money with almost no effort and no starting cash.</li>
+  <li><strong>Anchors:</strong> ChatGPT, Claude, Etsy, "lazy", "broke".</li>
+  <li><strong>New and specific:</strong> the method is concrete, such as $6 PNG files on Etsy, and the thumbnail shows the product.</li>
+  <li><strong>Who can copy it:</strong> anyone, but it needs real sales to show.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=DWAxo1Hwvyc">laziest way to make money with ai in 2027</a> · 277,000 views, 42x, Oct 2026 · Likely won because it names one product, $6 PNG files, where his usual titles stay general.
+        <blockquote>"You know, no one wants to believe this, but this is probably the laziest way to make money. Check how much I made selling little $6 items like this, hundreds of them"</blockquote></li>
+      <li><a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=2wwkGPNmy_I">Laziest Way to Make Money with AI (If You're Broke)</a> · 137,000 views, 36x, Sep 2026 · Likely won on the "If You're Broke" condition; his usual videos review AI tools.
+        <blockquote>"Listen, making money right now is easy. You probably heard that a hundred times before, but most of the people saying it have never actually done it. But what I'm about to show you is going to put money in your pocket by the end of today."</blockquote></li>
+      <li><a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=XrU6hYDmQrk">EASY Ways to Make Money With AI (If You Have NO Money) 💀</a> · 10,000 views, 13x, Oct 2026 · Likely won by mocking the paid-tool videos and promising only free tools.
+        <blockquote>"Every make-money with AI video is like, "Step one, subscribe to these nine tools for $40 a month each. Step two, buy my course. Step three, rent a Lamborghini for the thumbnail.""</blockquote></li>
+    </ul>
+  </div>
+</details>
+<h3>2. A ranked list for one named group · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=Uu5gNtHsEI4"><img src="https://i.ytimg.com/vi/Uu5gNtHsEI4/mqdefault.jpg" alt="">7 Side Hustles Students Can Start In 2027 · 293,000 views, 12.7x, Oct 2026</a>
+  <a href="https://www.youtube.com/watch?v=T19-pSH6YWg"><img src="https://i.ytimg.com/vi/T19-pSH6YWg/mqdefault.jpg" alt="">Which AI Side Hustle Pays Fastest? 7 Ranked · 224,000 views, 1,464x, Sep 2026</a>
+  <a href="https://www.youtube.com/watch?v=_doqDIYZaM8"><img src="https://i.ytimg.com/vi/_doqDIYZaM8/mqdefault.jpg" alt="">5 Gemini AI Side Hustles That Pay a Full Time Income (Ranked List) · 39,000 views, 2.3x, Sep 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "[Number] [AI Tool] Side Hustles [Group] Can Start In [Year]" or "Which AI Side Hustle Pays Fastest? [Number] Ranked"</li>
+  <li><strong>Thumbnail:</strong> [face, shrugging or thinking] + [a stack of payout cards from named apps, $ per day] or [one big question, "FASTEST AI INCOME?"]</li>
+  <li><strong>Hook:</strong> what other videos skip → the test or update → the list ahead</li>
+  <li><strong>Angle:</strong> the short list that fits your situation, sorted for you.</li>
+  <li><strong>Anchors:</strong> students, Gemini, Shopify, TikTok Shop, "ranked".</li>
+  <li><strong>New and specific:</strong> a ranking by time to first dollar, or a follow-up on last year's list.</li>
+  <li><strong>Who can copy it:</strong> anyone, if the ranking is really tested.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=Uu5gNtHsEI4">7 Side Hustles Students Can Start In 2027</a> · 293,000 views, 12.7x, Oct 2026 · Likely won by checking last year's list, which almost nobody does.
+        <blockquote>"These are the seven side hustles I'd actually start as a student going into the new year. A year ago I made a 2026 version of this video and it became the biggest one on this channel, 430,000 views. So I went back and checked everyone, which almost nobody does with these videos."</blockquote></li>
+      <li><a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=T19-pSH6YWg">Which AI Side Hustle Pays Fastest? 7 Ranked</a> · 224,000 views, 1,464x, Sep 2026 · One hit on a channel whose median is 153 views. It likely won by ranking on time to first dollar.
+        <blockquote>"Every one of them seemed to promise five figures in your first month, but not a single one of them told you how long it actually takes to get to your first dollar. And I think that number matters."</blockquote></li>
+      <li><a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=_doqDIYZaM8">5 Gemini AI Side Hustles That Pay a Full Time Income (Ranked List)</a> · 39,000 views, 2.3x, Sep 2026 · Likely won on one tool name plus "Ranked List".
+        <blockquote>"Google just poured 90-billion dollars into AI infrastructure this year alone. And as a result, their flagship AI Gemini is quietly becoming one of the most powerful money-making tools."</blockquote></li>
+    </ul>
+  </div>
+</details>
+<h3>3. Sell one AI service to local businesses, at a price · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=BwqNVrInMrU"><img src="https://i.ytimg.com/vi/BwqNVrInMrU/mqdefault.jpg" alt="">I Built One AI Employee And Sell It To Every Local Business  ($5K Each) · 41,000 views, 8.2x, Aug 2026</a>
+  <a href="https://www.youtube.com/watch?v=zVlqXgQLcag"><img src="https://i.ytimg.com/vi/zVlqXgQLcag/mqdefault.jpg" alt="">Stop Selling BORING Websites — Sell AI Talking Websites · 32,000 views, 9.4x, Sep 2026</a>
+  <a href="https://www.youtube.com/watch?v=XYMcBrFSJ4c"><img src="https://i.ytimg.com/vi/XYMcBrFSJ4c/mqdefault.jpg" alt="">9 BORING AI Automations That Can Make $1,200 A Day! · 114,000 views, 19.5x, Aug 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "I Built One [AI Thing] And Sell It To Every [Buyer] ([$ Price] Each)" or "Stop Selling [Old Service]. Sell [AI Service]"</li>
+  <li><strong>Thumbnail:</strong> [price and product, "$5000 AI EMPLOYEE"] + [the product on screen, dashboard or glowing site] + [face, small, side]</li>
+  <li><strong>Hook:</strong> the version you have seen → why it falls short → the version I run</li>
+  <li><strong>Angle:</strong> one thing you build once and sell many times to businesses that already pay.</li>
+  <li><strong>Anchors:</strong> local business, AI employee, AI receptionist, Claude Code.</li>
+  <li><strong>New and specific:</strong> a named product, a named buyer and a price per client.</li>
+  <li><strong>Who can copy it:</strong> needs a hard skill: building and selling the service.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=BwqNVrInMrU">I Built One AI Employee And Sell It To Every Local Business  ($5K Each)</a> · 41,000 views, 8.2x, Aug 2026 · Likely won on "one build, many buyers" plus a price, where her normal videos teach tools.
+        <blockquote>"You have probably seen the version of this video where a guy pulls up Google Maps, types in plumbers near Dallas, offers them a free website, and then charges them $300 a month. ... But I want to show you the version I actually run"</blockquote></li>
+      <li><a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · <a href="https://www.youtube.com/watch?v=zVlqXgQLcag">Stop Selling BORING Websites — Sell AI Talking Websites</a> · 32,000 views, 9.4x, Sep 2026 · Likely won by naming a new product against a familiar one.
+        <blockquote>"Normal websites are boring. They just sit there, do nothing, and look pretty. ... So, you need to stand apart. In this video, I'm going to show you exactly how to create AI talking websites."</blockquote></li>
+      <li><a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=XYMcBrFSJ4c">9 BORING AI Automations That Can Make $1,200 A Day!</a> · 114,000 views, 19.5x, Aug 2026 · Likely won by calling the services boring, which makes them sound real.
+        <blockquote>"So, a friend of mine runs one AI automation that is simply so boring, I'm almost embarrassed to describe it ... All it does is that it takes a spreadsheet of unpaid invoices and it sends the polite follow-up email when one goes overdue."</blockquote></li>
+    </ul>
+  </div>
+</details>
+<h3>4. I let AI make me money, with a deadline · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=xEKaDesfQK0"><img src="https://i.ytimg.com/vi/xEKaDesfQK0/mqdefault.jpg" alt="">I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS) · 315,000 views, 6.7x, Oct 2026</a>
+  <a href="https://www.youtube.com/watch?v=ZDwuRHSg6KM"><img src="https://i.ytimg.com/vi/ZDwuRHSg6KM/mqdefault.jpg" alt="">I Asked Claude Cowork to Make Me $5k · 55,000 views, 11x, Oct 2026</a>
+  <a href="https://www.youtube.com/watch?v=vUI8jYrCtfI"><img src="https://i.ytimg.com/vi/vUI8jYrCtfI/mqdefault.jpg" alt="">How I made $10,500 in 21 days with AI (Step-by-Step Tutorial) · 141,000 views, 25x, Oct 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "I Asked [AI Model] To Make Me [$ Amount / As Much Money As Possible] In [Days]" or "How I Made [$ Amount] in [Days] with AI"</li>
+  <li><strong>Thumbnail:</strong> [the amount or a time stamp, huge] + [AI logo or robot at a laptop] + [face, small, or none]</li>
+  <li><strong>Hook:</strong> the hype → the test, with rules and a deadline → we will see the result</li>
+  <li><strong>Angle:</strong> a real test you can watch, with a result at the end.</li>
+  <li><strong>Anchors:</strong> GPT-6 Astra, Claude Cowork, "raw results".</li>
+  <li><strong>New and specific:</strong> a new model, a deadline and a dollar target.</li>
+  <li><strong>Who can copy it:</strong> anyone, but it takes a week of real work per video.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=xEKaDesfQK0">I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS)</a> · 315,000 views, 6.7x, Oct 2026 · Likely won by turning his usual model tests into a money test.
+        <blockquote>"So, for the sake of humanity, I'm putting it to the test and for the next 10 days I'm giving GPT-6 Astra full control of this laptop and letting it run a real business."</blockquote></li>
+      <li><a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ZDwuRHSg6KM">I Asked Claude Cowork to Make Me $5k</a> · 55,000 views, 11x, Oct 2026 · Likely won on a named tool and a set target in seven days.
+        <blockquote>"So this time I took the one Claude tool that is built to do the work, Claude Co-work, and instead of asking it a question, I gave it a job. Make me $5,000 in seven days."</blockquote></li>
+      <li><a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=vUI8jYrCtfI">How I made $10,500 in 21 days with AI (Step-by-Step Tutorial)</a> · 141,000 views, 25x, Oct 2026 · Likely won by opening on the exact number.
+        <blockquote>"$10,000. That was exactly how much I made in 21 days using AI without showing my face"</blockquote></li>
+    </ul>
+  </div>
+</details>
+
+<h2>🔥 Hyped Topics And Power Words</h2>
+<p class="mut">Counted in the titles of all 12 channels' last three months of long videos: their top winners (35) against every flop (29).</p>
+<h3>Hyped topics</h3>
+<details class="row low">
+  <summary><i></i><span>Claude<small>4 winners on 4 channels · 9 flops</small></span><b>Worn out</b></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=Ug3x37N6Z_E">Can an Army of Claude Haiku 5.5 Subagents Beat Opus 5.5?</a> · 433,000 views, 9.2x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ZDwuRHSg6KM">I Asked Claude Cowork to Make Me $5k</a> · 55,000 views, 11x</li>
+      <li>Winner · <a href="https://www.youtube.com/@EverygenAI">Everygen AI</a> · <a href="https://www.youtube.com/watch?v=uH5ydwOV0bU">I Used Claude Opus 5.5 To Make a Viral Short</a> · 29,000 views, 4.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · <a href="https://www.youtube.com/watch?v=0wJ8h68DG4U">Claude Fable 5.2 Builds INSANE 10K Websites in Minutes</a> · 16,000 views, 4.7x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=I49uN-jK0uI">Insane Claude Design Skills You NEED To Install Right Now</a> · 17,000 views, 0.36x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=GI2PDQs7AnY">Anthropic Is Lying To You About Claude Fable 5.1</a> · 16,000 views, 0.34x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=T9q5aOI9j6s">I Made Claude Opus 5 and GPT 5.6 Build the Same App (RAW RESULTS)</a> · 14,000 views, 0.30x</li>
+      <li>Flop · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=PAT9PNxSdUc">laziest people are making money using claude ai</a> · 2,000 views, 0.30x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=9EEUFK_Kxp8">Claude + Omniflash: Create Viral UGC videos on autopilot</a> · 1,400 views, 0.03x</li>
+      <li>Flop · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ba0jOwL-89U">I Tested Claude Cowork Mobile for 2 Weeks — Here&#x27;s What Happened</a> · 1,400 views, 0.28x</li>
+      <li>Flop · <a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · <a href="https://www.youtube.com/watch?v=EgNgn1VmH30">Start a 1-Person AI Business with Claude Code (in 10 Minutes)</a> · 1,000 views, 0.29x</li>
+      <li>Flop · <a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=ADW6z2uWihM">$100,000 + 24 hours with Claude AI Trading Bot</a> · 988 views, 0.06x</li>
+    </ul>
+    <p class="mut">1 more flops use it.</p>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>Side hustles<small>4 winners on 3 channels · 2 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=Uu5gNtHsEI4">7 Side Hustles Students Can Start In 2027</a> · 293,000 views, 12.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=T19-pSH6YWg">Which AI Side Hustle Pays Fastest? 7 Ranked</a> · 224,000 views, 1,464x</li>
+      <li>Winner · <a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=yzIw54gIJZI">5 AI Side Hustles Making Students Rich in 2026</a> · 184,000 views, 8.0x</li>
+      <li>Winner · <a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=QKf6z1EfSd8">EASIEST AI Side Hustle on Spotify (Nobody is talking about this)</a> · 38,000 views, 49x</li>
+      <li>Flop · <a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=xS1x3OUu3-A">4 Claude AI Skills to Build a Fully-Automated Side Hustle (Without Quitting Your 9-5)</a> · 464 views, 0.03x</li>
+      <li>Flop · <a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=aL_iWwIbV5U">EP 559 The AI D&amp;D Side Hustle | Make Money Online With Campaign Creation</a> · 56 views, 0.37x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>A full course<small>4 winners on 3 channels · 0 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=0C6xYvQhjwQ">AI AGENTS MASTERCLASS 4 HOURS: Build &amp; Sell (2026)</a> · 122,000 views, 21x</li>
+      <li>Winner · <a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=r9Mf0Q1Pd0k">Start a 1-Person Business with ChatGPT (4 HOUR COURSE 2026)</a> · 60,000 views, 10x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=YaE6Iwysp1Q">I Built a Clothing Brand From $0 in One Weekend (FREE COURSE)</a> · 50,000 views, 13x</li>
+      <li>Winner · <a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · <a href="https://www.youtube.com/watch?v=UK52c72noOk">AI Receptionist Business: $0 to $10K/mo (Full Course)</a> · 24,000 views, 7.1x</li>
+    </ul>
+  </div>
+</details>
+<p class="mut">On two channels only: AI agents (2 winners, 0 flops) and ChatGPT or GPT (2 winners, 4 flops). Gemini wins three times, all on one channel.</p>
+<h3>Power words</h3>
+<details class="row high">
+  <summary><i></i><span>Make money, make me<small>9 winners on 8 channels · 5 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=xEKaDesfQK0">I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS)</a> · 315,000 views, 6.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=DWAxo1Hwvyc">laziest way to make money with ai in 2027</a> · 277,000 views, 42x</li>
+      <li>Winner · <a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=pJPxPBObKdU">5 Books That Changed My Life, Transformed My Mindset &amp; Helped Me Make Money| Becoming THAT Girl</a> · 201,000 views, 35x</li>
+      <li>Winner · <a href="https://www.youtube.com/@EverygenAI">Everygen AI</a> · <a href="https://www.youtube.com/watch?v=_8qFChfsENQ">How To Actually Make Money AI Clipping</a> · 180,000 views, 30x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=2wwkGPNmy_I">Laziest Way to Make Money with AI (If You&#x27;re Broke)</a> · 137,000 views, 36x</li>
+      <li>Winner · <a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=ASlLmFPlJ3M">20 Hacks To Use Gemini AI So Well It Feels Unfair (Make Money Online)</a> · 88,000 views, 5.2x</li>
+      <li>Winner · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=-mX6R7oGPzI">im begging you to make money online using ai (no experience)</a> · 58,000 views, 8.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ZDwuRHSg6KM">I Asked Claude Cowork to Make Me $5k</a> · 55,000 views, 11x</li>
+      <li>Winner · <a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=XrU6hYDmQrk">EASY Ways to Make Money With AI (If You Have NO Money) 💀</a> · 10,000 views, 13x</li>
+      <li>Flop · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=rBmJ9-7Hcy4">simplest way to make money with ai in 2027</a> · 2,800 views, 0.42x</li>
+      <li>Flop · <a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=aL_iWwIbV5U">EP 559 The AI D&amp;D Side Hustle | Make Money Online With Campaign Creation</a> · 56 views, 0.37x</li>
+      <li>Flop · <a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=t5ZicKjyxPo">EP 561 AI Scams Target Make Money Online Seekers | The ChatGPT Breach Explained</a> · 31 views, 0.20x</li>
+      <li>Flop · <a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=dZOs1Wafusg">EP 560 EP 560 AI-Generated Pet Horoscopes | Make Money Online With Niche Topics</a> · 30 views, 0.20x</li>
+      <li>Flop · <a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · <a href="https://www.youtube.com/watch?v=9pKo55zVPdM">EP 556 The 12-Minute AI Side Gig Fix | Make Money Online Faster</a> · 27 views, 0.18x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>I asked, I made, I built<small>8 winners on 5 channels · 2 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=xEKaDesfQK0">I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS)</a> · 315,000 views, 6.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=vUI8jYrCtfI">How I made $10,500 in 21 days with AI (Step-by-Step Tutorial)</a> · 141,000 views, 25x</li>
+      <li>Winner · <a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=_Q4RNNPK-BU">How I Made My First Million at Age 19 (how you can too)</a> · 71,000 views, 12x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ZDwuRHSg6KM">I Asked Claude Cowork to Make Me $5k</a> · 55,000 views, 11x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=YaE6Iwysp1Q">I Built a Clothing Brand From $0 in One Weekend (FREE COURSE)</a> · 50,000 views, 13x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=BwqNVrInMrU">I Built One AI Employee And Sell It To Every Local Business  ($5K Each)</a> · 41,000 views, 8.2x</li>
+      <li>Winner · <a href="https://www.youtube.com/@EverygenAI">Everygen AI</a> · <a href="https://www.youtube.com/watch?v=uH5ydwOV0bU">I Used Claude Opus 5.5 To Make a Viral Short</a> · 29,000 views, 4.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=45J4IbJxwhc">I Made a Viral AI Influencer for FREE (Step-By-Step)</a> · 19,000 views, 5.0x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=T9q5aOI9j6s">I Made Claude Opus 5 and GPT 5.6 Build the Same App (RAW RESULTS)</a> · 14,000 views, 0.30x</li>
+      <li>Flop · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ba0jOwL-89U">I Tested Claude Cowork Mobile for 2 Weeks — Here&#x27;s What Happened</a> · 1,400 views, 0.28x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>A dollar figure<small>7 winners on 6 channels · 1 flop</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=vUI8jYrCtfI">How I made $10,500 in 21 days with AI (Step-by-Step Tutorial)</a> · 141,000 views, 25x</li>
+      <li>Winner · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=OgIw3Zd-Zrs">how i make $6,000/week selling ai images as digital products</a> · 122,000 views, 18x</li>
+      <li>Winner · <a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=XYMcBrFSJ4c">9 BORING AI Automations That Can Make $1,200 A Day!</a> · 114,000 views, 19.5x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=ZDwuRHSg6KM">I Asked Claude Cowork to Make Me $5k</a> · 55,000 views, 11x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=YaE6Iwysp1Q">I Built a Clothing Brand From $0 in One Weekend (FREE COURSE)</a> · 50,000 views, 13x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=BwqNVrInMrU">I Built One AI Employee And Sell It To Every Local Business  ($5K Each)</a> · 41,000 views, 8.2x</li>
+      <li>Winner · <a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · <a href="https://www.youtube.com/watch?v=UK52c72noOk">AI Receptionist Business: $0 to $10K/mo (Full Course)</a> · 24,000 views, 7.1x</li>
+      <li>Flop · <a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=ADW6z2uWihM">$100,000 + 24 hours with Claude AI Trading Bot</a> · 988 views, 0.06x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>A number list<small>7 winners on 6 channels · 1 flop</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=Uu5gNtHsEI4">7 Side Hustles Students Can Start In 2027</a> · 293,000 views, 12.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=pJPxPBObKdU">5 Books That Changed My Life, Transformed My Mindset &amp; Helped Me Make Money| Becoming THAT Girl</a> · 201,000 views, 35x</li>
+      <li>Winner · <a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=yzIw54gIJZI">5 AI Side Hustles Making Students Rich in 2026</a> · 184,000 views, 8.0x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=IbFaY3xFpZM">14 Hermes Agent Skills You NEED To Install Right Now</a> · 166,000 views, 3.5x</li>
+      <li>Winner · <a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=XYMcBrFSJ4c">9 BORING AI Automations That Can Make $1,200 A Day!</a> · 114,000 views, 19.5x</li>
+      <li>Winner · <a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=ASlLmFPlJ3M">20 Hacks To Use Gemini AI So Well It Feels Unfair (Make Money Online)</a> · 88,000 views, 5.2x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · <a href="https://www.youtube.com/watch?v=tKBpMevDJO8">5 Things Local Businesses Are So Desperate to Fix They&#x27;ll Pay You On the Spot</a> · 38,000 views, 7.6x</li>
+      <li>Flop · <a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · <a href="https://www.youtube.com/watch?v=xS1x3OUu3-A">4 Claude AI Skills to Build a Fully-Automated Side Hustle (Without Quitting Your 9-5)</a> · 464 views, 0.03x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>Starting from nothing: no money, no experience, $0, free<small>6 winners on 4 channels · 0 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=2wwkGPNmy_I">Laziest Way to Make Money with AI (If You&#x27;re Broke)</a> · 137,000 views, 36x</li>
+      <li>Winner · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=-mX6R7oGPzI">im begging you to make money online using ai (no experience)</a> · 58,000 views, 8.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=YaE6Iwysp1Q">I Built a Clothing Brand From $0 in One Weekend (FREE COURSE)</a> · 50,000 views, 13x</li>
+      <li>Winner · <a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · <a href="https://www.youtube.com/watch?v=UK52c72noOk">AI Receptionist Business: $0 to $10K/mo (Full Course)</a> · 24,000 views, 7.1x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=45J4IbJxwhc">I Made a Viral AI Influencer for FREE (Step-By-Step)</a> · 19,000 views, 5.0x</li>
+      <li>Winner · <a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=XrU6hYDmQrk">EASY Ways to Make Money With AI (If You Have NO Money) 💀</a> · 10,000 views, 13x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>Lazy, easy, simplest<small>5 winners on 3 channels · 2 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=DWAxo1Hwvyc">laziest way to make money with ai in 2027</a> · 277,000 views, 42x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=2wwkGPNmy_I">Laziest Way to Make Money with AI (If You&#x27;re Broke)</a> · 137,000 views, 36x</li>
+      <li>Winner · <a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=QKf6z1EfSd8">EASIEST AI Side Hustle on Spotify (Nobody is talking about this)</a> · 38,000 views, 49x</li>
+      <li>Winner · <a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=XrU6hYDmQrk">EASY Ways to Make Money With AI (If You Have NO Money) 💀</a> · 10,000 views, 13x</li>
+      <li>Winner · <a href="https://www.youtube.com/@SideHustleProfessor">Side Hustle Professor</a> · <a href="https://www.youtube.com/watch?v=fHxmcvnKv1o">EASIEST Way To Get PAID By Spotify Using AI (You Don&#x27;t Need Talent)</a> · 4,400 views, 5.7x</li>
+      <li>Flop · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=rBmJ9-7Hcy4">simplest way to make money with ai in 2027</a> · 2,800 views, 0.42x</li>
+      <li>Flop · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=PAT9PNxSdUc">laziest people are making money using claude ai</a> · 2,000 views, 0.30x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>The year<small>5 winners on 3 channels · 1 flop</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=Uu5gNtHsEI4">7 Side Hustles Students Can Start In 2027</a> · 293,000 views, 12.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=DWAxo1Hwvyc">laziest way to make money with ai in 2027</a> · 277,000 views, 42x</li>
+      <li>Winner · <a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · <a href="https://www.youtube.com/watch?v=yzIw54gIJZI">5 AI Side Hustles Making Students Rich in 2026</a> · 184,000 views, 8.0x</li>
+      <li>Winner · <a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=0C6xYvQhjwQ">AI AGENTS MASTERCLASS 4 HOURS: Build &amp; Sell (2026)</a> · 122,000 views, 21x</li>
+      <li>Winner · <a href="https://www.youtube.com/@michtortiyt">Michele Torti</a> · <a href="https://www.youtube.com/watch?v=r9Mf0Q1Pd0k">Start a 1-Person Business with ChatGPT (4 HOUR COURSE 2026)</a> · 60,000 views, 10x</li>
+      <li>Flop · <a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · <a href="https://www.youtube.com/watch?v=rBmJ9-7Hcy4">simplest way to make money with ai in 2027</a> · 2,800 views, 0.42x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>A day or week count<small>3 winners on 3 channels · 0 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · <a href="https://www.youtube.com/watch?v=xEKaDesfQK0">I Asked AI To Make Me As Much Money As Possible In 10 Days (RAW RESULTS)</a> · 315,000 views, 6.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@aridebby">Ari Debby</a> · <a href="https://www.youtube.com/watch?v=vUI8jYrCtfI">How I made $10,500 in 21 days with AI (Step-by-Step Tutorial)</a> · 141,000 views, 25x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GeorgeDMcConnell">George McConnell</a> · <a href="https://www.youtube.com/watch?v=YaE6Iwysp1Q">I Built a Clothing Brand From $0 in One Weekend (FREE COURSE)</a> · 50,000 views, 13x</li>
+    </ul>
+  </div>
+</details>
+
+<h2>🚫 What To Avoid</h2>
+<ul>
+  <li><strong>What the flops share:</strong> no price, buyer or deadline. They lead with a tool, a vague level or a podcast label.</li>
+</ul>
+<h3>The laziest way: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=PAT9PNxSdUc">laziest people are making money using claude ai</a><small><a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · 2,000 views, 0.30x, Oct 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>The same promise and nearly the same thumbnail as his 277,000-view winner.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=PAT9PNxSdUc"><img src="https://i.ytimg.com/vi/PAT9PNxSdUc/mqdefault.jpg" alt="">laziest people are making money using claude ai</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=rBmJ9-7Hcy4">simplest way to make money with ai in 2027</a><small><a href="https://www.youtube.com/@alexpdfbusiness">Alex</a> · 2,800 views, 0.42x, Oct 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>A third copy of the winner's package, one word changed.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=rBmJ9-7Hcy4"><img src="https://i.ytimg.com/vi/rBmJ9-7Hcy4/mqdefault.jpg" alt="">simplest way to make money with ai in 2027</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=KmKjZyJ7Io0">Laziest Way to Make Money with AI (Starting From Zero)</a><small><a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · 1,500 views, 0.29x of its full-list median, Mar 2026</small></span><b>Too general</b></summary>
+  <div class="proof">
+    <p>No product or method shown on the thumbnail.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=KmKjZyJ7Io0"><img src="https://i.ytimg.com/vi/KmKjZyJ7Io0/mqdefault.jpg" alt="">Laziest Way to Make Money with AI (Starting From Zero)</a></div>
+  </div>
+</details>
+<h3>A ranked list: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=9Q2XMUZoHow">Top 5 AI Tools for Business and Freelancing for Beginners (Productivity Hack)</a><small><a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · 340 views, 0.02x, Aug 2026</small></span><b>Wrong anchor</b></summary>
+  <div class="proof">
+    <p>A list of tools, not of ways to earn.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=9Q2XMUZoHow"><img src="https://i.ytimg.com/vi/9Q2XMUZoHow/mqdefault.jpg" alt="">Top 5 AI Tools for Business and Freelancing for Beginners (Productivity Hack)</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=9pKo55zVPdM">EP 556 The 12-Minute AI Side Gig Fix | Make Money Online Faster</a><small><a href="https://www.youtube.com/@DarkHorseEntrepreneur">Dark Horse Entrepreneur</a> · 27 views, 0.18x, Aug 2026</small></span><b>Wrong format</b></summary>
+  <div class="proof">
+    <p>A podcast episode label and cover art, with no face.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=9pKo55zVPdM"><img src="https://i.ytimg.com/vi/9pKo55zVPdM/mqdefault.jpg" alt="">EP 556 The 12-Minute AI Side Gig Fix | Make Money Online Faster</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=Igp8KfrOugo">7 AI Side Hustles Students Can Start In 2026</a><small><a href="https://www.youtube.com/@edmondremington">Edmond Remington</a> · 2,100 views, 0.40x of its full-list median, Mar 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>The same list before he added a test or follow-up.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=Igp8KfrOugo"><img src="https://i.ytimg.com/vi/Igp8KfrOugo/mqdefault.jpg" alt="">7 AI Side Hustles Students Can Start In 2026</a></div>
+  </div>
+</details>
+<h3>Sell one AI service: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=Xa22xQ9vIQc">This AI Reads 500 Google Reviews and Finds Where a Business Is Bleeding Money</a><small><a href="https://www.youtube.com/@AutomateAIConsulting">Automate AI Consulting</a> · 2,200 views, 0.44x, Sep 2026</small></span><b>Wrong anchor</b></summary>
+  <div class="proof">
+    <p>A clever tool, but no price and no sale.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=Xa22xQ9vIQc"><img src="https://i.ytimg.com/vi/Xa22xQ9vIQc/mqdefault.jpg" alt="">This AI Reads 500 Google Reviews and Finds Where a Business Is Bleeding Money</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=EgNgn1VmH30">Start a 1-Person AI Business with Claude Code (in 10 Minutes)</a><small><a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · 1,000 views, 0.29x, Oct 2026</small></span><b>Too general</b></summary>
+  <div class="proof">
+    <p>No product, buyer or price.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=EgNgn1VmH30"><img src="https://i.ytimg.com/vi/EgNgn1VmH30/mqdefault.jpg" alt="">Start a 1-Person AI Business with Claude Code (in 10 Minutes)</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=hxqLP4VkX2U">The AI Gold Rush: 3 Levels From Beginner to AI Business Millionaire</a><small><a href="https://www.youtube.com/@anthonyshoosh">Anthony Shoosh</a> · 1,200 views, 0.35x, Sep 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>A "$0 to $1M" ladder seen many times.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=hxqLP4VkX2U"><img src="https://i.ytimg.com/vi/hxqLP4VkX2U/mqdefault.jpg" alt="">The AI Gold Rush: 3 Levels From Beginner to AI Business Millionaire</a></div>
+  </div>
+</details>
+<h3>I let AI make me money: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=OIzXPF1pUJk">I asked Claude Code to make me as much money as possible</a><small><a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · 152 views, 0.01x, Jul 2026</small></span><b>Too general</b></summary>
+  <div class="proof">
+    <p>No deadline or target. The thumbnail says "HOLY SH*T" instead of a number.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=OIzXPF1pUJk"><img src="https://i.ytimg.com/vi/OIzXPF1pUJk/mqdefault.jpg" alt="">I asked Claude Code to make me as much money as possible</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=AzkK3L984gg">How Claude AI Helped Me Make $2,000 In One Weekend (Even Though I'm Lazy)</a><small><a href="https://www.youtube.com/@shawnbuildsai">Shawn Builds AI</a> · 309 views, 0.02x, Jun 2026</small></span><b>Wrong format</b></summary>
+  <div class="proof">
+    <p>Posted when the channel taught Claude for business, so its viewers came for tools.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=AzkK3L984gg"><img src="https://i.ytimg.com/vi/AzkK3L984gg/mqdefault.jpg" alt="">How Claude AI Helped Me Make $2,000 In One Weekend (Even Though I'm Lazy)</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=M3LlWSRrp6g">I Vibecoded EVERY Subscription To Save Money (24 Hour Challenge)</a><small><a href="https://www.youtube.com/@Dubibubiii">Dubibubi</a> · 2,700 views, 0.06x, Aug 2026</small></span><b>Wrong anchor</b></summary>
+  <div class="proof">
+    <p>Saving money, not making it.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=M3LlWSRrp6g"><img src="https://i.ytimg.com/vi/M3LlWSRrp6g/mqdefault.jpg" alt="">I Vibecoded EVERY Subscription To Save Money (24 Hour Challenge)</a></div>
+  </div>
+</details>
+
+<h2>🧠 Next Steps</h2>
+<ol>
+  <li><strong>Write the titles for an AI money test</strong> · <code>title-formulas</code><br><span class="mut">"Titles for a video where I ask [AI model] to make me [$ amount] in [days]. Use the 'I asked AI to make me money' formulas."</span></li>
+  <li><strong>Design its thumbnail</strong> · <code>thumbnail-concepts</code><br><span class="mut">"Thumbnail for '[chosen title]'. Big amount or time stamp, AI logo at a laptop, small face."</span></li>
+  <li><strong>Study how the winners hold attention</strong> · <code>script-breakdown</code><br><span class="mut">"Break down https://www.youtube.com/watch?v=xEKaDesfQK0 and https://www.youtube.com/watch?v=ZDwuRHSg6KM and give me a skeleton for my [days]-day AI money test."</span></li>
+</ol>
+</main>
+</body>
+</html>

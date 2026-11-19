@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reverse Engineering: competitors of The Koerner Office</title>
+<style>
+:root{--bg:#fff;--fg:#1c1c1c;--mut:#666;--line:#e3e3e3;--low:#d42a2a;--med:#c26a00;--high:#0c8a4d}
+@media(prefers-color-scheme:dark){:root{--bg:#0f0f0f;--fg:#f1f1f1;--mut:#9a9a9a;--line:#2b2b2b;--low:#ff4e42;--med:#ffa400;--high:#3ddc97}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+main{max-width:920px;margin:auto;padding:32px 16px 72px}
+a{color:inherit}
+h1{font-size:24px;margin:0}
+h2{font-size:19px;margin:44px 0 6px}
+h3{font-size:16px;margin:28px 0 4px}
+.mut{color:var(--mut)}
+.low{--c:var(--low)}.med{--c:var(--med)}.high{--c:var(--high)}
+.row i{flex:none;display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c)}
+.row{border-bottom:1px solid var(--line)}
+.row>summary{display:flex;align-items:center;gap:12px;padding:13px 0;cursor:pointer;list-style:none}
+.row>summary::-webkit-details-marker{display:none}
+.row>summary::after{content:"+";color:var(--mut);width:12px;text-align:center}
+.row[open]>summary::after{content:"\2212"}
+.row span{flex:1}
+.row b{flex:none;color:var(--c)}
+.row small{display:block;font-size:13px;color:var(--mut)}
+.proof{padding:0 24px 18px 22px}
+.proof p{margin:6px 0}
+.proof ul{margin:6px 0;padding-left:20px}
+.proof li{margin:4px 0}
+.vids{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0}
+.vids a{width:200px;font-size:13px;line-height:1.35;text-decoration:none}
+.vids img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:8px;margin-bottom:6px;background:var(--line)}
+blockquote{margin:10px 0;padding-left:12px;border-left:3px solid var(--line);color:var(--mut)}
+ol,ul{padding-left:22px}
+li{margin:12px 0}
+table{border-collapse:collapse;width:100%;margin-top:12px;font-size:15px}
+td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--line)}
+.n{text-align:right}
+.me td{font-weight:700}
+@media(max-width:480px){table{font-size:13px}td,th{padding-right:6px}}
+</style>
+</head>
+<body>
+<main>
+<h1>🧭 Reverse Engineering: competitors of <a href="https://www.youtube.com/@thekoerneroffice">The Koerner Office</a></h1>
+<p class="mut">2026-11-19 · 11 competitors (11 emerging, 0 established) · 11 winners · 10 flops cited</p>
+<ul>
+  <li><strong>What wins:</strong> one surprising, cheap business or machine with a money figure on the thumbnail. Nine winners beat their own channel's median by 9x to 420x.</li>
+  <li><strong>Start with:</strong> a list of machines or garage businesses. Three channels under 50K subscribers win with it, and Koerner has not made one in three months.</li>
+</ul>
+
+<h2>📺 Working Formats</h2>
+<ul>
+  <li><strong>Format:</strong> a narrated breakdown of a business you could own, often faceless, with a money figure on the thumbnail.</li>
+  <li><strong>Length:</strong> mostly 18 to 27 minutes. Koerner's top three run 33 to 35 minutes.</li>
+  <li><strong>Where to differ:</strong> Koerner has what faceless channels lack, a real owner on camera. Keep that, and borrow their object-first thumbnails.</li>
+</ul>
+
+<h2>👥 The Sample</h2>
+<p class="mut">Medians cover each channel's last three months of long videos. The Koerner Office's row is in bold.</p>
+<table>
+  <tr><th>Channel</th><th>Type</th><th class="n">Subs</th><th class="n">Median views</th><th class="n">Median per sub</th></tr>
+  <tr><td><a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a></td><td>emerging</td><td class="n">17K</td><td class="n">18,000</td><td class="n">1.06</td></tr>
+  <tr><td><a href="https://www.youtube.com/@NickLoper">Side Hustle Nation</a></td><td>emerging</td><td class="n">50.9K</td><td class="n">48,000</td><td class="n">0.94</td></tr>
+  <tr><td><a href="https://www.youtube.com/@brianbeers">Brian Beers</a></td><td>emerging</td><td class="n">25.5K</td><td class="n">21,000</td><td class="n">0.82</td></tr>
+  <tr><td><a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a></td><td>emerging</td><td class="n">6.3K</td><td class="n">4,950</td><td class="n">0.78</td></tr>
+  <tr><td><a href="https://www.youtube.com/@Johns-Vault">John's Vault</a></td><td>emerging</td><td class="n">10.6K</td><td class="n">6,700</td><td class="n">0.63</td></tr>
+  <tr><td><a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a></td><td>emerging</td><td class="n">13.8K</td><td class="n">6,300</td><td class="n">0.46</td></tr>
+  <tr><td><a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a></td><td>emerging</td><td class="n">24.2K</td><td class="n">3,000</td><td class="n">0.12</td></tr>
+  <tr class="me"><td><a href="https://www.youtube.com/@thekoerneroffice">The Koerner Office</a></td><td>established</td><td class="n">732K</td><td class="n">73,000</td><td class="n">0.10</td></tr>
+  <tr><td><a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a></td><td>emerging</td><td class="n">10.4K</td><td class="n">1,000</td><td class="n">0.10</td></tr>
+  <tr><td><a href="https://www.youtube.com/@HarrysStealthWealth">Harry's Stealth Wealth</a></td><td>emerging</td><td class="n">34.1K</td><td class="n">2,800</td><td class="n">0.08</td></tr>
+  <tr><td><a href="https://www.youtube.com/@GarageProfits">Garage Profits</a></td><td>emerging</td><td class="n">49.6K</td><td class="n">3,300</td><td class="n">0.07</td></tr>
+  <tr><td><a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a></td><td>emerging</td><td class="n">132K</td><td class="n">6,100</td><td class="n">0.05</td></tr>
+</table>
+<p class="mut">Adrian Dimac was left out: only seven long videos in three months, mostly off topic. Side Hustle Nation had no video at twice its median.</p>
+
+<h2>🧩 Patterns That Work</h2>
+<h3>1. A list of machines or garage businesses you can buy · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY"><img src="https://i.ytimg.com/vi/6nPrEp4fgjY/mqdefault.jpg" alt="">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start · 662,000 views, 98.8x, Aug 2026</a>
+  <a href="https://www.youtube.com/watch?v=-2H5Mne7CVU"><img src="https://i.ytimg.com/vi/-2H5Mne7CVU/mqdefault.jpg" alt="">13 Tiny Machines Making People Rich From Their Kitchen Table · 265,000 views, 80x, Sep 2026</a>
+  <a href="https://www.youtube.com/watch?v=pTxN59xCd4c"><img src="https://i.ytimg.com/vi/pTxN59xCd4c/mqdefault.jpg" alt="">20 "Poor Man's Machines" That Can Turn a Garage Into $1,000 a Week · 99,000 views, 33x, Sep 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "[Number] [Unseen / Tiny / Poor Man's] [Garage Businesses / Machines] That [Cost Less Than $X / Make $X a Week]"</li>
+  <li><strong>Thumbnail:</strong> [one machine, large, centre] + [money figure per day or week] + [garage or workshop behind]</li>
+  <li><strong>Hook:</strong> a place you already own → what it could earn → the list ahead</li>
+  <li><strong>Angle:</strong> a cheap machine in your garage that turns into steady cash.</li>
+  <li><strong>Anchors:</strong> garage, kitchen table, "poor man's", a price under $1,000.</li>
+  <li><strong>New and specific:</strong> a real machine you can picture, plus a cost and a payout.</li>
+  <li><strong>Who can copy it:</strong> anyone. All three are faceless.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@Johns-Vault">John's Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x, Aug 2026 · Likely won by pointing at a room every viewer owns, where its other lists stay abstract.
+        <blockquote>"There's a room in your house right now that could be generating $3,000 to $10,000 a month. You park your car in it. You store holiday decorations in it."</blockquote></li>
+      <li><a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=-2H5Mne7CVU">13 Tiny Machines Making People Rich From Their Kitchen Table</a> · 265,000 views, 80x, Sep 2026 · Likely won on a smaller, newer place than the garage: the kitchen table.
+        <blockquote>"There are people quietly making real money with machines small enough to sit right on a table. And chances are you've never even heard of them."</blockquote></li>
+      <li><a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=pTxN59xCd4c">20 "Poor Man's Machines" That Can Turn a Garage Into $1,000 a Week</a> · 99,000 views, 33x, Sep 2026 · Likely won by opening on one dated, specific story.
+        <blockquote>"In 1974, a man in Ohio bought a used pressure washer for $40 and cleaned his neighbor's driveway for beer money. Two years later, he owned three trucks and a crew."</blockquote></li>
+    </ul>
+  </div>
+</details>
+<h3>2. Boring businesses with a monthly figure · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=K9kXTEcf6i4"><img src="https://i.ytimg.com/vi/K9kXTEcf6i4/mqdefault.jpg" alt="">10 Low-Tech Businesses Making Ordinary Guys $30,000/Month (Fully Automated) · 617,000 views, 97.9x, Oct 2026</a>
+  <a href="https://www.youtube.com/watch?v=zZohb9W-TiA"><img src="https://i.ytimg.com/vi/zZohb9W-TiA/mqdefault.jpg" alt="">10 "Boring" Service Businesses Making People Rich (Low Competition!) · 405,000 views, 66.4x, May 2026</a>
+  <a href="https://www.youtube.com/watch?v=z15zWnsaMI0"><img src="https://i.ytimg.com/vi/z15zWnsaMI0/mqdefault.jpg" alt="">7 BORING Businesses That Fit in One Spare Room (And Still Out-Earn a Storefront) · 24,000 views, 8.6x, Sep 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "[Number] ["Boring" / Low-Tech / Spare Room] Businesses [Making Ordinary Guys / Making People] [$ per Month or Rich] ([Fully Automated / Low Competition])"</li>
+  <li><strong>Thumbnail:</strong> [one plain object or scene, a mailbox or a bed] + [the money figure, large] + [a face or cartoon reacting]</li>
+  <li><strong>Hook:</strong> the life it gives you, or the obvious picks to skip → the list ahead</li>
+  <li><strong>Angle:</strong> dull work that ordinary people quietly get rich from.</li>
+  <li><strong>Anchors:</strong> "boring", "ugly", "ordinary guys", $ per month.</li>
+  <li><strong>New and specific:</strong> the figure is per month or per day, and the person is ordinary.</li>
+  <li><strong>Who can copy it:</strong> anyone. Two of the three are faceless.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=K9kXTEcf6i4">10 Low-Tech Businesses Making Ordinary Guys $30,000/Month (Fully Automated)</a> · 617,000 views, 97.9x, Oct 2026 · Likely won by pairing "ordinary guys" with a monthly figure.
+        <blockquote>"Picture this. You wake up, you check your phone before you've even had coffee, and there's already money sitting in your account from something you set up weeks ago."</blockquote></li>
+      <li><a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=zZohb9W-TiA">10 "Boring" Service Businesses Making People Rich (Low Competition!)</a> · 405,000 views, 66.4x, May 2026 · Likely won by ruling out the obvious picks before the list starts.
+        <blockquote>"Most people who want to start a service business end up in the same three places: lawn care, pressure washing, or window cleaning."</blockquote></li>
+      <li><a href="https://www.youtube.com/@HarrysStealthWealth">Harry's Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=z15zWnsaMI0">7 BORING Businesses That Fit in One Spare Room (And Still Out-Earn a Storefront)</a> · 24,000 views, 8.6x, Sep 2026 · Likely won on one real person's figure, $5,100 a month from a spare bedroom.
+        <blockquote>"There is a room in your house right now that earns nothing, not a dollar. It holds a bed nobody sleeps in and a box you have not opened since you moved."</blockquote></li>
+    </ul>
+  </div>
+</details>
+<h3>3. One familiar business and its real numbers · 3 winners on 3 channels</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=18sUMbT8AWU"><img src="https://i.ytimg.com/vi/18sUMbT8AWU/mqdefault.jpg" alt="">How Do $1 Pizza Shops Survive in New York · 365,000 views, 73.7x, Nov 2026</a>
+  <a href="https://www.youtube.com/watch?v=fDAz7A3hrEk"><img src="https://i.ytimg.com/vi/fDAz7A3hrEk/mqdefault.jpg" alt="">The Economics of Owning a Software Company · 420,000 views, 420x, Oct 2026</a>
+  <a href="https://www.youtube.com/watch?v=PYnqJpvUw3g"><img src="https://i.ytimg.com/vi/PYnqJpvUw3g/mqdefault.jpg" alt="">He Turned a Simple Idea Into a $65,000 A Day Business · 403,000 views, 22.4x, Oct 2026</a>
+</div>
+<ul>
+  <li><strong>Title formula:</strong> "How Do [$ Cheap Thing] [Shops] Survive in [Place]" or "The Economics of Owning a [Business]" or "He Turned a Simple Idea Into a [$ per Day] Business"</li>
+  <li><strong>Thumbnail:</strong> [the business, drawn or real] + [the trick or the margin, "75% PROFIT"] + [one line of text]</li>
+  <li><strong>Hook:</strong> "so you want to own" setup → one real case with a date or figure → the hidden numbers</li>
+  <li><strong>Angle:</strong> the hidden money inside a business you walk past.</li>
+  <li><strong>Anchors:</strong> $1 pizza, New York, software company, laundromat.</li>
+  <li><strong>New and specific:</strong> a familiar place, then a number nobody expects.</li>
+  <li><strong>Who can copy it:</strong> anyone for the explainers. The interview version needs insider trust: owners who will share their numbers.</li>
+</ul>
+<details class="row">
+  <summary><span>Proof: 3 winners<small>why each won, and its first lines</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li><a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · <a href="https://www.youtube.com/watch?v=18sUMbT8AWU">How Do $1 Pizza Shops Survive in New York</a> · 365,000 views, 73.7x, Nov 2026 · Likely won on a place every New Yorker walks past and a price that seems impossible.
+        <blockquote>"Okay, so you want to sell pizza for a dollar in New York. Rent a narrow storefront near a subway stop, paint a giant one dollar on the window, and watch the line wrap around the block."</blockquote></li>
+      <li><a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=fDAz7A3hrEk">The Economics of Owning a Software Company</a> · 420,000 views, 420x, Oct 2026 · Likely won on a news anchor, a $22.6 billion sale, where its other videos explain small shops.
+        <blockquote>"Okay, so you want to own a software company. $22.6 billion in cash for typing. This week, a French giant paid $22.6 billion for PTC"</blockquote></li>
+      <li><a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a> · <a href="https://www.youtube.com/watch?v=PYnqJpvUw3g">He Turned a Simple Idea Into a $65,000 A Day Business</a> · 403,000 views, 22.4x, Oct 2026 · Likely won on a dull product, sour candy, and a figure per day.
+        <blockquote>"This guy makes $2 million a month with a business idea many overlook. Sour candy."</blockquote></li>
+    </ul>
+  </div>
+</details>
+
+<h2>🔥 Hyped Topics And Power Words</h2>
+<p class="mut">Counted in the titles of all 11 competitors' last three months of long videos: their top winners (30) against every flop (69).</p>
+<h3>Hyped topics</h3>
+<details class="row low">
+  <summary><i></i><span>Garage, home or a spare room<small>5 winners on 3 channels · 6 flops</small></span><b>Worn out</b></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=-2H5Mne7CVU">13 Tiny Machines Making People Rich From Their Kitchen Table</a> · 265,000 views, 80x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=InQ7-NaPvxs">10 Cheap Machines That Turn Trash Into Cash (Start From Home)</a> · 293,000 views, 89x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=z15zWnsaMI0">7 BORING Businesses That Fit in One Spare Room (And Still Out-Earn a Storefront)</a> · 24,000 views, 8.6x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=Ce6X2vrNvy4">16 Boring Home Businesses Out-Earning a $75K Office Job (No Commute)</a> · 11,000 views, 3.9x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=iQZcxHCa9uQ">9 BUSINESSES You Can Run From Home and Still Profit!</a> · 2,000 views, 0.30x</li>
+      <li>Flop · <a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · <a href="https://www.youtube.com/watch?v=jkCItlI_QCk">Inside The Funeral Home Business</a> · 1,600 views, 0.32x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=7MUjCbpzVH4">10 Mini Factories You Can Start at Home for Under $1,000</a> · 1,600 views, 0.48x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=bJKYVSt9VDA">13 SECRET GARAGE Businesses That Cost Less Than $1000 to Start</a> · 1,500 views, 0.45x</li>
+      <li>Flop · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=Vz3vq6fQJlQ">20 Things Sitting in Your Garage That Someone Would Pay to Rent</a> · 1,300 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=2ext4r5bXM0">20 Garage-Business Mistakes That Can Burn Through Your Savings Before Your First Sale</a> · 808 views, 0.27x</li>
+    </ul>
+  </div>
+</details>
+<p class="mut">Only one topic wins on three channels. On two channels only: machines (4 winners, 5 flops), rentals (2 winners, 1 flop) and trading (2 winners, 0 flops).</p>
+<h3>Power words</h3>
+<details class="row high">
+  <summary><i></i><span>A dollar figure<small>13 winners on 7 channels · 10 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=K9kXTEcf6i4">10 Low-Tech Businesses Making Ordinary Guys $30,000/Month (Fully Automated)</a> · 617,000 views, 97.9x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=lTnn03EIzDI">20 “Poor Man’s Habits” That Quietly Save Americans $1,000 a Month</a> · 571,000 views, 190x</li>
+      <li>Winner · <a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a> · <a href="https://www.youtube.com/watch?v=PYnqJpvUw3g">He Turned a Simple Idea Into a $65,000 A Day Business</a> · 403,000 views, 22.4x</li>
+      <li>Winner · <a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · <a href="https://www.youtube.com/watch?v=18sUMbT8AWU">How Do $1 Pizza Shops Survive in New York</a> · 365,000 views, 73.7x</li>
+      <li>Winner · <a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a> · <a href="https://www.youtube.com/watch?v=HeHQu4WtTvM">Quit His Job to Make $480K/Month With This?!</a> · 301,000 views, 17x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=w6jeBBSsQrw">7 &quot;Ugly&quot; Businesses That Quietly Pay $40,000 A Month</a> · 203,000 views, 32x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=q1D9qRXIMT0">20 &quot;Poor Man&#x27;s Side Hustles&quot; That Still Pay $1,000 a Week in 2026</a> · 202,000 views, 67x</li>
+      <li>Winner · <a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · <a href="https://www.youtube.com/watch?v=fVni4MxR7xk">How $5 Pizza Chains Actually Make Money?</a> · 170,000 views, 34x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=WL4jKGNdnZU">5 Side Hustles You Can Start for $500 (Without Quitting Your Job)</a> · 114,000 views, 19x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=jKnB0cKnOKg">20 “Poor Man’s Businesses” That Make $100,000 Franchises Look Like a Scam</a> · 112,000 views, 37x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=whmS_mdbhRI">7 Businesses Nobody Wants to Do (That Make $300k/Year)</a> · 87,000 views, 14x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=Ce6X2vrNvy4">16 Boring Home Businesses Out-Earning a $75K Office Job (No Commute)</a> · 11,000 views, 3.9x</li>
+      <li>Flop · <a href="https://www.youtube.com/@brianbeers">Brian Beers</a> · <a href="https://www.youtube.com/watch?v=AkeWe36KaQ8">The Fake $55M Business Allegations...</a> · 6,100 views, 0.29x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=76N5YTuxgAI">11 BUSINESSES That Turn $100 Into Thousands</a> · 3,300 views, 0.49x</li>
+      <li>Flop · <a href="https://www.youtube.com/@brianbeers">Brian Beers</a> · <a href="https://www.youtube.com/watch?v=gr8X-J2BL5s">A Day In My Life As A $55M/Yr Business Owner</a> · 2,800 views, 0.13x</li>
+      <li>Flop · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=I820WA2TaSk">4 Remote Jobs That Have NO Income Cap! ($100K+)</a> · 2,300 views, 0.38x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=7MUjCbpzVH4">10 Mini Factories You Can Start at Home for Under $1,000</a> · 1,600 views, 0.48x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=bJKYVSt9VDA">13 SECRET GARAGE Businesses That Cost Less Than $1000 to Start</a> · 1,500 views, 0.45x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=F5VnLBUTLEE">6 Boring Weekly Routes You Start For $500 - Up to $10K a Month?</a> · 1,200 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=AiS_xRF80Lw">6 Boring Ways a Corner Store ATM Might Pay Its Owner $1,250 a Month</a> · 1,200 views, 0.43x</li>
+    </ul>
+    <p class="mut">2 more flops use it.</p>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>Cheap to start: tiny, cheap, poor man&#x27;s, under $X<small>9 winners on 5 channels · 5 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=K9kXTEcf6i4">10 Low-Tech Businesses Making Ordinary Guys $30,000/Month (Fully Automated)</a> · 617,000 views, 97.9x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=lTnn03EIzDI">20 “Poor Man’s Habits” That Quietly Save Americans $1,000 a Month</a> · 571,000 views, 190x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=-2H5Mne7CVU">13 Tiny Machines Making People Rich From Their Kitchen Table</a> · 265,000 views, 80x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=InQ7-NaPvxs">10 Cheap Machines That Turn Trash Into Cash (Start From Home)</a> · 293,000 views, 89x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=q1D9qRXIMT0">20 &quot;Poor Man&#x27;s Side Hustles&quot; That Still Pay $1,000 a Week in 2026</a> · 202,000 views, 67x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=qf9wKBljBng">11 TINY BUSINESSES With Giant Profit Margins</a> · 172,000 views, 26x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=WL4jKGNdnZU">5 Side Hustles You Can Start for $500 (Without Quitting Your Job)</a> · 114,000 views, 19x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=jKnB0cKnOKg">20 “Poor Man’s Businesses” That Make $100,000 Franchises Look Like a Scam</a> · 112,000 views, 37x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=7MUjCbpzVH4">10 Mini Factories You Can Start at Home for Under $1,000</a> · 1,600 views, 0.48x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=bJKYVSt9VDA">13 SECRET GARAGE Businesses That Cost Less Than $1000 to Start</a> · 1,500 views, 0.45x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=F5VnLBUTLEE">6 Boring Weekly Routes You Start For $500 - Up to $10K a Month?</a> · 1,200 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=zTWfhU8ZLfI">20 &quot;Poor Man&#x27;s&quot; Winter Services People Need Before the First Snow</a> · 908 views, 0.30x</li>
+      <li>Flop · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=Q8KA1uIpGF0">20 Poor Man’s Fixes to Try Before You Pay for a Repair</a> · 856 views, 0.29x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>A figure per month, week, day or year<small>7 winners on 3 channels · 4 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=K9kXTEcf6i4">10 Low-Tech Businesses Making Ordinary Guys $30,000/Month (Fully Automated)</a> · 617,000 views, 97.9x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=lTnn03EIzDI">20 “Poor Man’s Habits” That Quietly Save Americans $1,000 a Month</a> · 571,000 views, 190x</li>
+      <li>Winner · <a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a> · <a href="https://www.youtube.com/watch?v=PYnqJpvUw3g">He Turned a Simple Idea Into a $65,000 A Day Business</a> · 403,000 views, 22.4x</li>
+      <li>Winner · <a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a> · <a href="https://www.youtube.com/watch?v=HeHQu4WtTvM">Quit His Job to Make $480K/Month With This?!</a> · 301,000 views, 17x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=w6jeBBSsQrw">7 &quot;Ugly&quot; Businesses That Quietly Pay $40,000 A Month</a> · 203,000 views, 32x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=q1D9qRXIMT0">20 &quot;Poor Man&#x27;s Side Hustles&quot; That Still Pay $1,000 a Week in 2026</a> · 202,000 views, 67x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=whmS_mdbhRI">7 Businesses Nobody Wants to Do (That Make $300k/Year)</a> · 87,000 views, 14x</li>
+      <li>Flop · <a href="https://www.youtube.com/@brianbeers">Brian Beers</a> · <a href="https://www.youtube.com/watch?v=gr8X-J2BL5s">A Day In My Life As A $55M/Yr Business Owner</a> · 2,800 views, 0.13x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=F5VnLBUTLEE">6 Boring Weekly Routes You Start For $500 - Up to $10K a Month?</a> · 1,200 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=AiS_xRF80Lw">6 Boring Ways a Corner Store ATM Might Pay Its Owner $1,250 a Month</a> · 1,200 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=muT8X_PixyE">1 Boring Mall Chair Nobody Sits In - Does It Really Make $1,200 a Month?</a> · 1,000 views, 0.36x</li>
+    </ul>
+  </div>
+</details>
+<details class="row high">
+  <summary><i></i><span>Make money<small>3 winners on 3 channels · 0 flops</small></span></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=a9avKWEkd8U">18 Secret Machines from China Almost Nobody Is Using to Make Money (Huge Opportunity)</a> · 286,000 views, 87x</li>
+      <li>Winner · <a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · <a href="https://www.youtube.com/watch?v=fVni4MxR7xk">How $5 Pizza Chains Actually Make Money?</a> · 170,000 views, 34x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=fkvFvI5Nm08">21 RENTAL BUSINESSES That Make Money Without Daily Effort</a> · 136,000 views, 20x</li>
+    </ul>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>A number list<small>17 winners on 6 channels · 51 flops</small></span><b>Worn out</b></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=K9kXTEcf6i4">10 Low-Tech Businesses Making Ordinary Guys $30,000/Month (Fully Automated)</a> · 617,000 views, 97.9x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=lTnn03EIzDI">20 “Poor Man’s Habits” That Quietly Save Americans $1,000 a Month</a> · 571,000 views, 190x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=-2H5Mne7CVU">13 Tiny Machines Making People Rich From Their Kitchen Table</a> · 265,000 views, 80x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=InQ7-NaPvxs">10 Cheap Machines That Turn Trash Into Cash (Start From Home)</a> · 293,000 views, 89x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=a9avKWEkd8U">18 Secret Machines from China Almost Nobody Is Using to Make Money (Huge Opportunity)</a> · 286,000 views, 87x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=w6jeBBSsQrw">7 &quot;Ugly&quot; Businesses That Quietly Pay $40,000 A Month</a> · 203,000 views, 32x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=q1D9qRXIMT0">20 &quot;Poor Man&#x27;s Side Hustles&quot; That Still Pay $1,000 a Week in 2026</a> · 202,000 views, 67x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=qf9wKBljBng">11 TINY BUSINESSES With Giant Profit Margins</a> · 172,000 views, 26x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=fkvFvI5Nm08">21 RENTAL BUSINESSES That Make Money Without Daily Effort</a> · 136,000 views, 20x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=WL4jKGNdnZU">5 Side Hustles You Can Start for $500 (Without Quitting Your Job)</a> · 114,000 views, 19x</li>
+      <li>Winner · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=jKnB0cKnOKg">20 “Poor Man’s Businesses” That Make $100,000 Franchises Look Like a Scam</a> · 112,000 views, 37x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=whmS_mdbhRI">7 Businesses Nobody Wants to Do (That Make $300k/Year)</a> · 87,000 views, 14x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=bHx0BRaWWy8">7 Trailer Businesses Most People Don’t Know Exist</a> · 58,000 views, 9.5x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=z15zWnsaMI0">7 BORING Businesses That Fit in One Spare Room (And Still Out-Earn a Storefront)</a> · 24,000 views, 8.6x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=cV6oICyuKKo">7 Service Businesses Making People RICH in 2026 (Low Competition)</a> · 19,000 views, 3.1x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=Ce6X2vrNvy4">16 Boring Home Businesses Out-Earning a $75K Office Job (No Commute)</a> · 11,000 views, 3.9x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=76N5YTuxgAI">11 BUSINESSES That Turn $100 Into Thousands</a> · 3,300 views, 0.49x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=hsSsrI57Gw8">9 BUSINESSES You Never Notice But Use Every Day</a> · 3,300 views, 0.49x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=dTb0kEjfYb8">10 BUSINESSES That Rich People Buy Instead Starting</a> · 3,200 views, 0.48x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=QJYk7W-cK2Y">10 BUSINESSES That Haven&#x27;t Been Saturated Yet</a> · 2,900 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=t6PPmuzvXOs">11 Local Businesses Almost Nobody Thinks About</a> · 2,800 views, 0.42x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=tS1AGdV_t5w">12 SMALL BUSINESSES With Great Profit Margins</a> · 2,800 views, 0.42x</li>
+      <li>Flop · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=I820WA2TaSk">4 Remote Jobs That Have NO Income Cap! ($100K+)</a> · 2,300 views, 0.38x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=iQZcxHCa9uQ">9 BUSINESSES You Can Run From Home and Still Profit!</a> · 2,000 views, 0.30x</li>
+    </ul>
+    <p class="mut">43 more flops use it.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>Hidden: secret, unseen, nobody, most people don&#x27;t know<small>4 winners on 4 channels · 13 flops</small></span><b>Worn out</b></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x</li>
+      <li>Winner · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=a9avKWEkd8U">18 Secret Machines from China Almost Nobody Is Using to Make Money (Huge Opportunity)</a> · 286,000 views, 87x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=whmS_mdbhRI">7 Businesses Nobody Wants to Do (That Make $300k/Year)</a> · 87,000 views, 14x</li>
+      <li>Winner · <a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · <a href="https://www.youtube.com/watch?v=bHx0BRaWWy8">7 Trailer Businesses Most People Don’t Know Exist</a> · 58,000 views, 9.5x</li>
+      <li>Flop · <a href="https://www.youtube.com/@NickLoper">Side Hustle Nation</a> · <a href="https://www.youtube.com/watch?v=DG4yP9MACWk">The Side Hustle Strategy Nobody Tells You About</a> · 12,000 views, 0.25x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=t6PPmuzvXOs">11 Local Businesses Almost Nobody Thinks About</a> · 2,800 views, 0.42x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=6yIcjgTM-c8">15 Boring Businesses Making Millions That Nobody Talks About</a> · 1,800 views, 0.29x</li>
+      <li>Flop · <a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · <a href="https://www.youtube.com/watch?v=bJKYVSt9VDA">13 SECRET GARAGE Businesses That Cost Less Than $1000 to Start</a> · 1,500 views, 0.45x</li>
+      <li>Flop · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=yBF87vk__Fg">20 Forgotten Money-Making Machines Americans Used That Still Work Today</a> · 1,300 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=iEvLOrmd01Q">7 FORGOTTEN Kinds of Money the Government Quietly Owes You (Nobody Ever Claims Them)</a> · 1,100 views, 0.39x</li>
+      <li>Flop · <a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · <a href="https://www.youtube.com/watch?v=1f4la9qI9_w">20 Forgotten Skills That Prove You Don’t Need More Money</a> · 1,000 views, 0.33x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=muT8X_PixyE">1 Boring Mall Chair Nobody Sits In - Does It Really Make $1,200 a Month?</a> · 1,000 views, 0.36x</li>
+    </ul>
+    <p class="mut">5 more flops use it.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>Boring, ugly<small>5 winners on 2 channels · 13 flops</small></span><b>Worn out</b></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=w6jeBBSsQrw">7 &quot;Ugly&quot; Businesses That Quietly Pay $40,000 A Month</a> · 203,000 views, 32x</li>
+      <li>Winner · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=whmS_mdbhRI">7 Businesses Nobody Wants to Do (That Make $300k/Year)</a> · 87,000 views, 14x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=EcTeOVDbcXc">Buy Once Rent Forever: 7 Boring Assets That Pay You for Years</a> · 54,000 views, 19x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=z15zWnsaMI0">7 BORING Businesses That Fit in One Spare Room (And Still Out-Earn a Storefront)</a> · 24,000 views, 8.6x</li>
+      <li>Winner · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=Ce6X2vrNvy4">16 Boring Home Businesses Out-Earning a $75K Office Job (No Commute)</a> · 11,000 views, 3.9x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · <a href="https://www.youtube.com/watch?v=6yIcjgTM-c8">15 Boring Businesses Making Millions That Nobody Talks About</a> · 1,800 views, 0.29x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=-B8E6i1JKfU">14 BORING Businesses That Need No Storefront (And Still Pay Like One)</a> · 1,300 views, 0.46x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=F5VnLBUTLEE">6 Boring Weekly Routes You Start For $500 - Up to $10K a Month?</a> · 1,200 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=AiS_xRF80Lw">6 Boring Ways a Corner Store ATM Might Pay Its Owner $1,250 a Month</a> · 1,200 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=VOpL1v6SXNY">6 BORING Spaces People Book Overnight (You Never Meet a Single Guest)</a> · 1,100 views, 0.39x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=muT8X_PixyE">1 Boring Mall Chair Nobody Sits In - Does It Really Make $1,200 a Month?</a> · 1,000 views, 0.36x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=BAyVsNRl7R0">18 BORING BUSINESSES That Are Secret Gold Mines</a> · 999 views, 0.15x</li>
+      <li>Flop · <a href="https://www.youtube.com/@HarrysStealthWealth">Harry&#x27;s Stealth Wealth</a> · <a href="https://www.youtube.com/watch?v=nGsl9pZOh_E">6 BORING Machines That Pay You Every Month (Ice, Water, Office Coffee)</a> · 994 views, 0.35x</li>
+    </ul>
+    <p class="mut">5 more flops use it.</p>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span>The economics of<small>4 winners on 2 channels · 11 flops</small></span><b>Worn out</b></summary>
+  <div class="proof">
+    <ul>
+      <li>Winner · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=fDAz7A3hrEk">The Economics of Owning a Software Company</a> · 420,000 views, 420x</li>
+      <li>Winner · <a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · <a href="https://www.youtube.com/watch?v=7USVuwgQHZc">The Economics of Trading Cards</a> · 191,000 views, 39x</li>
+      <li>Winner · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=rLuFxwusnIk">The Economics of Owning a Trading Firm Explained</a> · 113,000 views, 113x</li>
+      <li>Winner · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=K0CHqrGdR9w">The Economics of Owning a Private Equity Firm Explained</a> · 28,000 views, 28x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=MZ25G_Y49PU">The Economics of Owning a Five Star Hotel</a> · 489 views, 0.49x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=lp1lJoOQpmE">The Economics of Owning a McDonald&#x27;s Explained</a> · 426 views, 0.43x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=5KbwQXPf0f8">The Economics of Owning a Cement Plant Explained</a> · 404 views, 0.40x</li>
+      <li>Flop · <a href="https://www.youtube.com/@Johns-Vault">John&#x27;s Vault</a> · <a href="https://www.youtube.com/watch?v=nGYIdYStWAI">The Economics of Owning a Dental Practice</a> · 399 views, 0.06x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=oIOctOWZZN0">The Economics of Owning a Luxury Empire Explained</a> · 387 views, 0.39x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=msalFYZs_io">The Economics of Owning a Christmas Light Company Explained</a> · 385 views, 0.39x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=0vF8G7i-ong">The Economics of Owning a Dairy Farm Explained?!</a> · 329 views, 0.33x</li>
+      <li>Flop · <a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · <a href="https://www.youtube.com/watch?v=DGc1rz6fQP4">The Economics of Owning a Firearms Store Explained</a> · 263 views, 0.26x</li>
+    </ul>
+    <p class="mut">3 more flops use it.</p>
+  </div>
+</details>
+
+<h2>🚫 What To Avoid</h2>
+<ul>
+  <li><strong>What the flops share:</strong> the same channel template reused on a smaller or duller object, or a list with no figure at all.</li>
+</ul>
+<h3>Machines and garage businesses: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=bJKYVSt9VDA">13 SECRET GARAGE Businesses That Cost Less Than $1000 to Start</a><small><a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · 1,500 views, 0.45x, Sep 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>Nearly the same title as John's Vault's 662,000-view winner, and its own "BUY THIS MACHINE $3000/DAY" thumbnail again.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=bJKYVSt9VDA"><img src="https://i.ytimg.com/vi/bJKYVSt9VDA/mqdefault.jpg" alt="">13 SECRET GARAGE Businesses That Cost Less Than $1000 to Start</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=SdkmSFguOOc">7 Tiny Machines Making BIG Money From Home In 2026</a><small><a href="https://www.youtube.com/@GarageProfits">Garage Profits</a> · 1,000 views, 0.30x, May 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>A smaller rerun of its own 433,000-view "12 Tiny Machines" video.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=SdkmSFguOOc"><img src="https://i.ytimg.com/vi/SdkmSFguOOc/mqdefault.jpg" alt="">7 Tiny Machines Making BIG Money From Home In 2026</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=yBF87vk__Fg">20 Forgotten Money-Making Machines Americans Used That Still Work Today</a><small><a href="https://www.youtube.com/@forgottenwaystomakemoney">Forgotten Ways to Make Money</a> · 1,300 views, 0.43x, Oct 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>Gumball and photo booths everyone has seen, with no payout on the thumbnail.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=yBF87vk__Fg"><img src="https://i.ytimg.com/vi/yBF87vk__Fg/mqdefault.jpg" alt="">20 Forgotten Money-Making Machines Americans Used That Still Work Today</a></div>
+  </div>
+</details>
+<h3>Boring businesses: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=6yIcjgTM-c8">15 Boring Businesses Making Millions That Nobody Talks About</a><small><a href="https://www.youtube.com/@Wealthverse11">Wealthverse</a> · 1,800 views, 0.29x, Oct 2026</small></span><b>Too general</b></summary>
+  <div class="proof">
+    <p>"millions" with no per-month figure, and an office-worker thumbnail.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=6yIcjgTM-c8"><img src="https://i.ytimg.com/vi/6yIcjgTM-c8/mqdefault.jpg" alt="">15 Boring Businesses Making Millions That Nobody Talks About</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=BAyVsNRl7R0">18 BORING BUSINESSES That Are Secret Gold Mines</a><small><a href="https://www.youtube.com/@Johns-Vault">John's Vault</a> · 999 views, 0.15x, Aug 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>The winner's exact cartoon, with no price or place.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=BAyVsNRl7R0"><img src="https://i.ytimg.com/vi/BAyVsNRl7R0/mqdefault.jpg" alt="">18 BORING BUSINESSES That Are Secret Gold Mines</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=JdfthGMsaHI">5 Seasonal Businesses You Can Start With Almost No Money</a><small><a href="https://www.youtube.com/@AustinZaback">Austin Zaback</a> · 1,400 views, 0.23x, Oct 2026</small></span><b>Too general</b></summary>
+  <div class="proof">
+    <p>"seasonal" names no business, and $425 a day is a smaller promise than his $1,000.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=JdfthGMsaHI"><img src="https://i.ytimg.com/vi/JdfthGMsaHI/mqdefault.jpg" alt="">5 Seasonal Businesses You Can Start With Almost No Money</a></div>
+  </div>
+</details>
+<h3>One business and its numbers: dead versions</h3>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=lp1lJoOQpmE">The Economics of Owning a McDonald's Explained</a><small><a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · 426 views, 0.43x, Sep 2026</small></span><b>Too familiar</b></summary>
+  <div class="proof">
+    <p>The most covered franchise there is, in the same template that won with a software company.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=lp1lJoOQpmE"><img src="https://i.ytimg.com/vi/lp1lJoOQpmE/mqdefault.jpg" alt="">The Economics of Owning a McDonald's Explained</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=2UPbmXqpx_4">The Economics of Owning A Pet Store Explained</a><small><a href="https://www.youtube.com/@CostAnatomy56">Cost Anatomy</a> · 121 views, 0.12x, Aug 2026</small></span><b>Too general</b></summary>
+  <div class="proof">
+    <p>No surprising number or trick in the title or thumbnail.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=2UPbmXqpx_4"><img src="https://i.ytimg.com/vi/2UPbmXqpx_4/mqdefault.jpg" alt="">The Economics of Owning A Pet Store Explained</a></div>
+  </div>
+</details>
+<details class="row low">
+  <summary><i></i><span><a href="https://www.youtube.com/watch?v=K0_qz9kvIVU">Why Course Selling Is Actually One of The BEST Business Models?</a><small><a href="https://www.youtube.com/@BossTalksMoney">Boss Talks Money</a> · 1,300 views, 0.26x, Oct 2026</small></span><b>Wrong format</b></summary>
+  <div class="proof">
+    <p>An online course, on a channel whose viewers come for street businesses.</p>
+    <div class="vids"><a href="https://www.youtube.com/watch?v=K0_qz9kvIVU"><img src="https://i.ytimg.com/vi/K0_qz9kvIVU/mqdefault.jpg" alt="">Why Course Selling Is Actually One of The BEST Business Models?</a></div>
+  </div>
+</details>
+
+<h2>🎯 Gaps To Win</h2>
+<h3>1. Lists of machines and garage businesses</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY"><img src="https://i.ytimg.com/vi/6nPrEp4fgjY/mqdefault.jpg" alt="">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start · 662,000 views, 98.8x, Aug 2026</a>
+</div>
+<ul>
+  <li><strong>Proof:</strong> <a href="https://www.youtube.com/@Johns-Vault">John's Vault</a> · <a href="https://www.youtube.com/watch?v=6nPrEp4fgjY">13 UNSEEN GARAGE Businesses That Cost Less Than $1000 to Start</a> · 662,000 views, 98.8x, Aug 2026</li>
+  <li><strong>Why it fits:</strong> Koerner's own list, "11 Proven Businesses My Viewers Started With Almost No Money", got 109,000 views, 1.5x. A list of machines he owns or has seen would add proof the faceless channels cannot.</li>
+</ul>
+<h3>2. "I bought it" tests with a day count</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=LHARCU4J6L8"><img src="https://i.ytimg.com/vi/LHARCU4J6L8/mqdefault.jpg" alt="">I Bought 2 Vending Machines… The Earnings Were Crazy · 588,000 views, 28x, Aug 2026</a>
+</div>
+<ul>
+  <li><strong>Proof:</strong> <a href="https://www.youtube.com/@brianbeers">Brian Beers</a> · <a href="https://www.youtube.com/watch?v=LHARCU4J6L8">I Bought 2 Vending Machines… The Earnings Were Crazy</a> · 588,000 views, 28x, Aug 2026</li>
+  <li><strong>Why it fits:</strong> Koerner's one test in three months, <a href="https://www.youtube.com/watch?v=kEV86fy-Rvc">I Tried to Make $10K in 10 Days With Costco Returns</a>, got 798,000 views, 10.9x his median.</li>
+</ul>
+<h3>3. Short owner interviews with the number in the title</h3>
+<div class="vids">
+  <a href="https://www.youtube.com/watch?v=PYnqJpvUw3g"><img src="https://i.ytimg.com/vi/PYnqJpvUw3g/mqdefault.jpg" alt="">He Turned a Simple Idea Into a $65,000 A Day Business · 403,000 views, 22.4x, Oct 2026</a>
+</div>
+<ul>
+  <li><strong>Proof:</strong> <a href="https://www.youtube.com/@upfliphighlights">UpFlip Highlights</a> · <a href="https://www.youtube.com/watch?v=PYnqJpvUw3g">He Turned a Simple Idea Into a $65,000 A Day Business</a> · 403,000 views, 22.4x, Oct 2026</li>
+  <li><strong>Why it fits:</strong> Koerner's guest videos run 30 to 70 minutes. UpFlip wins with 20-minute cuts of interviews like his.</li>
+</ul>
+<h3>Overall</h3>
+<ul>
+  <li><strong>Copy:</strong> an object on the thumbnail and a per-day or per-month figure next to it.</li>
+  <li><strong>Avoid:</strong> AI tool videos without a money target. <a href="https://www.youtube.com/watch?v=y33ecMVHxNU">This Tool Makes AI Agents Stupid Simple</a> got 31,000 views, 0.42x his median.</li>
+  <li><strong>Positioning:</strong> the owner of the business on camera, with the real numbers, where faceless rivals only narrate.</li>
+</ul>
+
+<h2>🧠 Next Steps</h2>
+<ol>
+  <li><strong>Write titles for a machines list</strong> · <code>title-formulas</code><br><span class="mut">"Titles for a video listing [number] machines or garage businesses I have owned or seen, each with its cost and monthly profit."</span></li>
+  <li><strong>Design an object-first thumbnail</strong> · <code>thumbnail-concepts</code><br><span class="mut">"Thumbnail for '[chosen title]': one machine large in the centre, the monthly figure, me small at the side."</span></li>
+  <li><strong>Plan the next 'I bought it' test</strong> · <code>video-ideation</code><br><span class="mut">"Ideas for 'I bought [business] and ran it for [days]' videos for @thekoerneroffice, ranked by how cheap and surprising the business is."</span></li>
+</ol>
+</main>
+</body>
+</html>
