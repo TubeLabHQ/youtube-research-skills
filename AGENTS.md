@@ -8,7 +8,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 |---|---|
 | Find a niche, unsaturated niches, faceless ideas, niches that earn beyond AdSense, twist or combine niches | `niche-finder` |
 | Bend this channel's format into another market, niche bending, which proven formats can I bring to my market | `niche-bending` |
-| What is working in X, why did this video blow up, trend report, weekly digest, hooks and formats to steal | `trend-report` |
+| What is working in X, why did this video blow up, trend report, weekly digest, hooks to steal this month | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
 | Roast or analyze a channel, mine or anyone's, why did views drop, what to change first | `roast-channel` |
 | Will my channel get demonetized or terminated, is my channel at risk, audit my channels for monetization risk | `audit-channel-risk` |
@@ -16,7 +16,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails, which thumbnails work in a niche | `thumbnail-concepts` |
 | Is X worth entering, is this niche saturated, go or no-go, score this niche, compare a shortlist of niches | `niche-validator` |
 | Titles for my video, title formulas, trending title templates, rewrite a title, a title and a thumbnail together (titles first) | `title-formulas` |
-| Who are my competitors, how do I compare, competitive landscape, who is growing in my space | `competitor-research` |
+| Reverse engineer a niche, what works and what flops in X, what to avoid, who are my competitors, how do I compare, competitive landscape, who is growing in my space | `reverse-engineer-niche` |
 | What do viewers ask or complain about, voice of audience, comments | `comment-mining` |
 | Script structure, beat sheet, hook of this video, script skeleton, how the top videos of a niche or channel are built | `script-breakdown` |
 | Monetization gaps for my channel, what to sell, how channels like mine make money, raise RPM, build a newsletter or products, who could sponsor my channel (the creator's side) | `revenue-maxxing` |
@@ -48,7 +48,7 @@ The plugin ships six agents in `agents/`, one per role. Each loads the skills be
 5. Link everything you cite: videos, channels, moments, brands and products. Use a URL from tool data, never a guessed one. A sponsor that was only heard links to the video moment where it was said.
 6. Look at the thumbnail of every video you analyze. Fetch the image from its link and open it.
 7. Revenue, RPM and audience are estimates. Present as bands, labelled.
-8. Searches cost credits. Channel, video, transcript and comment reads are free. Search to find candidates, and read to understand them. Most skills use two to six searches, and do not page through a paid search. One skill goes deeper, because the sample is the product: `niche-finder` pages its two channel searches 3 to 4 pages deep.
+8. Searches cost credits. Channel, video, transcript and comment reads are free. Search to find candidates, and read to understand them. Most skills use two to six searches, and do not page through a paid search. Two skills go deeper, because the sample is the product: `niche-finder` pages its two channel searches 3 to 4 pages deep, and `reverse-engineer-niche` uses up to 10 searches without paging.
 9. Write reports in plain language. Use short, full sentences, not dense or telegraphic notes, and no jargon. A reader who is not a YouTube strategist should understand every line on first read.
 10. End with the artifact laid out in the skill's "Output Format" section.
 
