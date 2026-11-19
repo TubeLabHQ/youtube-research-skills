@@ -4,7 +4,7 @@ description: Use when the user wants video ideas for a YouTube channel, what to 
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -16,7 +16,7 @@ About ten ideas for one channel, drawn from three sources and ranked: the channe
 
 ## Workflow
 
-1. Clarify scope only if needed. Unless told otherwise, the goal is reach, or conversion if the channel sells something.
+1. Clarify scope only if needed. Unless told otherwise, the goal is reach, or conversion if the channel sells something. Findings from `reverse-engineer-niche` or `reverse-engineer-channel` replace sources one and two: twist their patterns, blends and gaps, use their formulas, and skip searches they cover.
 2. Source one, the channel's own formats. Read the channel and find the formats that win for it by ratio. Double down on each with a new twist. A new channel has no formats of its own: say so, and lean on the other sources.
 3. Source two, outliers in its niche. Search them and twist the best for this channel.
 4. Source three, related niches. Pick one or two neighbouring niches, find the formats winning there, and twist them.
@@ -44,7 +44,7 @@ Potential and fit are judgment calls: High, Medium or Low.
 
 [![]({source video thumbnail})]({video url})
 
-- **Source:** {own format, niche outlier, related niche, or same audience (on request, noting an assumed profile)}
+- **Source:** {own format, niche outlier, related niche, a reverse-engineer finding (pattern, blend or gap), or same audience (on request, noting an assumed profile)}
 - **Proof:** [{channel}]({url}) · [{title}]({video url}) · {views, ratio, date}
 - **Twist:** {the SCAMPER move and what it changes, in one sentence}
 - **Why it fits:** {one sentence}
