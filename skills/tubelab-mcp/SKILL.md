@@ -97,7 +97,7 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 
 ## Spending credits
 
-Spend paid searches on finding candidates and free reads on understanding them. Two to six searches per job is a sane norm, and a paid search is not paged in a loop. Two skills go deeper, because the sample is the product: `niche-finder` pages two channel searches 3 to 4 pages deep, and `reverse-engineer-niche` uses up to 10 searches without paging. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Keep budgets and credit counts out of the report; give them if the user asks.
+Spend paid searches on finding candidates and free reads on understanding them. Two to six searches per job is a sane norm, and a paid search is not paged in a loop. Two skills go deeper, because the sample is the product: `niche-finder` pages two channel searches 3 to 4 pages deep, and `reverse-engineer-niche` uses up to 15 searches without paging. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Keep budgets and credit counts out of the report; give them if the user asks.
 
 ## Full reference
 

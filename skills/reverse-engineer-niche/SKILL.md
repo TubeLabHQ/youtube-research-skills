@@ -1,10 +1,10 @@
 ---
 name: reverse-engineer-niche
-description: Use when the user wants to reverse engineer a YouTube niche, or a channel's competitors, into the patterns that work and the ones that flop, and see how a channel compares. Requires the TubeLab MCP.
+description: Use when the user wants to reverse engineer a YouTube niche, or a channel's competitors, into its outliers, the patterns, titles, thumbnails, hooks and scripts that win, the versions that flop, and how a channel compares. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "1.1"
+  version: "2.0"
   requires: tubelab-mcp
 ---
 
@@ -12,27 +12,30 @@ metadata:
 
 ## Overview
 
-A niche taken apart through 10 to 12 of its channels: the patterns that win, the versions that flop, and who can copy each. Prefer emerging channels, with 3K to 300K subscribers. Read every video through five lenses:
+A niche taken apart through 12 to 20 channels, emerging ones first (3K to 300K subscribers): its outliers, winning patterns, title, thumbnail, hook and script formulas, and what flops. Five lenses:
 
-- **Working formats:** YouTube groups videos by what viewers watch together, not by topic. A new video must first fit the winners' format and length.
-- **New and specific:** new enough to stop a scroll, specific enough to feel real: a price, a document, a job, a place. Flops tend to be familiar and general.
+- **Working formats:** a new video must first fit the format and length viewers already watch together.
+- **New and specific:** new enough to stop a scroll, specific enough to feel real: a price, a job, a place. Flops tend to be familiar and general.
 - **Anchors:** names, brands, tools or terms that tell YouTube which viewers to send.
-- **Dead versions:** recent videos with a winner's promise that flopped.
-- **Who can copy it:** anyone, or only someone with its asset: life experience, insider trust, professional credibility, subculture fluency, a hard skill, fame or budget.
+- **Dead versions:** a winner's promise that flopped.
+- **Who can copy it:** anyone, or only someone with its asset: life experience, insider trust, credentials, a hard skill, fame or budget.
 
-Not for a dated digest of last month's winners (`trend-report`), whether to enter (`niche-validator`) or new niches (`niche-finder`).
+Not for last month's winners (`trend-report`), one channel (`reverse-engineer-channel`), whether to enter (`niche-validator`) or new niches (`niche-finder`).
 
 ## Workflow
 
-1. Clarify scope only if needed. Given a channel, sample its competitors.
-2. Use up to 10 searches, never paging one. Recent outliers from emerging channels are the best source: read the channels behind them. Add channel searches in other phrasings with average views at or above subscribers, similar channels of the best finds or the given channel, and channels you know.
-3. Verify each channel with a free read: on topic, long videos, the user's language. English titles can hide Hindi or French audio, so check one video's audio. Add established channels only when under 10 emerging ones hold up.
-4. Take each channel's median over its last three months of long videos. Winners are its top two or three at twice that or more. Flops are under half and older than a month. An older flop must also trail the videos around it.
-5. Group winners into three to five patterns, each on three or more channels. Explain each winner against its own channel's normal videos.
-6. For each pattern, pick two or three dead versions from the flops: same promise, few views. The strongest repeats its own channel's winning package. Give each a reason.
-7. Count the tools, names and words repeating in winning titles across channels, against the flops. Hyped: winners on three or more channels. Worn out: as common in flops.
-8. View every thumbnail you cite. Read the first 30 seconds of each cited winner.
-9. Given a channel, find up to three gaps: patterns its competitors win with that it skips or loses with.
+1. Given a channel, sample its competitors.
+2. Use up to 15 searches, never paging one. Six to eight on channels: the niche in different phrasings, for emerging and for established channels, and similar channels of different breakouts or the given channel. Three or four on outliers, to find channels not yet sampled.
+3. Verify each channel with a free read: on topic, long videos, the user's language. English titles can hide Hindi audio. Keep 12 to 20.
+4. Take each channel's median over its last three months of long videos. Winners are its top three at twice that or more. Flops are under half, older than a month, and trail the videos around them. Use one set of totals everywhere.
+5. View every winner's thumbnail on contact sheets, and each flop you cite.
+6. Group winners into three to five patterns, each on three or more channels. Explain each winner against its channel's normal videos.
+7. Count title formulas and thumbnail compositions across all winners and flops.
+8. Read the first 30 seconds of ten or more winners on different channels. Name beats in words that fit any video: setup, stakes, twist. A hook formula is an order of beats two or more channels share.
+9. Read the full transcripts of four to six top winners from different patterns. Mark each beat and its time. A structure is a layout two or more share.
+10. For each pattern, pick two or three dead versions, with a reason.
+11. Count the tools, names and words in winning titles against the flops. Hyped: winners on three or more channels. Worn out: as common in flops.
+12. Given a channel, find up to three gaps: patterns its competitors win with that it skips.
 
 ## Output Format
 
@@ -85,81 +88,118 @@ td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:
 </head>
 <body>
 <main>
-{About 1,500 words. If it runs long, cut whole items, never proof.}
+{About 3,500 words outside the collapsed proof. If it runs long, cut whole items, never proof.}
 <h1>🧭 Reverse Engineering: {niche, or competitors of <a href="{url}">{channel}</a>}</h1>
-<p class="mut">{run date} · {n} channels ({n} emerging, {n} established) · {n} winners · {n} flops cited</p>
+<p class="mut">{run date} · {n} channels ({n} emerging, {n} established) · {n} winners and {n} flops counted, {n} videos cited</p>
+
+<h2>🧭 The Niche</h2>
+<p>{One or two plain sentences: what the niche is and who watches it.}</p>
 <ul>
   <li><strong>What wins:</strong> {one sentence, with numbers}</li>
   <li><strong>Start with:</strong> {the one pattern to make first, and why}</li>
-</ul>
-
-<h2>📺 Working Formats</h2>
-<ul>
   <li><strong>Format:</strong> {the format the winners share}</li>
   <li><strong>Length:</strong> {usual length of the winners}</li>
   <li><strong>Where to differ:</strong> {one sentence}</li>
 </ul>
+<details class="row">
+  <summary><span>The sample: {n} channels<small>medians cover each channel's last three months of long videos{; the given channel is in bold}</small></span></summary>
+  <table>
+    <tr><th>Channel</th><th>Type</th><th class="n">Subs</th><th class="n">Median views</th><th class="n">Median per sub</th></tr>
+    <tr{ class="me" for the given channel}><td><a href="{url}">{channel}</a></td><td>{emerging or established}</td><td class="n">{subs}</td><td class="n">{views}</td><td class="n">{ratio}</td></tr>
+  </table>
+  <p class="mut">{Channels left out and why, one line, if any.}</p>
+</details>
 
-<h2>👥 The Sample</h2>
-<p class="mut">Medians cover each channel's last three months of long videos. {Given a channel: its row is in bold.}</p>
-<table>
-  <tr><th>Channel</th><th>Type</th><th class="n">Subs</th><th class="n">Median views</th><th class="n">Median per sub</th></tr>
-  <tr{ class="me" for the given channel}><td><a href="{url}">{channel}</a></td><td>{emerging or established}</td><td class="n">{subs}</td><td class="n">{views}</td><td class="n">{ratio}</td></tr>
-</table>
-<p class="mut">{Channels left out and why, one line, if any.}</p>
+<h2>🚀 Outliers</h2>
+<p class="mut">{n} winners with the highest ratio to their own channel's median, at most two per channel.</p>
+<div class="vids">
+  <a href="{video url}"><img src="{320px mqdefault.jpg}" alt="">{title} · {channel} · {views}, {ratio}x, {date}</a> {9 to 12}
+</div>
+<details class="row">
+  <summary><span>Why each broke out<small>against its own channel's normal videos</small></span></summary>
+  <div class="proof"><ul>
+    <li><a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio, date} · {why it likely beat this channel's normal videos}</li>
+  </ul></div>
+</details>
 
 <h2>🧩 Patterns That Work</h2>
-{Three to five patterns. Each shows three winners from different channels.}
 <h3>{n}. {Pattern name} · {n} winners on {n} channels</h3>
-<div class="vids">
-  <a href="{video url}"><img src="{320px mqdefault.jpg}" alt="">{title} · {views, ratio, date}</a>
-</div>
+<div class="vids">{three winners from different channels, as in Outliers}</div>
 <ul>
-  <li><strong>Title formula:</strong> "{pattern with every slot in square brackets}"</li>
-  <li><strong>Thumbnail:</strong> {the parts a viewer can point at, each in square brackets}</li>
-  <li><strong>Hook:</strong> {the order of beats, such as claim → proof → promise}</li>
   <li><strong>Angle:</strong> {the promise to the viewer}</li>
-  <li><strong>Anchors:</strong> {the hyped topics and power words it uses}</li>
   <li><strong>New and specific:</strong> {what is new, and what makes it feel real}</li>
+  <li><strong>Packaging:</strong> {title formula {n} · thumbnail {n} · hook {n}, numbered as below}</li>
   <li><strong>Who can copy it:</strong> {anyone, or needs their asset: which one}</li>
 </ul>
 <details class="row">
-  <summary><span>Proof: {n} winners<small>why each won, and its first lines</small></span></summary>
-  <div class="proof">
-    <ul>
-      <li><a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio to its median, date} · {why it likely beat this channel's normal videos}
-        <blockquote>"{first lines, word for word}"</blockquote></li>
-    </ul>
-  </div>
+  <summary><span>Proof: {n} of the {n} winners<small>why each won</small></span></summary>
+  <div class="proof"><ul>
+    <li><a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio to its median, date} · {why it likely won}</li>
+  </ul></div>
+</details>
+
+<h2>✍️ Title Formulas</h2>
+<p class="mut">Counted in all {n} winners and {n} flops. {8 to 12 formulas.}</p>
+<details class="row {high, or low when worn out}">
+  <summary><i></i><span>{n}. "{formula, every slot in square brackets}"<small>{n} winners on {n} channels · {n} flops · e.g. <a href="{video url}">{example title}</a> · {ratio}</small></span><b>{Worn out, or nothing}</b></summary>
+  <div class="proof"><ul>
+    <li>{winner or flop} · <a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio}</li> {every winner using it, then up to four flops}
+  </ul></div>
+</details>
+
+<h2>🖼️ Thumbnails That Work</h2>
+<p class="mut">All {n} winner and {n} flop thumbnails viewed.</p> {Four to six compositions, by layout, face, text, colour and objects.}
+<h3>{n}. {Composition name} · {n} winners on {n} channels · {n} flops</h3>
+<div class="vids">{two or three winners using it, as in Outliers}</div>
+<ul>
+  <li><strong>Formula:</strong> {the parts a viewer can point at, each in square brackets, such as "[face, shocked, right] + [price in yellow, left]"}</li>
+  <li><strong>Text and colour:</strong> {how many words, what they say, the main colours}</li>
+  <li><strong>Why it likely works:</strong> {one sentence}</li>
+</ul>
+
+<h2>🎣 Hook Formulas</h2>
+<h3>{n}. {Formula name} · {n} of {n} openings read, on {n} channels</h3>
+<ul>
+  <li><strong>Structure:</strong> {beat} → {beat} → {beat}, in the first {n} seconds</li>
+  <li><strong>Who can copy it:</strong> {anyone, or needs their asset: which one}</li>
+</ul>
+<details class="row">
+  <summary><span>Examples: {n} openings<small>word for word</small></span></summary>
+  <div class="proof"><ul>
+    <li><a href="{url}">{channel}</a> · <a href="{video url}&t=0s">{title}</a> · {views, ratio}<blockquote><strong>{Beat}:</strong> "{its words}"</blockquote></li>
+  </ul></div>
+</details>
+
+<h2>📜 Script Structures</h2>
+<h3>{n}. {Structure name} · {n} of {n} scripts read</h3>
+<ul>
+  <li><strong>Layout:</strong> Hook 0:00 → {beat} {share of runtime} → ... → {ending}</li>
+  <li><strong>Main payoff:</strong> {where it lands, as a share of the runtime, and what it is}</li>
+  <li><strong>What repeats:</strong> {the device the scripts reuse, and how often}</li>
+</ul>
+<details class="row">
+  <summary><span>Example: {title}<small>{channel} · {views, ratio, length}</small></span></summary>
+  <table>
+    <tr><th>Time</th><th>Beat</th><th>What happens</th></tr>
+    <tr><td><a href="{video url}&t={seconds}s">{m:ss}</a></td><td>{beat}</td><td>{a few words}</td></tr>
+  </table>
 </details>
 
 <h2>🔥 Hyped Topics And Power Words</h2>
-<p class="mut">Counted in the titles of all {n} channels' last three months: their top winners ({n}) against every flop ({n}).</p>
+<p class="mut">Counted in the titles of all {n} winners and {n} flops.</p>
 <h3>Hyped topics</h3>
-{Tools, products, names and ideas in winning titles on three or more channels, most channels first. Mark one worn out when flops use it as often as winners. Then one line naming those on two channels only.}
+{Tools, products, names and ideas in winning titles on three or more channels, most channels first. Then one line naming those on two channels only.}
 <details class="row {high, or low when worn out}">
   <summary><i></i><span>{topic}<small>{n} winners on {n} channels · {n} flops</small></span><b>{Worn out, or nothing}</b></summary>
-  <div class="proof">
-    <ul>
-      <li>{winner or flop} · <a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio}</li> {every winner, then up to eight flops}
-    </ul>
-  </div>
+  <div class="proof"><ul>
+    <li>{winner or flop} · <a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio}</li> {every winner, then up to eight flops}
+  </ul></div>
 </details>
 <h3>Power words</h3>
-{Words or phrases in winning titles on two or more channels, such as a condition, a dollar figure or a day count. Mark one worn out when flops use it as often as winners.}
-<details class="row {high, or low when worn out}">
-  <summary><i></i><span>"{word or phrase}"<small>{n} winners on {n} channels · {n} flops</small></span><b>{Worn out, or nothing}</b></summary>
-  <div class="proof">
-    <ul>
-      <li>{winner or flop} · <a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio}</li> {every winner, then up to eight flops}
-    </ul>
-  </div>
-</details>
+{Words or phrases in winning titles on two or more channels, such as a condition, a dollar figure or a day count, as rows like the topics.}
 
 <h2>🚫 What To Avoid</h2>
-<ul>
-  <li><strong>What the flops share:</strong> {one sentence}</li>
-</ul>
+<ul><li><strong>What the flops share:</strong> {one sentence}</li></ul>
 <h3>{Pattern name}: dead versions</h3>
 <details class="row low">
   <summary><i></i><span><a href="{video url}">{title}</a><small><a href="{url}">{channel}</a> · {views, ratio to its median, date}</small></span><b>{Too familiar, Too general, Wrong anchor or Wrong format}</b></summary>
@@ -172,9 +212,7 @@ td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:
 {Given a channel only.}
 <h2>🎯 Gaps To Win</h2>
 <h3>{n}. {Gap}</h3>
-<div class="vids">
-  <a href="{video url}"><img src="{320px mqdefault.jpg}" alt="">{title} · {views, ratio, date}</a>
-</div>
+<div class="vids">{one or two competitor winners, as in Outliers}</div>
 <ul>
   <li><strong>Proof:</strong> <a href="{url}">{channel}</a> · <a href="{video url}">{title}</a> · {views, ratio, date}</li>
   <li><strong>Why it fits:</strong> {one sentence}</li>
@@ -195,16 +233,15 @@ td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:
 </html>
 ```
 
-- File: `reverse-engineer-niche-{niche-slug or handle}.html`, or an artifact.
-- Chat: the top finding, the sample mix and the file.
+- File: `reverse-engineer-niche-{niche-slug or handle}.html`, or an artifact. Chat: the top finding and the file.
 - Language: plain and short. State causes as likely, never as fact.
-- Bullets: one fact each, under 25 words, except quotes, verbatim titles, formulas and prompts.
-- Links: every video and channel, from IDs and handles in the data.
+- Bullets: one fact each, under 25 words, except quotes, titles, formulas and prompts.
+- Links: every video, channel and moment, from IDs and handles in the data.
 
 ## Common Pitfalls
 
-- Do not call one channel's hits a pattern. One viral video on a tiny channel proves the idea, not the channel.
-- Do not sell a pattern seen only on established channels to a new channel. It may ride on viewers who already trust them.
+- Do not call one channel's hits a pattern or formula. One viral video proves the idea, not the channel.
+- Do not sell a pattern seen only on established channels to a new channel. It may ride on trust.
 - Do not keep a channel because a search returned it. Hits are often off-topic, off-language or Shorts-only.
 - Do not count last month's uploads as flops. They are still collecting views.
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, except a lookup by handle.
