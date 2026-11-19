@@ -128,7 +128,10 @@ td,th{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:
 <ul>
   <li><strong>Angle:</strong> {the promise to the viewer}</li>
   <li><strong>New and specific:</strong> {what is new, and what makes it feel real}</li>
-  <li><strong>Packaging:</strong> {title formula {n} · thumbnail {n} · hook {n}, numbered as below}</li>
+  <li><strong>Title formula:</strong> "{the formula itself, slots in square brackets}"</li>
+  <li><strong>Thumbnail:</strong> {composition name}: {its formula, such as "[face, right] + [payout screen, left]"}</li>
+  <li><strong>Hook:</strong> {formula name}: {beat} → {beat} → {beat}</li>
+  <li><strong>Script:</strong> {structure name}: {its layout}, {only when one was read}</li> {Spell each one out. Never point to another section by number.}
   <li><strong>Who can copy it:</strong> {anyone, or needs their asset: which one}</li>
 </ul>
 <details class="row">
