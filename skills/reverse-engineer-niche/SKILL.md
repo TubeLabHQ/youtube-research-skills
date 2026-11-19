@@ -4,7 +4,7 @@ description: Use when the user wants to reverse engineer a YouTube niche, or a c
 license: MIT
 metadata:
   author: tubelab
-  version: "3.1"
+  version: "3.2"
   requires: tubelab-mcp
 ---
 
@@ -32,10 +32,10 @@ Not for last month's winners (`trend-report`), one channel (`reverse-engineer-ch
 6. Group winners into three to five patterns, each on three or more channels, each winner explained against its channel's normal videos.
 7. Count title formulas and thumbnail compositions across winners and flops.
 8. Read the opening 30 seconds of ten or more winners on different channels. A hook formula is a beat order, named to fit any video, shared by two or more channels.
-9. Read four to six full winning transcripts from different patterns. Mark each beat and its time. A structure is a layout two or more share.
+9. Read four to six full winning transcripts from different patterns. Mark each beat and its time. A video formula is a layout two or more share.
 10. Pair dead versions with their winners, same channel when you can, with the reason.
 11. Count tools, names and words in winning titles against flops. Worn out: as common in flops.
-12. Blend two patterns into an angle no sampled video has filmed.
+12. Blend two patterns into a new angle no sampled video has filmed.
 13. Given a channel, find up to three gaps: patterns its competitors win with that it skips.
 14. If wanted, run `video-ideation` on these findings for the last chapter. Unanswered: offer it in the closing line.
 
@@ -81,21 +81,21 @@ mark{background:var(--red);color:#fff;padding:0 .25em;border-radius:.25em;-webki
 .g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
 .kv{display:grid;grid-template-columns:auto 1fr;gap:calc(var(--u)*.9) calc(var(--u)*2);align-content:start}
 .kv dt{color:var(--mut);font-size:calc(var(--u)*1);font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding-top:.3em}
-.v{display:flex;flex-direction:column;gap:calc(var(--u)*.5);font-size:calc(var(--u)*1.05);line-height:1.3;min-width:0}
+.v{display:flex;flex-direction:column;gap:calc(var(--u)*.4);font-size:calc(var(--u)*1.05);line-height:1.3;min-width:0;background:var(--card);border-radius:calc(var(--u)*.9);padding:calc(var(--u)*.65)}
 .v img,.wall img,.anno img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:calc(var(--u)*.6);background:var(--line)}
 .v b,.r{align-self:flex-start;display:inline-block;width:fit-content;background:var(--red);color:#fff;font-weight:800;line-height:1;padding:.2em .4em;border-radius:.35em;white-space:nowrap}
 .v b{font-size:calc(var(--u)*1.4)}
 .r{font-size:.9em}
-.x+b,.x+div>b,.no b,.r.lo{background:var(--card);color:var(--mut);box-shadow:inset 0 0 0 1px var(--line)}
+.x+b,.x+div>b,.no b,.r.lo{background:var(--bg);color:var(--mut);box-shadow:inset 0 0 0 1px var(--line)}
 .v span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .v small{color:var(--mut)}
 .one .v span{-webkit-line-clamp:1}
-.tight .col{gap:var(--u)}.tight .legend{gap:calc(var(--u)*.5)}.tight .kv{gap:calc(var(--u)*.6) calc(var(--u)*2)}.one small{font-size:calc(var(--u)*.85)}
-.v.h{display:grid;grid-template-columns:calc(var(--u)*16) 1fr;gap:calc(var(--u)*1.2);align-items:start}
+.tight .col{gap:calc(var(--u)*.8)}.tight .legend,.tight .kv{font-size:calc(var(--u)*1.15)}.tight .legend{gap:calc(var(--u)*.5)}.tight .kv{gap:calc(var(--u)*.6) calc(var(--u)*2)}.one small{font-size:calc(var(--u)*.85)}
+.v.h{display:grid;grid-template-columns:calc(var(--u)*14) 1fr;gap:calc(var(--u)*1);align-items:start}
 .v.h>div{display:flex;flex-direction:column;gap:calc(var(--u)*.35)}
 .v p{font-size:calc(var(--u)*1.05);line-height:1.35}
 .vs{flex:1;min-height:0;display:grid;grid-template-columns:repeat(2,minmax(0,calc(var(--u)*36)));justify-content:space-around;align-content:center;gap:calc(var(--u)*5)}
-.vs .v{gap:calc(var(--u)*.8);font-size:calc(var(--u)*1.2)}
+.vs .v{gap:calc(var(--u)*.8);font-size:calc(var(--u)*1.2);padding:calc(var(--u)*1.4)}
 .vs .v>div:first-child{display:flex;justify-content:space-between;align-items:center}
 .vs .v b{align-self:center;font-size:calc(var(--u)*3.4)}
 .x{position:relative;display:block}
@@ -144,7 +144,7 @@ code{font-family:ui-monospace,Menlo,monospace;font-size:.9em;background:var(--ca
 html{scroll-snap-type:none}
 .page{width:100%;height:auto;min-height:0;margin:0 0 10px;padding:28px 16px 48px}
 .page::before{left:16px;bottom:16px}.page::after{right:16px;bottom:16px}
-.split,.g2,.g3,.vs{grid-template-columns:1fr}.chans{grid-template-columns:1fr 1fr}
+.split,.g2,.g3,.vs{grid-template-columns:1fr}.chans{grid-template-columns:1fr 1fr}.vs{gap:16px}
 .cover{min-height:80vh}h1{font-size:42px}.divider h1{font-size:52px}.cover>div:last-child{max-width:none}.wall{inset:-10% -30% 40% -10%}.cover .shade{background:linear-gradient(0deg,var(--bg) 55%,transparent 90%)}
 .divider{min-height:60vh}
 .beats{padding-left:28px}
@@ -173,34 +173,34 @@ PAGE: <section class="page"><p class="k">{Chapter · section}</p><h2>{title}</h2
 </section>
 </div>
 <div class="chapter" style="--ch:'Research'">
-<section class="page divider"><p class="n">01</p><h1>Research</h1><p class="lead mut">The niche · Working formats · The channels · Outliers · Flops · Patterns</p></section>
+<section class="page divider"><p class="n">01</p><h1>Research</h1><p class="lead mut">The niche · Working formats · The channels · Outliers · What to avoid · Patterns that work</p></section>
 {The niche: <div class="split"><div class="col"><p class="lead">{what it is}</p><dl class="kv"><dt>Who watches</dt><dd>{one sentence}</dd><dt>What wins</dt><dd>{with numbers}</dd><dt>Start with</dt><dd>{the pattern to make first, and why}</dd></dl></div><div class="col">{CARD}</div></div>}
 {Working formats: the same split. kv: Format, Length, Where to differ. Right: <div class="g2">{four CARDs}</div>}
 {The channels, h2 "{n} channels: {n} emerging, {n} established": <div class="chans"><a{ class="me" for the given channel} href="{url}"><img class="av" src="{avatar url}" alt=""><b>{channel}</b>{emerging or established} · {subs} subscribers<br><span class="mut">median {views} views · {ratio} per subscriber</span></a></div><p class="mut"><small>Medians cover each channel's last three months of long videos. Left out: {channels and why}.</small></p>}
 {Outliers, two pages of six: <div class="g2 fill">{ROW CARDs with why}</div>}
-{Flops: <p class="lead">{what the flops share}</p><div class="g2 fill">{six FLOP ROW CARDs with why}</div>}
-{One page per pattern, h2 = its name: <p class="mut">{n} winners on {n} channels</p><div class="split"><div class="col"><dl class="kv">{Angle, New and specific, Title (formula, slots in <mark>[ ]</mark>), Thumbnail (composition name), Hook (formula name), Script (structure name, only when read), Who can copy}</dl></div><div class="col">{three ROW CARDs}</div></div>}
+{What to avoid: <p class="lead">{what the flops share}</p><div class="g2 fill">{six FLOP ROW CARDs with why}</div>}
+{One page per pattern, h2 = its name: <p class="mut">{n} winners on {n} channels</p><div class="split"><div class="col"><dl class="kv">{Angle, New and specific, Title (formula, slots in <mark>[ ]</mark>), Thumbnail (composition name), Hook (formula name), Script (video formula name, only when read), Who can copy}</dl></div><div class="col">{three ROW CARDs}</div></div>}
 </div>
 <div class="chapter" style="--ch:'Packaging'">
-<section class="page divider"><p class="n">02</p><h1>Packaging</h1><p class="lead mut">A winner at a glance · Title formulas · Words · Thumbnail design</p></section>
-{A winner at a glance: <div class="split"><div class="col">{ANNOTATED}</div><div class="col"><p class="f">{its title, the slots in <mark></mark>}</p><p class="mut">{channel · views · date · ratio}</p><dl class="kv">{In the title, In the picture, Always}</dl></div></div>}
+<section class="page divider"><p class="n">02</p><h1>Packaging</h1><p class="lead mut">Anatomy of an outlier · Title formulas · Winning words · Thumbnail design</p></section>
+{Anatomy of an outlier: <div class="split"><div class="col">{ANNOTATED}</div><div class="col"><p class="f">{its title, the slots in <mark></mark>}</p><p class="mut">{channel · views · date · ratio}</p><dl class="kv">{In the title, In the picture, Always}</dl></div></div>}
 {ANNOTATED, boxing what matters on one real thumbnail (face, payout screen, amount, arrow), in percent of the image: <a class="anno" href="{video url}"><img src="{hqdefault}" alt=""><i data-n="1" style="left:{x}%;top:{y}%;width:{w}%;height:{h}%"></i></a><ol class="legend"><li>{what box 1 holds, <strong>words on it</strong>}</li></ol>}
 {One page per title formula, no h2: <p class="f">"{formula, slots in <mark>[ ]</mark>}"</p><div class="split"><div class="col"><p><span class="big">{n}</span> winners on {n} channels</p><p><span class="big">{n}</span> flops</p></div><div class="col">{three ROW CARDs}</div></div>}
 {More formulas, four a page: <div class="g2 fill"><div class="col"><p class="lead">"{formula}"</p><p class="mut">{counts}</p>{ROW CARD}</div></div>}
 {Worn out, two a page: <div class="col"><p class="lead">"{formula}"</p><p class="mut">{counts}</p><div class="g2">{winner ROW CARD}{FLOP ROW CARD}</div></div>}
-{Words: <div class="g3 fill"><div class="col" style="grid-column:span 2"><p class="k">Win</p><div class="g2">{CHIPs}</div></div><div class="col"><p class="k">Worn out: as common in flops</p><div class="chips">{CHIPs with class="chip worn"}</div></div></div>
+{Winning words: <div class="g3 fill"><div class="col" style="grid-column:span 2"><p class="k">Win</p><div class="g2">{CHIPs}</div></div><div class="col"><p class="k">Worn out: as common in flops</p><div class="chips">{CHIPs with class="chip worn"}</div></div></div>
 CHIP: <div class="chip"><b>{word or topic}</b> · {n} winners, {n} channels, {n} flops<br><small class="mut">e.g. <a href="{video url}">{title}</a> · <b class="r">{ratio}×</b></small></div>}
 {One page per thumbnail composition, h2 = its name: <p class="mut">{n} winners on {n} channels · {n} flops</p><div class="split tight"><div class="col">{ANNOTATED, legend moved right}<small class="mut">{proof}</small></div><div class="col">{legend}<dl class="kv"><dt>Text and colour</dt><dd>..</dd><dt>Why it likely works</dt><dd>..</dd></dl><div class="g2 one">{two CARDs}</div></div></div>}
 </div>
 <div class="chapter" style="--ch:'Storytelling'">
-<section class="page divider"><p class="n">03</p><h1>Storytelling</h1><p class="lead mut">Hook formulas · Script structures</p></section>
+<section class="page divider"><p class="n">03</p><h1>Storytelling</h1><p class="lead mut">Hook formulas · Video formulas</p></section>
 {One page per hook formula, h2 = its name: <p class="mut">{n} of {n} openings read, on {n} channels · the first {n} seconds · Who can copy: {..}</p><div class="beats"><span>{beat}</span><span>{beat}</span></div><div class="g2 fill"><div class="q"><small><a href="{video url}&amp;t=0s">{title}</a> · {channel · views · date · ratio}</small><p><b>{Beat}</b>"{its words}"</p></div></div>}
-{One page per script structure, h2 = its name: <p class="mut">{n} of {n} scripts read</p><div class="split"><div class="col"><div class="gantt"><span><strong>{Beat: Hook, Setup, Re-hook, Stakes increase, Peak, Twist or Payoff}</strong> <span class="mut">{what happens}</span></span><div{ class=pay on the main payoff}><i style="--a:{start %};--b:{end %}"></i></div><span></span><span class="mut" style="display:flex;justify-content:space-between;font-size:.8em"><span>0%</span><span>50%</span><span>100% of the runtime</span></span></div></div><div class="col"><dl class="kv">{Main payoff, What repeats, Example: linked title, its stats and length}</dl><div class="chips"><a class="chip" href="{video url}&amp;t={s}s"><b>{m:ss}</b> {beat}</a></div></div></div>}
+{One page per video formula, h2 = its name: <p class="mut">{n} of {n} scripts read</p><div class="split"><div class="col"><div class="gantt"><span><strong>{Beat: Hook, Setup, Re-hook, Stakes increase, Peak, Twist or Payoff}</strong> <span class="mut">{what happens}</span></span><div{ class=pay on the main payoff}><i style="--a:{start %};--b:{end %}"></i></div><span></span><span class="mut" style="display:flex;justify-content:space-between;font-size:.8em"><span>0%</span><span>50%</span><span>100% of the runtime</span></span></div></div><div class="col"><dl class="kv">{Main payoff, What repeats, Example: linked title, its stats and length}</dl><div class="chips"><a class="chip" href="{video url}&amp;t={s}s"><b>{m:ss}</b> {beat}</a></div></div></div>}
 </div>
 <div class="chapter" style="--ch:'Learnings'">
-<section class="page divider"><p class="n">04</p><h1>Learnings</h1><p class="lead mut">Do's and don'ts · Blends{ · Gaps to win}</p></section>
+<section class="page divider"><p class="n">04</p><h1>Learnings</h1><p class="lead mut">Do's and don'ts · New angles{ · Gaps to win}</p></section>
 {One page per pair, h2 = the lesson: <div class="vs"><div class="v yes"><div><span class="tag">✓ Do</span><b>{ratio}×</b></div><a href="{video url}"><img src="{hqdefault}" alt=""></a><a href="{video url}"><span>{title}</span></a><small>{channel · views · date}</small></div><div class="v no">{the dead version, the same with ✕ Don't and class="x" on its image link}</div></div><p class="lead">{the reason}</p>}
-{One page per blend, h2 = the new angle: <div class="split"><div class="g2"><div class="col"><p class="k">{pattern}</p>{CARD}</div><div class="col"><p class="k">+ {pattern}</p>{CARD}</div></div><div class="col"><dl class="kv">{New angle, Why it should work, Filmed yet? (not in the {n} videos counted)}</dl></div></div>}
+{One page per new angle, two patterns blended, h2 = the angle: <div class="split"><div class="g2"><div class="col"><p class="k">{pattern}</p>{CARD}</div><div class="col"><p class="k">+ {pattern}</p>{CARD}</div></div><div class="col"><dl class="kv">{New angle, Why it should work, Filmed yet? (not in the {n} videos counted)}</dl></div></div>}
 {Given a channel: one page per gap, h2 = the gap: <div class="split"><div class="g2">{two competitor CARDs}</div><div class="col"><dl class="kv">{Their proof, Why it fits}</dl></div></div>. Then a page "Overall": kv of Copy, Avoid, Position, each <span class="lead"></span>.}
 </div>
 <div class="chapter" style="--ch:'Video ideas'">
@@ -221,7 +221,7 @@ addEventListener('keydown',e=>{const d={ArrowRight:1,ArrowDown:1,PageDown:1,Arro
 - File: `reverse-engineer-niche-{niche-slug or handle}.html`, or an artifact. Chat: the top finding and the file.
 - Plain, short language, with causes stated as likely. One idea and a few lines per page.
 - Link every video, channel and moment from the data.
-- Spell formulas, compositions, hooks and structures out where used, never by page number.
+- Spell formulas and compositions out where used, never by page number.
 
 ## Common Pitfalls
 
