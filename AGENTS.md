@@ -10,7 +10,7 @@ This repository is a set of Agent Skills for YouTube research on top of the Tube
 | Bend this channel's format into another market, niche bending, which proven formats can I bring to my market | `niche-bending` |
 | What is working in X, why did this video blow up, trend report, weekly digest, hooks and formats to steal | `trend-report` |
 | Video ideas for my channel, what should I make next | `video-ideation` |
-| Analyze or roast my channel, why did views drop, what to change first | `channel-analysis` |
+| Roast or analyze a channel, mine or anyone's, why did views drop, what to change first | `roast-channel` |
 | Will my channel get demonetized or terminated, is my channel at risk, audit my channels for monetization risk | `audit-channel-risk` |
 | Reverse engineer a channel, what works for it, its title, thumbnail and hook formulas, how it grew and earns, what can I copy from it | `reverse-engineer-channel` |
 | Thumbnail for this video or title or script, thumbnail concepts, generate thumbnails, which thumbnails work in a niche | `thumbnail-concepts` |

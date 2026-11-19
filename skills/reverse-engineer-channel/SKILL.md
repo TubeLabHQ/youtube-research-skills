@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts when it can be reused, even if the channel used it once. Every read is free. Not for the user's own channel (`channel-analysis`).
+One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts when it can be reused, even if the channel used it once. Every read is free. Not for what holds a channel back (`roast-channel`).
 
 ## Workflow
 
