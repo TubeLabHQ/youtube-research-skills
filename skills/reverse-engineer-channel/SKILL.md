@@ -4,7 +4,7 @@ description: Use when the user wants to reverse engineer a YouTube channel into 
 license: MIT
 metadata:
   author: tubelab
-  version: "6.0"
+  version: "6.1"
   requires: tubelab-mcp
 ---
 
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts when it can be reused, even if the channel used it once. Every read is free. Not for the user's own channel (`channel-analysis`).
+One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts when it can be reused, even if the channel used it once. Every read is free. Not for what holds a channel back (`roast-channel`).
 
 ## Workflow
 
@@ -25,7 +25,7 @@ One channel taken apart into formulas the user can reuse. A formula is a pattern
 7. Read the first 30 seconds of the five best videos and two weak ones. Name each opening's beats in words that fit any video, such as setup, stakes or twist. A hook formula is an order of beats that two or more strong openings share.
 8. Read the full transcripts of three of the best videos, from different formats. Mark each beat and its time, named the same way, and keep the layout they share.
 9. Find how the channel earns, from its description, the descriptions of the ten best and five newest videos, and sponsor reads in the transcripts.
-10. Write five learnings to copy, best first. Each names the skill that runs it, such as `title-formulas`, `thumbnail-concepts`, `script-breakdown` or `revenue-maxxing`, and a prompt to paste. Add two or three things not to copy, because they need this channel's fame, budget or access.
+10. Write five learnings, best first. Each names the skill that runs it, such as `title-formulas`, `thumbnail-concepts`, `script-breakdown` or `revenue-maxxing`, and a prompt to paste. Tag every format, hook formula, script structure and learning "anyone can copy" or "needs their asset" (job, life, credentials, fame, budget, access or hard skill).
 
 ## Output Format
 
@@ -59,6 +59,7 @@ A video beats its neighbours when it has more views than the median of the video
 - **Title formula:** "{the pattern with every slot in square brackets, such as "[Number] Days In [Place]"}" · [{title}]({video url}) · {views, ratio}
 - **Thumbnail formula:** {the parts a viewer can point at, each a few words in square brackets, such as "[face, shocked, centre] + [object, oversized, left] + [price in white, top right]"}
 - **Length:** {usual length}
+- **Who can copy it:** {"anyone can copy" or "needs their [asset]"} · {why, in a few words}
 
 ## 🚫 What Doesn't Work
 
@@ -77,6 +78,7 @@ A video beats its neighbours when it has more views than the median of the video
 - **Structure:** {beat} → {beat} → {beat}
 - **Runs:** the first {n} seconds
 - **Weak videos:** {whether the weak openings read use it too}
+- **Who can copy it:** {"anyone can copy" or "needs their [asset]"} · {why, in a few words}
 
 <details>
 <summary>Example: {title}</summary>
@@ -92,6 +94,7 @@ A video beats its neighbours when it has more views than the median of the video
 - **Layout:** Hook 0:00 → {beat} {when} → ... → {ending} {when}
 - **What repeats:** {the device every script reuses, and how often}
 - **How it ends:** {one sentence}
+- **Who can copy it:** {"anyone can copy" or "needs their [asset]"} · {why, in a few words}
 
 <details>
 <summary>Example: {title}</summary>
@@ -116,9 +119,10 @@ A video beats its neighbours when it has more views than the median of the video
 
 1. **{What to copy}**
    - **Proof:** [{title}]({video url}) · {views, ratio, date}
+   - **Who can copy it:** {"anyone can copy" or "needs their [asset]"} · {why, in a few words}
    - **Run next:** `{skill}` · "{a prompt the user can paste, with [square brackets] for what they fill in}"
 
-- ❌ **Do not copy {move}:** {why it will not carry over, with proof}
+- ❌ **Needs their asset: {move}** · {the asset it needs and why it will not carry over, with proof}
 ```
 
 - Length: about 1,700 words. Up to six outliers, three turning points, four formats that work, three that do not, three hook formulas, one script example and ten ways it earns.
@@ -126,7 +130,7 @@ A video beats its neighbours when it has more views than the median of the video
 - Bullets: one fact each, under 25 words, except quotes, verbatim titles, formulas and prompts. No extra sections or bullets.
 - If it runs long, cut whole items. Never cut proof.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
-- Thumbnails: the 320px `mqdefault.jpg` image, linked to its video, on its own line. A format that works shows its three best on one line, and the outliers share one line.
+- Thumbnails: the 320px `mqdefault.jpg` image, linked to its video, on its own line. A format that works shows its three best on one line.
 - Quotes: only inside the collapsed examples, word for word, with misspelt names fixed. Never paste a full transcript.
 
 ## Common Pitfalls
