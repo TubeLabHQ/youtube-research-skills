@@ -82,6 +82,8 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 - When left out, `search_trending_formats` defaults to English, `quality: "positive"`, `videosCountFrom: 18`, sorting by `lastVideosCountChangePercentage`, `size: 12`, and formulas found in the last 4 months.
 - `search_related_channels` ranks by similarity, not size. A large seed channel returns small lookalikes unless you add `subscribersFrom`.
 - High `viewCountFrom` floors on `search_outliers` surface paid brand campaigns, with ratios of 50 and more. Add `channelMonetizationAdsense: true` or remove them by hand.
+- `search_outliers` returns nothing with `averageViewsRatioTo` at 0.5: the index holds videos that beat their channel, not flops. Find flops in free channel reads.
+- On `search_channels`, adding `contentKind: "long-form"` has let channels with a views-to-subscribers ratio near 0 through an `avgViewsToSubscribersRatioFrom: 1` filter. Leave `contentKind` out and drop Shorts-only channels by hand.
 - `search_related_outliers` with a `title` anchor has returned off-topic hits and ignored `publishedAtFrom` and `classificationQuality`. The `videoId`, `thumbnailVideoId` and `relatedChannelId` anchors behave. `search_outliers` with `by: "lexical"` has ignored the query. In both cases, check the hits are on topic before spending more.
 - `language` on outlier searches matches the indexed title language, not the audio. English-tagged titles can be Hindi, Urdu or Tamil videos. The title script and thumbnail text usually reveal it. Check `defaultAudioLanguage` from `get_video` when it matters.
 - `channelVideoCountTo` caps at 120, because channels are sampled to 120 videos. `titlePattern` must contain `*` and at least two letters. Every range needs from below to.
@@ -95,7 +97,7 @@ Each call costs the same whatever its `size`. Repeating an identical request wit
 
 ## Spending credits
 
-Spend paid searches on finding candidates and free reads on understanding them. Two to six searches per job is a sane norm, and a paid search is not paged in a loop. One skill goes deeper, because the sample is the product: `niche-finder` pages two channel searches 3 to 4 pages deep. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Keep budgets and credit counts out of the report; give them if the user asks.
+Spend paid searches on finding candidates and free reads on understanding them. Two to six searches per job is a sane norm, and a paid search is not paged in a loop. Two skills go deeper, because the sample is the product: `niche-finder` pages two channel searches 3 to 4 pages deep, and `reverse-engineer-niche` uses up to 15 searches without paging. If a search errors, call `get_credits_balance`, then retry once with fewer filters. Keep budgets and credit counts out of the report; give them if the user asks.
 
 ## Full reference
 

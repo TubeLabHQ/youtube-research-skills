@@ -7,7 +7,6 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | roast-channel | [2026-11-alexhormozi.md](roast-channel/2026-11-alexhormozi.md) | @AlexHormozi |
 | audit-channel-risk | [2026-11-thepaintexplainer.html](audit-channel-risk/2026-11-thepaintexplainer.html), with a [screenshot](audit-channel-risk/2026-11-thepaintexplainer.png) | @ThePaintExplainer, which scores high for demonetization and low for termination |
 | comment-mining | [2026-11-alexhormozi.md](comment-mining/2026-11-alexhormozi.md) | @AlexHormozi, latest 12 videos |
-| competitor-research | [2026-11-thekoerneroffice.md](competitor-research/2026-11-thekoerneroffice.md) | @thekoerneroffice |
 | revenue-maxxing | [2026-11-drsaharyousef.html](revenue-maxxing/2026-11-drsaharyousef.html), [2026-11-thekoerneroffice.html](revenue-maxxing/2026-11-thekoerneroffice.html), [2026-11-lostamericanchristmas.html](revenue-maxxing/2026-11-lostamericanchristmas.html) | @DrSaharYousef, @thekoerneroffice, @LostAmericanChristmas |
 | niche-bending | [2026-11-thepaintexplainer.md](niche-bending/2026-11-thepaintexplainer.md) | @ThePaintExplainer's formats, bent into new markets |
 | niche-finder | [2026-11-open-discovery.md](niche-finder/2026-11-open-discovery.md) | open discovery, no starting topic |
@@ -15,6 +14,7 @@ Real outputs produced by an agent with the live TubeLab MCP, one folder per skil
 | niche-validator | [2026-11-war-dead-dna.md](niche-validator/2026-11-war-dead-dna.md) | a new idea, scored on the two niches it draws on |
 | niche-watchlist | [2026-11-09.md](niche-watchlist/2026-11-09.md), with [config.json](niche-watchlist/config.json) and [state.json](niche-watchlist/state.json) | business advice |
 | reverse-engineer-channel | [2026-11-mrbeast.md](reverse-engineer-channel/2026-11-mrbeast.md) | @MrBeast, the formats, hooks and script layout that carry the channel |
+| reverse-engineer-niche | [2026-11-ai-side-hustles.html](reverse-engineer-niche/2026-11-ai-side-hustles.html), [2026-11-thekoerneroffice.html](reverse-engineer-niche/2026-11-thekoerneroffice.html) | AI side hustles and automation, with ideas for a new channel; @thekoerneroffice's competitors, with its gaps and ideas for the channel |
 | script-breakdown | [2026-11-alexhormozi.md](script-breakdown/2026-11-alexhormozi.md) | one @AlexHormozi video |
 | sponsorship-prospecting | [2026-11-bookkeeping-app.md](sponsorship-prospecting/2026-11-bookkeeping-app.md) | an invoicing and bookkeeping app for US freelancers |
 | thumbnail-concepts | [2026-11-alexhormozi.md](thumbnail-concepts/2026-11-alexhormozi.md) | one @AlexHormozi video |
