@@ -19,14 +19,14 @@ One channel taken apart into formulas the user can reuse. A formula is a pattern
 ## Workflow
 
 1. If the user names their own channel or market, aim learnings at it.
-2. Read the channel's long-form list and its Shorts. The list holds the latest 120; read a video for its exact date. Look it up by handle in one channel search for audience, AdSense, RPM and revenue methods.
+2. Read the channel's long-form list and its Shorts. The list holds the latest 120; read a video for its exact date. Look it up by handle in a channel search for audience, AdSense, RPM and revenue methods.
 3. Find the outliers: videos with at least twice the list's average views, or the three highest. Split the list into up to ten blocks and compare median views. A turning point is a lasting jump or fall in the median after something changed.
 4. View every thumbnail, on numbered contact sheets.
 5. Group the videos into formats: ideas that can be remade with a twist, even if used once. Count how many of its videos beat their neighbours, the median of their own block, as older videos had longer to gain views. Rank videos the same way.
-6. Run one similar-channel outlier search seeded with the channel and count the similar channels with an outlier in each format: two or more means it travels; none means it may ride on the creator.
+6. Run one similar-channel outlier search seeded with the channel: last year, ratio 2 or more, 50 hits. Per format, count channels whose outlier runs it, not recaps it: two or more means it travels.
 7. Find what does not work: the formats, topics and habits of the weakest videos. Skip last month's uploads and channel updates.
 8. Read the first 30 seconds of the five best videos and two weak ones. Name each opening's beats in general words, such as setup, stakes or twist. A hook formula is a beat order two strong openings share.
-9. Read full transcripts of three best videos from different formats. Mark each beat and its time, and keep the layout they share.
+9. Read full transcripts of three best videos, one per format. Mark each beat and its time, and keep the layout they share.
 10. Find how it earns, from the detected revenue methods, its description, the descriptions of its ten best and five newest videos, and sponsor reads.
 11. Write five learnings, best first. Each names the skill that runs it, such as `title-formulas` or `script-breakdown`, and a prompt to paste. Tag every format, hook, script and learning "anyone can copy" or "needs their asset" (job, life, credentials, fame, budget, access or hard skill).
 
