@@ -1,10 +1,10 @@
 ---
 name: reverse-engineer-niche
-description: Use when the user wants to reverse engineer a YouTube niche, or a channel's competitors, into a guidelines book of its outliers, winning titles, thumbnails, hooks and scripts, the versions that flop, and video ideas. Requires the TubeLab MCP.
+description: Use when the user wants to reverse engineer a YouTube niche, or a channel's competitors, into a guidelines report of its outliers, winning titles, thumbnails, hooks and scripts, the versions that flop, and video ideas. Requires the TubeLab MCP.
 license: MIT
 metadata:
   author: tubelab
-  version: "3.2"
+  version: "4.0"
   requires: tubelab-mcp
 ---
 
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-A niche taken apart through 12 to 20 channels, emerging ones first (3K to 300K subscribers), as a niche guidelines book. Five lenses:
+A niche taken apart through 12 to 20 channels, emerging ones first, as a niche guidelines book. Five lenses:
 
 - **Working formats:** a new video must fit the format and length viewers already watch.
 - **New and specific:** new enough to stop a scroll, specific enough to feel real: a price, a job, a place.
@@ -22,22 +22,59 @@ A niche taken apart through 12 to 20 channels, emerging ones first (3K to 300K s
 
 Not for last month's winners (`trend-report`), one channel (`reverse-engineer-channel`) or whether to enter (`niche-validator`).
 
+**Without TubeLab:** no search for new or similar channels, no audience, income, lost-ads or terminated-channel data. The report covers only channels you already know.
+
 ## Workflow
 
 1. Ask once, with any scope question: end with video ideas, for their channel or a new one here?
-2. Given a channel, sample its competitors. Up to 15 searches, never paging one: six to eight on channels (niche phrasings, emerging and established, channels similar to breakouts or the given channel), three or four on outliers for unsampled channels.
-3. Verify each channel with a free read (it gives the avatar): on topic, long videos, the user's language. English titles can hide Hindi audio. Keep 12 to 20.
+2. Run the searches below, up to 15, never paging one.
+3. Verify each channel with a free read (it gives the avatar): on topic, long videos, the user's language. English titles can hide Hindi audio; the hit's audience region shows it. Keep 12 to 20.
 4. Median each channel's last three months of long videos. Winners: its top three at twice that or more. Flops: under half, older than a month, trailing their neighbours. One set of totals everywhere.
-5. View every winner's thumbnail on contact sheets, and each flop you cite.
-6. Group winners into three to five patterns, each on three or more channels, each winner explained against its channel's normal videos.
-7. Count title formulas and thumbnail compositions across winners and flops.
-8. Read the opening 30 seconds of ten or more winners on different channels. A hook formula is a beat order, named to fit any video, shared by two or more channels.
-9. Read four to six full winning transcripts from different patterns. Mark each beat and its time. A video formula is a layout two or more share.
-10. Pair dead versions with their winners, same channel when you can, with the reason.
-11. Count tools, names and words in winning titles against flops. Worn out: as common in flops.
-12. Blend two patterns into a new angle no sampled video has filmed.
-13. Given a channel, find up to three gaps: patterns its competitors win with that it skips.
-14. If wanted, run `video-ideation` on these findings for the last chapter. Unanswered: offer it in the closing line.
+5. Fill the audience and income page from channel hits only; video hits carry just ads and RPM.
+6. View every winner's and every flop's thumbnail on contact sheets.
+7. Group winners into three to five patterns, each on three or more channels, each winner explained against its channel's normal videos.
+8. Count title formulas and thumbnail compositions across winners and flops. Rising: also in the trending search.
+9. Read the opening 30 seconds of ten or more winners on different channels. A hook formula is a beat order, named to fit any video, shared by two or more channels.
+10. Read four to six full winning transcripts from different patterns. Mark each beat and its time. A video formula is a layout two or more share.
+11. Pair dead versions with their winners, same channel when you can, with the reason.
+12. Count topics, sub-topics and power words: winning titles against flops. Worn out: as common in flops.
+13. Run the risk searches and fill the risk page.
+14. Blend two patterns into a new angle no sampled video has filmed.
+15. Given a channel, find up to three gaps: patterns its competitors win with that it skips.
+16. If wanted, run `video-ideation` on these findings for the last chapter. Unanswered: offer it in the closing line.
+
+```jsonc
+// One search per line. {niche}: one to three phrasings of one niche. {code}: the user's language.
+// Keep publishedAtFrom and classificationQuality as written. Only the risk searches leave quality out.
+// 10 searches as written. Spend the spare five on a second phrasing, a wider date range, or handle lookups
+// ({ "query": ["@handle"] }, nothing else) for big sampled channels found only by video, so the audience page covers them.
+
+// Channels created this year, then emerging channels.
+{ "query": ["{niche}"], "language": ["{code}"], "publishedAtFrom": "trimester", "classificationQuality": "neutral", "joinedDateFrom": "year", "medianViewsFrom": 1000 }
+{ "query": ["{niche}"], "language": ["{code}"], "publishedAtFrom": "trimester", "classificationQuality": "neutral", "subscribersFrom": 3000, "subscribersTo": 300000, "avgViewsToSubscribersRatioFrom": 1 }
+
+// Outliers: small channels' breakouts, breakouts on channels with 30 videos or fewer, then established channels' breakouts.
+{ "query": ["{niche}"], "language": ["{code}"], "type": "video", "publishedAtFrom": "trimester", "classificationQuality": "neutral", "averageViewsRatioFrom": 2, "subscribersCountFrom": 3000, "subscribersCountTo": 300000, "size": 40 }
+{ "query": ["{niche}"], "language": ["{code}"], "type": "video", "publishedAtFrom": "trimester", "classificationQuality": "neutral", "averageViewsRatioFrom": 2, "channelVideoCountTo": 30, "subscribersCountFrom": 1000, "size": 40 }
+{ "query": ["{niche}"], "language": ["{code}"], "type": "video", "publishedAtFrom": "trimester", "classificationQuality": "neutral", "averageViewsRatioFrom": 1.5, "subscribersCountFrom": 300000, "size": 40 }
+
+// Similar channels, one seed per search: the best breakout, or the given channel. Several seeds blur into a generic set,
+// and the hits are mostly small, recently found channels: established ones come from the outlier search above.
+{ "relatedChannelId": ["<channelId>"], "language": ["{code}"], "publishedAtFrom": "trimester", "classificationQuality": "neutral", "subscribersFrom": 3000, "size": 40 }
+
+// Outliers of similar channels, same seed.
+{ "relatedChannelId": ["<channelId>"], "type": "video", "publishedAtFrom": "trimester", "classificationQuality": "neutral", "averageViewsRatioFrom": 2, "size": 40 }
+
+// Trending title formulas whose use grew 10% or more over the previous period. English only: pass no language.
+// Keep only formulas whose example titles fit the niche; the rest are generic.
+{ "query": ["{niche}"], "lastVideosCountChangePercentageFrom": 10 }
+
+// Risk, seeded with the three strongest emerging channels (live seeds work): similar channels terminated, then that lost ads.
+{ "relatedChannelId": ["<channelId>", "<channelId>", "<channelId>"], "terminated": true, "publishedAtFrom": "year", "size": 40 }
+{ "relatedChannelId": ["<channelId>", "<channelId>", "<channelId>"], "monetizationChanged": true, "monetizationAdsense": false, "publishedAtFrom": "year", "size": 40 }
+
+// AI-made channels: count detections.madeWithAI on the channel hits above. A search filtered on it returns AI films, off topic.
+```
 
 ## Output Format
 
@@ -160,6 +197,7 @@ html{scroll-snap-type:none}
 </head>
 <body style="--book:'{Niche}: Niche Guidelines'">
 {CARD: <div class="v"><a href="{video url}"><img src="https://i.ytimg.com/vi/{id}/hqdefault.jpg" alt=""></a><b>{ratio}×</b><a href="{video url}"><span>{title}</span></a><small><a href="{channel url}">{channel}</a> · {views} views · {date}</small></div>
+{ratio}: views ÷ the channel's three-month median from step 4, the number that picks winners and flops, on every badge and ratio. Never print TubeLab's averageViewsRatio.
 ROW CARD: the same with class="v h", everything after the image link in one <div>, and <p>{why, one line}</p> last when the page asks for it. FLOP: class="x" on the image link crosses it out.
 Any other ratio, outside a card: <b class="r">{ratio}×</b>, class="r lo" for a flop's.
 PAGE: <section class="page"><p class="k">{Chapter · section}</p><h2>{title}</h2>{body}</section>. Each body below is one page. A page that overflows becomes two pages.}
@@ -173,19 +211,21 @@ PAGE: <section class="page"><p class="k">{Chapter · section}</p><h2>{title}</h2
 </section>
 </div>
 <div class="chapter" style="--ch:'Research'">
-<section class="page divider"><p class="n">01</p><h1>Research</h1><p class="lead mut">The niche · Working formats · The channels · Outliers · What to avoid · Patterns that work</p></section>
-{The niche: <div class="split"><div class="col"><p class="lead">{what it is}</p><dl class="kv"><dt>Who watches</dt><dd>{one sentence}</dd><dt>What wins</dt><dd>{with numbers}</dd><dt>Start with</dt><dd>{the pattern to make first, and why}</dd></dl></div><div class="col">{CARD}</div></div>}
-{Working formats: the same split. kv: Format, Length, Where to differ. Right: <div class="g2">{four CARDs}</div>}
+<section class="page divider"><p class="n">01</p><h1>Research</h1><p class="lead mut">The niche · Working formats · The channels · Who watches, and how it pays · Outliers · What to avoid · What got similar channels in trouble · Patterns that work</p></section>
+{The niche: <div class="split"><div class="col"><p class="lead">{what it is}</p><dl class="kv"><dt>Who watches</dt><dd>{the most common age, gender, income tier and region across the channel hits, as an estimate}</dd><dt>What wins</dt><dd>{with numbers}</dd><dt>Start with</dt><dd>{the pattern to make first, and why}</dd></dl></div><div class="col">{CARD}</div></div>}
+{Working formats: the same split. kv: Format, Length, Faceless or on camera ({n} of {n} winners are on faceless channels, from the hits and checked on the thumbnails), Where to differ. Right: <div class="g2">{four CARDs}</div>}
 {The channels, h2 "{n} channels: {n} emerging, {n} established": <div class="chans"><a{ class="me" for the given channel} href="{url}"><img class="av" src="{avatar url}" alt=""><b>{channel}</b>{emerging or established} · {subs} subscribers<br><span class="mut">median {views} views · {ratio} per subscriber</span></a></div><p class="mut"><small>Medians cover each channel's last three months of long videos. Left out: {channels and why}.</small></p>}
-{Outliers, two pages of six: <div class="g2 fill">{ROW CARDs with why}</div>}
+{Who watches and how it pays, h2 "Who watches, and how it pays": <div class="split"><div class="col"><p class="k">Who watches</p><dl class="kv"><dt>Age</dt><dd>{most common band} · {n} of {n} channels</dd><dt>Gender</dt><dd>{male, female or balanced} · {n} of {n}</dd><dt>Income</dt><dd>{low, middle, upper-middle or high} · {n} of {n}</dd><dt>Region</dt><dd>{region} · {n} of {n}</dd></dl></div><div class="col"><p class="k">How it pays</p><dl class="kv"><dt>Ads on</dt><dd>{n} of {n} channels</dd><dt>RPM</dt><dd>{band}</dd><dt>Also earn from</dt><dd><div class="chips">{one per detected method (sponsors, affiliate links, products, courses, newsletter, community, services, donations): <div class="chip"><b>{method}</b> · {n} channels</div>}</div></dd></dl></div></div><p class="mut"><small>Estimates from TubeLab's channel search, for {n} of the {n} channels. No estimate for: {channels found only through a video search}. {If the fields come back empty: "not available on this plan".}</small></p>}
+{Outliers, two pages of six: <div class="g2 fill">{ROW CARDs with why}</div><p class="mut"><small>{n} of {n} are also outliers against their channel's whole list, by TubeLab's flag. The rest are recent wins only: {titles}.</small></p>}
 {What to avoid: <p class="lead">{what the flops share}</p><div class="g2 fill">{six FLOP ROW CARDs with why}</div>}
+{What got similar channels in trouble, from the risk searches. Keep only channels that share a sampled title formula or thumbnail style. If none is close, one line saying so: <p class="lead">{n} similar channels were terminated and {n} lost ads in the last year. {what their formats share}</p><table class="t"><tr><th>Channel</th><th>What happened</th><th>Format it used</th></tr><tr><td><a href="{url}">{channel}</a></td><td>{terminated | lost ads {month year}}</td><td>{its title formula, slots in [ ], with one linked title}</td></tr></table><p class="mut"><small>The data shows what happened, never why. AI-made channels found in the niche: {n}, {n} of them classed low effort. They share: {format}.</small></p> Never print this note: a terminated channel's thumbnails load from https://cdn.tubelab.net/vi/{id}.jpeg.}
 {One page per pattern, h2 = its name: <p class="mut">{n} winners on {n} channels</p><div class="split"><div class="col"><dl class="kv">{Angle, New and specific, Title (formula, slots in <mark>[ ]</mark>), Thumbnail (composition name), Hook (formula name), Script (video formula name, only when read), Who can copy}</dl></div><div class="col">{three ROW CARDs}</div></div>}
 </div>
 <div class="chapter" style="--ch:'Packaging'">
 <section class="page divider"><p class="n">02</p><h1>Packaging</h1><p class="lead mut">Anatomy of an outlier · Title formulas · Winning words · Thumbnail design</p></section>
 {Anatomy of an outlier: <div class="split"><div class="col">{ANNOTATED}</div><div class="col"><p class="f">{its title, the slots in <mark></mark>}</p><p class="mut">{channel · views · date · ratio}</p><dl class="kv">{In the title, In the picture, Always}</dl></div></div>}
 {ANNOTATED, boxing what matters on one real thumbnail (face, payout screen, amount, arrow), in percent of the image: <a class="anno" href="{video url}"><img src="{hqdefault}" alt=""><i data-n="1" style="left:{x}%;top:{y}%;width:{w}%;height:{h}%"></i></a><ol class="legend"><li>{what box 1 holds, <strong>words on it</strong>}</li></ol>}
-{One page per title formula, no h2: <p class="f">"{formula, slots in <mark>[ ]</mark>}"</p><div class="split"><div class="col"><p><span class="big">{n}</span> winners on {n} channels</p><p><span class="big">{n}</span> flops</p></div><div class="col">{three ROW CARDs}</div></div>}
+{One page per title formula, no h2: <p class="f">"{formula, slots in <mark>[ ]</mark>}"</p><div class="split"><div class="col"><p><span class="big">{n}</span> winners on {n} channels</p><p><span class="big">{n}</span> flops</p><p class="mut">{Rising across YouTube: {n} videos use it, {ratio}× on average, use up 10% or more · click triggers: {triggers} | Seen in this niche only}</p></div><div class="col">{three ROW CARDs}</div></div>}
 {More formulas, four a page: <div class="g2 fill"><div class="col"><p class="lead">"{formula}"</p><p class="mut">{counts}</p>{ROW CARD}</div></div>}
 {Worn out, two a page: <div class="col"><p class="lead">"{formula}"</p><p class="mut">{counts}</p><div class="g2">{winner ROW CARD}{FLOP ROW CARD}</div></div>}
 {Winning words: <div class="g3 fill"><div class="col" style="grid-column:span 2"><p class="k">Win</p><div class="g2">{CHIPs}</div></div><div class="col"><p class="k">Worn out: as common in flops</p><div class="chips">{CHIPs with class="chip worn"}</div></div></div>
@@ -227,6 +267,4 @@ addEventListener('keydown',e=>{const d={ArrowRight:1,ArrowDown:1,PageDown:1,Arro
 
 - Do not call one channel's hits a pattern. One viral video proves the idea, not the channel.
 - Do not sell a pattern seen only on established channels to a new channel. It may ride on trust.
-- Do not keep a channel because a search returned it. Hits are often off-topic, off-language or Shorts-only.
-- Do not count last month's uploads as flops. They are still collecting views.
-- Do not search without `publishedAtFrom` and `classificationQuality` at `"neutral"` or above, except a lookup by handle.
+- Do not say why a channel was terminated or lost ads. The data does not show why.
