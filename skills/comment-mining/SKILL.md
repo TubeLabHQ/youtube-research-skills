@@ -4,7 +4,7 @@ description: Use when the user wants to know what a YouTube audience asks, wants
 license: MIT
 metadata:
   author: tubelab
-  version: "5.1"
+  version: "5.2"
   requires: tubelab-mcp
 ---
 
@@ -18,7 +18,7 @@ What the audience asks, objects to and wants next, in their own words. Likes are
 
 ## Workflow
 
-1. Clarify scope only if needed. Default to 10 to 15 videos, picked by ratio and never by raw views. Videos the user names are used as given. For a channel, take its five latest, its five best by ratio from the free read, and five outliers of similar channels, from one search seeded with the channel. For a topic, take its top outliers from one search, at most two per channel.
+1. Clarify scope only if needed. Default to 10 to 15 videos, picked by ratio and never by raw views. Videos the user names are used as given. For a channel, take its five latest, its five best by ratio from the last three months of the free read, and five outliers of similar channels, from one search seeded with the channel. Skip outliers with fewer than 50 comments, and prefer the channel's own format and language. For a topic, take its top outliers from one search, at most two per channel.
 2. Fetch comments one video at a time, because parallel fetches overwrite each other. Remove spam, repeated rows and the creator's own replies.
 3. Group the rest into questions, objections and requests, weighted by likes. For a channel, mark each theme as raised on its own videos, on similar channels, or both. A theme raised only on similar channels is an ask the channel has not answered.
 
@@ -28,7 +28,7 @@ What the audience asks, objects to and wants next, in their own words. Likes are
 # 🗣️ Voice of Audience: {channel, topic or videos}
 
 - **Biggest ask:** {one sentence, with likes and number of videos}
-- **Sample:** {n} videos, {n} comments · {how the videos were picked}
+- **Sample:** {n} videos, {n} comments · {how the videos were picked, with their ratios}
 
 ## 🧵 Themes
 1. **{Theme}**

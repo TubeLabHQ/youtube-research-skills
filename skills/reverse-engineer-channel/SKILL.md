@@ -4,7 +4,7 @@ description: Use when the user wants to reverse engineer a YouTube channel into 
 license: MIT
 metadata:
   author: tubelab
-  version: "6.2"
+  version: "6.3"
   requires: tubelab-mcp
 ---
 
@@ -14,7 +14,7 @@ metadata:
 
 One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. Every read is free. Not for what holds a channel back (`roast-channel`).
 
-**Without TubeLab:** no transcripts, since the official API gives captions only to the video's owner, so hook and script formulas go unread. Outlier ratios are worked out by hand.
+**Without TubeLab:** no outlier ratio or outlier flag on each video, so winners are guessed from raw views, and every transcript has to be scraped by hand.
 
 ## Workflow
 
