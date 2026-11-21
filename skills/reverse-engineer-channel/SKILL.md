@@ -4,7 +4,7 @@ description: Use when the user wants to reverse engineer a YouTube channel into 
 license: MIT
 metadata:
   author: tubelab
-  version: "6.1"
+  version: "6.2"
   requires: tubelab-mcp
 ---
 
@@ -12,12 +12,14 @@ metadata:
 
 ## Overview
 
-One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. It counts when it can be reused, even if the channel used it once. Every read is free. Not for what holds a channel back (`roast-channel`).
+One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. Every read is free. Not for what holds a channel back (`roast-channel`).
+
+**Without TubeLab:** no transcripts, since the official API gives captions only to the video's owner, so hook and script formulas go unread. Outlier ratios are worked out by hand.
 
 ## Workflow
 
 1. If the user names their own channel or market, aim the learnings at it.
-2. Read the channel's long-form list and its Shorts. The list holds the latest 120 videos, newest first, with rough dates. Read a video for its exact date.
+2. Read the channel's long-form list and its Shorts. The list holds the latest 120 videos, newest first; read a video for its exact date.
 3. Find the outliers: videos with at least twice the list's average views, or the three highest. Then split the list into up to ten equal blocks and compare median views. A turning point is where the median jumps or falls, and stays there, after something changed.
 4. View every thumbnail, on numbered contact sheets.
 5. Group the videos into formats. A format is a video idea that can be remade with a twist, whatever its title or thumbnail, even if used once. Count how many of its videos beat their neighbours, meaning the median of their own block, because older videos had longer to collect views. Rank videos the same way.
@@ -128,9 +130,9 @@ A video beats its neighbours when it has more views than the median of the video
 - Length: about 1,700 words. Up to six outliers, three turning points, four formats that work, three that do not, three hook formulas, one script example and ten ways it earns.
 - Language: plain words and short, complete sentences. Nothing compressed.
 - Bullets: one fact each, under 25 words, except quotes, verbatim titles, formulas and prompts. No extra sections or bullets.
-- If it runs long, cut whole items. Never cut proof.
+- If it runs long, cut whole items, never proof.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
-- Thumbnails: the 320px `mqdefault.jpg` image, linked to its video, on its own line. A format that works shows its three best on one line.
+- Thumbnails: the 320px `mqdefault.jpg` image, linked to its video, on its own line.
 - Quotes: only inside the collapsed examples, word for word, with misspelt names fixed. Never paste a full transcript.
 
 ## Common Pitfalls

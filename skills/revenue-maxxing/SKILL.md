@@ -4,7 +4,7 @@ description: Use when the user wants to raise what a YouTube channel or niche ea
 license: MIT
 metadata:
   author: tubelab
-  version: "6.5"
+  version: "6.6"
   requires: tubelab-mcp
 ---
 
@@ -14,22 +14,24 @@ metadata:
 
 Top-earning channels stack five layers: sponsors, buyer intent (videos promising a result), a list to upsell, own products, and ad revenue, the least important. Score each against peers.
 
+**Without TubeLab:** no audience, RPM, revenue or income-method data, so peers are guesses.
+
 ## Workflow
 
 1. No channel? Score what a newcomer should build.
 2. Read the channel's About, top and newest videos, descriptions, thumbnails and two transcripts (reads are often spoken). Note each offer, list and sponsor.
-3. Look up the channel and the peer that earns in the most ways by handle, one per search, no other filter, not even `publishedAtFrom`. Find peers selling to the same viewers in any format: ones the user names or you know, checked by a free read; one or two searches seeded with the channel, with `publishedAtFrom` and `classificationQuality` `"neutral"` or above, which also return the channel's band; and one with niche words and `detectionsMonetization` course, product, community and services, for sellers and prices. Drop off-audience hits.
+3. Look up the channel and the peer that earns in the most ways by handle, one per search, no other filter, not even `publishedAtFrom`. Find peers selling to the same viewers in any format: ones the user names or you know, read for free; one or two searches seeded with the channel, with `publishedAtFrom` and `classificationQuality` `"neutral"` or above; and one with niche words and `detectionsMonetization` course, product, community and services, for sellers and prices. Drop hits whose audience estimate differs.
 4. Open peers' offers and sponsor reads: what, price, link. Read that peer's top transcript.
 5. Mine comments on the top five to ten videos for pains: questions, complaints, "how do I", "I wish", favouring the richest viewers.
 6. Score each layer ✅ 100, 🟡 50, ❌ 0.
    - Sponsors: ✅ for regular reads, 🟡 for occasional reads or affiliate links only. Also ✅ when its own products fill that slot. A read against the channel's message counts as none.
    - Buyer intent: ✅ when most top videos promise a result a product could deliver, 🟡 for some. Also ✅ when its average views beat peers earning well without promising results.
-   - Audience capture: ✅ for a newsletter or community in most descriptions, with a free download to join. It exists to upsell. 🟡 when rarely linked or with nothing to join for.
+   - Audience capture: ✅ for a newsletter or community in most descriptions, with a free download to join. 🟡 when rarely linked or with nothing to join for.
    - Own products: ✅ for a linked product solving the problem the videos promise. 🟡 when it misses that problem or is not linked, ❌ when both.
    - Ad revenue: ✅ when videos average 8 minutes or more, 🟡 when some do.
 7. The stack score is their average, ad revenue counting half.
 8. Order actions: fast wins needing no other layer and deadlines first; then what another layer needs, like a list before a product; then the biggest win.
-9. Write three to five product ideas. Each sells a transformation viewers cannot get free from videos or social media, like "your first AI automation at work in 30 days", never information like a catch-up. Each solves a pain many viewers share or a top video's promise. Where jobs, money or health are at stake, one answers the fear behind the views, priced from a step 3 seller to the same viewers with a close problem. Price the rest from offers to these viewers, or "price untested".
+9. Each product idea sells a transformation viewers cannot get free from videos or social media, like "your first AI automation at work in 30 days", never information like a catch-up. Each solves a pain many viewers share or a top video's promise. Where jobs, money or health are at stake, one answers the fear behind the views, priced from a step 3 seller to the same viewers with a close problem. Price the rest from offers to these viewers, or "price untested".
 
 ## Output Format
 

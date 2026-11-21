@@ -4,7 +4,7 @@ description: Use when the user wants to know what works now in a YouTube niche, 
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -14,12 +14,14 @@ metadata:
 
 A dated report on what is winning in a niche right now. Rank winners by ratio, because a video that beats its own channel's average says more than a big view count. A pattern needs three winners from different channels. To explain why one video blew up, compare it with its channel's normal videos.
 
+**Without TubeLab:** a plain search ranks by views, so the report lists big channels' normal videos. No outlier ratio, no small-channel filter, and no trending formulas or click triggers.
+
 ## Workflow
 
 1. Clarify scope only if needed. Default to the last month. If given a channel, use its own videos as the baseline for the top finding, not as winners.
-2. Search for outliers. Keep at most 2 winners per channel. Two or three searches are enough.
+2. Search for outliers. Run one search as is, and one limited to channels under 100K subscribers, where the format explains the win and the channel's size does not. Keep at most 2 winners per channel. Two or three searches are enough.
 3. Quote each top winner's opening from its transcript, word for word. If there is no transcript, give no hook. Fetch and view each winner's thumbnail, and say so if one fails to load.
-4. Work out the winning patterns: the topics, the title formulas written with bracketed slots, how the hooks open, and the emotional triggers, each with what shows it.
+4. Work out the winning patterns: the topics, the title formulas written with bracketed slots, how the hooks open, and the emotional triggers, each with what shows it. Then search the niche's trending title formulas once, in English only. Where a winner uses one, give its video count, average ratio and click triggers.
 5. If given a channel, say in one or two sentences what it should lean into and what to add, citing a winner. Then write about six video ideas, each with one line on what it does and a suggested opening line.
 
 ## Output Format
@@ -44,7 +46,7 @@ A dated report on what is winning in a niche right now. Rank winners by ratio, b
 ## 🔍 Winning Patterns
 - **Topics:** {the winning topics, in one line}
 - **Titles:**
-  - `{formula with [SLOTS]}`
+  - `{formula with [SLOTS]}` · {across YouTube: {n} videos, {ratio}X on average, triggers: {triggers}; or "this niche only"}
 - **Hooks:** {how the hooks open, with the key moves in bold and short quoted phrases}
 - **Triggers:** {trigger} ({what shows it}), {trigger} ({what shows it})
 - **For your channel:** {what to lean into, citing a winner and its ratio, and what to add}
