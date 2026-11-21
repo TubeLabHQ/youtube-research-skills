@@ -4,7 +4,7 @@ description: Use when the user wants thumbnail concepts or images for a YouTube 
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -12,11 +12,13 @@ metadata:
 
 ## Overview
 
-Three thumbnail concepts for one video. A strong thumbnail joins what the viewer already cares about with what is new in this video. So look at 50 or more thumbnails across both, keep the few with an idea worth reusing, write down exactly what works in them, and combine one of each into every concept.
+Three thumbnail concepts for one video. A strong thumbnail joins what the viewer already cares about with what is new in this video. So study 50 or more thumbnails across both, and combine one pattern from each into every concept.
+
+**Without TubeLab:** no outlier ratio and no Content Authenticity filter. You study the most-viewed thumbnails, which show channel size and low-effort bait, not what earned the click.
 
 ## Workflow
 
-1. Clarify scope only if needed. Split the video into two plain lines: its unique angle (what is new or different about it) and the familiar problem (what this audience already cares about). With only a niche and no video, search the niche from two angles instead. If the user wants a title too, follow `title-formulas` first and design for the chosen title, so the thumbnail shows what the title leaves out.
+1. Clarify scope only if needed. Split the video into two plain lines: its unique angle and the familiar problem. With only a niche and no video, search the niche from two angles instead. If the user wants a title too, follow `title-formulas` first and design for the chosen title, so the thumbnail shows what the title leaves out.
 2. Run two outlier searches: one for videos with the unique angle, wherever they are, and one for videos on the familiar problem. Ask each for 40 results, the largest page, which costs the same as 20. Add outliers already found in this conversation, if they meet the quality floor in Common Pitfalls.
 3. View every thumbnail, 50 or more in all. Numbered contact sheets are the quickest way. Leave out the user's own video, and say if a thumbnail fails to load.
 4. Keep only the thumbnails worth analysing, up to six in each set. A keeper has a clear idea you could reuse: a composition, a prop, a gesture, a word or a visual trick. Drop the plain ones, such as a face beside the title's words, a stock photo or a podcast frame. View each keeper again on its own, at a larger size.
@@ -68,7 +70,7 @@ Three thumbnail concepts for one video. A strong thumbnail joins what the viewer
 - Length: about 900 words. Up to six kept thumbnails and about five pattern notes in each group, then three concepts.
 - Language: plain words and short, complete sentences. Nothing compressed.
 - Bullets: one fact each, under 25 words, except quotes, verbatim titles and prompts. No extra sections or bullets.
-- If it runs long, cut text. Never cut an image, and never squeeze sentences.
+- If it runs long, cut text, never an image.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
 - Thumbnails: use the 320px `mqdefault.jpg` image, on its own line under the heading, linked to the video.
 
@@ -77,7 +79,6 @@ Three thumbnail concepts for one video. A strong thumbnail joins what the viewer
 - Do not search without `publishedAtFrom` and `classificationQuality` at `"positive"`. Viral thumbnails on low-effort channels teach the wrong lesson. Widen the dates, never the floor.
 - Do not write generic pattern notes such as "high contrast" or "show emotion". Name the exact prop, gesture, word or framing you saw, and where.
 - Do not describe a thumbnail you have not viewed, or cite one without showing it.
-- Do not keep a thumbnail because its video did well. Keep it for an idea in the image itself.
 - Do not let the thumbnail text repeat the title.
-- Do not keep the face by default. If faceless thumbnails win in this niche, say so.
+- Do not keep the face by default. Count faceless channels among the hits, by TubeLab's flag, and say so if they win.
 - Do not generate a real person's face. Leave a place in the prompt for a real photo of them.

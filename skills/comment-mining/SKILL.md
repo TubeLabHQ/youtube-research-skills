@@ -4,7 +4,7 @@ description: Use when the user wants to know what a YouTube audience asks, wants
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -14,11 +14,13 @@ metadata:
 
 What the audience asks, objects to and wants next, in their own words. Likes are votes: a question with 900 likes is 900 people asking. Quotes stay word for word, and your reading of them goes on its own line.
 
+**Without TubeLab:** comments can still be read, but the videos are picked blind. No outlier ratio and no similar-channel search, so you miss what viewers ask on competitors' breakout videos.
+
 ## Workflow
 
-1. Clarify scope only if needed. Default to 10 to 15 videos: the ones given, or else the channel's latest (its best if asked), or else a topic's top outliers. Finding videos by topic costs one search.
+1. Clarify scope only if needed. Default to 10 to 15 videos, picked by ratio and never by raw views. Videos the user names are used as given. For a channel, take its five latest, its five best by ratio from the free read, and five outliers of similar channels, from one search seeded with the channel. For a topic, take its top outliers from one search, at most two per channel.
 2. Fetch comments one video at a time, because parallel fetches overwrite each other. Remove spam, repeated rows and the creator's own replies.
-3. Group the rest into questions, objections and requests, weighted by likes.
+3. Group the rest into questions, objections and requests, weighted by likes. For a channel, mark each theme as raised on its own videos, on similar channels, or both. A theme raised only on similar channels is an ask the channel has not answered.
 
 ## Output Format
 
@@ -26,11 +28,11 @@ What the audience asks, objects to and wants next, in their own words. Likes are
 # 🗣️ Voice of Audience: {channel, topic or videos}
 
 - **Biggest ask:** {one sentence, with likes and number of videos}
-- **Sample:** {n} videos, {n} comments
+- **Sample:** {n} videos, {n} comments · {how the videos were picked}
 
 ## 🧵 Themes
 1. **{Theme}**
-   - {n} videos · {total likes} likes
+   - {n} videos · {total likes} likes · {raised on this channel, on similar channels, or both}
    - "{best quote}" · [{video}]({video url})
    - **What it means:** {one sentence}
 

@@ -4,7 +4,7 @@ description: Use when the user wants to monitor YouTube niches on a schedule and
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -14,12 +14,14 @@ metadata:
 
 Watch niches on a schedule and report only what changed since the last run. The two files below keep a fixed shape, so each run can be compared with the last one. For each new channel or mover, say what is worth learning from it.
 
+**Without TubeLab:** no search ordered by when a channel was first found, and no ad status per channel. Spotting a new channel means rereading the whole niche on every run.
+
 ## Workflow
 
 1. Read `watchlist/config.json`. If it is missing, ask for 1 to 5 niches and write it.
 2. Read `watchlist/state.json`. If it is missing, this run is a baseline, not a wave of breakouts.
 3. Run each saved search once, exactly as saved. Compare only the channels it returns.
-4. A new channel is one first seen since the last run. A mover is a known channel whose median views rose more than 50 percent over the stored value.
+4. A new channel is one first seen since the last run. A mover is a known channel whose median views rose more than 50 percent over the stored value. An ad change is a known channel whose ads turned on or off since the last run; the hit gives the date.
 5. Read each new channel and mover, which is free. Look at its top videos by ratio, the topics it repeats and the title shapes it repeats. Fetch and view its best video's thumbnail, and say so if one fails to load.
 6. Write `watchlist/<date>.md` on every run, then refresh the stored values.
 
@@ -34,7 +36,7 @@ Watch niches on a schedule and report only what changed since the last run. The 
 
 ```json
 { "lastRun": "<date>", "niches": { "budget travel": { "<channelId>":
-  { "handle": "@name", "subscribers": 0, "medianViews": 0, "firstSeen": "<date>" } } } }
+  { "handle": "@name", "subscribers": 0, "medianViews": 0, "adsense": true, "firstSeen": "<date>" } } } }
 ```
 
 ## Output Format
@@ -42,7 +44,7 @@ Watch niches on a schedule and report only what changed since the last run. The 
 ```markdown
 # 📡 Watchlist Digest: {date}
 
-- **Since {last run}:** {n new and n movers, or "No change", or "Baseline"}
+- **Since {last run}:** {n new, n movers and n ad changes, or "No change", or "Baseline"}
 
 ## {Niche}
 
@@ -56,6 +58,7 @@ Watch niches on a schedule and report only what changed since the last run. The 
 - **Best recent video:** [{title}]({video url}) · {views, ratio, date}
 
 - [{channel}]({url}) · {new or mover} · ❌ not worth studying: {why in one sentence}
+- [{channel}]({url}) · ⚠️ ads turned {on or off} {month year} · {its main format, in a few words}
 ```
 
 - Length: about 600 words. Up to five channels per niche, strongest first. One line for a niche with no change, and one line for a channel not worth studying.
@@ -71,3 +74,4 @@ Watch niches on a schedule and report only what changed since the last run. The 
 - Do not change a saved search between runs, or the differences are noise. An edited niche starts a new baseline.
 - Do not call a channel new because it dropped out of the sample and came back. Check its first-seen date.
 - Do not call a channel a breakout below 1K median views or 5 videos.
+- Do not report ads off as lost ads without a change date. Off alone only means not monetized.

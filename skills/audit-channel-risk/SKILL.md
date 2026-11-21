@@ -4,7 +4,7 @@ description: Use when the user wants to know whether a YouTube channel is at ris
 license: MIT
 metadata:
   author: tubelab
-  version: "1.0"
+  version: "1.1"
   requires: tubelab-mcp
 ---
 
@@ -12,7 +12,9 @@ metadata:
 
 ## Overview
 
-YouTube's [channel monetization policies](https://support.google.com/youtube/answer/1311392?hl=en) decide which channels keep monetization, and they change often. Read the page on every run and check the channel against it, never against memory.
+YouTube's [channel monetization policies](https://support.google.com/youtube/answer/1311392?hl=en) decide which channels keep monetization, and they change often. Check the channel against the live page on every run, never against memory.
+
+**Without TubeLab:** terminated channels vanish from YouTube and ad status is not public, so no similar-channel evidence exists. Termination risk cannot be scored, and demonetization rests on the guidelines alone.
 
 ## Workflow
 
@@ -162,15 +164,12 @@ td,th{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--lin
 - File: save it as `channel-risk-{handle}.html` and open it, or make it an artifact.
 - Chat: reply with only the two scores, the biggest risk and the file.
 - Language: plain words and short sentences. Say "similar channels" and "terminated".
-- Proof: every claim has its videos or channels under it.
-- Links: link every video and channel you cite, from IDs in the data.
+- Proof: every claim has its videos or channels under it, linked from IDs in the data.
 
 ## Common Pitfalls
 
 - Do not say why a similar channel was terminated. The data does not show why.
-- Do not rate closeness by topic alone.
 - Do not count a later clone of the channel's own videos. Other channels in the same format count.
 - Do not flag AI use or upload pace alone.
 - Do not score the channel's own AdSense status. Off can mean it was never monetized.
-- A score is not a probability, and a low one does not mean safe.
 - Never suggest hiding from detection. Every action changes the videos or shows who makes them.

@@ -4,7 +4,7 @@ description: Use when the user wants to break down a YouTube video's hook, struc
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -14,11 +14,14 @@ metadata:
 
 How a video holds attention, mapped from its transcript into a structure the user can reuse. Strong videos cycle through promise, stakes, re-hooks and small payoffs before the final payoff. Showing where each one lands is the point. The hook is the exact first 30 seconds, quoted. Transcripts are free to read.
 
+**Without TubeLab:** you can break down a video you name, but not find which to study. No outlier ratio and no channel-size filter, so you copy big channels' scripts.
+
 ## Workflow
 
-1. Clarify scope only if needed. Read 1 to 3 videos. If the user names a channel or a niche instead, pick the videos yourself. For a channel, take its best videos of the last three months by ratio, which is a free read. For a niche, take the top outliers from one search. Say which you picked and why.
+1. Clarify scope only if needed. Read 1 to 3 videos. If the user names a channel or a niche instead, pick the videos yourself, by ratio. For a channel, take its best videos of the last three months by ratio, which is a free read, plus one outlier from a similar channel, from one search seeded with the channel. For a niche, take the top outliers from one search, limited to channels under 300K subscribers and to the length the user plans to make, one per channel. Say which you picked and why.
 2. Tag every beat in order with one type: hook, promise, stakes, open loop, proof, re-hook, mini-payoff, payoff, or call to action. Types repeat, and a long video has 10 to 20 beats.
-3. Turn the beats into a layout someone could reuse. With several videos, keep only the parts they share.
+3. Read the opening of one weak video from the same channel, with a ratio under 0.5 in the free read. Say what the winner's opening does that the weak one lacks.
+4. Turn the beats into a layout someone could reuse. With several videos, keep only the parts they share.
 
 ## Output Format
 
@@ -31,6 +34,7 @@ How a video holds attention, mapped from its transcript into a structure the use
 ## [{title}]({video url}) · [{channel}]({url}) · {views, ratio, length}
 - **Hook (0:00 to 0:30):** "{word for word}"
 - **What it does:** {one sentence}
+- **Against a weak video:** [{title}]({video url}) · {ratio} · {what its opening lacks}
 
 | Time | Beat | What happens |
 |---|---|---|

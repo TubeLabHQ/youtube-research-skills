@@ -51,6 +51,7 @@ The plugin ships six agents in `agents/`, one per role. Each loads the skills be
 8. Searches cost credits. Channel, video, transcript and comment reads are free. Search to find candidates, and read to understand them. Most skills use two to six searches, and do not page through a paid search. Two skills go deeper, because the sample is the product: `niche-finder` pages its two channel searches 3 to 4 pages deep, and `reverse-engineer-niche` uses up to 15 searches without paging.
 9. Write reports in plain language. Use short, full sentences, not dense or telegraphic notes, and no jargon. A reader who is not a YouTube strategist should understand every line on first read.
 10. End with the artifact laid out in the skill's "Output Format" section.
+11. If TubeLab is not connected, say so before you start. Quote the skill's "Without TubeLab" line, name the parts of the report that will be weaker or missing, and write "not available" where a number is missing. Never fill a gap with a guess.
 
 ## Connecting the MCP
 

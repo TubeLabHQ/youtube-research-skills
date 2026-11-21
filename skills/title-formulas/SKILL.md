@@ -4,7 +4,7 @@ description: Use when the user wants titles or title formulas for a YouTube vide
 license: MIT
 metadata:
   author: tubelab
-  version: "5.0"
+  version: "5.1"
   requires: tubelab-mcp
 ---
 
@@ -14,11 +14,13 @@ metadata:
 
 Titles the user can publish, each built on a proven formula, followed by the formulas used. A formula is proven when current outliers in the niche, or the channel's own wins, use it. A formula with no results in the niche is untested. If the user has no video in mind, lead with the formulas and treat the titles as examples.
 
+**Without TubeLab:** no index of title formulas with video counts, average ratio, growth and click triggers, and no outliers to prove one works in this niche. Formulas become guesses.
+
 ## Workflow
 
 1. Clarify scope only if needed: the topic or draft title, and what the channel can truthfully claim.
-2. Collect formulas from three sources. First, the trending formulas that fit the topic. Second, outliers in this niche: work out the formula behind each winning title, meaning its repeated shape with the slots marked. Third, outliers in one or two neighbouring niches whose viewers are the same kind of people, such as NFL fans for a soccer channel.
-3. Label each formula. It is proven when an outlier in this niche or one of the channel's own wins uses it. A formula from a neighbouring niche stays untested here until an outlier in this niche uses it. Use about five searches in total, and reuse outliers already found in this conversation before searching again.
+2. Collect formulas from three sources. First, the trending formulas that fit the topic, from two searches: one as is, and one with a growth floor of 10 percent, which returns the rising ones. Note each one's click triggers. Second, outliers in this niche: work out the formula behind each winning title, meaning its repeated shape with the slots marked. Third, outliers of channels similar to the user's, from one search seeded with the channel. With no channel, use outliers in one or two neighbouring niches whose viewers are the same kind of people, such as NFL fans for a soccer channel.
+3. Label each formula. It is proven when an outlier in this niche or one of the channel's own wins uses it. A formula from a similar channel or a neighbouring niche stays untested here until an outlier in this niche uses it. Use about five searches in total, and reuse outliers already found in this conversation before searching again.
 4. Write each title in the channel's own voice.
 5. If the user wants a thumbnail too, finish the titles first. Then follow `thumbnail-concepts` for the chosen title.
 
@@ -31,7 +33,7 @@ Titles the user can publish, each built on a proven formula, followed by the for
 - **Can claim:** {what the channel can truthfully say}
 
 1. **{Title}**
-   - **Formula:** {formula}
+   - **Formula:** {formula} · {its click triggers, for a trending formula} · {"rising: use up 10% or more", if the growth-floor search returned it}
    - **Proof:** [{channel}]({url}) · [{title}]({video url}) · {views, ratio, date}, or "🧪 untested here"
 
 | Formula | Source | Videos | Avg ratio | Example (link) | ✅ Proven or 🧪 untested here |
@@ -52,5 +54,5 @@ Titles the user can publish, each built on a proven formula, followed by the for
 - Do not fill a slot with what the creator is proud of. Fill it with what the viewer wants.
 - Do not pass a language to the trending formats search. It rejects one, and its index is English only.
 - Do not reword a formula's pattern when you search with it. The match breaks.
-- Do not call a formula rising. Its momentum numbers are not returned.
+- Do not call a formula rising unless the growth-floor search returned it. Say the floor, because the growth number itself is not returned.
 - Do not carry a formula from a niche whose audience is different. A formula that wins with gamers may not win with gardeners.

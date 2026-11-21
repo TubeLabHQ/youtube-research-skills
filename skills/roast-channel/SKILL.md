@@ -4,7 +4,7 @@ description: "Use when the user wants a YouTube channel roasted or analyzed, the
 license: MIT
 metadata:
   author: tubelab
-  version: "6.0"
+  version: "6.1"
   requires: tubelab-mcp
 ---
 
@@ -12,19 +12,21 @@ metadata:
 
 ## Overview
 
-A blunt read of any channel. A channel's median views show what a typical video gets. Its last few uploads show how it is doing now. Comparing the two tells you whether the channel is healthy, growing or declining. A format that gets fewer views each time it returns is worn out: keep what makes it work, and change what the title promises. A hit the channel never followed up is its cheapest opportunity.
+A blunt read of any channel. Its median views against its last few uploads show whether it is healthy, growing or declining. A format that gets fewer views each time it returns is worn out: keep what makes it work, and change what the title promises. A hit the channel never followed up is its cheapest opportunity.
 
-The best videos usually rest on an asset only this creator has: a job, a life story, insider trust, credentials, a subculture they belong to, or a hard skill. Without it, the video could be anyone's. YouTube also groups videos by who watches them together, so every channel has neighbours. The names, brands, tools and known ideas in a title or thumbnail are anchors: they tell YouTube which viewer to send. A hit with the wrong anchor can bring viewers the rest of the channel does not serve.
+The best videos usually rest on an asset only this creator has: a job, a life story, insider trust, credentials, a subculture they belong to, or a hard skill. YouTube also groups videos by who watches them together, so every channel has neighbours. The names, brands, tools and known ideas in a title or thumbnail are anchors: they tell YouTube which viewer to send. A hit with the wrong anchor can bring viewers the rest of the channel does not serve.
+
+**Without TubeLab:** no outliers for its audience, similar channels or audience estimate, so the channel is compared only with itself.
 
 ## Workflow
 
 1. Clarify scope only if needed. Unless told otherwise, the goal is reach, or conversion if the channel sells something.
 2. Compare the last 4 to 6 long-form uploads with the median. Leave out Shorts and uploads still gathering views.
-3. Fetch and view the thumbnail of every video you feature. If one fails to load, say so.
-4. Check what works now for the same audience. Two or three searches are enough. The channels they return are its neighbours.
+3. View the thumbnail of every video you feature, and say if one fails.
+4. Search two or three times for what works now with the same audience. Their channels are its neighbours, plus on-topic hits from one similar-channels search with at least a tenth of its subscribers. Views per subscriber below most of theirs means the channel is the problem, not the niche.
 5. Find the asset in the About text, the descriptions and the openings of the two or three best videos. Then find recent videos that skip it, and compare views.
-6. Read the anchors in the titles and thumbnails of the best and weakest videos. Say which viewer each one pulls, and whether the channel serves that viewer.
-7. Flag off-audience hits: top videos whose topic or anchor is unlike the rest of the channel.
+6. Read the anchors in the titles and thumbnails of the best and weakest videos.
+7. Flag off-audience hits: top videos whose topic or anchor is unlike its other videos.
 8. Put the channel's recent titles and thumbnails next to the neighbours', with no new search. Name any that could belong to a neighbour.
 
 ## Output Format
@@ -33,7 +35,8 @@ The best videos usually rest on an asset only this creator has: a job, a life st
 # 🔥 Channel Roast: [{channel}]({url})
 
 - **Diagnosis:** {one sentence, with numbers}
-- **Positioning:** {who it serves and what it promises}
+- **Positioning:** {who it serves, with its audience estimate if a channel search returned the channel, and what it promises}
+- **Against neighbours:** {its views per subscriber} against {the neighbours' median}, from {n} neighbours
 - **Assets:** {what only this channel has, and how many recent videos use it}
 
 ## ✅ What Works
@@ -89,7 +92,7 @@ The best videos usually rest on an asset only this creator has: a job, a life st
 - Tone: blunt. Each problem is one flat sentence with its proof. No insults and no softening.
 - Language: plain words and short, complete sentences. Nothing compressed.
 - Bullets: one fact each, under 25 words, except quotes and verbatim titles. No extra sections or bullets.
-- If a check finds nothing, say so in one bullet. If it runs long, cut whole items. Never cut proof, and never squeeze sentences.
+- If a check finds nothing, say so in one bullet. If it runs long, cut whole items, never proof.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
 - Thumbnails: use the 320px `mqdefault.jpg` image, on its own line under the heading, linked to the video.
 
