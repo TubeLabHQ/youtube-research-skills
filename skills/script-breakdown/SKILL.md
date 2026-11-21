@@ -4,7 +4,7 @@ description: Use when the user wants to break down a YouTube video's hook, struc
 license: MIT
 metadata:
   author: tubelab
-  version: "5.1"
+  version: "5.2"
   requires: tubelab-mcp
 ---
 
@@ -18,9 +18,9 @@ How a video holds attention, mapped from its transcript into a structure the use
 
 ## Workflow
 
-1. Clarify scope only if needed. Read 1 to 3 videos. If the user names a channel or a niche instead, pick the videos yourself, by ratio. For a channel, take its best videos of the last three months by ratio, which is a free read, plus one outlier from a similar channel, from one search seeded with the channel. For a niche, take the top outliers from one search, limited to channels under 300K subscribers and to the length the user plans to make, one per channel. Say which you picked and why.
+1. Clarify scope only if needed. Read 1 to 3 videos. If the user names a channel or a niche instead, pick the videos yourself, by ratio. For a channel, take its best videos of the last three months by ratio, which is a free read, plus one outlier from a similar channel with at least 10K subscribers, from one search seeded with the channel. For a niche, take the top outliers from one search, limited to channels under 300K subscribers and to the length the user plans to make, one per channel. Say which you picked and why.
 2. Tag every beat in order with one type: hook, promise, stakes, open loop, proof, re-hook, mini-payoff, payoff, or call to action. Types repeat, and a long video has 10 to 20 beats.
-3. Read the opening of one weak video from the same channel, with a ratio under 0.5 in the free read. Say what the winner's opening does that the weak one lacks.
+3. For each video, read the opening of one weak video from the same channel, with a ratio under 0.5 in the free read. Say what the winner's opening does that the weak one lacks.
 4. Turn the beats into a layout someone could reuse. With several videos, keep only the parts they share.
 
 ## Output Format

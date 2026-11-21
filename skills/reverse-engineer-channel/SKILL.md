@@ -4,7 +4,7 @@ description: Use when the user wants to reverse engineer a YouTube channel into 
 license: MIT
 metadata:
   author: tubelab
-  version: "6.2"
+  version: "6.4"
   requires: tubelab-mcp
 ---
 
@@ -12,22 +12,23 @@ metadata:
 
 ## Overview
 
-One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts, a hook as its order of beats. Every read is free. Not for what holds a channel back (`roast-channel`).
+One channel taken apart into formulas the user can reuse. A formula is a pattern, not a quote: a title with its slots, a thumbnail as its parts. Reads are free; two searches add the rest. Not for what holds a channel back (`roast-channel`).
 
-**Without TubeLab:** no transcripts, since the official API gives captions only to the video's owner, so hook and script formulas go unread. Outlier ratios are worked out by hand.
+**Without TubeLab:** no audience estimates, AdSense status or detected revenue methods, and no similar-channel search to show whether a formula wins beyond this channel.
 
 ## Workflow
 
-1. If the user names their own channel or market, aim the learnings at it.
-2. Read the channel's long-form list and its Shorts. The list holds the latest 120 videos, newest first; read a video for its exact date.
-3. Find the outliers: videos with at least twice the list's average views, or the three highest. Then split the list into up to ten equal blocks and compare median views. A turning point is where the median jumps or falls, and stays there, after something changed.
+1. If the user names their own channel or market, aim learnings at it.
+2. Read the channel's long-form list and its Shorts. The list holds the latest 120; read a video for its exact date. Look it up by handle in a channel search for audience, AdSense, RPM and revenue methods.
+3. Find the outliers: videos with at least twice the list's average views, or the three highest. Split the list into up to ten blocks and compare median views. A turning point is a lasting jump or fall in the median after something changed.
 4. View every thumbnail, on numbered contact sheets.
-5. Group the videos into formats. A format is a video idea that can be remade with a twist, whatever its title or thumbnail, even if used once. Count how many of its videos beat their neighbours, meaning the median of their own block, because older videos had longer to collect views. Rank videos the same way.
-6. Find what does not work: the formats, topics and habits of the weakest videos. Leave out last month's uploads and channel updates such as Q&As.
-7. Read the first 30 seconds of the five best videos and two weak ones. Name each opening's beats in words that fit any video, such as setup, stakes or twist. A hook formula is an order of beats that two or more strong openings share.
-8. Read the full transcripts of three of the best videos, from different formats. Mark each beat and its time, named the same way, and keep the layout they share.
-9. Find how the channel earns, from its description, the descriptions of the ten best and five newest videos, and sponsor reads in the transcripts.
-10. Write five learnings, best first. Each names the skill that runs it, such as `title-formulas`, `thumbnail-concepts`, `script-breakdown` or `revenue-maxxing`, and a prompt to paste. Tag every format, hook formula, script structure and learning "anyone can copy" or "needs their asset" (job, life, credentials, fame, budget, access or hard skill).
+5. Group the videos into formats: ideas that can be remade with a twist, even if used once. Count how many of its videos beat their neighbours, the median of their own block, as older videos had longer to gain views. Rank videos the same way.
+6. Run one similar-channel outlier search seeded with the channel: last year, ratio 2 or more, 50 hits. Per format, count channels whose outlier runs it, not recaps it: two or more means it travels.
+7. Find what does not work: the formats, topics and habits of the weakest videos. Skip last month's uploads and channel updates.
+8. Read the first 30 seconds of the five best videos and two weak ones. Name each opening's beats in general words, such as setup, stakes or twist. A hook formula is a beat order two strong openings share.
+9. Read full transcripts of three best videos, one per format. Mark each beat and its time, and keep the layout they share.
+10. Find how it earns, from the detected revenue methods, its description, the descriptions of its ten best and five newest videos, and sponsor reads.
+11. Write five learnings, best first. Each names the skill that runs it, such as `title-formulas` or `script-breakdown`, and a prompt to paste. Tag every format, hook, script and learning "anyone can copy" or "needs their asset" (job, life, credentials, fame, budget, access or hard skill).
 
 ## Output Format
 
@@ -61,6 +62,7 @@ A video beats its neighbours when it has more views than the median of the video
 - **Title formula:** "{the pattern with every slot in square brackets, such as "[Number] Days In [Place]"}" · [{title}]({video url}) · {views, ratio}
 - **Thumbnail formula:** {the parts a viewer can point at, each a few words in square brackets, such as "[face, shocked, centre] + [object, oversized, left] + [price in white, top right]"}
 - **Length:** {usual length}
+- **Wins elsewhere:** {n} similar channels · [{title}]({video url}) · [{channel}]({url}) · {ratio}, or "only here"
 - **Who can copy it:** {"anyone can copy" or "needs their [asset]"} · {why, in a few words}
 
 ## 🚫 What Doesn't Work
@@ -115,6 +117,7 @@ A video beats its neighbours when it has more views than the median of the video
 |---|---|---|
 | {product, merch, newsletter, course, membership, community, app, sponsor or affiliate: check each} | [{offer or brand}]({url}) | [{title}]({video or moment url}) · {in the description, or said in the video} |
 
+- **Audience and ads (estimates):** {age, gender, income tier, region} · AdSense {on or off} · RPM {band}
 - **Not found:** {the methods looked for and not seen}
 
 ## 🧠 Learnings
@@ -127,13 +130,13 @@ A video beats its neighbours when it has more views than the median of the video
 - ❌ **Needs their asset: {move}** · {the asset it needs and why it will not carry over, with proof}
 ```
 
-- Length: about 1,700 words. Up to six outliers, three turning points, four formats that work, three that do not, three hook formulas, one script example and ten ways it earns.
+- Length: about 1,700 words. Up to six outliers, three turning points, four good formats, three bad ones, three hook formulas, one script example and ten ways it earns.
 - Language: plain words and short, complete sentences. Nothing compressed.
 - Bullets: one fact each, under 25 words, except quotes, verbatim titles, formulas and prompts. No extra sections or bullets.
 - If it runs long, cut whole items, never proof.
 - Links: link every video, channel, moment, brand and offer you cite, built from IDs, handles and links in the data. Never guess one.
 - Thumbnails: the 320px `mqdefault.jpg` image, linked to its video, on its own line.
-- Quotes: only inside the collapsed examples, word for word, with misspelt names fixed. Never paste a full transcript.
+- Quotes: only in the examples, word for word, with misspelt names fixed. Never paste a full transcript.
 
 ## Common Pitfalls
 
